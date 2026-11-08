@@ -25,6 +25,9 @@ function diasHasta(iso) {
   return Math.round((new Date(iso + 'T00:00:00') - hoy) / 86400000);
 }
 const fechaCorta = (iso) => new Date(iso + 'T00:00:00').toLocaleDateString('es-PE', { day: 'numeric', month: 'short', year: 'numeric' });
+const mesCorto = (iso) => new Date(iso + 'T00:00:00').toLocaleDateString('es-PE', { month: 'short', year: 'numeric' });
+// Si la web solo da el mes ("cierra en marzo 2027") se muestra "~mar 2027"
+const fechaTxt = (iso, aprox) => (aprox ? `~${mesCorto(iso)}` : fechaCorta(iso));
 function hace(isoDT) {
   if (!isoDT) return 'nunca';
   const min = Math.round((Date.now() - new Date(isoDT)) / 60000);
@@ -95,13 +98,15 @@ function filtrar(items) {
 
 function cierre(it) {
   const d = diasHasta(it.fechaLimite);
-  if (it.estado === 'vencida') return ['gris', `Venció el ${fechaCorta(it.fechaLimite)}`];
+  const ap = !!it.fechaAprox;
+  if (it.estado === 'vencida') return ['gris', `Venció ${ap ? 'en' : 'el'} ${fechaTxt(it.fechaLimite, ap)}`];
   if (d != null) {
     const clase = d <= 7 ? 'urgente' : d <= 21 ? 'pronto' : 'ok';
+    if (ap) return [clase, `Cierra a fines de ${mesCorto(it.fechaLimite)} · confirmar día en la web oficial`];
     const txt = d === 0 ? 'Cierra HOY' : d === 1 ? 'Cierra mañana' : `Cierra en ${d} días`;
     return [clase, `${txt} · ${fechaCorta(it.fechaLimite)}`];
   }
-  if (it.estado === 'cerrada') return ['gris', `Convocatoria cerrada (${fechaCorta(it.ultimaPasada)}) · próxima por anunciar`];
+  if (it.estado === 'cerrada') return ['gris', `Convocatoria cerrada (${fechaTxt(it.ultimaPasada, ap)}) · próxima por anunciar`];
   return ['gris', 'Fecha por confirmar · revisar web oficial'];
 }
 
@@ -175,7 +180,7 @@ function pintarSalud() {
   for (const s of salud) {
     const li = document.createElement('li');
     const ok = s.ok && !s.error;
-    li.textContent = `${ok ? '✔' : '✖'} ${s.nombre} — ${ok ? `${s.items} enlaces` : s.error}`;
+    li.textContent = `${ok ? '✔' : '✖'} ${s.nombre} — ${ok ? `${s.items} enlaces${s.via ? ' (vía fuente alternativa)' : ''}` : s.error}`;
     if (!ok) li.className = 'error';
     ul.append(li);
   }

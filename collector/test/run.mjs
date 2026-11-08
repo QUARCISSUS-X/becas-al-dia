@@ -35,6 +35,22 @@ prueba('elige la próxima futura y reporta la pasada', () => {
 prueba('rechaza fechas imposibles', () => {
   assert.equal(encontrarFechas('fecha límite 31/02/2027').length, 0);
 });
+prueba('ignora "offer deadline" y resultados (caso Chevening)', () => {
+  const t = 'Mid-June 2027 Results: interview results are announced. 8 July 2027 Offer deadline The deadline to receive an unconditional UK university offer is 17:00 BST on 8 July 2027.';
+  assert.equal(fechaLimite(t, HOY).fecha, null);
+});
+prueba('línea de tiempo "October 2026 Applications close" → cerrada aprox.', () => {
+  const r = fechaLimite('August 2026 Applications open. October 2026 Applications close. Mid-June 2027 Results.', HOY);
+  assert.deepEqual([r.fecha, r.ultimaPasada, r.aprox], [null, '2026-10-31', true]);
+});
+prueba('"Deadline: March 2027" → fin de mes, aproximada', () => {
+  const r = fechaLimite('Deadline: March 2027', HOY);
+  assert.deepEqual([r.fecha, r.aprox], ['2027-03-31', true]);
+});
+prueba('una fecha exacta gana a una aproximada', () => {
+  const r = fechaLimite('Applications close in March 2027. Deadline: 15 March 2027', HOY);
+  assert.deepEqual([r.fecha, r.aprox], ['2027-03-15', false]);
+});
 prueba('días restantes', () => {
   assert.equal(diasHasta('2026-11-18', HOY), 10);
 });
@@ -65,6 +81,7 @@ const WEBS = {
         <li><a href="/n/2">Ministro inaugura colegio en Puno</a></li>
         <li><a href="/n/3">Convocatoria Beca Perú para maestría en ingeniería civil</a></li></ul></body></html>`,
   'https://gob.test/n/3': '<html><body><main>Bases. Fecha límite: 10/12/2026</main></body></html>',
+  'https://alt.test/ok': '<html><body><main>Programa Alterno. Deadline: 30 April 2027</main></body></html>',
   'https://prog.test/timeline': '<html><body><main><h2>Timeline</h2><p>Applications open 4 August 2026. Applications close 6 October 2026 at 12:00 UTC.</p></main></body></html>',
 };
 usarObtener(async (url) => { if (!(url in WEBS)) throw new Error('HTTP 404'); return WEBS[url]; });
@@ -74,6 +91,8 @@ const fuentes = [
   { id: 'gob', nombre: 'Gob prueba', tipo: 'html', url: 'https://gob.test/noticias', filtro: 'beca|convocatoria', pais: 'Perú' },
   { id: 'prog', nombre: 'Programa prueba', tipo: 'programa', url: 'https://prog.test/timeline', titulo: 'Programa X', nivel: 'maestria' },
   { id: 'caida', nombre: 'Fuente caída', tipo: 'html', url: 'https://caida.test/' },
+  { id: 'alt', nombre: 'Con alternativa', tipo: 'html', url: 'https://bloqueada.test/', pais: 'Alemania',
+    alternativas: [{ tipo: 'programa', url: 'https://alt.test/ok', titulo: 'Programa Alterno', nivel: 'maestria' }] },
 ];
 process.env.HOY = HOY.toISOString();
 
@@ -100,7 +119,13 @@ prueba('Conserva becas no vistas recientemente', () => assert.ok(por('ya no apar
 prueba('Purga vencidas de hace más de 14 días', () => assert.equal(por('vencida hace mucho'), undefined));
 prueba('Reporta la salud de cada fuente', () => {
   const c = datos.salud.find((s) => s.id === 'caida'); assert.equal(c.ok, false); assert.match(c.error, /404/);
-  assert.equal(datos.salud.filter((s) => s.ok).length, 3);
+  assert.equal(datos.salud.filter((s) => s.ok).length, 4);
+});
+prueba('Usa la alternativa si la URL principal falla', () => {
+  const a = datos.salud.find((s) => s.id === 'alt');
+  assert.equal(a.ok, true); assert.equal(a.via, 'https://alt.test/ok');
+  assert.equal(por('Programa Alterno').fechaLimite, '2027-04-30');
+  assert.equal(por('Programa Alterno').pais, 'Alemania');
 });
 
 // Segunda corrida: detecta cambio de fecha

@@ -19,7 +19,24 @@ const CLAVES_CIERRE = [
   'deadline', 'closing date', 'closes', 'close on', 'apply by', 'applications close',
   'due date', 'submission', 'until',
 ];
-const CLAVES_RE = new RegExp(`(${CLAVES_CIERRE.join('|')})`, 'i');
+const CLAVES_RE = new RegExp(`(${CLAVES_CIERRE.join('|')})`, 'gi');
+
+// Contextos que NO son el cierre de postulación aunque digan "deadline"
+// (p. ej. Chevening: "Offer deadline – 8 July 2027" es para entregar la carta de la universidad).
+const CLAVES_NO_CIERRE = [
+  'offer deadline', 'university offer', 'unconditional', 'carta de aceptaci[oó]n',
+  'results?', 'resultados?', 'interviews?', 'entrevistas?', 'shortlist',
+  'studies begin', 'inicio de (clases|estudios)', 'start of (studies|classes)',
+  'publicad[oa] el', 'published on', 'posted on', 'actualizad[oa] el', 'updated on',
+];
+const NO_CIERRE_RE = new RegExp(`(${CLAVES_NO_CIERRE.join('|')})`, 'gi');
+
+// ¿La última palabra clave antes de la fecha es de cierre (y no de resultados, ofertas, etc.)?
+function esContextoCierre(antes) {
+  const ult = (re) => { let p = -1; for (const m of antes.matchAll(re)) p = m.index + m[0].length; return p; };
+  const pos = ult(CLAVES_RE);
+  return pos >= 0 && pos > ult(NO_CIERRE_RE);
+}
 
 function iso(y, m, d) {
   if (!y || !m || !d || m < 1 || m > 12 || d < 1 || d > 31) return null;
@@ -57,8 +74,32 @@ export function encontrarFechas(texto) {
       const fecha = f(m);
       if (!fecha) continue;
       const antes = t.slice(Math.max(0, m.index - 120), m.index);
-      res.push({ fecha, pos: m.index, cerca: CLAVES_RE.test(antes) });
+      res.push({ fecha, pos: m.index, cerca: esContextoCierre(antes) });
     }
+  }
+  return res;
+}
+
+// Fechas solo con mes y año ("Applications close: October 2026"), únicamente junto
+// a una palabra de cierre. Se toma el último día del mes y se marcan como aproximadas.
+export function encontrarMesesCierre(texto) {
+  if (!texto) return [];
+  const t = texto.replace(/\s+/g, ' ');
+  const re = new RegExp(`\\b(${MES_RE})\\.?,?\\s+(?:de(?:l)?\\s+)?(20\\d{2})\\b`, 'gi');
+  const res = [];
+  for (const m of t.matchAll(re)) {
+    // Evitar duplicar fechas completas ("15 de marzo de 2027", "March 15, 2027")
+    const previo = t.slice(Math.max(0, m.index - 8), m.index);
+    if (/\d\s*(de|of)?\s*$/i.test(previo)) continue;
+    const mes = MESES[m[1].toLowerCase()];
+    const y = Number(m[2]);
+    const ultimo = new Date(Date.UTC(y, mes, 0)).getUTCDate();
+    const antes = t.slice(Math.max(0, m.index - 35), m.index);
+    // En líneas de tiempo el rótulo suele ir después: "October 2026 – Applications close"
+    const despues = t.slice(m.index + m[0].length, m.index + m[0].length + 30);
+    const rotuloDespues = /^\W{0,3}(applications? (close|deadline)|deadline|cierre|cierra|fecha l[ií]mite)/i.test(despues);
+    const rotuloOtro = new RegExp(`^\\W{0,3}(${CLAVES_NO_CIERRE.join('|')}|applications? open|abre|apertura)`, 'i').test(despues);
+    if (!rotuloOtro && (esContextoCierre(antes) || rotuloDespues)) res.push(iso(y, mes, ultimo));
   }
   return res;
 }
@@ -77,7 +118,12 @@ export function fechaLimite(texto, hoy = new Date()) {
   const limite = new Date(hoy); limite.setUTCFullYear(limite.getUTCFullYear() + 3);
   const lim = limite.toISOString().slice(0, 10);
   const proxima = futuras.find((f) => f <= lim) || null;
-  return { fecha: proxima, ultimaPasada: pasadas.at(-1) || null };
+  if (proxima || pasadas.length) return { fecha: proxima, ultimaPasada: pasadas.at(-1) || null, aprox: false };
+  // Sin fecha exacta: probar "mes año" junto a palabras de cierre
+  const meses = [...new Set(encontrarMesesCierre(texto))].sort();
+  const mFut = meses.filter((f) => f >= hoyIso && f <= lim);
+  const mPas = meses.filter((f) => f < hoyIso);
+  return { fecha: mFut[0] || null, ultimaPasada: mPas.at(-1) || null, aprox: meses.length > 0 };
 }
 
 export function diasHasta(fechaIso, hoy = new Date()) {

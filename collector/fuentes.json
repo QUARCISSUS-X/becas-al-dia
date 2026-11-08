@@ -1,5 +1,5 @@
 {
-  "_ayuda": "Para agregar o arreglar una fuente, edita solo este archivo. tipo: 'rss' (feed), 'html' (página con lista de enlaces) o 'programa' (beca recurrente con página oficial). 'filtro' es una expresión regular sobre el texto del enlace. 'activa': false la desactiva sin borrarla.",
+  "_ayuda": "Para agregar o arreglar una fuente, edita solo este archivo. tipo: 'rss' (feed), 'html' (página con lista de enlaces) o 'programa' (beca recurrente con página oficial). 'filtro' es una expresión regular sobre el texto del enlace. 'activa': false la desactiva sin borrarla. 'alternativas': lista opcional de {url, tipo, ...} que se prueban en orden si la URL principal falla o no trae nada.",
   "fuentes": [
     {
       "id": "pronabec-noticias",
@@ -13,13 +13,18 @@
     },
     {
       "id": "prociencia",
-      "nombre": "ProCiencia – Concytec",
+      "nombre": "ProCiencia – Concytec (noticias oficiales en gob.pe)",
       "tipo": "html",
-      "url": "https://prociencia.gob.pe/",
-      "filtro": "beca|convocatoria|doctorado|maestr",
+      "url": "https://www.gob.pe/institucion/prociencia/noticias",
+      "filtro": "beca|convocatoria|concurso|doctorado|maestr|pasant|postula",
       "pais": "Perú",
       "idioma": "es",
-      "activa": true
+      "activa": true,
+      "alternativas": [
+        {
+          "url": "https://www.gob.pe/institucion/concytec/noticias"
+        }
+      ]
     },
     {
       "id": "daad-maestria",
@@ -29,7 +34,17 @@
       "filtro": "beca|maestr|master|convocatoria",
       "pais": "Alemania",
       "idioma": "es",
-      "activa": true
+      "activa": true,
+      "alternativas": [
+        {
+          "tipo": "programa",
+          "url": "https://www.daad.de/en/information-services-for-higher-education-institutions/further-information-on-daad-programmes/epos/",
+          "titulo": "DAAD EPOS – Maestrías relacionadas con el desarrollo (Alemania)",
+          "nivel": "maestria",
+          "cobertura": "completa",
+          "idioma": "en"
+        }
+      ]
     },
     {
       "id": "daad-doctorado",
@@ -55,7 +70,7 @@
       "id": "chevening",
       "nombre": "Chevening (Reino Unido)",
       "tipo": "programa",
-      "url": "https://www.chevening.org/apply/application-timeline",
+      "url": "https://www.chevening.org/scholarships/application-timeline/",
       "titulo": "Becas Chevening – Maestría de 1 año en Reino Unido",
       "nivel": "maestria",
       "cobertura": "completa",

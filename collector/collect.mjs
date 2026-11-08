@@ -27,16 +27,32 @@ const idDe = (url) => createHash('sha1').update(url.replace(/[#?].*$/, '').repla
 const limpiar = (s = '') => s.replace(/\s+/g, ' ').trim();
 const sumarDias = (iso, n) => { const d = new Date(iso + 'T00:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); };
 
+// Algunas webs (p. ej. DAAD) responden 403 a clientes que no parecen navegador.
+// Primero se pide con el UA honesto del proyecto; si da 403/429, se reintenta una vez
+// con cabeceras normales de navegador (una sola lectura diaria de una página pública).
+const CABECERAS_NAVEGADOR = {
+  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
+  'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'Accept-Language': 'es-PE,es;q=0.9,en;q=0.8',
+  'Upgrade-Insecure-Requests': '1',
+};
+
 // Inyectable en pruebas
 export let obtener = async function (url) {
   let ultimoError;
-  for (let intento = 0; intento < 2; intento++) {
+  const intentos = [
+    { 'User-Agent': UA, 'Accept-Language': 'es-PE,es;q=0.9,en;q=0.8' },
+    CABECERAS_NAVEGADOR,
+  ];
+  for (const headers of intentos) {
     try {
       const ctrl = new AbortController();
       const t = setTimeout(() => ctrl.abort(), 20000);
-      const r = await fetch(url, { headers: { 'User-Agent': UA, 'Accept-Language': 'es-PE,es;q=0.9,en;q=0.8' }, signal: ctrl.signal, redirect: 'follow' });
+      const r = await fetch(url, { headers, signal: ctrl.signal, redirect: 'follow' });
       clearTimeout(t);
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      if (!r.ok) {
+        const e = new Error(`HTTP ${r.status}`); e.status = r.status; throw e;
+      }
       return await r.text();
     } catch (e) {
       ultimoError = e;
@@ -126,16 +142,28 @@ export async function recolectar({ fuentes, anterior }) {
 
   for (const fuente of fuentes.filter((f) => f.activa !== false)) {
     const lector = LECTORES[fuente.tipo];
-    const s = { id: fuente.id, nombre: fuente.nombre, url: fuente.url, ok: false, items: 0, error: null, ultimaOk: saludPrev.get(fuente.id)?.ultimaOk || null };
+    const s = { id: fuente.id, nombre: fuente.nombre, url: fuente.url, via: null, ok: false, items: 0, error: null, ultimaOk: saludPrev.get(fuente.id)?.ultimaOk || null };
     try {
       if (!lector) throw new Error(`tipo desconocido: ${fuente.tipo}`);
-      const crudos = await lector(fuente);
+      // Si la URL principal falla o no trae nada, probar las alternativas (otra URL u otro tipo)
+      let crudos = [];
+      const errores = [];
+      for (const variante of [fuente, ...(fuente.alternativas || []).map((a) => ({ ...fuente, alternativas: undefined, ...a }))]) {
+        try {
+          const lec = LECTORES[variante.tipo];
+          if (!lec) throw new Error(`tipo desconocido: ${variante.tipo}`);
+          crudos = await lec(variante);
+          if (crudos.length) { if (variante !== fuente) s.via = variante.url; break; }
+          errores.push(`${variante.url}: sin resultados`);
+        } catch (e) { errores.push(`${variante.url}: ${e.message || e}`); }
+      }
+      if (!crudos.length && errores.length && errores.every((x) => !x.endsWith('sin resultados'))) throw new Error(errores.join(' | '));
       let detallesAbiertos = 0;
 
       for (const c of crudos) {
         const id = idDe(c.url);
         const prev = previos.get(id);
-        let { fecha, ultimaPasada } = fechaLimite(c.texto, HOY);
+        let { fecha, ultimaPasada, aprox } = fechaLimite(c.texto, HOY);
         let verificada = fecha ? HOY_ISO : null;
 
         // Sin fecha en el listado: abrir la página de detalle (máx. MAX_DETALLES),
@@ -143,12 +171,12 @@ export async function recolectar({ fuentes, anterior }) {
         const reciente = prev?.verificado && prev.verificado >= sumarDias(HOY_ISO, -REVERIFICAR_DIAS);
         if (!fecha && !c.detalleLeido) {
           if (reciente) {
-            fecha = prev.fechaLimite; verificada = prev.verificado; ultimaPasada = prev.ultimaPasada || null;
+            fecha = prev.fechaLimite; verificada = prev.verificado; ultimaPasada = prev.ultimaPasada || null; aprox = !!prev.fechaAprox;
           } else if (detallesAbiertos < MAX_DETALLES) {
             detallesAbiertos++;
             try {
               const det = textoPrincipal(cheerio.load(await obtener(c.url)));
-              ({ fecha, ultimaPasada } = fechaLimite(det, HOY));
+              ({ fecha, ultimaPasada, aprox } = fechaLimite(det, HOY));
               c.texto += ' ' + det.slice(0, 3000);
               verificada = HOY_ISO;
             } catch { /* el detalle falló; se queda por confirmar */ }
@@ -168,6 +196,7 @@ export async function recolectar({ fuentes, anterior }) {
           idioma: fuente.idioma || null,
           fechaLimite: fecha,
           ultimaPasada,
+          fechaAprox: !!aprox, // true = solo se conoce el mes ("cierra en octubre 2026")
           verificado: verificada,
           estado: fecha ? 'abierta' : (ultimaPasada && !fecha ? 'cerrada' : 'por-confirmar'),
           niveles: c.fijo?.niveles || cls.niveles,
