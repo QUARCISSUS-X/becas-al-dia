@@ -128,6 +128,16 @@ async function leerPrograma(fuente) {
 
 const LECTORES = { rss: leerRss, html: leerHtml, programa: leerPrograma };
 
+// ¿El título habla de un ciclo ya pasado? ("convocatoria 2024/2025", "2025/26" estando en 2026)
+export function cicloPasado(titulo, anioActual) {
+  const ciclos = [...titulo.matchAll(/\b(20\d{2})\s*[/-]\s*(20\d{2}|\d{2})\b/g)];
+  if (ciclos.length) {
+    return ciclos.every((m) => { const fin = m[2].length === 2 ? 2000 + Number(m[2]) : Number(m[2]); return fin <= anioActual; });
+  }
+  const anios = [...titulo.matchAll(/\b(20\d{2})\b/g)].map((m) => Number(m[1]));
+  return anios.length > 0 && Math.max(...anios) < anioActual;
+}
+
 // ---------- Proceso principal ----------
 
 async function cargarAnterior() {
@@ -160,7 +170,9 @@ export async function recolectar({ fuentes, anterior }) {
       if (!crudos.length && errores.length && errores.every((x) => !x.endsWith('sin resultados'))) throw new Error(errores.join(' | '));
       let detallesAbiertos = 0;
 
+      const anioActual = Number(HOY_ISO.slice(0, 4));
       for (const c of crudos) {
+        if (!c.detalleLeido && cicloPasado(c.titulo, anioActual)) continue;
         const id = idDe(c.url);
         const prev = previos.get(id);
         let { fecha, ultimaPasada, aprox } = fechaLimite(c.texto, HOY);
@@ -224,9 +236,14 @@ export async function recolectar({ fuentes, anterior }) {
     console.log(`${s.ok ? '✔' : '✖'} ${fuente.nombre}: ${s.items} items${s.error ? ' — ' + s.error : ''}`);
   }
 
-  // Conservar becas de corridas anteriores que hoy no aparecieron (feeds rotan, webs caen)
+  // Conservar becas de corridas anteriores que hoy no aparecieron (feeds rotan, webs caen).
+  // Excepción: las fuentes tipo 'programa' tienen una sola ficha; si hoy respondieron,
+  // la ficha anterior (p. ej. con otra URL) se reemplaza en vez de duplicarse.
+  const programasOk = new Set(fuentes.filter((f) => f.tipo === 'programa' && salud.find((x) => x.id === f.id)?.ok).map((f) => f.id));
   for (const [id, p] of previos) {
     if (nuevos.has(id)) continue;
+    if (programasOk.has(p.fuente)) continue;
+    if (cicloPasado(p.titulo || '', Number(HOY_ISO.slice(0, 4)))) continue;
     if (p.vistoUltimo >= sumarDias(HOY_ISO, -CONSERVAR_NO_VISTAS)) nuevos.set(id, p);
   }
 

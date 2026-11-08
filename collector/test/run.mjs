@@ -2,7 +2,7 @@
 import assert from 'node:assert/strict';
 import { encontrarFechas, fechaLimite, diasHasta } from '../lib/fechas.mjs';
 import { clasificar } from '../lib/clasificar.mjs';
-import { recolectar, usarObtener } from '../collect.mjs';
+import { recolectar, usarObtener, cicloPasado } from '../collect.mjs';
 
 const HOY = new Date('2026-11-08T12:00:00Z');
 let ok = 0;
@@ -64,6 +64,15 @@ prueba('clasifica nivel, área y cobertura', () => {
   assert.equal(c.paraPeru, true);
 });
 
+prueba('detecta ciclos pasados en el título', () => {
+  assert.equal(cicloPasado('Guía para postularse a la convocatoria 2025/26', 2026), true);
+  assert.equal(cicloPasado('Guía convocatoria 2024/2025', 2026), true);
+  assert.equal(cicloPasado('Guía para postularse a la convocatoria 2026/27', 2026), false);
+  assert.equal(cicloPasado('Becas STEM 2026', 2026), false);
+  assert.equal(cicloPasado('Informe anual 2023', 2026), true);
+  assert.equal(cicloPasado('Beca sin año', 2026), false);
+});
+
 // --- Recolector completo con webs simuladas ---
 const WEBS = {
   'https://feed.test/rss': `<?xml version="1.0"?><rss><channel>
@@ -97,6 +106,7 @@ const fuentes = [
 process.env.HOY = HOY.toISOString();
 
 const anterior = { items: [
+  { id: 'progviejo00', titulo: 'Programa X (URL antigua)', url: 'https://prog.test/viejo', fuente: 'prog', estado: 'abierta', fechaLimite: '2027-07-08', vistoUltimo: '2026-11-07', primeraVez: '2026-11-01' },
   { id: 'viejo000000', titulo: 'Beca que ya no aparece', url: 'https://x.test/a', estado: 'abierta', fechaLimite: '2027-05-01', vistoUltimo: '2026-11-01', primeraVez: '2026-10-01' },
   { id: 'vencida0000', titulo: 'Beca vencida hace mucho', url: 'https://x.test/b', estado: 'abierta', fechaLimite: '2026-09-01', vistoUltimo: '2026-11-05', primeraVez: '2026-08-01' },
 ], salud: [] };
@@ -115,6 +125,7 @@ prueba('HTML: fecha dd/mm desde el detalle', () => assert.equal(por('ingeniería
 prueba('Programa: convocatoria cerrada sin fecha nueva', () => {
   const p = por('Programa X'); assert.equal(p.estado, 'cerrada'); assert.equal(p.ultimaPasada, '2026-10-06');
 });
+prueba('Programa: no duplica la ficha si cambió la URL', () => assert.equal(por('URL antigua'), undefined));
 prueba('Conserva becas no vistas recientemente', () => assert.ok(por('ya no aparece')));
 prueba('Purga vencidas de hace más de 14 días', () => assert.equal(por('vencida hace mucho'), undefined));
 prueba('Reporta la salud de cada fuente', () => {
