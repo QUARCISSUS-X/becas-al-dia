@@ -1,9 +1,9 @@
 {
  "version": 1,
- "generado": "2026-11-08T23:49:07.348Z",
+ "generado": "2026-11-08T23:50:39.400Z",
  "hoy": "2026-11-08",
- "total": 88,
- "abiertas": 16,
+ "total": 79,
+ "abiertas": 14,
  "items": [
   {
    "id": "3e2700bbb6ab",
@@ -20,14 +20,11 @@
    "verificado": "2026-11-08",
    "estado": "abierta",
    "niveles": [
-    "curso",
     "investigacion"
    ],
-   "areas": [
-    "ingenieria"
-   ],
+   "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
    "vistoUltimo": "2026-11-08"
@@ -240,16 +237,11 @@
    "verificado": "2026-11-08",
    "estado": "abierta",
    "niveles": [
-    "maestria",
-    "doctorado",
-    "curso",
-    "investigacion"
+    "curso"
    ],
-   "areas": [
-    "ingenieria"
-   ],
+   "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
    "vistoUltimo": "2026-11-08"
@@ -269,8 +261,7 @@
    "verificado": "2026-11-08",
    "estado": "abierta",
    "niveles": [
-    "curso",
-    "investigacion"
+    "curso"
    ],
    "areas": [
     "ingenieria",
@@ -297,13 +288,9 @@
    "verificado": "2026-11-08",
    "estado": "abierta",
    "niveles": [
-    "maestria",
-    "doctorado",
-    "posdoc",
-    "investigacion"
+    "maestria"
    ],
    "areas": [
-    "ingenieria",
     "gestion"
    ],
    "cobertura": null,
@@ -331,56 +318,6 @@
    ],
    "areas": [],
    "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
-  },
-  {
-   "id": "0f14f3821a54",
-   "titulo": "Guía para postularse a la convocatoria 2025/2026",
-   "url": "https://www.daad.co/files/2025/07/GUIA_Becas_DOCENTES_Arte_-Arquitectura_2025.pdf",
-   "resumen": "Study Visits for Academics- Artists and Architects Becas para estancias de docentes universitarios de arquitectura y disciplinas artísticas. Duración: 1-3 meses Prestaciones: Estas becas incluyen apoyo para los tiquetes aéreos, mensualidad de manutención y vivienda durante la est",
-   "fuente": "daad-doctorado",
-   "fuenteNombre": "DAAD (oficina regional para Perú) – Doctorado e investigación",
-   "pais": "Alemania",
-   "idioma": "es",
-   "fechaLimite": "2027-03-31",
-   "ultimaPasada": "2026-09-30",
-   "fechaAprox": true,
-   "verificado": "2026-11-08",
-   "estado": "abierta",
-   "niveles": [
-    "investigacion"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
-  },
-  {
-   "id": "797ed4221acc",
-   "titulo": "Becas Chevening – Maestría de 1 año en Reino Unido",
-   "url": "https://www.chevening.org/apply/application-timeline",
-   "resumen": "",
-   "fuente": "chevening",
-   "fuenteNombre": "Chevening (Reino Unido)",
-   "pais": "Reino Unido",
-   "idioma": "en",
-   "fechaLimite": "2027-07-08",
-   "ultimaPasada": null,
-   "verificado": "2026-11-08",
-   "estado": "abierta",
-   "niveles": [
-    "maestria"
-   ],
-   "areas": [
-    "ingenieria",
-    "gestion"
-   ],
-   "cobertura": "completa",
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
@@ -655,12 +592,9 @@
    "fechaAprox": false,
    "verificado": "2026-11-08",
    "estado": "por-confirmar",
-   "niveles": [
-    "pregrado"
-   ],
+   "niveles": [],
    "areas": [
-    "ingenieria",
-    "ambiental"
+    "ingenieria"
    ],
    "cobertura": null,
    "paraPeru": true,
@@ -683,12 +617,11 @@
    "verificado": "2026-11-08",
    "estado": "por-confirmar",
    "niveles": [
-    "pregrado",
-    "curso"
+    "pregrado"
    ],
    "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
    "vistoUltimo": "2026-11-08"
@@ -707,18 +640,10 @@
    "fechaAprox": false,
    "verificado": "2026-11-08",
    "estado": "por-confirmar",
-   "niveles": [
-    "pregrado",
-    "maestria",
-    "curso"
-   ],
-   "areas": [
-    "ingenieria",
-    "civil",
-    "mineria"
-   ],
+   "niveles": [],
+   "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
    "vistoUltimo": "2026-11-08"
@@ -737,14 +662,10 @@
    "fechaAprox": false,
    "verificado": "2026-11-08",
    "estado": "por-confirmar",
-   "niveles": [
-    "maestria"
-   ],
-   "areas": [
-    "gestion"
-   ],
+   "niveles": [],
+   "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
    "vistoUltimo": "2026-11-08"
@@ -764,12 +685,9 @@
    "verificado": "2026-11-08",
    "estado": "por-confirmar",
    "niveles": [
-    "pregrado",
-    "curso"
+    "pregrado"
    ],
-   "areas": [
-    "ingenieria"
-   ],
+   "areas": [],
    "cobertura": null,
    "paraPeru": true,
    "publicado": null,
@@ -791,12 +709,11 @@
    "verificado": "2026-11-08",
    "estado": "por-confirmar",
    "niveles": [
-    "pregrado",
-    "curso"
+    "pregrado"
    ],
    "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
    "vistoUltimo": "2026-11-08"
@@ -816,12 +733,11 @@
    "verificado": "2026-11-08",
    "estado": "por-confirmar",
    "niveles": [
-    "pregrado",
-    "curso"
+    "pregrado"
    ],
    "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
    "vistoUltimo": "2026-11-08"
@@ -841,14 +757,11 @@
    "verificado": "2026-11-08",
    "estado": "por-confirmar",
    "niveles": [
-    "pregrado",
-    "curso"
+    "pregrado"
    ],
-   "areas": [
-    "ingenieria"
-   ],
+   "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
    "vistoUltimo": "2026-11-08"
@@ -868,12 +781,11 @@
    "verificado": "2026-11-08",
    "estado": "por-confirmar",
    "niveles": [
-    "pregrado",
-    "curso"
+    "pregrado"
    ],
    "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
    "vistoUltimo": "2026-11-08"
@@ -893,12 +805,11 @@
    "verificado": "2026-11-08",
    "estado": "por-confirmar",
    "niveles": [
-    "pregrado",
-    "curso"
+    "pregrado"
    ],
    "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
    "vistoUltimo": "2026-11-08"
@@ -920,11 +831,9 @@
    "niveles": [
     "maestria"
    ],
-   "areas": [
-    "gestion"
-   ],
+   "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
    "vistoUltimo": "2026-11-08"
@@ -944,12 +853,11 @@
    "verificado": "2026-11-08",
    "estado": "por-confirmar",
    "niveles": [
-    "pregrado",
-    "curso"
+    "pregrado"
    ],
    "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
    "vistoUltimo": "2026-11-08"
@@ -966,12 +874,16 @@
    "fechaLimite": null,
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": null,
+   "verificado": "2026-11-08",
    "estado": "por-confirmar",
-   "niveles": [],
-   "areas": [],
+   "niveles": [
+    "curso"
+   ],
+   "areas": [
+    "ambiental"
+   ],
    "cobertura": null,
-   "paraPeru": false,
+   "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
    "vistoUltimo": "2026-11-08"
@@ -991,15 +903,11 @@
    "verificado": "2026-11-08",
    "estado": "por-confirmar",
    "niveles": [
-    "curso",
-    "investigacion"
+    "curso"
    ],
-   "areas": [
-    "ingenieria",
-    "gestion"
-   ],
+   "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
    "vistoUltimo": "2026-11-08"
@@ -1023,11 +931,7 @@
     "posdoc",
     "investigacion"
    ],
-   "areas": [
-    "ingenieria",
-    "ambiental",
-    "civil"
-   ],
+   "areas": [],
    "cobertura": null,
    "paraPeru": false,
    "publicado": null,
@@ -1066,34 +970,6 @@
    "id": "77418871aea5",
    "titulo": "Lista de Maestrías financiadas por el Programa EPOS 2026",
    "url": "https://static.daad.de/media/daad_de/pdfs_nicht_barrierefrei/in-deutschland-studieren-forschen-lehren/daad_programmbroschuere_epos_2026-27.pdf",
-   "resumen": "EPOS: Development-Related Postgraduate Courses Becas para Estudios de Posgrado en Alemania en el ámbito del Desarrollo: Este programa financia una selección específica de 35 Maestrías y 4 programas de Doctorados. Dirigido a egresados ​​de Pregrado o Maestría con al menos 2 años d",
-   "fuente": "daad-maestria",
-   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
-   "pais": "Alemania",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [
-    "pregrado",
-    "maestria",
-    "doctorado",
-    "curso",
-    "investigacion"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
-  },
-  {
-   "id": "f4b8261fe0fb",
-   "titulo": "Fechas para postularse 2025/26 según cada programa de la lista EPOS",
-   "url": "https://static.daad.de/media/daad_de/pdfs_nicht_barrierefrei/in-deutschland-studieren-forschen-lehren/daad_epos_deadlines_2026_27.pdf",
    "resumen": "EPOS: Development-Related Postgraduate Courses Becas para Estudios de Posgrado en Alemania en el ámbito del Desarrollo: Este programa financia una selección específica de 35 Maestrías y 4 programas de Doctorados. Dirigido a egresados ​​de Pregrado o Maestría con al menos 2 años d",
    "fuente": "daad-maestria",
    "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
@@ -1199,110 +1075,6 @@
    "vistoUltimo": "2026-11-08"
   },
   {
-   "id": "86ae8c333d90",
-   "titulo": "Guía para postularse a la convocatoria 2025/26",
-   "url": "https://www.daad.co/files/2025/10/GUIA_BELLAS-ARTES_Convocatoria-2025_stand_9_octubre_2025.pdf",
-   "resumen": "Study Scholarships – Postgraduate Studies in the Fields of Fine Art, Design, Visual Communication and Film Becas para Artistas en las áreas de Bellas Artes, Cinematografía, Diseño / Comunicación Visual Se financian programas completos de Maestría, estancias para desarrollo de pro",
-   "fuente": "daad-maestria",
-   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
-   "pais": "Alemania",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria",
-    "curso",
-    "investigacion"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
-  },
-  {
-   "id": "06a5e16b39e7",
-   "titulo": "Guía para postularse a la convocatoria 2025/26",
-   "url": "https://www.daad.co/files/2025/08/GUIA_ARQUITECTURA-Convocatoria-2025_stand-12-agosto.pdf",
-   "resumen": "Study Scholarships – Postgraduate Studies in the Field of Architecture Becas para el ámbito de la Arquitectura Se financian programas completos de Maestría, estancias para desarrollo de proyectos o estudios de profundización que tengan un enfoque práctico orientado hacia el ámbit",
-   "fuente": "daad-maestria",
-   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
-   "pais": "Alemania",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": null,
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria",
-    "curso",
-    "investigacion"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
-  },
-  {
-   "id": "df2a674404d7",
-   "titulo": "Guía para postularse a la convocatoria 2025/26",
-   "url": "https://www.daad.co/files/2025/08/GUIA_MUSICA-Convocatoria-2025_stand-21_-agosto.pdf",
-   "resumen": "Study Scholarships – Postgraduate Studies in the Field of Music Becas para Artistas en el área de Música Se financian programas completos de Maestría, estancias para desarrollo de proyectos o estudios de profundización que tengan un enfoque práctico musical/artístico. – Apoyo par",
-   "fuente": "daad-maestria",
-   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
-   "pais": "Alemania",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": null,
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria",
-    "curso",
-    "investigacion"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
-  },
-  {
-   "id": "5ca920cf542b",
-   "titulo": "Guía para postularse a la convocatoria 2025/26",
-   "url": "https://www.daad.co/files/2025/10/GUIA_ARTES-ESCENICAS_Convocatoria-2025_stand_9-de-octubre_FINAL.pdf",
-   "resumen": "Study Scholarships – Postgraduate Studies in the Field of the Performing Arts Becas para Artistas en el área de Artes Escénicas (Actuación, teatro, dirección de teatro, Danza, Coreografía, Musical, estudios de performance) Se financian Maestrías, desarrollo de proyectos o estudio",
-   "fuente": "daad-maestria",
-   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
-   "pais": "Alemania",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": null,
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria",
-    "curso",
-    "investigacion"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
-  },
-  {
    "id": "6f999ce2b5cb",
    "titulo": "Guía para postularse a la convocatoria 2026",
    "url": "https://www.daad.co/files/2026/02/DAAD_COLFUTURO_Convocatoria-2026-1.pdf",
@@ -1314,7 +1086,7 @@
    "fechaLimite": null,
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": null,
+   "verificado": "2026-11-08",
    "estado": "por-confirmar",
    "niveles": [
     "maestria",
@@ -1340,7 +1112,7 @@
    "fechaLimite": null,
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": null,
+   "verificado": "2026-11-08",
    "estado": "por-confirmar",
    "niveles": [
     "maestria",
@@ -1350,6 +1122,33 @@
    "areas": [],
    "cobertura": "parcial",
    "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-08"
+  },
+  {
+   "id": "5faf7896bfa2",
+   "titulo": "Guia para postularse a la Convocatoria de becas 2026",
+   "url": "https://imp.daad.com/media/daad_de/pdfs_nicht_barrierefrei/in-deutschland-studieren-forschen-lehren/call_third_country_programme_latin_america_master.pdf",
+   "resumen": "„In-Region Scholarship Programme“ Latin America Beca del DAAD: Maestría en Ingeniería Eléctrica en la Universidad Nacional de San Juan, Argentina. La convocatoria “In-Region Scholarship Programme – Latin America”, permite realizar estudios de Maestría en la Universidad Nacional d",
+   "fuente": "daad-maestria",
+   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
+   "pais": "Alemania",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [
+    "maestria",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria"
+   ],
+   "cobertura": "completa",
+   "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
    "vistoUltimo": "2026-11-08"
@@ -1366,40 +1165,16 @@
    "fechaLimite": null,
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": null,
+   "verificado": "2026-11-08",
    "estado": "por-confirmar",
    "niveles": [
     "pregrado",
+    "maestria",
     "curso"
    ],
    "areas": [],
    "cobertura": null,
    "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
-  },
-  {
-   "id": "b08e084d85d8",
-   "titulo": "Guía para postularse a la convocatoria 2024/2025",
-   "url": "https://www.daad.co/files/2024/08/Guia_HWK_Cursos_Invierno_Convocatoria-2024_FINAL_stand_12_agosto.pdf",
-   "resumen": "University Winter Courses in Germany for Foreign Students and Graduates Becas para cursos de invierno: Cursos intensivos para perfeccionar conocimientos de alemán presenciales en diferentes instituciones en Alemania. Dirigidos a estudiantes de pregrado de universidades en Colombi",
-   "fuente": "daad-maestria",
-   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
-   "pais": "Alemania",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": null,
-   "estado": "por-confirmar",
-   "niveles": [
-    "pregrado",
-    "curso"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
    "vistoUltimo": "2026-11-08"
@@ -1476,32 +1251,6 @@
    "niveles": [
     "doctorado",
     "posdoc",
-    "investigacion"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
-  },
-  {
-   "id": "fdd329837cad",
-   "titulo": "Guía informativa para la convocatoria 2025",
-   "url": "https://www.daad.co/files/2025/04/1_GUIA-CONVOCATORIA-PROCOL-2025_stand_23_abril.pdf",
-   "resumen": "DAAD - PROCOL Programm des projektbezogenen Personenaustauschs (PPP) Dirigido a investigadores colombianos o extranjeros domiciliados en Colombia, reconocidos por MINCIENCIAS, egresados de Maestrías y/o estudiantes de Doctorado y alemanes, que planean realizar un proyecto de inve",
-   "fuente": "daad-doctorado",
-   "fuenteNombre": "DAAD (oficina regional para Perú) – Doctorado e investigación",
-   "pais": "Alemania",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria",
-    "doctorado",
     "investigacion"
    ],
    "areas": [],
@@ -2132,41 +1881,11 @@
    "fechaAprox": false,
    "verificado": "2026-11-08",
    "estado": "cerrada",
-   "niveles": [
-    "curso",
-    "investigacion"
-   ],
+   "niveles": [],
    "areas": [
     "ambiental"
    ],
    "cobertura": null,
-   "paraPeru": true,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
-  },
-  {
-   "id": "5faf7896bfa2",
-   "titulo": "Guia para postularse a la Convocatoria de becas 2026",
-   "url": "https://imp.daad.com/media/daad_de/pdfs_nicht_barrierefrei/in-deutschland-studieren-forschen-lehren/call_third_country_programme_latin_america_master.pdf",
-   "resumen": "„In-Region Scholarship Programme“ Latin America Beca del DAAD: Maestría en Ingeniería Eléctrica en la Universidad Nacional de San Juan, Argentina. La convocatoria “In-Region Scholarship Programme – Latin America”, permite realizar estudios de Maestría en la Universidad Nacional d",
-   "fuente": "daad-maestria",
-   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
-   "pais": "Alemania",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": "2026-03-03",
-   "fechaAprox": false,
-   "verificado": null,
-   "estado": "cerrada",
-   "niveles": [
-    "maestria",
-    "investigacion"
-   ],
-   "areas": [
-    "ingenieria"
-   ],
-   "cobertura": "completa",
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
