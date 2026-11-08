@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Becas al Día</title>
+  <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="marca">
+      <img src="icons/48.png" alt="" width="28" height="28">
+      <div>
+        <h1>Becas al Día</h1>
+        <p id="estadoDatos" class="sutil">Cargando…</p>
+      </div>
+    </div>
+    <div class="acciones">
+      <button id="btnActualizar" class="icono" title="Actualizar ahora" aria-label="Actualizar ahora">↻</button>
+      <button id="btnAjustes" class="icono" title="Ajustes" aria-label="Ajustes">⚙</button>
+    </div>
+  </header>
+
+  <nav class="pestanas" role="tablist">
+    <button role="tab" class="pestana activa" data-pestana="becas" aria-selected="true">🎓 Becas <span id="contBecas" class="contador"></span></button>
+    <button role="tab" class="pestana" data-pestana="empleo" aria-selected="false">💼 Empleo y prácticas</button>
+  </nav>
+
+  <!-- ================= BECAS ================= -->
+  <section id="becas" class="panel activo" role="tabpanel">
+    <div class="filtros">
+      <input id="buscar" type="search" placeholder="Buscar beca, país, universidad…" autocomplete="off">
+      <div class="fila">
+        <select id="fEstado" aria-label="Estado">
+          <option value="vigentes">Vigentes</option>
+          <option value="abierta">Con fecha abierta</option>
+          <option value="todas">Todas (incl. vencidas)</option>
+        </select>
+        <select id="fNivel" aria-label="Nivel">
+          <option value="">Todo nivel</option>
+          <option value="pregrado">Pregrado</option>
+          <option value="maestria">Maestría</option>
+          <option value="doctorado">Doctorado</option>
+          <option value="posdoc">Posdoctorado</option>
+          <option value="curso">Cursos</option>
+          <option value="investigacion">Investigación / estancias</option>
+        </select>
+        <select id="fPais" aria-label="País"><option value="">Todo país</option></select>
+      </div>
+      <div class="chips" id="fAreas">
+        <button class="chip" data-area="ingenieria">Ingeniería</button>
+        <button class="chip" data-area="ambiental">Ambiental</button>
+        <button class="chip" data-area="civil">Civil</button>
+        <button class="chip" data-area="mineria">Minería</button>
+        <button class="chip" data-area="gestion">Gestión / costos</button>
+      </div>
+      <div class="chips">
+        <button class="chip" id="fCompleta">Financiamiento completo</button>
+        <button class="chip" id="fPeru">Menciona Perú/LatAm</button>
+        <button class="chip" id="fFavs">★ Favoritas</button>
+        <button class="chip" id="fNuevas">Nuevas</button>
+      </div>
+    </div>
+
+    <p id="resumen" class="resumen"></p>
+    <ol id="lista" class="lista"></ol>
+    <div id="vacio" class="vacio" hidden></div>
+
+    <details class="salud">
+      <summary>Estado de las fuentes <span id="saludResumen"></span></summary>
+      <ul id="saludLista"></ul>
+      <p class="sutil">Si una fuente falla varios días, su web cambió: se corrige editando <code>collector/fuentes.json</code> en tu repositorio.</p>
+    </details>
+  </section>
+
+  <!-- ================= EMPLEO ================= -->
+  <section id="empleo" class="panel" role="tabpanel" hidden>
+    <div class="aviso">
+      <strong>Búsqueda de ofertas — Fase 2.</strong>
+      Aquí aparecerán ofertas de Bumeran, Computrabajo, Talento Perú (SERVIR) y carreras de mineras, filtradas por tus perfiles y con % de coincidencia con tu CV.
+      Para dejarlo listo, completa tu perfil: lo usará el autocompletado de formularios (Fase 3). <em>Tú siempre revisas y das clic en «Postular».</em>
+    </div>
+
+    <form id="perfil" class="perfil" autocomplete="on">
+      <fieldset>
+        <legend>Datos de contacto</legend>
+        <label>Nombres <input name="nombres" autocomplete="given-name"></label>
+        <label>Apellidos <input name="apellidos" autocomplete="family-name"></label>
+        <label>Correo <input name="correo" type="email" autocomplete="email"></label>
+        <label>Teléfono <input name="telefono" type="tel" autocomplete="tel" placeholder="+51 9…"></label>
+        <label>Ciudad <input name="ciudad" autocomplete="address-level2" placeholder="Lima"></label>
+        <label>LinkedIn <input name="linkedin" type="url" placeholder="https://linkedin.com/in/…"></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Perfil profesional</legend>
+        <label>Profesión / título <input name="profesion" placeholder="Ingeniero ambiental"></label>
+        <label>Años de experiencia <input name="experiencia" type="number" min="0" max="50"></label>
+        <label>Pretensión salarial (S/) <input name="salario" type="number" min="0" step="100"></label>
+        <label>Disponibilidad
+          <select name="disponibilidad">
+            <option value="">—</option><option>Inmediata</option><option>15 días</option><option>30 días</option>
+          </select>
+        </label>
+        <label>Modalidad
+          <select name="modalidad">
+            <option value="">Cualquiera</option><option>Presencial</option><option>Híbrido</option><option>Remoto</option><option>En mina (atípico)</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Perfiles de búsqueda</legend>
+        <div class="checks">
+          <label><input type="checkbox" name="perfiles" value="control-proyectos"> Control de proyectos</label>
+          <label><input type="checkbox" name="perfiles" value="costos-presupuestos"> Costos y presupuestos</label>
+          <label><input type="checkbox" name="perfiles" value="cierre-minas"> Cierre de minas</label>
+          <label><input type="checkbox" name="perfiles" value="relaves"> Gobernanza de relaves</label>
+          <label><input type="checkbox" name="perfiles" value="mineria"> Minería</label>
+          <label><input type="checkbox" name="perfiles" value="ambiental"> Ingeniería ambiental</label>
+          <label><input type="checkbox" name="perfiles" value="civil"> Ingeniería civil</label>
+          <label><input type="checkbox" name="perfiles" value="practicas"> Prácticas profesionales</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Palabras clave de tu CV</legend>
+        <label class="ancho">Habilidades, software y certificaciones (separadas por coma)
+          <textarea name="claves" rows="4" placeholder="S10, MS Project, Primavera P6, AutoCAD, Civil 3D, ISO 14001, cierre de minas, relaves, EVM…"></textarea>
+        </label>
+        <p class="sutil">Se usarán para calcular el % de coincidencia con cada oferta, sin IA.</p>
+      </fieldset>
+
+      <div class="pie-form">
+        <span id="perfilEstado" class="sutil">Se guarda solo en este navegador.</span>
+        <button type="submit" class="primario">Guardar perfil</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- ================= AJUSTES ================= -->
+  <dialog id="ajustes">
+    <form method="dialog">
+      <h2>Ajustes</h2>
+      <label class="ancho">URL de los datos (JSON del recolector)
+        <input id="urlDatos" type="url" spellcheck="false">
+      </label>
+      <p class="sutil">Por defecto lee <code>data/becas.json</code> del repositorio <code>QUARCISSUS-X/becas-al-dia</code>.</p>
+      <div class="pie-form">
+        <button value="cancelar">Cancelar</button>
+        <button id="guardarAjustes" value="ok" class="primario">Guardar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <template id="tplBeca">
+    <li class="beca">
+      <div class="beca-top">
+        <a class="titulo" target="_blank" rel="noopener"></a>
+        <button class="fav" aria-label="Marcar como favorita" title="Favorita">☆</button>
+      </div>
+      <p class="meta"></p>
+      <p class="resumen-beca"></p>
+      <div class="etiquetas"></div>
+      <div class="cierre"></div>
+    </li>
+  </template>
+
+  <script src="panel.js" type="module"></script>
+</body>
+</html>

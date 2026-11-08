@@ -1,0 +1,118 @@
+{
+  "_ayuda": "Para agregar o arreglar una fuente, edita solo este archivo. tipo: 'rss' (feed), 'html' (página con lista de enlaces) o 'programa' (beca recurrente con página oficial). 'filtro' es una expresión regular sobre el texto del enlace. 'activa': false la desactiva sin borrarla.",
+  "fuentes": [
+    {
+      "id": "pronabec-noticias",
+      "nombre": "Pronabec (noticias oficiales)",
+      "tipo": "html",
+      "url": "https://www.gob.pe/institucion/pronabec/noticias",
+      "filtro": "beca|convocatoria|postula",
+      "pais": "Perú",
+      "idioma": "es",
+      "activa": true
+    },
+    {
+      "id": "prociencia",
+      "nombre": "ProCiencia – Concytec",
+      "tipo": "html",
+      "url": "https://prociencia.gob.pe/",
+      "filtro": "beca|convocatoria|doctorado|maestr",
+      "pais": "Perú",
+      "idioma": "es",
+      "activa": true
+    },
+    {
+      "id": "daad-maestria",
+      "nombre": "DAAD (oficina regional para Perú) – Maestría",
+      "tipo": "html",
+      "url": "https://www.daad.co/es/becas/becas-de-posgrado/maestria",
+      "filtro": "beca|maestr|master|convocatoria",
+      "pais": "Alemania",
+      "idioma": "es",
+      "activa": true
+    },
+    {
+      "id": "daad-doctorado",
+      "nombre": "DAAD (oficina regional para Perú) – Doctorado e investigación",
+      "tipo": "html",
+      "url": "https://www.daad.co/es/becas/becas-de-estancias-de-investigacion-y-docencia/",
+      "filtro": "beca|doctor|investigaci|estancia",
+      "pais": "Alemania",
+      "idioma": "es",
+      "activa": true
+    },
+    {
+      "id": "oea",
+      "nombre": "OEA – Programa de Becas",
+      "tipo": "html",
+      "url": "https://www.oas.org/es/becas/",
+      "filtro": "beca|convocatoria|programa",
+      "pais": "Américas",
+      "idioma": "es",
+      "activa": true
+    },
+    {
+      "id": "chevening",
+      "nombre": "Chevening (Reino Unido)",
+      "tipo": "programa",
+      "url": "https://www.chevening.org/apply/application-timeline",
+      "titulo": "Becas Chevening – Maestría de 1 año en Reino Unido",
+      "nivel": "maestria",
+      "cobertura": "completa",
+      "pais": "Reino Unido",
+      "idioma": "en",
+      "activa": true
+    },
+    {
+      "id": "fulbright-peru",
+      "nombre": "Fulbright Perú",
+      "tipo": "programa",
+      "url": "https://www.fulbright.pe/",
+      "titulo": "Becas Fulbright – Posgrado en EE. UU.",
+      "nivel": "maestria",
+      "pais": "EE. UU.",
+      "idioma": "es",
+      "activa": true
+    },
+    {
+      "id": "erasmus-mundus",
+      "nombre": "Erasmus Mundus (UE)",
+      "tipo": "programa",
+      "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en",
+      "titulo": "Erasmus Mundus – Maestrías conjuntas en Europa",
+      "nivel": "maestria",
+      "cobertura": "completa",
+      "pais": "Unión Europea",
+      "idioma": "en",
+      "activa": true
+    },
+    {
+      "id": "fundacion-carolina",
+      "nombre": "Fundación Carolina (España)",
+      "tipo": "html",
+      "url": "https://www.fundacioncarolina.es/",
+      "filtro": "beca|convocatoria|postgrado|doctorado",
+      "pais": "España",
+      "idioma": "es",
+      "activa": true
+    },
+    {
+      "id": "scholars4dev",
+      "nombre": "Scholars4Dev (agregador internacional)",
+      "tipo": "rss",
+      "url": "https://www.scholars4dev.com/feed/",
+      "pais": "Internacional",
+      "idioma": "en",
+      "activa": true
+    },
+    {
+      "id": "opportunitydesk",
+      "nombre": "Opportunity Desk (becas, cursos y eventos)",
+      "tipo": "rss",
+      "url": "https://opportunitydesk.org/feed/",
+      "pais": "Internacional",
+      "idioma": "en",
+      "activa": true
+    }
+  ]
+}
