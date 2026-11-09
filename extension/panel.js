@@ -340,6 +340,23 @@ function pintarSaludEmpleo() {
   }
 }
 
+async function copiarDiagnostico(e) {
+  const b = e.currentTarget;
+  const d = emp.datos || {};
+  const info = {
+    version: ext?.runtime.getManifest().version,
+    navegador: navigator.userAgent,
+    busqueda: d.generado || null,
+    terminos: d.terminos || null,
+    total: d.total ?? null,
+    porFuente: (d.items || []).reduce((a, o) => ((a[o.fuente] = (a[o.fuente] || 0) + 1), a), {}),
+    sinDescripcion: (d.items || []).filter((o) => o.sinDetalle).length,
+    portales: d.salud || [],
+  };
+  try { await navigator.clipboard.writeText('Diagnóstico Becas al Día\n' + JSON.stringify(info, null, 2)); b.textContent = '✔ Copiado'; } catch { b.textContent = 'No se pudo copiar'; }
+  setTimeout(() => { b.textContent = '📋 Copiar diagnóstico'; }, 2200);
+}
+
 async function ejecutarBusqueda() {
   if (emp.buscando) return;
   emp.buscando = true;
@@ -417,7 +434,8 @@ $('#eOrden').addEventListener('change', (e) => { emp.f.orden = e.target.value; p
 for (const [id, k] of [['#ePracticas', 'practicas'], ['#eEmpleos', 'empleos'], ['#eMineras', 'mineras'], ['#ePublico', 'publico'], ['#eGuardadas', 'guardadas'], ['#eNuevas', 'nuevas']]) {
   $(id).addEventListener('click', (e) => { emp.f[k] = !emp.f[k]; e.currentTarget.classList.toggle('on'); pintarEmpleo(); });
 }
-$('#eRestaurar').addEventListener('click', async () => { emp.ocultas.clear(); await almacen.set({ empleoOcultas: [] }); pintarEmpleo(); });
+$('#eDiagnostico').addEventListener('click', copiarDiagnostico);
+  $('#eRestaurar').addEventListener('click', async () => { emp.ocultas.clear(); await almacen.set({ empleoOcultas: [] }); pintarEmpleo(); });
 
 // ---------- Eventos ----------
 $$('.pestana').forEach((b) => b.addEventListener('click', () => {

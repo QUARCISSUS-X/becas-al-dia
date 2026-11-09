@@ -65,6 +65,7 @@ export async function buscarEmpleo({ perfil = {}, anterior = {}, cacheDetalles =
       await espera(PAUSA_MS);
     }
     s.error = s.ok ? (s.errores.length ? `${s.errores.length} de ${consultas.length} búsquedas fallaron (${s.errores[0]})` : null) : (s.errores[0] || 'sin resultados');
+    s.detalleErrores = [...new Set(s.errores)].slice(0, 3); // para «Copiar diagnóstico»
     delete s.errores;
     salud.push(s);
   }));

@@ -91,13 +91,19 @@ export const bumeran = {
   nombre: 'Bumeran',
   base: 'https://www.bumeran.com.pe',
   async buscar(q, dep) {
-    const r = await dep.fetch(`${this.base}/api/avisos/searchV2?pageSize=20&page=0&sort=RELEVANTES`, {
+    const pedir = (credentials) => dep.fetch(`${this.base}/api/avisos/searchV2?pageSize=20&page=0&sort=RELEVANTES`, {
       method: 'POST',
-      credentials: 'omit',
+      credentials,
       headers: { 'content-type': 'application/json', 'x-site-id': 'BMPE' },
       body: JSON.stringify({ filtros: [], busquedaExtendida: false, tipoDetalle: 'full', withHome: false, query: q, internacional: false }),
     });
-    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    // Primero sin cookies; si Bumeran rechaza (antibots), se reintenta con las cookies de tu
+    // propia visita a bumeran.com.pe (el navegador las envía, la extensión no las lee).
+    let r = await pedir('omit');
+    if ([401, 403, 429].includes(r.status)) r = await pedir('include');
+    if (!r.ok) throw new Error(r.status === 403 ? 'HTTP 403 (abre bumeran.com.pe una vez en este navegador y vuelve a buscar)' : `HTTP ${r.status}`);
+    const tipo = r.headers?.get?.('content-type') || 'application/json';
+    if (!/json/.test(tipo)) throw new Error('Bumeran respondió una página en vez de datos (posible verificación antibots: abre bumeran.com.pe y reintenta)');
     const j = await r.json();
     return (j.content || []).map((a) => ({
       id: 'bm-' + a.id,

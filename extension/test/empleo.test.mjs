@@ -154,6 +154,19 @@ await prueba('Computrabajo: lee el JobPosting del detalle', async () => {
   assert.match(d.descripcion, /3 años/);
   assert.equal(d.vence, '2026-12-07');
 });
+await prueba('Bumeran: si rechaza sin cookies, reintenta con las del navegador', async () => {
+  const usadas = [];
+  const fx = async (url, op) => {
+    usadas.push(op.credentials);
+    if (op.credentials === 'omit') return { ok: false, status: 403, headers: new Map([['content-type', 'text/html']]) };
+    return fetchFalso(url, op);
+  };
+  const r = await bumeran.buscar('ingeniero civil', { fetch: fx, parsear });
+  assert.deepEqual(usadas, ['omit', 'include']);
+  assert.ok(r.length > 0);
+  const fx403 = async () => ({ ok: false, status: 403 });
+  await assert.rejects(bumeran.buscar('x', { fetch: fx403, parsear }), /abre bumeran\.com\.pe/);
+});
 await prueba('Bumeran: API con x-site-id, confidencial y sin HTML', async () => {
   const r = await bumeran.buscar('ingeniero civil', dep);
   assert.equal(r[0].url, 'https://www.bumeran.com.pe/empleos/aviso-1118492911.html');
