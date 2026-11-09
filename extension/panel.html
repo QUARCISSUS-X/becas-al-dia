@@ -235,6 +235,14 @@
           <datalist id="iaModelos"></datalist>
         </label>
         <p class="sutil"><button type="button" id="iaProbar" class="enlace">Probar y listar modelos</button> <span id="iaEstado" aria-live="polite"></span></p>
+        <fieldset class="ia-funciones">
+          <legend>Funciones activas</legend>
+          <label><input type="checkbox" data-funcion="analisis"> Analizar afinidad <span>segunda opinión del %, requisito por requisito</span></label>
+          <label><input type="checkbox" data-funcion="lote"> Analizar en lote <span>las 10 primeras de la lista con un clic</span></label>
+          <label><input type="checkbox" data-funcion="carta"> Carta de presentación <span>borrador descargable en Word</span></label>
+          <label><input type="checkbox" data-funcion="cv"> Adaptar mi CV <span>CV_Bécquer Melgarejo_&lt;empresa&gt; en Word</span></label>
+          <label><input type="checkbox" data-funcion="pregunta"> Responder preguntas del formulario <span>pegas la pregunta y redacta la respuesta</span></label>
+        </fieldset>
         <p class="sutil">La clave queda guardada solo en este navegador. Las consultas van directo de tu navegador al proveedor y solo cuando pulsas un botón ✨.</p>
       </div>
       <div class="pie-form">
@@ -259,7 +267,7 @@
         <button type="button" data-tarea="carta">Carta de presentación</button>
         <button type="button" data-tarea="cv">Adaptar mi CV</button>
       </div>
-      <div class="ia-pregunta">
+      <div class="ia-pregunta" data-funcion-bloque="pregunta">
         <input id="iaPregunta" placeholder="Pega una pregunta del formulario de postulación…" autocomplete="off">
         <button type="button" data-tarea="pregunta">Responder</button>
       </div>

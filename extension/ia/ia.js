@@ -33,6 +33,17 @@ export const PROVEEDORES = {
   },
 };
 
+// Funciones que el usuario puede activar o desactivar. Por defecto todas activas.
+export const FUNCIONES = {
+  analisis: 'Analizar afinidad',
+  lote: 'Analizar en lote',
+  carta: 'Carta de presentación',
+  cv: 'Adaptar mi CV',
+  pregunta: 'Responder preguntas del formulario',
+};
+export const funcionActiva = (cfg, f) => cfg?.funciones?.[f] !== false;
+export const algunaActiva = (cfg) => Object.keys(FUNCIONES).some((f) => funcionActiva(cfg, f));
+
 export const configurada = (cfg) => !!cfg?.proveedor && PROVEEDORES[cfg.proveedor]
   && (cfg.proveedor === 'local' || ((cfg.clave || cfg.proveedor === 'compatible') && (cfg.proveedor !== 'compatible' || cfg.base)));
 

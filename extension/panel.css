@@ -1,3 +1,4 @@
+[hidden] { display: none !important; }
 :root {
   --fondo: #f6f4ef;
   --superficie: #ffffff;
@@ -191,3 +192,8 @@ dialog label { margin-top: 8px; }
 #iaDlg button:disabled { opacity: 0.55; cursor: progress; }
 dialog button.enlace { border: 0; padding: 0; border-radius: 0; }
 .oferta-acciones .btn-ocultar { border-color: transparent; background: none; padding-inline: 4px; }
+
+.ia-funciones { margin-top: 10px; gap: 6px; background: var(--fondo); }
+.ia-funciones label { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 6px; margin: 0; color: var(--texto); font-size: 12.5px; }
+.ia-funciones input { width: auto; margin: 0; accent-color: var(--acento); align-self: center; }
+.ia-funciones span { flex-basis: 100%; padding-left: 22px; color: var(--sutil); font-size: 11.5px; }

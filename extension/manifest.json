@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Becas al Día",
   "short_name": "Becas al Día",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Becas con fechas verificadas a diario y búsqueda de empleo y prácticas. Funciona sin IA ni costo; conectar tu propia IA es opcional.",
   "icons": {
     "16": "icons/16.png",

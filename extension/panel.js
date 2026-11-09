@@ -2,7 +2,7 @@
 import { buscarEmpleo, puntuar, aplicarAprendizaje } from './empleo/buscador.js';
 import { promptCv, aprender } from './empleo/coincidencia.js';
 import { ESTADOS, marcar, aCsv } from './empleo/seguimiento.js';
-import { PROVEEDORES, configurada, origenDe, generar, probar } from './ia/ia.js';
+import { PROVEEDORES, configurada, origenDe, generar, probar, FUNCIONES, funcionActiva, algunaActiva } from './ia/ia.js';
 import { TAREAS, armar, leerAnalisis, analisisATexto, aWord, nombreArchivo } from './ia/tareas.js';
 const URL_DATOS_DEFECTO = 'https://raw.githubusercontent.com/QUARCISSUS-X/becas-al-dia/main/data/becas.json';
 const $ = (s) => document.querySelector(s);
@@ -295,7 +295,7 @@ function pintarEmpleo() {
   const nSeg = Object.keys(emp.seguimiento).length;
   $('#ePostuladasN').textContent = nSeg || '';
   $('#eSegN').textContent = nSeg;
-  $('#eIaBarra').hidden = !configurada(emp.ia) || !vis.length;
+  $('#eIaBarra').hidden = !configurada(emp.ia) || !funcionActiva(emp.ia, 'lote') || !vis.length;
   const ap = modeloAprendizaje();
   $('#eAprende').textContent = ap.activo ? `El orden ya se afina con tus ${ap.senales} decisiones (guardadas, postuladas y ocultas): hasta ±8 puntos.`
     : 'Guarda u oculta al menos 3 ofertas y el % empezará a afinarse con tus decisiones.';
@@ -328,7 +328,7 @@ function pintarEmpleo() {
     if (o.vence) { const d = diasHasta(o.vence); tag(d <= 0 ? 'Cierra hoy' : `Cierra en ${d} día${d === 1 ? '' : 's'}`, d <= 3 ? 'urgente' : ''); }
     if (o.convocatoria) tag(`Conv. ${o.convocatoria}`);
     const ia = emp.iaCache[o.id]?.analisis;
-    if (ia?.pct != null) tag(`IA ${ia.pct}%`, 'ia');
+    if (ia?.pct != null && funcionActiva(emp.ia, 'analisis')) tag(`IA ${ia.pct}%`, 'ia');
     if (o.retirada) { tag('Ya no aparece en el portal'); li.classList.add('retirada'); }
 
     const m = li.querySelector('.match');
@@ -357,7 +357,10 @@ function pintarEmpleo() {
       await almacen.set({ empleoSeguimiento: emp.seguimiento });
       await reaprender(); pintarEmpleo();
     });
-    li.querySelector('.btn-ia').addEventListener('click', () => abrirIa(o));
+    const bIa = li.querySelector('.btn-ia');
+    // Sin IA conectada el botón invita a conectarla; con IA pero todas las funciones apagadas, se oculta
+    bIa.hidden = configurada(emp.ia) && !algunaActiva(emp.ia);
+    bIa.addEventListener('click', () => abrirIa(o));
 
     const fav = li.querySelector('.fav');
     const pintarFav = () => { const on = emp.guardadas.has(o.id); fav.classList.toggle('on', on); fav.textContent = on ? '★' : '☆'; fav.setAttribute('aria-pressed', on); };
@@ -519,8 +522,10 @@ function abrirIa(o) {
   $('#iaSub').textContent = on ? `${o.empresa || ''} · con ${PROVEEDORES[emp.ia.proveedor].nombre}${emp.ia.modelo ? ` (${emp.ia.modelo})` : ''}` : o.empresa || '';
   $('#iaSin').hidden = on; $('#iaCon').hidden = !on;
   $('#iaPregunta').value = '';
+  $$('#iaDlg [data-tarea]').forEach((b) => { if (b.closest('.ia-tareas')) b.hidden = !funcionActiva(emp.ia, b.dataset.tarea); });
+  $('[data-funcion-bloque=pregunta]').hidden = !funcionActiva(emp.ia, 'pregunta');
   $('#iaAviso').textContent = emp.perfil.cvTexto ? '' : 'Aún no pegaste tu CV en «Mi perfil y CV»: los resultados serán genéricos.';
-  const previo = emp.iaCache[o.id]?.analisis;
+  const previo = funcionActiva(emp.ia, 'analisis') ? emp.iaCache[o.id]?.analisis : null;
   mostrarSalida(previo ? analisisATexto(previo) : '', previo ? 'analisis' : '');
   $('#iaDlg').showModal();
 }
@@ -540,6 +545,7 @@ async function ejecutarIa(tarea, o, extra = '') {
 }
 $$('#iaDlg [data-tarea]').forEach((b) => b.addEventListener('click', async () => {
   const tarea = b.dataset.tarea; const o = iaDlg.oferta;
+  if (!funcionActiva(emp.ia, tarea)) return;
   const extra = $('#iaPregunta').value.trim();
   if (tarea === 'pregunta' && !extra) { $('#iaAviso').textContent = 'Pega primero la pregunta del formulario.'; return; }
   const botones = $$('#iaDlg [data-tarea]'); botones.forEach((x) => { x.disabled = true; });
@@ -566,7 +572,7 @@ $('#iaConfigurar').addEventListener('click', () => { $('#iaDlg').close(); $('#aj
 
 // Segunda opinión en lote: una consulta cada 4,5 s para respetar los límites gratuitos
 $('#eIaLote').addEventListener('click', async (e) => {
-  const b = e.currentTarget; if (b.disabled) return;
+  const b = e.currentTarget; if (b.disabled || !funcionActiva(emp.ia, 'lote')) return;
   const pend = (emp.visibles || []).filter((o) => !o.retirada && !emp.iaCache[o.id]?.analisis).slice(0, 10);
   const est = $('#eIaLoteEstado');
   if (!pend.length) { est.textContent = '· las primeras ya están analizadas'; return; }
@@ -583,7 +589,8 @@ $('#eIaLote').addEventListener('click', async (e) => {
 // ---------- IA: ajustes ----------
 function leerAjustesIa() {
   const proveedor = $('#iaProveedor').value;
-  return proveedor ? { proveedor, clave: $('#iaClave').value.trim(), modelo: $('#iaModelo').value.trim(), base: $('#iaBase').value.trim() } : {};
+  const funciones = Object.fromEntries($$('[data-funcion]').map((c) => [c.dataset.funcion, c.checked]));
+  return proveedor ? { proveedor, clave: $('#iaClave').value.trim(), modelo: $('#iaModelo').value.trim(), base: $('#iaBase').value.trim(), funciones } : {};
 }
 function pintarCamposIa() {
   const p = $('#iaProveedor').value; const info = PROVEEDORES[p];
@@ -600,6 +607,7 @@ function cargarAjustesIa() {
   const c = emp.ia || {};
   $('#iaProveedor').value = c.proveedor || '';
   $('#iaClave').value = c.clave || ''; $('#iaModelo').value = c.modelo || ''; $('#iaBase').value = c.base || '';
+  $$('[data-funcion]').forEach((x) => { x.checked = funcionActiva(c, x.dataset.funcion); });
   $('#iaEstado').textContent = '';
   pintarCamposIa();
 }

@@ -6,7 +6,7 @@ import { coincidencia, aniosPedidos, terminos, promptCv, esMinera, clavesUsuario
 import { computrabajo, bumeran, servir, fechaRelativa, slug } from '../empleo/portales.js';
 import { buscarEmpleo, terminosBusqueda, puntuar, fusionarDuplicadas, aplicarAprendizaje } from '../empleo/buscador.js';
 import { marcar, aCsv } from '../empleo/seguimiento.js';
-import { generar, listarModelos, elegirModelo, probar, configurada, origenDe } from '../ia/ia.js';
+import { generar, listarModelos, elegirModelo, probar, configurada, origenDe, funcionActiva, algunaActiva } from '../ia/ia.js';
 import { armar, leerAnalisis, analisisATexto, aWord, nombreArchivo } from '../ia/tareas.js';
 
 const require = createRequire(new URL('../../collector/package.json', import.meta.url));
@@ -367,4 +367,9 @@ await prueba('IA: instrucciones, lectura del análisis y documento Word', () => 
   assert.equal(nombreArchivo('cv', o), 'CV_Bécquer Melgarejo_Minera Sol Perú');
 });
 
+await prueba('IA: funciones activables (por defecto todas activas)', () => {
+  assert.ok(funcionActiva({}, 'carta')); assert.ok(funcionActiva({ funciones: { cv: false } }, 'carta'));
+  assert.ok(!funcionActiva({ funciones: { cv: false } }, 'cv'));
+  assert.ok(!algunaActiva({ funciones: { analisis: false, lote: false, carta: false, cv: false, pregunta: false } }));
+});
 console.log(`\n${ok} pruebas de empleo OK`);

@@ -112,6 +112,8 @@ Con la IA conectada, el botón **✨ IA** de cada oferta ofrece:
 
 «✨ Analizar con IA las 10 primeras» lo hace en lote, una consulta cada 4,5 s.
 
+En **Funciones activas** (dentro de Ajustes) marcas solo las que quieras usar; las desmarcadas desaparecen del panel. Si las desmarcas todas, el botón ✨ IA se oculta.
+
 Privacidad: la clave se guarda solo en tu navegador (sin cifrar, como cualquier dato de extensión). Tu CV y la oferta viajan directo al proveedor que elegiste, y solo cuando pulsas un botón ✨. El código está en `extension/ia/`.
 
 Si un portal cambia su web, en «Estado de los portales» aparecerá ⚠ o ✖. Los lectores de cada portal están en `extension/empleo/portales.js`.
