@@ -132,3 +132,39 @@ dialog { border: 1px solid var(--borde); border-radius: 12px; background: var(--
 dialog::backdrop { background: rgb(0 0 0 / 0.35); }
 dialog button:not(.primario) { background: none; border: 1px solid var(--borde); border-radius: 8px; padding: 8px 14px; cursor: pointer; }
 dialog .pie-form { justify-content: flex-end; margin-top: 12px; }
+
+/* ---------- Empleo ---------- */
+.barra-empleo { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 10px; }
+.barra-empleo .sutil { margin: 0; }
+#empleoProgreso:empty { display: none; }
+.primario:disabled { opacity: 0.6; cursor: progress; }
+.oferta {
+  background: var(--superficie); border: 1px solid var(--borde); border-radius: var(--radio);
+  padding: 10px 12px; display: grid; gap: 5px;
+}
+.oferta-top { display: flex; gap: 10px; align-items: flex-start; }
+.oferta-cuerpo { flex: 1; min-width: 0; display: grid; gap: 2px; }
+.pct {
+  flex: none; min-width: 48px; text-align: center; font-weight: 800; font-size: 15px; padding: 5px 6px;
+  border-radius: 8px; font-variant-numeric: tabular-nums;
+}
+.pct.ok { background: var(--ok-suave); color: var(--ok); }
+.pct.pronto { background: var(--pronto-suave); color: var(--pronto); }
+.pct.urgente { background: var(--urgente-suave); color: var(--urgente); }
+.pct.gris { background: var(--fondo); color: var(--sutil); }
+.tag.acento { background: var(--acento-suave); border-color: transparent; color: var(--acento); }
+.tag.urgente { background: var(--urgente-suave); border-color: transparent; color: var(--urgente); font-weight: 600; }
+.match { margin: 0; font-size: 12px; color: var(--sutil); overflow-wrap: anywhere; }
+.notas { margin: 0; font-size: 12px; color: var(--pronto); }
+.oferta-acciones { display: flex; gap: 6px; align-items: center; margin-top: 2px; }
+.oferta-acciones button:not(.fav) {
+  border: 1px solid var(--borde); background: var(--fondo); border-radius: 7px; padding: 3px 9px; font-size: 12px; cursor: pointer;
+}
+.oferta-acciones button:not(.fav):hover { border-color: var(--acento); }
+.oferta-acciones .btn-ocultar { margin-left: auto; color: var(--sutil); }
+.enlace { background: none; border: 0; padding: 0; color: var(--acento); cursor: pointer; text-decoration: underline; font-size: inherit; }
+.perfil-bloque { margin-top: 14px; }
+.perfil-bloque > summary { cursor: pointer; font-weight: 700; padding: 8px 0; }
+.perfil-bloque[open] > summary { margin-bottom: 6px; }
+.archivo { font-size: 12px; }
+.archivo input { border: 0; padding: 0; background: none; }

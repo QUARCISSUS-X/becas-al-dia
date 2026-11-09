@@ -73,12 +73,31 @@ chrome.notifications.onClicked.addListener(async (clave) => {
   if (it) chrome.tabs.create({ url: it.url });
 });
 
+// Bumeran rechaza llamadas a su API que no vengan de su propia web. Para las consultas que
+// hace esta extensión (y solo esas), se envían Origin/Referer de bumeran.com.pe.
+async function reglasRed() {
+  try {
+    await chrome.declarativeNetRequest.updateSessionRules({
+      removeRuleIds: [1],
+      addRules: [{
+        id: 1, priority: 1,
+        action: { type: 'modifyHeaders', requestHeaders: [
+          { header: 'origin', operation: 'set', value: 'https://www.bumeran.com.pe' },
+          { header: 'referer', operation: 'set', value: 'https://www.bumeran.com.pe/empleos.html' },
+        ] },
+        condition: { urlFilter: '||bumeran.com.pe/api/', initiatorDomains: [chrome.runtime.id], resourceTypes: ['xmlhttprequest', 'other'] },
+      }],
+    });
+  } catch (e) { console.warn('No se pudo registrar la regla de Bumeran', e); }
+}
+reglasRed();
+
 chrome.runtime.onInstalled.addListener(() => {
   chrome.sidePanel.setPanelBehavior({ openPanelOnActionClick: true }).catch(() => {});
   chrome.alarms.create('actualizar', { periodInMinutes: CADA_MINUTOS, delayInMinutes: 0.1 });
   actualizar();
 });
-chrome.runtime.onStartup.addListener(() => actualizar());
+chrome.runtime.onStartup.addListener(() => { reglasRed(); actualizar(); });
 chrome.alarms.onAlarm.addListener((a) => { if (a.name === 'actualizar') actualizar(); });
 
 chrome.runtime.onMessage.addListener((msg, _sender, responder) => {

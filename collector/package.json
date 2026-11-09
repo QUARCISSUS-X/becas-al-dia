@@ -8,7 +8,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "node test/run.mjs",
+    "test": "HOY=2026-11-08T12:00:00Z node test/run.mjs && node ../extension/test/empleo.test.mjs",
     "start": "node collect.mjs"
   },
   "keywords": [],
@@ -18,5 +18,8 @@
   "private": "true",
   "dependencies": {
     "cheerio": "^1.2.0"
+  },
+  "devDependencies": {
+    "linkedom": "^0.18.5"
   }
 }

@@ -48,7 +48,43 @@ Si usas otro nombre de repo o de cuenta, cámbialo en ⚙ **Ajustes** dentro del
   - `rss`: un feed.
   - `html`: una página con una lista de enlaces.
   - `programa`: una beca recurrente con su página oficial.
-- **Pruebas.** Se ejecutan con `cd collector && npm install && npm test`. Usan webs simuladas, sin internet.
+- **Pruebas.** Se ejecutan con `cd collector && npm install && npm test`. Cubren el recolector y la búsqueda de empleo, y usan webs simuladas, sin internet.
+
+## Pestaña Empleo y prácticas (Fase 2)
+
+La búsqueda de empleo **corre en tu navegador**, no en GitHub: Computrabajo y Bumeran bloquean a los servidores, pero ven la extensión como una visita normal. No usa IA ni gasta tokens.
+
+1. Abre **👤 Mi perfil y CV**. Completa estos datos:
+   - tu profesión;
+   - tus años de experiencia;
+   - los perfiles que buscas (ambiental, civil, costos y presupuestos, cierre de minas, relaves, minería, prácticas…);
+   - el texto de tu CV: ábrelo, pulsa Ctrl+A y Ctrl+C, y pégalo;
+   - palabras clave extra.
+
+   Luego pulsa **Guardar perfil**. Todo queda solo en tu navegador.
+2. Pulsa **Buscar ofertas**. La extensión consulta tres portales:
+   - **Computrabajo**: lee la descripción completa de las ofertas más afines (bloque `JobPosting`);
+   - **Bumeran**: usa su API, que ya incluye la descripción;
+   - **Talento Perú (SERVIR)**: revisa empleos y prácticas del sector público.
+
+   La búsqueda se repite sola cuando abres la pestaña y la última tiene más de 6 h.
+3. Cada oferta muestra su **% de coincidencia** con tu CV:
+
+   | Factor | Peso |
+   |---|---|
+   | Habilidades y software que pide la oferta y aparecen en tu CV | 45 % |
+   | Profesión | 20 % |
+   | Perfil buscado | 20 % |
+   | Años de experiencia | 15 % |
+
+   El % tiene dos límites:
+   - si la oferta pide otra carrera, el máximo es 35 %;
+   - si la oferta no detalla requisitos, el máximo es 70 %.
+
+   Debajo verás ✔ lo que coincide y ✖ lo que falta.
+4. **📋 Prompt para CV** copia un prompt que puedes pegar en cualquier chat de IA. El prompt incluye la oferta, el análisis y tu CV. Pide adaptar el CV sin inventar nada y nombrar el archivo `CV_Bécquer Melgarejo_<empresa>`.
+
+Si un portal cambia su web, en «Estado de los portales» aparecerá ⚠ o ✖. Los lectores de cada portal están en `extension/empleo/portales.js`.
 
 ### Cómo se verifican las fechas
 - Solo se acepta una fecha si aparece cerca de palabras como «fecha límite», «cierre», «hasta el», «deadline» o «apply by». Si no hay ninguna, la beca queda como **«Fecha por confirmar»**: nunca se inventa una fecha.
@@ -58,5 +94,6 @@ Si usas otro nombre de repo o de cuenta, cámbialo en ⚙ **Ajustes** dentro del
 
 ## Hoja de ruta
 - [x] **Fase 1**: recolector y pestaña Becas. Pestaña Empleo con el perfil.
-- [ ] **Fase 2**: ofertas de empleo y prácticas (Bumeran, Computrabajo, Talento Perú, carreras de mineras), filtradas por tus perfiles y con % de coincidencia con tu CV.
-- [ ] **Fase 3**: autocompletado de formularios portal por portal, registro de postulaciones y botón «Generar prompt para adaptar CV».
+- [x] **Fase 2**: ofertas de empleo y prácticas de Bumeran, Computrabajo y Talento Perú, filtradas por tus perfiles. Cada oferta tiene su % de coincidencia con tu CV, etiqueta «Minera» y el prompt para adaptar el CV.
+- [ ] **Fase 2b**: portales de carrera de las mineras (Antamina, Southern, Cerro Verde, Las Bambas…).
+- [ ] **Fase 3**: autocompletado de formularios portal por portal y registro de postulaciones.

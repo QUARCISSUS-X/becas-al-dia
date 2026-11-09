@@ -75,12 +75,54 @@
 
   <!-- ================= EMPLEO ================= -->
   <section id="empleo" class="panel" role="tabpanel" hidden>
-    <div class="aviso">
-      <strong>Búsqueda de ofertas — Fase 2.</strong>
-      Aquí aparecerán ofertas de Bumeran, Computrabajo, Talento Perú (SERVIR) y carreras de mineras, filtradas por tus perfiles y con % de coincidencia con tu CV.
-      Para dejarlo listo, completa tu perfil: lo usará el autocompletado de formularios (Fase 3). <em>Tú siempre revisas y das clic en «Postular».</em>
+    <div class="barra-empleo">
+      <div>
+        <p id="empleoEstado" class="sutil">Aún no se ha buscado.</p>
+        <p id="empleoProgreso" class="sutil" aria-live="polite"></p>
+      </div>
+      <button id="btnBuscarEmpleo" class="primario">Buscar ofertas</button>
     </div>
 
+    <div class="filtros">
+      <input id="eBuscar" type="search" placeholder="Filtrar por puesto, empresa, lugar…" autocomplete="off">
+      <div class="fila">
+        <select id="eMinimo" aria-label="Coincidencia mínima">
+          <option value="0">Todo %</option>
+          <option value="40">≥ 40 %</option>
+          <option value="60" selected>≥ 60 %</option>
+          <option value="75">≥ 75 %</option>
+        </select>
+        <select id="eFuente" aria-label="Portal"><option value="">Todo portal</option></select>
+        <select id="eOrden" aria-label="Orden">
+          <option value="pct">Más afines</option>
+          <option value="recientes">Más recientes</option>
+          <option value="cierre">Cierran antes</option>
+        </select>
+      </div>
+      <div class="chips">
+        <button class="chip" id="ePracticas">Prácticas</button>
+        <button class="chip" id="eEmpleos">Solo empleos</button>
+        <button class="chip" id="eMineras">Mineras</button>
+        <button class="chip" id="ePublico">Sector público</button>
+        <button class="chip" id="eGuardadas">★ Guardadas</button>
+        <button class="chip" id="eNuevas">Nuevas</button>
+      </div>
+    </div>
+
+    <p id="eResumen" class="resumen"></p>
+    <ol id="eLista" class="lista"></ol>
+    <div id="eVacio" class="vacio" hidden></div>
+
+    <details class="salud">
+      <summary>Estado de los portales <span id="eSaludResumen"></span></summary>
+      <ul id="eSaludLista"></ul>
+      <p class="sutil">La búsqueda corre en tu navegador: los portales ven una visita normal. Se repite sola cada 6 h mientras uses el panel.</p>
+      <p class="sutil">Ocultas: <span id="eOcultasN">0</span> · <button id="eRestaurar" class="enlace">mostrar de nuevo</button></p>
+    </details>
+
+    <details id="perfilBloque" class="perfil-bloque">
+      <summary>👤 Mi perfil y CV <span id="perfilAviso" class="sutil"></span></summary>
+      <p class="sutil">Todo se guarda solo en este navegador. Se usa para el % de coincidencia, para el prompt que adapta tu CV y, en la Fase 3, para autocompletar postulaciones (tú siempre revisas y das clic en «Postular»).</p>
     <form id="perfil" class="perfil" autocomplete="on">
       <fieldset>
         <legend>Datos de contacto</legend>
@@ -124,11 +166,26 @@
       </fieldset>
 
       <fieldset>
+        <legend>Tu CV</legend>
+        <label class="ancho">Pega aquí el texto de tu CV (abre tu PDF o Word, Ctrl+A, Ctrl+C)
+          <textarea name="cvTexto" rows="8" placeholder="Pega el contenido completo de tu CV…"></textarea>
+        </label>
+        <label class="archivo">o carga un .txt <input type="file" id="cvArchivo" accept=".txt,text/plain"></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Búsquedas adicionales</legend>
+        <label class="ancho">Otros puestos a buscar (separados por coma)
+          <input name="busquedas" placeholder="supervisor de obra, especialista SSOMA, planner">
+        </label>
+      </fieldset>
+
+      <fieldset>
         <legend>Palabras clave de tu CV</legend>
         <label class="ancho">Habilidades, software y certificaciones (separadas por coma)
           <textarea name="claves" rows="4" placeholder="S10, MS Project, Primavera P6, AutoCAD, Civil 3D, ISO 14001, cierre de minas, relaves, EVM…"></textarea>
         </label>
-        <p class="sutil">Se usarán para calcular el % de coincidencia con cada oferta, sin IA.</p>
+        <p class="sutil">Se suman a lo que se detecte en tu CV para calcular el % de coincidencia, sin IA.</p>
       </fieldset>
 
       <div class="pie-form">
@@ -136,6 +193,7 @@
         <button type="submit" class="primario">Guardar perfil</button>
       </div>
     </form>
+    </details>
   </section>
 
   <!-- ================= AJUSTES ================= -->
@@ -163,6 +221,26 @@
       <p class="resumen-beca"></p>
       <div class="etiquetas"></div>
       <div class="cierre"></div>
+    </li>
+  </template>
+
+  <template id="tplOferta">
+    <li class="oferta">
+      <div class="oferta-top">
+        <div class="oferta-cuerpo">
+          <a class="titulo" target="_blank" rel="noopener"></a>
+          <p class="meta"></p>
+        </div>
+        <div class="pct" title="Coincidencia con tu CV"></div>
+      </div>
+      <div class="etiquetas"></div>
+      <p class="match"></p>
+      <p class="notas"></p>
+      <div class="oferta-acciones">
+        <button class="fav" aria-label="Guardar oferta" title="Guardar">☆</button>
+        <button class="btn-prompt" title="Copia un prompt para adaptar tu CV a esta oferta">📋 Prompt para CV</button>
+        <button class="btn-ocultar" title="No volver a mostrar">Ocultar</button>
+      </div>
     </li>
   </template>
 
