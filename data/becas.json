@@ -1,9 +1,9 @@
 {
  "version": 1,
- "generado": "2026-11-08T23:50:39.400Z",
- "hoy": "2026-11-08",
- "total": 79,
- "abiertas": 14,
+ "generado": "2026-11-09T13:09:50.720Z",
+ "hoy": "2026-11-09",
+ "total": 91,
+ "abiertas": 23,
  "items": [
   {
    "id": "3e2700bbb6ab",
@@ -27,7 +27,95 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
+  },
+  {
+   "id": "0fa3d35d4e40",
+   "titulo": "DAAD In-Country/In-Region Scholarships for Sub-Saharan Africans",
+   "url": "https://www.scholars4dev.com/drd-scholarships-for-sub-saharan-africans/",
+   "resumen": "DAAD Masters Degree Deadline: 12 Nov 2026 (annual) Study in: Sub-Saharan Africa Course starts 2027 Brief description: The DAAD In-Country/In-Region Programme gives scholarships for development-related Master’s studies at selected universities in Sub-Saharan Africa. It is for peop",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-11-12",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-09",
+   "estado": "abierta",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental",
+    "gestion"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-09",
+   "primeraVez": "2026-11-09",
+   "vistoUltimo": "2026-11-09"
+  },
+  {
+   "id": "019d069e9e37",
+   "titulo": "Mastercard Foundation Scholars Program for Africans",
+   "url": "https://www.scholars4dev.com/mastercard-foundation-scholarship-program-for-africans/",
+   "resumen": "Mastercard Foundation Bachelors/Masters Degree Deadline: Varies per university Study in: Africa, Canada, USA, UK, France, Lebanon, Costa Rica Course starts varies per university Brief description: The Mastercard Foundation Scholars Program is the largest scholarship initiative of",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-11-14",
+   "ultimaPasada": "2026-10-31",
+   "fechaAprox": false,
+   "verificado": "2026-11-09",
+   "estado": "abierta",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "doctorado",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental",
+    "civil",
+    "gestion"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-09",
+   "primeraVez": "2026-11-09",
+   "vistoUltimo": "2026-11-09"
+  },
+  {
+   "id": "f11f3b260153",
+   "titulo": "State of Black Entrepreneurship Fellows Program 2027 (up to $10,000)",
+   "url": "https://opportunitydesk.org/2026/11/09/state-of-black-entrepreneurship-fellows-program-2027/",
+   "resumen": "Deadline: November 16, 2026 Applications are invited for the State of Black Entrepreneurship Fellows Program 2027. This initiative reflects the Center for Black Entrepreneurship (CBE’s) commitment to advancing scholarship on entrepreneurship, economic mobility, and wealth creatio",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-11-16",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-09",
+   "estado": "abierta",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-09",
+   "primeraVez": "2026-11-09",
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "6224ea37b475",
@@ -49,7 +137,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "9eff1286f00f",
@@ -63,7 +151,7 @@
    "fechaLimite": "2026-11-30",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-08",
+   "verificado": "2026-11-09",
    "estado": "abierta",
    "niveles": [
     "curso"
@@ -73,7 +161,7 @@
    "paraPeru": false,
    "publicado": "2026-11-07",
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "f41c410e78d4",
@@ -111,7 +199,7 @@
    "fechaLimite": "2026-12-03",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-08",
+   "verificado": "2026-11-09",
    "estado": "abierta",
    "niveles": [
     "investigacion"
@@ -121,7 +209,7 @@
    "paraPeru": false,
    "publicado": "2026-11-07",
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "1b7486a56be7",
@@ -135,7 +223,7 @@
    "fechaLimite": "2026-12-14",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-08",
+   "verificado": "2026-11-09",
    "estado": "abierta",
    "niveles": [],
    "areas": [],
@@ -143,7 +231,7 @@
    "paraPeru": false,
    "publicado": "2026-11-07",
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "6511ae6e8e27",
@@ -170,6 +258,34 @@
    "publicado": "2026-09-24",
    "primeraVez": "2026-11-08",
    "vistoUltimo": "2026-11-08"
+  },
+  {
+   "id": "be7c684b5156",
+   "titulo": "Benjamin A. Gilman International Scholarship for US Citizens to Study Abroad",
+   "url": "https://www.scholars4dev.com/benjamin-a-gilman-international-scholarship/",
+   "resumen": "U.S. Department of State Courses/internships Deadline: 25 Feb 2027 (twice a year) Study in: Countries outside the U.S. Course starts May 2027-April 2028 Brief description: The Benjamin A. Gilman International Scholarship Program gives merit-based scholarships to American undergra",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-01-05",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-09",
+   "estado": "abierta",
+   "niveles": [
+    "pregrado",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-09",
+   "primeraVez": "2026-11-09",
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "5482f97afae9",
@@ -210,7 +326,7 @@
    "fechaLimite": "2027-01-17",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-08",
+   "verificado": "2026-11-09",
    "estado": "abierta",
    "niveles": [
     "investigacion"
@@ -220,7 +336,35 @@
    "paraPeru": false,
    "publicado": "2026-11-07",
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
+  },
+  {
+   "id": "291c186928cc",
+   "titulo": "Boren Awards for USA students to Study Abroad",
+   "url": "https://www.scholars4dev.com/boren-awards-for-usa-students-to-study-abroad/",
+   "resumen": "National Security Education Program Study abroad programs Deadline: 20/27 Jan 2027 (annual) Study in: Countries outside the U.S. Course starts June 2027-1 March 2028 Brief description: Boren Awards are an initiative of the Defense Language and National Security Education Office. ",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-01-20",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-09",
+   "estado": "abierta",
+   "niveles": [
+    "pregrado",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-09",
+   "primeraVez": "2026-11-09",
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "c56d15fcea58",
@@ -244,7 +388,31 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
+  },
+  {
+   "id": "e6e91956daf5",
+   "titulo": "Generation Regen Challenge to Attend the One Young World Summit 2027 (Fully-funded)",
+   "url": "https://opportunitydesk.org/2026/11/09/generation-regen-challenge-2027/",
+   "resumen": "Deadline: February 24, 2027 Applications are open for the Generation Regen Challenge 2027. Agriculture is a cornerstone of economic resilience in Canada, the U.S., contributing significantly to GDP, supporting millions of jobs, and playing a vital role in global food security. As",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-02-24",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-09",
+   "estado": "abierta",
+   "niveles": [],
+   "areas": [
+    "ambiental"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-09",
+   "primeraVez": "2026-11-09",
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "6c3665469376",
@@ -271,7 +439,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "c3e335df6ac6",
@@ -297,7 +465,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "a3e790baf9a0",
@@ -311,7 +479,7 @@
    "fechaLimite": "2027-03-31",
    "ultimaPasada": "2026-09-30",
    "fechaAprox": true,
-   "verificado": "2026-11-08",
+   "verificado": "2026-11-09",
    "estado": "abierta",
    "niveles": [
     "investigacion"
@@ -321,7 +489,98 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
+  },
+  {
+   "id": "c2f7bc934bb0",
+   "titulo": "Australia Awards Masters Scholarships for Africa",
+   "url": "https://www.scholars4dev.com/australia-awards-masters-scholarships-for-africa/",
+   "resumen": "Australian Government Masters Degree Deadline: around Apr 2027 (annual) Study in: Australia Course starts 2028 Brief description: Australia Awards Scholarships are offered by the Australian Government to eligible African candidates for Master’s study in Australia. The program loo",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-04-30",
+   "ultimaPasada": null,
+   "fechaAprox": true,
+   "verificado": "2026-11-09",
+   "estado": "abierta",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "curso"
+   ],
+   "areas": [
+    "ambiental",
+    "mineria",
+    "gestion"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-09",
+   "primeraVez": "2026-11-09",
+   "vistoUltimo": "2026-11-09"
+  },
+  {
+   "id": "4750d8386680",
+   "titulo": "The Marshall Scholarship for US citizens to study in the UK",
+   "url": "https://www.scholars4dev.com/the-marshall-scholarship-for-americans-to-study-in-the-uk/",
+   "resumen": "Marshall Aid Commemoration Commission Masters/PhD Degree Deadline: around Sept 2027 (Annual) Study in: UK Course starts Autumn 2028 Brief description: Marshall Scholarships finance young Americans of high ability to study for a graduate degree in the United Kingdom. Up to 50 youn",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-09-30",
+   "ultimaPasada": null,
+   "fechaAprox": true,
+   "verificado": "2026-11-09",
+   "estado": "abierta",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "doctorado",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [
+    "gestion"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-09",
+   "primeraVez": "2026-11-09",
+   "vistoUltimo": "2026-11-09"
+  },
+  {
+   "id": "7de0dc4b4043",
+   "titulo": "Rhodes Scholarships at Oxford University for International Students",
+   "url": "https://www.scholars4dev.com/rhodes-international-scholarships-at-oxford-university/",
+   "resumen": "Rhodes Scholarship Fund Masters/PhD Degree Deadline: varies, around July-Oct 2027 (annual) Study in: UK Course starts October 2028 Brief description: The Rhodes Scholarships are postgraduate awards supporting exceptional all-round students at the University of Oxford. Established",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-10-31",
+   "ultimaPasada": null,
+   "fechaAprox": true,
+   "verificado": "2026-11-09",
+   "estado": "abierta",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "doctorado",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria",
+    "gestion"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-09",
+   "primeraVez": "2026-11-09",
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "08aac2bc744f",
@@ -345,7 +604,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "819c1ff2f05f",
@@ -367,7 +626,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "1a37543a047c",
@@ -391,7 +650,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "b2ae51ea98ad",
@@ -415,7 +674,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "e71e7eb76b0e",
@@ -439,7 +698,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "cee663f2951b",
@@ -461,7 +720,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "1f6c23b68ba1",
@@ -483,7 +742,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "ba6455b8a3f3",
@@ -505,7 +764,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "bbf097c9af59",
@@ -527,7 +786,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "55c6c9e219f5",
@@ -552,7 +811,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "e51304633dcb",
@@ -576,7 +835,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "b857117cfd8f",
@@ -600,7 +859,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "bfdfb6bae497",
@@ -624,7 +883,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "94553eea33cb",
@@ -646,7 +905,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "c91a16c279fd",
@@ -668,7 +927,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "fdc238768f8a",
@@ -692,7 +951,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "dd056e50a37b",
@@ -716,7 +975,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "48afbfda0a7f",
@@ -740,7 +999,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "a0f9bd24dc37",
@@ -764,7 +1023,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "df18ea746646",
@@ -788,7 +1047,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "a4db949d0cc6",
@@ -812,7 +1071,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "2b9938536e1b",
@@ -836,7 +1095,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "f6e9ed4cbec3",
@@ -860,7 +1119,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "b6a35c34031a",
@@ -876,17 +1135,13 @@
    "fechaAprox": false,
    "verificado": "2026-11-08",
    "estado": "por-confirmar",
-   "niveles": [
-    "curso"
-   ],
-   "areas": [
-    "ambiental"
-   ],
+   "niveles": [],
+   "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "d72f4b000fee",
@@ -910,7 +1165,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "4db96c9594ed",
@@ -936,7 +1191,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "3b5016ced3d7",
@@ -964,7 +1219,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "77418871aea5",
@@ -992,7 +1247,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "d51f18b203cc",
@@ -1018,7 +1273,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "0b6e33a74b2a",
@@ -1044,7 +1299,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "64c1caf011b9",
@@ -1072,7 +1327,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "6f999ce2b5cb",
@@ -1098,7 +1353,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "64139aeaec1c",
@@ -1124,7 +1379,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "5faf7896bfa2",
@@ -1151,7 +1406,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "bca599a069fc",
@@ -1169,7 +1424,6 @@
    "estado": "por-confirmar",
    "niveles": [
     "pregrado",
-    "maestria",
     "curso"
    ],
    "areas": [],
@@ -1177,7 +1431,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "1ce860e401f1",
@@ -1204,7 +1458,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "a2b8b9460213",
@@ -1232,7 +1486,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "ec301f8798ff",
@@ -1258,7 +1512,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "709e052cbcd4",
@@ -1280,7 +1534,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "cce000f3b4a2",
@@ -1302,7 +1556,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "56265b2ee48a",
@@ -1324,7 +1578,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "07b4b7c403ba",
@@ -1350,7 +1604,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "fb3b472d817b",
@@ -1376,7 +1630,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "b53249a26e4f",
@@ -1402,7 +1656,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "3fe6afc92bbb",
@@ -1427,7 +1681,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "2504b353449f",
@@ -1454,7 +1708,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "f5dc38a26511",
@@ -1478,7 +1732,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "5c91bb907312",
@@ -1492,7 +1746,7 @@
    "fechaLimite": null,
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-08",
+   "verificado": "2026-11-09",
    "estado": "por-confirmar",
    "niveles": [
     "maestria"
@@ -1507,7 +1761,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "7a779131cfd9",
@@ -1521,7 +1775,7 @@
    "fechaLimite": null,
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-08",
+   "verificado": "2026-11-09",
    "estado": "por-confirmar",
    "niveles": [
     "maestria"
@@ -1536,7 +1790,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "f5a73f506aff",
@@ -1558,7 +1812,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "d68daa3b68c9",
@@ -1580,7 +1834,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "52e73f84d887",
@@ -1604,7 +1858,103 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
+  },
+  {
+   "id": "97fa9bf252cd",
+   "titulo": "21 Hot Job Opportunities Currently Open – November 7, 2026",
+   "url": "https://opportunitydesk.org/2026/11/07/21-hot-job-opportunities-currently-open-november-7-2026/",
+   "resumen": "1. WASH Specialist, NO-3 – UNICEF, Kaduna, NigeriaUNICEF Nigeria is recruiting a WASH Specialist to support strategic programme planning, development, implementation, monitoring and evaluation from its Kaduna Field Office. The role provides technical guidance and management suppo",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": null,
+   "estado": "por-confirmar",
+   "niveles": [],
+   "areas": [
+    "ambiental"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-07",
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-09"
+  },
+  {
+   "id": "563dd62bb153",
+   "titulo": "10 Grants and Funding Opportunities Currently Open – November 7, 2026",
+   "url": "https://opportunitydesk.org/2026/11/07/10-grants-and-funding-opportunities-currently-open-november-7-2026/",
+   "resumen": "1. IX-WAI Early Career Development Grant 2027 (up to £1,000)The I-X Women in AI Network Early Career Development Grant supports women and non-binary individuals at Imperial College London who are at Master’s, PhD or postdoctoral level and are interested in artificial intelligence",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": null,
+   "estado": "por-confirmar",
+   "niveles": [
+    "maestria",
+    "doctorado",
+    "posdoc"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-07",
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-09"
+  },
+  {
+   "id": "3bf8855d4775",
+   "titulo": "How to Turn Your Passion into Income: 5 Practical Ways to Make Money Doing What You Love",
+   "url": "https://opportunitydesk.org/2026/11/07/how-to-turn-your-passion-into-income-5-practical-ways-to-make-money-doing-what-you-love/",
+   "resumen": "Have you ever wondered whether something you genuinely enjoy doing could become a source of income? Perhaps you love writing, photography, fashion, cooking, teaching, designing or creating content. What if you could turn that interest into something that pays your bills, supports",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": null,
+   "estado": "por-confirmar",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-07",
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-09"
+  },
+  {
+   "id": "629bf5bf9bd4",
+   "titulo": "How to Get a Scholarship with a Third-Class Degree: 7 Practical Steps to Improve Your Chances",
+   "url": "https://opportunitydesk.org/2026/11/07/how-to-get-a-scholarship-with-a-third-class-degree-7-practical-steps-to-improve-your-chances/",
+   "resumen": "Graduating with a third-class degree can feel discouraging, especially when you begin searching for scholarships and discover that many opportunities require a first-class or second-class upper degree. For some graduates, this becomes a reason to abandon their dreams of further e",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": null,
+   "estado": "por-confirmar",
+   "niveles": [
+    "pregrado"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-07",
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "de27075c42e0",
@@ -1726,102 +2076,6 @@
    "vistoUltimo": "2026-11-08"
   },
   {
-   "id": "97fa9bf252cd",
-   "titulo": "21 Hot Job Opportunities Currently Open – November 7, 2026",
-   "url": "https://opportunitydesk.org/2026/11/07/21-hot-job-opportunities-currently-open-november-7-2026/",
-   "resumen": "1. WASH Specialist, NO-3 – UNICEF, Kaduna, NigeriaUNICEF Nigeria is recruiting a WASH Specialist to support strategic programme planning, development, implementation, monitoring and evaluation from its Kaduna Field Office. The role provides technical guidance and management suppo",
-   "fuente": "opportunitydesk",
-   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
-   "pais": "Internacional",
-   "idioma": "en",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": null,
-   "estado": "por-confirmar",
-   "niveles": [],
-   "areas": [
-    "ambiental"
-   ],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": "2026-11-07",
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
-  },
-  {
-   "id": "563dd62bb153",
-   "titulo": "10 Grants and Funding Opportunities Currently Open – November 7, 2026",
-   "url": "https://opportunitydesk.org/2026/11/07/10-grants-and-funding-opportunities-currently-open-november-7-2026/",
-   "resumen": "1. IX-WAI Early Career Development Grant 2027 (up to £1,000)The I-X Women in AI Network Early Career Development Grant supports women and non-binary individuals at Imperial College London who are at Master’s, PhD or postdoctoral level and are interested in artificial intelligence",
-   "fuente": "opportunitydesk",
-   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
-   "pais": "Internacional",
-   "idioma": "en",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": null,
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria",
-    "doctorado",
-    "posdoc"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": "2026-11-07",
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
-  },
-  {
-   "id": "3bf8855d4775",
-   "titulo": "How to Turn Your Passion into Income: 5 Practical Ways to Make Money Doing What You Love",
-   "url": "https://opportunitydesk.org/2026/11/07/how-to-turn-your-passion-into-income-5-practical-ways-to-make-money-doing-what-you-love/",
-   "resumen": "Have you ever wondered whether something you genuinely enjoy doing could become a source of income? Perhaps you love writing, photography, fashion, cooking, teaching, designing or creating content. What if you could turn that interest into something that pays your bills, supports",
-   "fuente": "opportunitydesk",
-   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
-   "pais": "Internacional",
-   "idioma": "en",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": null,
-   "estado": "por-confirmar",
-   "niveles": [],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": "2026-11-07",
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
-  },
-  {
-   "id": "629bf5bf9bd4",
-   "titulo": "How to Get a Scholarship with a Third-Class Degree: 7 Practical Steps to Improve Your Chances",
-   "url": "https://opportunitydesk.org/2026/11/07/how-to-get-a-scholarship-with-a-third-class-degree-7-practical-steps-to-improve-your-chances/",
-   "resumen": "Graduating with a third-class degree can feel discouraging, especially when you begin searching for scholarships and discover that many opportunities require a first-class or second-class upper degree. For some graduates, this becomes a reason to abandon their dreams of further e",
-   "fuente": "opportunitydesk",
-   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
-   "pais": "Internacional",
-   "idioma": "en",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": null,
-   "estado": "por-confirmar",
-   "niveles": [
-    "pregrado"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": "2026-11-07",
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
-  },
-  {
    "id": "eed83d6065a6",
    "titulo": "Call for judges : Join the OD Impact Challenge 2026 global judging panel",
    "url": "https://opportunitydesk.org/2026/11/07/call-for-judges-join-the-od-impact-challenge-2026-global-judging-panel/",
@@ -1842,6 +2096,92 @@
    "publicado": "2026-11-07",
    "primeraVez": "2026-11-08",
    "vistoUltimo": "2026-11-08"
+  },
+  {
+   "id": "92815d6ec6ed",
+   "titulo": "Schwarzman Scholars Program at Tsinghua University",
+   "url": "https://www.scholars4dev.com/schwarzman-scholars-program-at-tsinghua-university/",
+   "resumen": "Tsinghua University Masters Degree Deadline: around May/Sept 2027 (annual) Study in: China Course starts August 2028 Brief description: Designed to prepare the next generation of global leaders, Schwarzman Scholars is the first scholarship created to respond to the geopolitical l",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": "2026-09-09",
+   "fechaAprox": false,
+   "verificado": "2026-11-09",
+   "estado": "cerrada",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "curso"
+   ],
+   "areas": [
+    "ingenieria"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-09",
+   "primeraVez": "2026-11-09",
+   "vistoUltimo": "2026-11-09"
+  },
+  {
+   "id": "b2f889e0a953",
+   "titulo": "Belgian American Educational Foundation Fellowships",
+   "url": "https://www.scholars4dev.com/belgian-american-educational-foundation-fellowships/",
+   "resumen": "Belgian American Educational Foundation Masters/PhD Degrees/Postdoctoral Fellowships Deadline: around Oct 2027 (Annual) Study in: Belgium Course starts AY 2028-2029 Brief description: The Belgian American Educational Foundation (BAEF) offers fellowships to U.S. citizens and perma",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": "2026-10-31",
+   "fechaAprox": false,
+   "verificado": "2026-11-09",
+   "estado": "cerrada",
+   "niveles": [
+    "maestria",
+    "doctorado",
+    "posdoc",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-09",
+   "primeraVez": "2026-11-09",
+   "vistoUltimo": "2026-11-09"
+  },
+  {
+   "id": "6a0e49374b55",
+   "titulo": "Fulbright US Student Program for Study Abroad",
+   "url": "https://www.scholars4dev.com/fulbright-us-student-program-for-study-abroad/",
+   "resumen": "USA Government Study abroad programs Deadline: around Oct 2027 (annual) Study in: multiple countries Course starts AY 2028-2029 Brief description: In partnership with more than 140 countries worldwide, the Fulbright U.S. Student Program offers opportunities in all academic discip",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": "2026-10-06",
+   "fechaAprox": false,
+   "verificado": "2026-11-09",
+   "estado": "cerrada",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "doctorado",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-09",
+   "primeraVez": "2026-11-09",
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "98e25c7eadf4",
@@ -1865,7 +2205,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "c7a979b3e3ba",
@@ -1889,7 +2229,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "5d9c66951d6c",
@@ -1913,7 +2253,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "45d2a74fd85c",
@@ -1935,7 +2275,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   },
   {
    "id": "ef80cdc067da",
@@ -1949,7 +2289,7 @@
    "fechaLimite": null,
    "ultimaPasada": "2026-10-31",
    "fechaAprox": true,
-   "verificado": "2026-11-08",
+   "verificado": "2026-11-09",
    "estado": "cerrada",
    "niveles": [
     "maestria"
@@ -1962,7 +2302,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-09"
   }
  ],
  "salud": [
@@ -1974,7 +2314,7 @@
    "ok": true,
    "items": 25,
    "error": null,
-   "ultimaOk": "2026-11-08"
+   "ultimaOk": "2026-11-09"
   },
   {
    "id": "prociencia",
@@ -1984,7 +2324,7 @@
    "ok": true,
    "items": 5,
    "error": null,
-   "ultimaOk": "2026-11-08"
+   "ultimaOk": "2026-11-09"
   },
   {
    "id": "daad-maestria",
@@ -1994,7 +2334,7 @@
    "ok": true,
    "items": 25,
    "error": null,
-   "ultimaOk": "2026-11-08"
+   "ultimaOk": "2026-11-09"
   },
   {
    "id": "daad-doctorado",
@@ -2004,7 +2344,7 @@
    "ok": true,
    "items": 10,
    "error": null,
-   "ultimaOk": "2026-11-08"
+   "ultimaOk": "2026-11-09"
   },
   {
    "id": "oea",
@@ -2014,7 +2354,7 @@
    "ok": true,
    "items": 12,
    "error": null,
-   "ultimaOk": "2026-11-08"
+   "ultimaOk": "2026-11-09"
   },
   {
    "id": "chevening",
@@ -2024,7 +2364,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-08"
+   "ultimaOk": "2026-11-09"
   },
   {
    "id": "fulbright-peru",
@@ -2034,7 +2374,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-08"
+   "ultimaOk": "2026-11-09"
   },
   {
    "id": "erasmus-mundus",
@@ -2044,7 +2384,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-08"
+   "ultimaOk": "2026-11-09"
   },
   {
    "id": "fundacion-carolina",
@@ -2054,7 +2394,7 @@
    "ok": true,
    "items": 3,
    "error": null,
-   "ultimaOk": "2026-11-08"
+   "ultimaOk": "2026-11-09"
   },
   {
    "id": "scholars4dev",
@@ -2062,9 +2402,9 @@
    "url": "https://www.scholars4dev.com/feed/",
    "via": null,
    "ok": true,
-   "items": 6,
+   "items": 10,
    "error": null,
-   "ultimaOk": "2026-11-08"
+   "ultimaOk": "2026-11-09"
   },
   {
    "id": "opportunitydesk",
@@ -2074,7 +2414,7 @@
    "ok": true,
    "items": 10,
    "error": null,
-   "ultimaOk": "2026-11-08"
+   "ultimaOk": "2026-11-09"
   }
  ]
 }
