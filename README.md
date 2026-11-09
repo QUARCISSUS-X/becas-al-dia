@@ -3,9 +3,9 @@
 Extensión de navegador (Chrome / Edge) con dos pestañas:
 
 - **🎓 Becas**: becas y convocatorias con fecha límite, días restantes, filtros (nivel, país, área, financiamiento completo, Perú/LatAm), favoritas y avisos de cierre (7, 3, 1 y 0 días).
-- **💼 Empleo y prácticas**: perfil para la postulación semiautomática. La búsqueda de ofertas llega en la Fase 2 y el autocompletado en la Fase 3. Siempre eres tú quien da clic en «Postular».
+- **💼 Empleo y prácticas**: busca ofertas en tres portales, calcula el % de coincidencia con tu CV y lleva el registro de tus postulaciones. El autocompletado llega en la Fase 3. Siempre eres tú quien da clic en «Postular».
 
-**No usa IA ni tokens.** Un recolector gratuito corre cada mañana en GitHub Actions. Lee las webs oficiales, extrae las fechas con reglas fijas, compara con el día anterior y publica `data/becas.json`. La extensión solo descarga ese archivo.
+**Funciona completa sin IA ni tokens.** Conectar tu propia IA (Gemini, Claude, ChatGPT u otra) es opcional y solo añade redacción y una segunda opinión. Un recolector gratuito corre cada mañana en GitHub Actions. Lee las webs oficiales, extrae las fechas con reglas fijas, compara con el día anterior y publica `data/becas.json`. La extensión solo descarga ese archivo.
 
 ```
 GitHub Actions (6:17 a. m. Lima)          Tu navegador
@@ -81,8 +81,38 @@ La búsqueda de empleo **corre en tu navegador**, no en GitHub: Computrabajo y B
    - si la oferta pide otra carrera, el máximo es 35 %;
    - si la oferta no detalla requisitos, el máximo es 70 %.
 
-   Debajo verás ✔ lo que coincide y ✖ lo que falta.
+   Debajo verás ✔ lo que coincide, ✖ lo indispensable que falta y ○ lo deseable que falta.
+
+   Detalles del cálculo:
+   - **Indispensable vs. deseable.** Lo que la oferta pide como «deseable», «de preferencia» o «no excluyente» pesa un tercio. Lo que aparece en «Beneficios» o «Sobre nosotros» no cuenta como requisito.
+   - **Aprende de ti.** Cuando ya guardaste, postulaste u ocultaste al menos 3 ofertas, las parecidas (por palabras del puesto y por empresa) suben o bajan hasta 8 puntos.
+   - **Sin repetidas.** La misma oferta publicada en dos portales se muestra una vez, con el enlace «También en».
 4. **📋 Prompt para CV** copia un prompt que puedes pegar en cualquier chat de IA. El prompt incluye la oferta, el análisis y tu CV. Pide adaptar el CV sin inventar nada y nombrar el archivo `CV_Bécquer Melgarejo_<empresa>`.
+
+5. **Registro de postulaciones.** En cada oferta, el desplegable «Sin postular» pasa a «Postulé», «Entrevista», «Me ofrecieron» o «No avanzó». El filtro **Postuladas** las reúne aunque el portal ya las haya retirado, y en «Estado de los portales» puedes descargarlas para Excel.
+
+### IA opcional (✨)
+
+En ⚙ **Ajustes → Inteligencia artificial** eliges un proveedor y pegas tu clave:
+
+| Proveedor | Costo | Dónde sale la clave |
+|---|---|---|
+| Google Gemini | Tiene nivel gratuito | aistudio.google.com/apikey |
+| Claude (Anthropic) | De pago | console.anthropic.com |
+| ChatGPT (OpenAI) | De pago | platform.openai.com/api-keys |
+| Otro compatible con OpenAI | Groq y OpenRouter tienen modelos gratuitos; Ollama corre en tu PC | según el servicio |
+| IA local de Chrome | Gratis, sin clave; pide una PC potente | — |
+
+Pulsa **Probar y listar modelos**: la extensión comprueba la clave y elige un modelo económico (puedes cambiarlo). Luego **Guardar**.
+
+Con la IA conectada, el botón **✨ IA** de cada oferta ofrece:
+- **Analizar afinidad**: segunda opinión del %, requisito por requisito, con la evidencia de tu CV. Queda como etiqueta «IA %».
+- **Carta de presentación** y **Adaptar mi CV**: se descargan como Word con el nombre `CV_Bécquer Melgarejo_<empresa>`. La IA tiene prohibido inventar experiencia.
+- **Responder** una pregunta del formulario de postulación.
+
+«✨ Analizar con IA las 10 primeras» lo hace en lote, una consulta cada 4,5 s.
+
+Privacidad: la clave se guarda solo en tu navegador (sin cifrar, como cualquier dato de extensión). Tu CV y la oferta viajan directo al proveedor que elegiste, y solo cuando pulsas un botón ✨. El código está en `extension/ia/`.
 
 Si un portal cambia su web, en «Estado de los portales» aparecerá ⚠ o ✖. Los lectores de cada portal están en `extension/empleo/portales.js`.
 
@@ -95,5 +125,6 @@ Si un portal cambia su web, en «Estado de los portales» aparecerá ⚠ o ✖. 
 ## Hoja de ruta
 - [x] **Fase 1**: recolector y pestaña Becas. Pestaña Empleo con el perfil.
 - [x] **Fase 2**: ofertas de empleo y prácticas de Bumeran, Computrabajo y Talento Perú, filtradas por tus perfiles. Cada oferta tiene su % de coincidencia con tu CV, etiqueta «Minera» y el prompt para adaptar el CV.
+- [x] **v0.3**: requisitos indispensables vs. deseables, aprendizaje de tus decisiones, ofertas repetidas unidas, registro de postulaciones e IA opcional con tu propia clave.
 - [ ] **Fase 2b**: portales de carrera de las mineras (Antamina, Southern, Cerro Verde, Las Bambas…).
 - [ ] **Fase 3**: autocompletado de formularios portal por portal y registro de postulaciones.

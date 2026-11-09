@@ -1,6 +1,9 @@
 // Becas al Día — panel lateral con dos pestañas: Becas y Empleo.
-import { buscarEmpleo, puntuar } from './empleo/buscador.js';
-import { promptCv } from './empleo/coincidencia.js';
+import { buscarEmpleo, puntuar, aplicarAprendizaje } from './empleo/buscador.js';
+import { promptCv, aprender } from './empleo/coincidencia.js';
+import { ESTADOS, marcar, aCsv } from './empleo/seguimiento.js';
+import { PROVEEDORES, configurada, origenDe, generar, probar } from './ia/ia.js';
+import { TAREAS, armar, leerAnalisis, analisisATexto, aWord, nombreArchivo } from './ia/tareas.js';
 const URL_DATOS_DEFECTO = 'https://raw.githubusercontent.com/QUARCISSUS-X/becas-al-dia/main/data/becas.json';
 const $ = (s) => document.querySelector(s);
 const $$ = (s) => [...document.querySelectorAll(s)];
@@ -191,11 +194,28 @@ function pintarSalud() {
 const BUSCAR_CADA_H = 6;
 const emp = {
   datos: null, perfil: {}, guardadas: new Set(), ocultas: new Set(), vistasAntes: new Set(), buscando: false,
-  f: { q: '', minimo: 60, fuente: '', orden: 'pct', practicas: false, empleos: false, mineras: false, publico: false, guardadas: false, nuevas: false },
+  seguimiento: {}, ia: {}, iaCache: {},
+  f: { q: '', minimo: 60, fuente: '', orden: 'pct', practicas: false, empleos: false, mineras: false, publico: false, guardadas: false, postuladas: false, nuevas: false },
 };
 
+// Lo que guardas o a lo que postulas sube ofertas parecidas; lo que ocultas las baja (sin IA)
+function modeloAprendizaje() {
+  const positivas = new Set([...emp.guardadas, ...Object.entries(emp.seguimiento).filter(([, s]) => s.estado !== 'rechazada').map(([id]) => id)]);
+  return aprender(emp.datos?.items || [], positivas, emp.ocultas);
+}
+async function reaprender() {
+  if (!emp.datos) return;
+  const m = modeloAprendizaje();
+  emp.datos.items.forEach((o) => aplicarAprendizaje(o, m));
+  await almacen.set({ empleo: emp.datos });
+}
+
 async function cargarEmpleo() {
-  const g = await almacen.get(['empleo', 'perfil', 'empleoGuardadas', 'empleoOcultas', 'empleoVistas']);
+  const g = await almacen.get(['empleo', 'perfil', 'empleoGuardadas', 'empleoOcultas', 'empleoVistas', 'empleoSeguimiento', 'ia', 'empleoIA']);
+  emp.seguimiento = g.empleoSeguimiento || {};
+  emp.ia = g.ia || {};
+  emp.iaCache = g.empleoIA || {};
+  cargarAjustesIa();
   emp.datos = g.empleo || null;
   emp.perfil = g.perfil || {};
   emp.guardadas = new Set(g.empleoGuardadas || []);
@@ -234,10 +254,18 @@ function pintarEstadoEmpleo() {
 function filtrarOfertas() {
   const f = emp.f;
   const q = sinTildes(f.q.trim());
-  return (emp.datos?.items || []).filter((o) => {
-    if (emp.ocultas.has(o.id) && !f.guardadas) return false;
+  let base = emp.datos?.items || [];
+  if (f.postuladas) {
+    // Incluye postulaciones cuya oferta ya fue retirada del portal (se guardó una copia)
+    const ids = new Set(base.map((o) => o.id));
+    base = [...base, ...Object.entries(emp.seguimiento).filter(([id]) => !ids.has(id)).map(([id, s]) => ({ id, ...s, pct: null, retirada: true }))];
+  }
+  return base.filter((o) => {
+    const seg = emp.seguimiento[o.id];
+    if (f.postuladas && !seg) return false;
+    if (emp.ocultas.has(o.id) && !f.guardadas && !f.postuladas) return false;
     if (f.guardadas && !emp.guardadas.has(o.id)) return false;
-    if (f.minimo && (o.pct ?? 0) < f.minimo && !emp.guardadas.has(o.id)) return false;
+    if (f.minimo && (o.pct ?? 0) < f.minimo && !emp.guardadas.has(o.id) && !seg) return false;
     if (f.fuente && o.fuente !== f.fuente) return false;
     if (f.practicas && !o.practica) return false;
     if (f.empleos && o.practica) return false;
@@ -261,7 +289,16 @@ function pintarEmpleo() {
   const vacio = $('#eVacio');
   const total = emp.datos?.items.length || 0;
   const vis = filtrarOfertas();
-  $('#eResumen').textContent = total ? `${vis.length} de ${total} ofertas` : '';
+  emp.visibles = vis;
+  const dup = emp.datos?.duplicadas ? ` · ${emp.datos.duplicadas} repetidas unidas` : '';
+  $('#eResumen').textContent = total ? `${vis.length} de ${total} ofertas${dup}` : '';
+  const nSeg = Object.keys(emp.seguimiento).length;
+  $('#ePostuladasN').textContent = nSeg || '';
+  $('#eSegN').textContent = nSeg;
+  $('#eIaBarra').hidden = !configurada(emp.ia) || !vis.length;
+  const ap = modeloAprendizaje();
+  $('#eAprende').textContent = ap.activo ? `El orden ya se afina con tus ${ap.senales} decisiones (guardadas, postuladas y ocultas): hasta ±8 puntos.`
+    : 'Guarda u oculta al menos 3 ofertas y el % empezará a afinarse con tus decisiones.';
   if (!total) {
     vacio.hidden = false;
     vacio.textContent = emp.buscando ? 'Buscando en los portales…' : 'Sin ofertas todavía. Pulsa «Buscar ofertas».';
@@ -290,16 +327,37 @@ function pintarEmpleo() {
     if (o.modalidad && !o.practica) tag(o.modalidad);
     if (o.vence) { const d = diasHasta(o.vence); tag(d <= 0 ? 'Cierra hoy' : `Cierra en ${d} día${d === 1 ? '' : 's'}`, d <= 3 ? 'urgente' : ''); }
     if (o.convocatoria) tag(`Conv. ${o.convocatoria}`);
+    const ia = emp.iaCache[o.id]?.analisis;
+    if (ia?.pct != null) tag(`IA ${ia.pct}%`, 'ia');
+    if (o.retirada) { tag('Ya no aparece en el portal'); li.classList.add('retirada'); }
 
     const m = li.querySelector('.match');
     const partes = [];
     if (o.coinciden?.length) partes.push(`✔ ${o.coinciden.slice(0, 8).join(', ')}`);
     if (o.faltan?.length) partes.push(`✖ ${o.faltan.slice(0, 6).join(', ')}`);
+    if (o.faltanDeseables?.length) partes.push(`○ deseable: ${o.faltanDeseables.slice(0, 4).join(', ')}`);
     m.textContent = partes.join('   ');
     m.hidden = !partes.length;
     const n = li.querySelector('.notas');
-    n.textContent = [...(o.notas || []), o.sinDetalle ? 'Sin descripción: el % usa solo el título.' : ''].filter(Boolean).join(' · ');
+    n.textContent = [...(o.notas || []), o.sinDetalle ? 'Sin descripción: el % usa solo el título.' : '',
+      o.ajuste ? `${o.ajuste > 0 ? '+' : ''}${o.ajuste} por tus decisiones anteriores` : ''].filter(Boolean).join(' · ');
     n.hidden = !n.textContent;
+    if (o.tambienEn?.length) {
+      const t = li.querySelector('.tambien'); t.append('También en: ');
+      o.tambienEn.forEach((e, i) => { const x = document.createElement('a'); x.href = e.url; x.target = '_blank'; x.rel = 'noopener'; x.textContent = e.fuente; t.append(i ? ', ' : '', x); });
+    }
+
+    const sel = li.querySelector('.seg');
+    sel.append(new Option('Sin postular', ''), ...Object.entries(ESTADOS).map(([k, v]) => new Option(v, k)));
+    sel.value = emp.seguimiento[o.id]?.estado || '';
+    sel.classList.toggle('activa', !!sel.value);
+    if (emp.seguimiento[o.id]) sel.title = `Postulé el ${fechaCorta(emp.seguimiento[o.id].desde)}`;
+    sel.addEventListener('change', async () => {
+      emp.seguimiento = marcar(emp.seguimiento, o, sel.value);
+      await almacen.set({ empleoSeguimiento: emp.seguimiento });
+      await reaprender(); pintarEmpleo();
+    });
+    li.querySelector('.btn-ia').addEventListener('click', () => abrirIa(o));
 
     const fav = li.querySelector('.fav');
     const pintarFav = () => { const on = emp.guardadas.has(o.id); fav.classList.toggle('on', on); fav.textContent = on ? '★' : '☆'; fav.setAttribute('aria-pressed', on); };
@@ -307,18 +365,19 @@ function pintarEmpleo() {
     fav.addEventListener('click', async () => {
       emp.guardadas.has(o.id) ? emp.guardadas.delete(o.id) : emp.guardadas.add(o.id);
       pintarFav(); await almacen.set({ empleoGuardadas: [...emp.guardadas] });
+      await reaprender();
     });
     li.querySelector('.btn-prompt').addEventListener('click', async (e) => {
       const b = e.currentTarget;
       try { await navigator.clipboard.writeText(promptCv(o, emp.perfil)); b.textContent = '✔ Copiado'; } catch { b.textContent = 'No se pudo copiar'; }
-      setTimeout(() => { b.textContent = '📋 Prompt para CV'; }, 2200);
+      setTimeout(() => { b.textContent = '📋 Prompt'; }, 2200);
     });
     const oc = li.querySelector('.btn-ocultar');
     oc.textContent = emp.ocultas.has(o.id) ? 'Mostrar' : 'Ocultar';
     oc.addEventListener('click', async () => {
       emp.ocultas.has(o.id) ? emp.ocultas.delete(o.id) : emp.ocultas.add(o.id);
       await almacen.set({ empleoOcultas: [...emp.ocultas] });
-      pintarEmpleo();
+      await reaprender(); pintarEmpleo();
     });
     frag.append(li);
   }
@@ -369,6 +428,7 @@ async function ejecutarBusqueda() {
       perfil: emp.perfil,
       anterior: emp.datos || {},
       cacheDetalles: empleoDetalles,
+      aprendizaje: modeloAprendizaje(),
       dep: {
         fetch: (u, o) => fetch(u, o),
         parsear: (html) => parser.parseFromString(html, 'text/html'),
@@ -377,7 +437,10 @@ async function ejecutarBusqueda() {
     });
     // Las vistas de la búsqueda anterior dejan de ser «nuevas»
     const vistas = new Set([...emp.vistasAntes, ...(emp.datos?.items || []).map((i) => i.id)]);
-    await almacen.set({ empleo: datos, empleoDetalles, empleoVistas: [...vistas].slice(-3000) });
+    // Los análisis de IA de ofertas que ya no existen se borran (salvo los de postulaciones)
+    const vivas = new Set(datos.items.map((i) => i.id));
+    for (const id of Object.keys(emp.iaCache)) if (!vivas.has(id) && !emp.seguimiento[id]) delete emp.iaCache[id];
+    await almacen.set({ empleo: datos, empleoDetalles, empleoVistas: [...vistas].slice(-3000), empleoIA: emp.iaCache });
     emp.datos = datos; emp.vistasAntes = vistas;
     $('#empleoProgreso').textContent = '';
   } catch (e) {
@@ -414,7 +477,7 @@ $('#perfil').addEventListener('submit', async (e) => {
   const cambianBusquedas = JSON.stringify([emp.perfil.perfiles, emp.perfil.busquedas]) !== JSON.stringify([p.perfiles, p.busquedas]);
   emp.perfil = p;
   // Recalcular el % de lo ya encontrado con el perfil nuevo (sin volver a buscar)
-  if (emp.datos) { emp.datos.items.forEach((o) => puntuar(o, p)); await almacen.set({ empleo: emp.datos }); }
+  if (emp.datos) { const m = modeloAprendizaje(); emp.datos.items.forEach((o) => puntuar(o, p, m)); await almacen.set({ empleo: emp.datos }); }
   await almacen.set({ perfil: p });
   $('#perfilEstado').textContent = 'Perfil guardado ✔ (solo en este navegador)';
   avisoPerfil(); pintarEmpleo();
@@ -431,11 +494,139 @@ $('#eBuscar').addEventListener('input', (e) => { emp.f.q = e.target.value; pinta
 $('#eMinimo').addEventListener('change', (e) => { emp.f.minimo = Number(e.target.value); pintarEmpleo(); });
 $('#eFuente').addEventListener('change', (e) => { emp.f.fuente = e.target.value; pintarEmpleo(); });
 $('#eOrden').addEventListener('change', (e) => { emp.f.orden = e.target.value; pintarEmpleo(); });
-for (const [id, k] of [['#ePracticas', 'practicas'], ['#eEmpleos', 'empleos'], ['#eMineras', 'mineras'], ['#ePublico', 'publico'], ['#eGuardadas', 'guardadas'], ['#eNuevas', 'nuevas']]) {
+for (const [id, k] of [['#ePracticas', 'practicas'], ['#eEmpleos', 'empleos'], ['#eMineras', 'mineras'], ['#ePublico', 'publico'], ['#eGuardadas', 'guardadas'], ['#ePostuladas', 'postuladas'], ['#eNuevas', 'nuevas']]) {
   $(id).addEventListener('click', (e) => { emp.f[k] = !emp.f[k]; e.currentTarget.classList.toggle('on'); pintarEmpleo(); });
 }
 $('#eDiagnostico').addEventListener('click', copiarDiagnostico);
-  $('#eRestaurar').addEventListener('click', async () => { emp.ocultas.clear(); await almacen.set({ empleoOcultas: [] }); pintarEmpleo(); });
+$('#eRestaurar').addEventListener('click', async () => { emp.ocultas.clear(); await almacen.set({ empleoOcultas: [] }); await reaprender(); pintarEmpleo(); });
+$('#eExportar').addEventListener('click', () => descargar(aCsv(emp.seguimiento), `Postulaciones_${new Date().toISOString().slice(0, 10)}.csv`, 'text/csv'));
+
+function descargar(contenido, nombre, tipo) {
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([contenido], { type: `${tipo};charset=utf-8` }));
+  a.download = nombre; document.body.append(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+}
+
+// ---------- IA opcional ----------
+const depIa = { fetch: (u, o) => fetch(u, o) };
+const iaDlg = { oferta: null, tarea: '', texto: '' };
+
+function abrirIa(o) {
+  iaDlg.oferta = o; iaDlg.tarea = ''; iaDlg.texto = '';
+  const on = configurada(emp.ia);
+  $('#iaTitulo').textContent = `✨ ${o.titulo}`;
+  $('#iaSub').textContent = on ? `${o.empresa || ''} · con ${PROVEEDORES[emp.ia.proveedor].nombre}${emp.ia.modelo ? ` (${emp.ia.modelo})` : ''}` : o.empresa || '';
+  $('#iaSin').hidden = on; $('#iaCon').hidden = !on;
+  $('#iaPregunta').value = '';
+  $('#iaAviso').textContent = emp.perfil.cvTexto ? '' : 'Aún no pegaste tu CV en «Mi perfil y CV»: los resultados serán genéricos.';
+  const previo = emp.iaCache[o.id]?.analisis;
+  mostrarSalida(previo ? analisisATexto(previo) : '', previo ? 'analisis' : '');
+  $('#iaDlg').showModal();
+}
+function mostrarSalida(texto, tarea) {
+  iaDlg.texto = texto; iaDlg.tarea = tarea;
+  const s = $('#iaSalida'); s.textContent = texto; s.hidden = !texto; s.scrollTop = 0;
+  $('#iaCopiar').hidden = !texto;
+  $('#iaDescargar').hidden = !texto || !['cv', 'carta'].includes(tarea);
+}
+async function ejecutarIa(tarea, o, extra = '') {
+  const txt = await generar(emp.ia, armar(tarea, o, emp.perfil, extra), depIa);
+  if (tarea !== 'analisis') return txt;
+  const a = leerAnalisis(txt);
+  emp.iaCache[o.id] = { ...(emp.iaCache[o.id] || {}), analisis: { ...a, el: new Date().toISOString().slice(0, 10) } };
+  await almacen.set({ empleoIA: emp.iaCache });
+  return analisisATexto(a);
+}
+$$('#iaDlg [data-tarea]').forEach((b) => b.addEventListener('click', async () => {
+  const tarea = b.dataset.tarea; const o = iaDlg.oferta;
+  const extra = $('#iaPregunta').value.trim();
+  if (tarea === 'pregunta' && !extra) { $('#iaAviso').textContent = 'Pega primero la pregunta del formulario.'; return; }
+  const botones = $$('#iaDlg [data-tarea]'); botones.forEach((x) => { x.disabled = true; });
+  $('#iaAviso').textContent = `${TAREAS[tarea].nombre}: consultando a la IA…`;
+  try {
+    const txt = await ejecutarIa(tarea, o, extra);
+    if (iaDlg.oferta === o) { mostrarSalida(txt, tarea); $('#iaAviso').textContent = 'Revisa antes de usar: la IA puede equivocarse.'; }
+    if (tarea === 'analisis') pintarEmpleo();
+  } catch (e) { $('#iaAviso').textContent = `No se pudo: ${e.message || e}`; }
+  botones.forEach((x) => { x.disabled = false; });
+}));
+$('#iaCopiar').addEventListener('click', async (e) => {
+  const b = e.currentTarget;
+  try { await navigator.clipboard.writeText(iaDlg.texto); b.textContent = '✔ Copiado'; } catch { b.textContent = 'No se pudo copiar'; }
+  setTimeout(() => { b.textContent = 'Copiar'; }, 2000);
+});
+$('#iaDescargar').addEventListener('click', () => {
+  const nombre = nombreArchivo(iaDlg.tarea, iaDlg.oferta);
+  descargar(aWord(iaDlg.texto, nombre), `${nombre}.doc`, 'application/msword');
+});
+$('#iaCerrar').addEventListener('click', () => $('#iaDlg').close());
+$('#iaCerrar0').addEventListener('click', () => $('#iaDlg').close());
+$('#iaConfigurar').addEventListener('click', () => { $('#iaDlg').close(); $('#ajustes').showModal(); $('#iaProveedor').focus(); });
+
+// Segunda opinión en lote: una consulta cada 4,5 s para respetar los límites gratuitos
+$('#eIaLote').addEventListener('click', async (e) => {
+  const b = e.currentTarget; if (b.disabled) return;
+  const pend = (emp.visibles || []).filter((o) => !o.retirada && !emp.iaCache[o.id]?.analisis).slice(0, 10);
+  const est = $('#eIaLoteEstado');
+  if (!pend.length) { est.textContent = '· las primeras ya están analizadas'; return; }
+  b.disabled = true; let hechas = 0;
+  for (const o of pend) {
+    est.textContent = `· ${hechas + 1} de ${pend.length}…`;
+    try { await ejecutarIa('analisis', o); hechas++; } catch (err) { est.textContent = `· se detuvo en ${hechas} de ${pend.length}: ${err.message || err}`; b.disabled = false; pintarEmpleo(); return; }
+    if (o !== pend.at(-1)) await new Promise((ok) => setTimeout(ok, 4500));
+  }
+  b.disabled = false; pintarEmpleo();
+  est.textContent = `· ${hechas} analizadas: mira la etiqueta «IA %» de cada oferta`;
+});
+
+// ---------- IA: ajustes ----------
+function leerAjustesIa() {
+  const proveedor = $('#iaProveedor').value;
+  return proveedor ? { proveedor, clave: $('#iaClave').value.trim(), modelo: $('#iaModelo').value.trim(), base: $('#iaBase').value.trim() } : {};
+}
+function pintarCamposIa() {
+  const p = $('#iaProveedor').value; const info = PROVEEDORES[p];
+  $('#iaCampos').hidden = !p;
+  if (!p) return;
+  $('#iaBaseFila').hidden = p !== 'compatible';
+  $('#iaClaveFila').hidden = p === 'local';
+  $('#iaModeloFila').hidden = p === 'local';
+  $('#iaAyuda').textContent = p === 'local' ? 'Usa el modelo que Chrome descarga en tu PC (unos 4 GB la primera vez). Es más limitado que los modelos en la nube.'
+    : p === 'compatible' ? 'Ejemplos: https://api.groq.com/openai/v1 · https://openrouter.ai/api/v1 · http://localhost:11434/v1 (Ollama, sin clave).'
+    : `${info.nombre}: ${info.costo}. Consigue tu clave en ${info.claveEn.replace('https://', '')}`;
+}
+function cargarAjustesIa() {
+  const c = emp.ia || {};
+  $('#iaProveedor').value = c.proveedor || '';
+  $('#iaClave').value = c.clave || ''; $('#iaModelo').value = c.modelo || ''; $('#iaBase').value = c.base || '';
+  $('#iaEstado').textContent = '';
+  pintarCamposIa();
+}
+// El permiso para llamar al proveedor se pide en el mismo clic (Chrome lo exige así)
+function pedirPermisoIa(cfg) {
+  const origen = origenDe(cfg);
+  if (!origen || !ext?.permissions) return Promise.resolve(true);
+  return ext.permissions.request({ origins: [origen] }).catch(() => false);
+}
+$('#iaProveedor').addEventListener('change', () => {
+  // Al cambiar de proveedor, la clave y el modelo del anterior no sirven
+  if ($('#iaProveedor').value !== (emp.ia.proveedor || '')) { $('#iaClave').value = ''; $('#iaModelo').value = ''; }
+  else cargarAjustesIa();
+  $('#iaEstado').textContent = ''; pintarCamposIa();
+});
+$('#iaProbar').addEventListener('click', async () => {
+  const cfg = leerAjustesIa(); const est = $('#iaEstado');
+  const permiso = pedirPermisoIa(cfg);
+  if (!configurada({ ...cfg, modelo: cfg.modelo || 'x' })) { est.textContent = cfg.proveedor === 'compatible' ? '· escribe la dirección del servicio' : '· escribe tu clave'; return; }
+  est.textContent = '· probando…';
+  if (!(await permiso)) { est.textContent = '· sin permiso para conectar con el proveedor'; return; }
+  const r = await probar(cfg, depIa);
+  if (!r.ok) { est.textContent = `· ✖ ${r.error}`; return; }
+  $('#iaModelos').replaceChildren(...r.modelos.map((m) => new Option(m, m)));
+  $('#iaModelo').value = r.modelo;
+  est.textContent = `· ✔ funciona${r.modelos.length > 1 ? ` (${r.modelos.length} modelos; puedes elegir otro)` : ''}. Pulsa «Guardar».`;
+});
 
 // ---------- Eventos ----------
 $$('.pestana').forEach((b) => b.addEventListener('click', () => {
@@ -466,10 +657,15 @@ $('#btnActualizar').addEventListener('click', async (e) => {
   if (r && !r.ok) $('#estadoDatos').textContent = `Error al actualizar: ${r.error}`;
 });
 
-$('#btnAjustes').addEventListener('click', () => $('#ajustes').showModal());
+$('#btnAjustes').addEventListener('click', () => { cargarAjustesIa(); $('#ajustes').showModal(); });
 $('#guardarAjustes').addEventListener('click', async () => {
+  const ia = leerAjustesIa();
+  const permiso = pedirPermisoIa(ia);
   const url = $('#urlDatos').value.trim() || URL_DATOS_DEFECTO;
   const { config = {} } = await almacen.get('config');
+  await permiso;
+  emp.ia = ia; await almacen.set({ ia });
+  pintarEmpleo();
   await almacen.set({ config: { ...config, urlDatos: url } });
   mensaje({ tipo: 'actualizar' }).then(cargar);
 });

@@ -168,3 +168,26 @@ dialog .pie-form { justify-content: flex-end; margin-top: 12px; }
 .perfil-bloque[open] > summary { margin-bottom: 6px; }
 .archivo { font-size: 12px; }
 .archivo input { border: 0; padding: 0; background: none; }
+
+/* ---------- Registro de postulaciones, duplicadas e IA ---------- */
+h3 { font-size: 13.5px; margin: 16px 0 4px; }
+.oferta-acciones { flex-wrap: wrap; }
+.seg { width: auto; padding: 3px 4px; font-size: 12px; border-radius: 7px; background: var(--fondo); max-width: 112px; }
+.seg.activa { background: var(--acento-suave); border-color: transparent; color: var(--acento); font-weight: 600; }
+.tambien { margin: 0; font-size: 12px; color: var(--sutil); }
+.tambien:empty { display: none; }
+.tambien a { color: var(--acento); }
+.tag.ia { background: var(--acento-suave); border-color: transparent; color: var(--acento); font-weight: 700; }
+.oferta.retirada { opacity: 0.7; }
+dialog select { width: 100%; }
+dialog label { margin-top: 8px; }
+#iaDlg { width: min(94vw, 460px); }
+.ia-tareas { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 6px; }
+.ia-pregunta { display: grid; grid-template-columns: 1fr auto; gap: 6px; }
+.ia-salida {
+  margin-top: 10px; padding: 10px 12px; border: 1px solid var(--borde); border-radius: 8px; background: var(--fondo);
+  white-space: pre-wrap; overflow-wrap: anywhere; font-size: 13px; max-height: 46vh; overflow-y: auto;
+}
+#iaDlg button:disabled { opacity: 0.55; cursor: progress; }
+dialog button.enlace { border: 0; padding: 0; border-radius: 0; }
+.oferta-acciones .btn-ocultar { border-color: transparent; background: none; padding-inline: 4px; }

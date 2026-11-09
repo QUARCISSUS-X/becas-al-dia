@@ -105,9 +105,11 @@
         <button class="chip" id="eMineras">Mineras</button>
         <button class="chip" id="ePublico">Sector público</button>
         <button class="chip" id="eGuardadas">★ Guardadas</button>
+        <button class="chip" id="ePostuladas">Postuladas <span id="ePostuladasN"></span></button>
         <button class="chip" id="eNuevas">Nuevas</button>
       </div>
     </div>
+    <p id="eIaBarra" class="sutil" hidden><button id="eIaLote" class="enlace">✨ Analizar con IA las 10 primeras de la lista</button> <span id="eIaLoteEstado"></span></p>
 
     <p id="eResumen" class="resumen"></p>
     <ol id="eLista" class="lista"></ol>
@@ -119,11 +121,13 @@
       <p class="sutil">La búsqueda corre en tu navegador: los portales ven una visita normal. Se repite sola cada 6 h mientras uses el panel.</p>
       <p class="sutil"><button id="eDiagnostico" class="enlace">📋 Copiar diagnóstico</button> (para pegarlo en el chat si algo falla)</p>
       <p class="sutil">Ocultas: <span id="eOcultasN">0</span> · <button id="eRestaurar" class="enlace">mostrar de nuevo</button></p>
+      <p class="sutil">Postulaciones registradas: <span id="eSegN">0</span> · <button id="eExportar" class="enlace">descargar para Excel</button></p>
+      <p class="sutil" id="eAprende"></p>
     </details>
 
     <details id="perfilBloque" class="perfil-bloque">
       <summary>👤 Mi perfil y CV <span id="perfilAviso" class="sutil"></span></summary>
-      <p class="sutil">Todo se guarda solo en este navegador. Se usa para el % de coincidencia, para el prompt que adapta tu CV y, en la Fase 3, para autocompletar postulaciones (tú siempre revisas y das clic en «Postular»).</p>
+      <p class="sutil">Todo se guarda solo en este navegador. Se usa para el % de coincidencia, para adaptar tu CV y, en la Fase 3, para autocompletar postulaciones (tú siempre revisas y das clic en «Postular»). Si conectas una IA en ⚙ Ajustes, tu CV se envía a ese proveedor solo cuando pulsas un botón ✨.</p>
     <form id="perfil" class="perfil" autocomplete="on">
       <fieldset>
         <legend>Datos de contacto</legend>
@@ -205,11 +209,68 @@
         <input id="urlDatos" type="url" spellcheck="false">
       </label>
       <p class="sutil">Por defecto lee <code>data/becas.json</code> del repositorio <code>QUARCISSUS-X/becas-al-dia</code>.</p>
+
+      <h3>✨ Inteligencia artificial (opcional)</h3>
+      <p class="sutil">Todo funciona sin esto. Con tu propia clave se activan: análisis de afinidad, carta de presentación, CV adaptado y respuestas a preguntas de formularios.</p>
+      <label class="ancho">Proveedor
+        <select id="iaProveedor">
+          <option value="">Sin IA</option>
+          <option value="gemini">Google Gemini — tiene nivel gratuito</option>
+          <option value="claude">Claude (Anthropic) — de pago</option>
+          <option value="openai">ChatGPT (OpenAI) — de pago</option>
+          <option value="compatible">Otro compatible con OpenAI (Groq, OpenRouter, Ollama…)</option>
+          <option value="local">IA local de Chrome — gratis, sin clave</option>
+        </select>
+      </label>
+      <div id="iaCampos" hidden>
+        <label class="ancho" id="iaBaseFila" hidden>Dirección del servicio
+          <input id="iaBase" type="url" spellcheck="false" placeholder="https://api.groq.com/openai/v1">
+        </label>
+        <label class="ancho" id="iaClaveFila">Clave (API key)
+          <input id="iaClave" type="password" spellcheck="false" autocomplete="off">
+        </label>
+        <p class="sutil" id="iaAyuda"></p>
+        <label class="ancho" id="iaModeloFila">Modelo
+          <input id="iaModelo" list="iaModelos" spellcheck="false" placeholder="Se elige solo al probar">
+          <datalist id="iaModelos"></datalist>
+        </label>
+        <p class="sutil"><button type="button" id="iaProbar" class="enlace">Probar y listar modelos</button> <span id="iaEstado" aria-live="polite"></span></p>
+        <p class="sutil">La clave queda guardada solo en este navegador. Las consultas van directo de tu navegador al proveedor y solo cuando pulsas un botón ✨.</p>
+      </div>
       <div class="pie-form">
         <button value="cancelar">Cancelar</button>
         <button id="guardarAjustes" value="ok" class="primario">Guardar</button>
       </div>
     </form>
+  </dialog>
+
+  <!-- ================= IA por oferta ================= -->
+  <dialog id="iaDlg">
+    <h2 id="iaTitulo">✨ IA</h2>
+    <p id="iaSub" class="sutil"></p>
+    <div id="iaSin" hidden>
+      <p>Aún no has conectado una IA. Es opcional: puedes usar Gemini gratis con una clave de Google AI Studio, o tu clave de Claude o ChatGPT.</p>
+      <p class="sutil">Mientras tanto, «📋 Prompt» copia todo lo necesario para pegarlo en cualquier chat.</p>
+      <div class="pie-form"><button type="button" id="iaCerrar0">Cerrar</button><button type="button" id="iaConfigurar" class="primario">Conectar una IA</button></div>
+    </div>
+    <div id="iaCon">
+      <div class="ia-tareas">
+        <button type="button" data-tarea="analisis">Analizar afinidad</button>
+        <button type="button" data-tarea="carta">Carta de presentación</button>
+        <button type="button" data-tarea="cv">Adaptar mi CV</button>
+      </div>
+      <div class="ia-pregunta">
+        <input id="iaPregunta" placeholder="Pega una pregunta del formulario de postulación…" autocomplete="off">
+        <button type="button" data-tarea="pregunta">Responder</button>
+      </div>
+      <p id="iaAviso" class="sutil" aria-live="polite"></p>
+      <div id="iaSalida" class="ia-salida" hidden></div>
+      <div class="pie-form">
+        <button type="button" id="iaCopiar" hidden>Copiar</button>
+        <button type="button" id="iaDescargar" hidden>Descargar Word</button>
+        <button type="button" id="iaCerrar">Cerrar</button>
+      </div>
+    </div>
   </dialog>
 
   <template id="tplBeca">
@@ -237,9 +298,12 @@
       <div class="etiquetas"></div>
       <p class="match"></p>
       <p class="notas"></p>
+      <p class="tambien"></p>
       <div class="oferta-acciones">
         <button class="fav" aria-label="Guardar oferta" title="Guardar">☆</button>
-        <button class="btn-prompt" title="Copia un prompt para adaptar tu CV a esta oferta">📋 Prompt para CV</button>
+        <select class="seg" aria-label="Estado de mi postulación" title="Registro de postulaciones"></select>
+        <button class="btn-prompt" title="Copia un prompt para adaptar tu CV a esta oferta en cualquier chat de IA">📋 Prompt</button>
+        <button class="btn-ia" title="Análisis, carta, CV adaptado y respuestas con tu IA conectada">✨ IA</button>
         <button class="btn-ocultar" title="No volver a mostrar">Ocultar</button>
       </div>
     </li>

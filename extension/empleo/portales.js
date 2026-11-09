@@ -3,8 +3,11 @@
 // Dependencias inyectables para poder probarlos en Node: { fetch, parsear(html) → Document }.
 
 const limpiar = (s = '') => String(s).replace(/\s+/g, ' ').trim();
-const sinHtml = (s = '') => limpiar(String(s).replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ')
-  .replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>'));
+// Quita el HTML pero conserva los saltos de línea: sirven para separar «Requisitos» de «Deseable»
+export const sinHtml = (s = '') => String(s).replace(/<(br|\/p|\/li|\/div|\/h\d|\/tr|\/ul|\/ol)\s*\/?>/gi, '\n').replace(/<li[^>]*>/gi, '\n• ')
+  .replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ')
+  .replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+  .split('\n').map(limpiar).filter((l) => l && l !== '•').join('\n');
 export const slug = (q) => q.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const isoDeDMY = (s = '') => { const m = String(s).match(/(\d{1,2})[/-](\d{1,2})[/-](\d{4})/); return m ? `${m[3]}-${m[2].padStart(2, '0')}-${m[1].padStart(2, '0')}` : null; };
 function hash(s) { let h = 2166136261; for (const c of s) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return (h >>> 0).toString(36); }

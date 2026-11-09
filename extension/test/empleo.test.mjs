@@ -2,9 +2,12 @@
 // de la estructura real de cada web (nov-2026). Se corre desde collector/: npm test
 import assert from 'node:assert/strict';
 import { createRequire } from 'node:module';
-import { coincidencia, aniosPedidos, terminos, promptCv, esMinera, clavesUsuario } from '../empleo/coincidencia.js';
+import { coincidencia, aniosPedidos, terminos, promptCv, esMinera, clavesUsuario, seccionar, aprender, ajuste } from '../empleo/coincidencia.js';
 import { computrabajo, bumeran, servir, fechaRelativa, slug } from '../empleo/portales.js';
-import { buscarEmpleo, terminosBusqueda, puntuar } from '../empleo/buscador.js';
+import { buscarEmpleo, terminosBusqueda, puntuar, fusionarDuplicadas, aplicarAprendizaje } from '../empleo/buscador.js';
+import { marcar, aCsv } from '../empleo/seguimiento.js';
+import { generar, listarModelos, elegirModelo, probar, configurada, origenDe } from '../ia/ia.js';
+import { armar, leerAnalisis, analisisATexto, aWord, nombreArchivo } from '../ia/tareas.js';
 
 const require = createRequire(new URL('../../collector/package.json', import.meta.url));
 const { DOMParser } = require('linkedom');
@@ -224,6 +227,144 @@ await prueba('re-puntuar al cambiar el perfil', () => {
   puntuar(o, PERFIL); const antes = o.pct;
   puntuar(o, { ...PERFIL, profesion: 'Ingeniero civil', claves: PERFIL.claves + ', Primavera P6' });
   assert.ok(o.pct > antes); assert.ok(o.minera);
+});
+
+// ---------- Mejoras sin IA ----------
+await prueba('separa indispensable, deseable y beneficios (con saltos de línea)', () => {
+  const s = seccionar('Somos una empresa minera líder.\nRequisitos:\n• Ingeniero ambiental colegiado\n• Manejo de S10\nDeseable:\n• Primavera P6\n• Inglés avanzado\nBeneficios:\n• Capacitación en Power BI');
+  assert.match(s.req, /S10/); assert.match(s.des, /Primavera/); assert.match(s.des, /Inglés/);
+  assert.ok(!/Power BI/.test(s.req + s.des)); assert.ok(!/minera líder/.test(s.req));
+});
+await prueba('separa por oraciones cuando la descripción viene en una sola línea', () => {
+  const s = seccionar('Buscamos ingeniero de costos con experiencia en S10 y metrados. De preferencia con manejo de Primavera P6. Indispensable Excel avanzado. Ofrecemos: ingreso a planilla y cursos de Python.');
+  assert.match(s.req, /S10/); assert.match(s.req, /Excel avanzado/);
+  assert.match(s.des, /Primavera/); assert.ok(!/Python/.test(s.req + s.des));
+});
+await prueba('lo deseable pesa menos que lo indispensable', () => {
+  const base = { titulo: 'Ingeniero ambiental', empresa: 'X' };
+  const comoReq = coincidencia({ ...base, descripcion: 'Requisitos:\nS10\nMS Project\nPrimavera P6\nPython' }, PERFIL);
+  const comoDes = coincidencia({ ...base, descripcion: 'Requisitos:\nS10\nMS Project\nDeseable:\nPrimavera P6\nPython' }, PERFIL);
+  assert.ok(comoDes.pct > comoReq.pct, `${comoDes.pct} > ${comoReq.pct}`);
+  assert.deepEqual(comoDes.faltan, []); assert.deepEqual(comoDes.faltanDeseables.sort(), ['Primavera P6', 'Python']);
+  assert.ok(comoReq.faltan.includes('Python'));
+  // Los años pedidos solo como deseable no penalizan
+  assert.equal(coincidencia({ ...base, descripcion: 'Requisitos:\nS10\nDeseable: 8 años de experiencia en minería' }, PERFIL).partes.experiencia, null);
+});
+await prueba('aprende de guardadas y ocultas (máx. ±8, respeta el tope)', () => {
+  const items = [
+    { id: 'a', titulo: 'Analista de costos y presupuestos', empresa: 'Minera Uno' },
+    { id: 'b', titulo: 'Ingeniero de costos', empresa: 'Minera Dos' },
+    { id: 'c', titulo: 'Vendedor técnico de campo', empresa: 'Ventas SAC' },
+    { id: 'd', titulo: 'Asesor vendedor', empresa: 'Ventas SAC' },
+  ];
+  assert.equal(aprender(items, new Set(['a']), new Set(['c'])).activo, false); // menos de 3 señales
+  const m = aprender(items, new Set(['a', 'b']), new Set(['c', 'd']));
+  assert.ok(m.activo);
+  const sube = ajuste({ titulo: 'Especialista de costos', empresa: 'Otra' }, m);
+  const baja = ajuste({ titulo: 'Vendedor de repuestos', empresa: 'Ventas SAC' }, m);
+  assert.ok(sube > 0 && sube <= 8, `sube=${sube}`); assert.ok(baja < 0 && baja >= -8, `baja=${baja}`);
+  assert.equal(ajuste({ titulo: 'Geólogo de exploraciones', empresa: 'Z' }, m), 0);
+  const o = aplicarAprendizaje({ titulo: 'Jefe de costos', empresa: 'Minera Uno', pctBase: 34, tope: 35 }, m);
+  assert.equal(o.pct, 35);
+  aplicarAprendizaje(o, m); assert.equal(o.pct, 35); // no se acumula al repetir
+});
+await prueba('une la misma oferta publicada en dos portales', () => {
+  const r = fusionarDuplicadas([
+    { id: 'ct-1', titulo: 'Ingeniero Ambiental', empresa: 'Minera Sol S.A.', ubicacion: 'Lima, Lima', fuente: 'Computrabajo', url: 'https://ct/1', descripcion: '' },
+    { id: 'bm-1', titulo: 'INGENIERO AMBIENTAL', empresa: 'Minera Sol SA', ubicacion: 'Lima', fuente: 'Bumeran', url: 'https://bm/1', descripcion: 'Requisitos: S10', publicado: '2026-11-01' },
+    { id: 'bm-2', titulo: 'Ingeniero Ambiental', empresa: 'Minera Sol SA', ubicacion: 'Arequipa', fuente: 'Bumeran', url: 'https://bm/2', descripcion: 'x' },
+    { id: 'bm-3', titulo: 'Ingeniero Ambiental', empresa: 'Confidencial', ubicacion: 'Lima', fuente: 'Bumeran', url: 'https://bm/3', descripcion: 'x' },
+    { id: 'bm-4', titulo: 'Ingeniero Ambiental', empresa: 'Confidencial', ubicacion: 'Lima', fuente: 'Bumeran', url: 'https://bm/4', descripcion: 'x' },
+  ], new Set(['ct-1']));
+  assert.equal(r.length, 4); // otra ciudad y las confidenciales no se unen
+  const p = r.find((o) => o.id === 'ct-1'); // se conserva la que ya se había mostrado
+  assert.deepEqual(p.tambienEn, [{ fuente: 'Bumeran', url: 'https://bm/1' }]);
+  assert.match(p.descripcion, /S10/); assert.equal(p.publicado, '2026-11-01');
+});
+await prueba('registro de postulaciones y CSV para Excel', () => {
+  const o = { id: 'ct-1', titulo: 'Ingeniero "senior"; costos', empresa: 'Minera Sol', fuente: 'Computrabajo', url: 'https://ct/1', ubicacion: 'Lima' };
+  let s = marcar({}, o, 'postulada', new Date('2026-11-09T15:00:00Z'));
+  s = marcar(s, o, 'entrevista', new Date('2026-11-15T15:00:00Z'));
+  assert.deepEqual([s['ct-1'].estado, s['ct-1'].desde, s['ct-1'].cambio], ['entrevista', '2026-11-09', '2026-11-15']);
+  const csv = aCsv(s);
+  assert.ok(csv.startsWith('﻿"Postulé el";"Estado"'));
+  assert.match(csv, /"2026-11-09";"Entrevista";"2026-11-15";"Ingeniero ""senior""; costos";"Minera Sol"/);
+  assert.deepEqual(marcar(s, o, ''), {});
+});
+
+// ---------- IA opcional ----------
+const llamadas = [];
+const iaFalsa = async (url, op = {}) => {
+  llamadas.push({ url, op, cuerpo: op.body ? JSON.parse(op.body) : null });
+  const resp = (obj, status = 200) => ({ ok: status < 400, status, text: async () => JSON.stringify(obj) });
+  const h = op.headers || {};
+  if (url.includes('generativelanguage')) {
+    if (h['x-goog-api-key'] !== 'G') return resp({ error: { message: 'API key not valid' } }, 403);
+    if (url.includes('/models?')) return resp({ models: [
+      { name: 'models/gemini-flash-latest', supportedGenerationMethods: ['generateContent'] },
+      { name: 'models/gemini-2.5-pro', supportedGenerationMethods: ['generateContent'] },
+      { name: 'models/gemini-embedding-001', supportedGenerationMethods: ['embedContent'] }] });
+    return resp({ candidates: [{ content: { parts: [{ text: 'pensando', thought: true }, { text: 'hola de gemini' }] } }] });
+  }
+  if (url.includes('anthropic')) {
+    if (url.endsWith('/models?limit=100')) return resp({ data: [{ id: 'claude-opus-5-5' }, { id: 'claude-haiku-5-5' }] });
+    return resp({ content: [{ type: 'text', text: 'hola de claude' }], stop_reason: 'end_turn' });
+  }
+  if (url.includes('openai.com')) {
+    if (url.endsWith('/models')) return resp({ data: [{ id: 'gpt-6-luna' }, { id: 'gpt-6' }, { id: 'gpt-realtime' }, { id: 'text-embedding-3-small' }] });
+    return resp({ choices: [{ message: { content: 'hola de gpt' } }] });
+  }
+  if (url.includes('localhost')) return url.endsWith('/models') ? resp({ data: [{ id: 'llama3.2' }] }) : resp({ choices: [{ message: { content: 'hola local' } }] });
+  return resp({}, 404);
+};
+const depIa = { fetch: iaFalsa };
+
+await prueba('IA: Gemini, Claude, OpenAI y compatibles (formato de cada API)', async () => {
+  const p = { sistema: 'S', mensaje: 'M', json: true, maxTokens: 100 };
+  assert.equal(await generar({ proveedor: 'gemini', clave: 'G', modelo: 'gemini-flash-latest' }, p, depIa), 'hola de gemini');
+  let c = llamadas.at(-1);
+  assert.match(c.url, /v1beta\/models\/gemini-flash-latest:generateContent$/); assert.ok(!c.url.includes('key=')); // la clave va en cabecera, no en la URL
+  assert.equal(c.cuerpo.generationConfig.responseMimeType, 'application/json'); assert.equal(c.cuerpo.systemInstruction.parts[0].text, 'S');
+
+  assert.equal(await generar({ proveedor: 'claude', clave: 'C', modelo: 'claude-haiku-5-5' }, p, depIa), 'hola de claude');
+  c = llamadas.at(-1);
+  assert.deepEqual([c.op.headers['x-api-key'], c.op.headers['anthropic-version'], c.op.headers['anthropic-dangerous-direct-browser-access']], ['C', '2023-06-01', 'true']);
+  assert.deepEqual([c.cuerpo.system, c.cuerpo.max_tokens, c.cuerpo.messages[0].content], ['S', 100, 'M']);
+
+  assert.equal(await generar({ proveedor: 'openai', clave: 'O', modelo: 'gpt-6-luna' }, p, depIa), 'hola de gpt');
+  c = llamadas.at(-1);
+  assert.equal(c.op.headers.authorization, 'Bearer O'); assert.ok(c.cuerpo.max_completion_tokens > 100); assert.equal(c.cuerpo.response_format.type, 'json_object');
+
+  assert.equal(await generar({ proveedor: 'compatible', base: 'http://localhost:11434/v1/', modelo: 'llama3.2' }, p, depIa), 'hola local');
+  c = llamadas.at(-1);
+  assert.equal(c.url, 'http://localhost:11434/v1/chat/completions'); assert.equal(c.cuerpo.max_tokens, 100); assert.equal(c.op.headers.authorization, undefined);
+  assert.equal(c.op.credentials, 'omit');
+});
+await prueba('IA: lista modelos, elige uno económico y explica los errores', async () => {
+  assert.deepEqual(await listarModelos({ proveedor: 'gemini', clave: 'G' }, depIa), ['gemini-2.5-pro', 'gemini-flash-latest']);
+  assert.deepEqual(await listarModelos({ proveedor: 'openai', clave: 'O' }, depIa), ['gpt-6', 'gpt-6-luna']);
+  assert.equal(elegirModelo('claude', ['claude-opus-5-5', 'claude-haiku-5-5']), 'claude-haiku-5-5');
+  const r = await probar({ proveedor: 'gemini', clave: 'G' }, depIa);
+  assert.deepEqual([r.ok, r.modelo], [true, 'gemini-flash-latest']);
+  const mal = await probar({ proveedor: 'gemini', clave: 'mala' }, depIa);
+  assert.equal(mal.ok, false); assert.match(mal.error, /clave no es válida.*API key not valid/);
+  await assert.rejects(generar({}, { mensaje: 'x' }, depIa), /no está configurada/);
+  await assert.rejects(generar({ proveedor: 'claude', clave: 'C' }, { mensaje: 'x' }, depIa), /Falta elegir el modelo/);
+  assert.ok(!configurada({ proveedor: 'gemini' })); assert.ok(configurada({ proveedor: 'local' })); assert.ok(!configurada({ proveedor: 'compatible', clave: 'k' }));
+  assert.equal(origenDe({ proveedor: 'claude' }), 'https://api.anthropic.com/*'); assert.equal(origenDe({ proveedor: 'local' }), null);
+});
+await prueba('IA: instrucciones, lectura del análisis y documento Word', () => {
+  const o = { titulo: 'Ingeniero de costos', empresa: 'Minera Sol / Perú', descripcion: 'Requisitos: S10', fuente: 'Bumeran' };
+  const a = armar('analisis', o, PERFIL);
+  assert.ok(a.json); assert.match(a.mensaje, /Minera Sol/); assert.match(a.mensaje, /Ingeniero ambiental colegiado/); assert.match(a.sistema, /Nunca inventas/);
+  assert.match(armar('pregunta', o, { ...PERFIL, salario: '6000' }, '¿Pretensión salarial?').mensaje, /¿Pretensión salarial\?[\s\S]*S\/ 6000/);
+  const an = leerAnalisis('```json\n{"pct": 130, "veredicto": "Calza", "requisitos": [{"texto": "S10", "tipo": "Indispensable", "cumple": "Sí", "evidencia": "CV"}, {"texto": "P6", "tipo": "deseable", "cumple": "no"}], "fortalezas": ["a"], "brechas": [], "consejo": "c"}\n```');
+  assert.deepEqual([an.pct, an.requisitos[0].cumple, an.requisitos[1].tipo, an.requisitos[1].cumple], [100, 'si', 'deseable', 'no']);
+  assert.match(analisisATexto(an), /✔ S10 — CV\n✖ P6 \(deseable\)/);
+  assert.throws(() => leerAnalisis('no puedo'), /formato esperado/);
+  const w = aWord('# Bécquer\n## Experiencia\n- **S10** <script>\n\nTexto', 'CV');
+  assert.match(w, /<h1>Bécquer<\/h1>\n<h2>Experiencia<\/h2>\n<ul>\n<li><b>S10<\/b> &lt;script&gt;<\/li>\n<\/ul>\n<p>Texto<\/p>/);
+  assert.equal(nombreArchivo('cv', o), 'CV_Bécquer Melgarejo_Minera Sol Perú');
 });
 
 console.log(`\n${ok} pruebas de empleo OK`);

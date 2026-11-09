@@ -3,6 +3,8 @@
 // El puntaje combina cuatro componentes; los que no se pueden evaluar (p. ej. la oferta
 // no pide años de experiencia) se omiten y el resto se re-pondera:
 //   habilidades 45 % · profesión 20 % · perfil buscado 20 % · experiencia 15 %
+// En habilidades, lo «deseable» pesa un tercio de lo indispensable, y lo que la oferta
+// menciona en «Beneficios» o «Sobre nosotros» no cuenta como requisito.
 
 export const sinTildes = (s = '') => String(s).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 export const normalizar = (s = '') => ' ' + sinTildes(s).replace(/[^a-z0-9+#]+/g, ' ').replace(/\s+/g, ' ').trim() + ' ';
@@ -44,8 +46,18 @@ export const VOCABULARIO = [
   // Normas y SSOMA
   ['ISO 14001', 'iso 14001'], ['ISO 9001', 'iso 9001'], ['ISO 45001', 'iso 45001'], ['SSOMA / HSE', 'ssoma', 'hse', 'sst', 'seguridad y salud en el trabajo'],
   ['DS 024-2016-EM', '024 2016 em'], ['Normativa ambiental', 'normativa ambiental', 'legislacion ambiental'],
+  // Más del rubro (costos, obra, calidad)
+  ['Estimación de costos', 'estimacion de costos', 'cost estimating'],
+  ['CAPEX / OPEX', 'capex', 'opex'], ['Forecast / flujo de caja', 'forecast', 'flujo de caja', 'cash flow'],
+  ['Gestión de riesgos', 'gestion de riesgos', 'analisis de riesgos', 'matriz de riesgos'],
+  ['Control documentario', 'control documentario', 'control de documentos'], ['QA/QC', 'qa qc', 'aseguramiento de calidad', 'control de calidad'],
+  ['Movimiento de tierras', 'movimiento de tierras'], ['Topografía', 'topografia'], ['Obras civiles', 'obras civiles'],
+  ['Plantas de tratamiento', 'ptar', 'ptap', 'planta de tratamiento', 'plantas de tratamiento', 'tratamiento de aguas'],
+  ['Gestión de contratistas', 'gestion de contratistas', 'empresas contratistas', 'administracion de contratistas'],
+  ['Ingeniería de detalle', 'ingenieria de detalle', 'ingenieria basica', 'factibilidad', 'prefactibilidad'],
+  ['Power Query / macros', 'power query', 'macros', 'vba'], ['SQL', 'sql'],
   // Idiomas y licencias
-  ['Inglés intermedio', 'ingles intermedio'], ['Inglés avanzado', 'ingles avanzado'], ['Licencia de conducir', 'licencia de conducir', 'brevete'],
+  ['Inglés básico', 'ingles basico'], ['Inglés intermedio', 'ingles intermedio'], ['Inglés avanzado', 'ingles avanzado'], ['Licencia de conducir', 'licencia de conducir', 'brevete'],
   ['Colegiado y habilitado', 'colegiado', 'colegiatura', 'habilitado'],
 ];
 
@@ -140,14 +152,47 @@ export function aniosPedidos(texto) {
 export const esPractica = (titulo = '') => PERFILES.practicas.re.test(sinTildes(titulo));
 export const esMinera = (texto = '') => { const t = ' ' + sinTildes(texto) + ' '; return MINERAS.some((m) => t.includes(m)); };
 
+// ---------- Secciones de la oferta: indispensable / deseable / no es requisito ----------
+const DESEABLE = /\b(deseable|deseables|de preferencia|preferentemente|preferible|preferiblemente|se valorara|se valora|valorable|valorado|sera un plus|es un plus|un plus|opcional|opcionalmente|no indispensable|no excluyente|no limitante|nice to have|idealmente)\b/;
+const CAB_REQ = /^(requisitos|requerimientos|requerido|perfil|funciones|principales funciones|responsabilidades|conocimientos|competencias|formacion|experiencia|estudios|indispensable|que buscamos|te buscamos|buscamos|tu mision|mision del puesto)/;
+const CAB_DES = /^(deseable|deseables|valorable|se valorara|plus|adicional|adicionales)/;
+const CAB_IGNORAR = /^(beneficios|ofrecemos|que ofrecemos|te ofrecemos|nuestra propuesta|sobre nosotros|quienes somos|somos|acerca de|sobre la empresa|condiciones|horario|lugar de trabajo)/;
+const REACTIVA = /requisit|requerim|indispensable|experiencia|conocimiento|funciones|responsabilidades|buscamos|formacion|egresad|titulad|bachiller/;
+
+/**
+ * Separa la descripción en lo indispensable (req) y lo deseable (des); descarta beneficios y
+ * la presentación de la empresa. Funciona con saltos de línea o, si no los hay, por oraciones.
+ */
+export function seccionar(texto = '') {
+  let segs = String(texto).split(/\n+/).map((s) => s.trim()).filter(Boolean);
+  if (segs.length <= 2) segs = String(texto).split(/(?<=[.;:!?])\s+(?=[A-ZÁÉÍÓÚÑ¿•\d-])|\s[•·▪●]\s/).map((s) => s.trim()).filter(Boolean);
+  const out = { req: [], des: [] };
+  let estado = 'req';
+  for (const seg of segs) {
+    const n = sinTildes(seg).replace(/^[\s•·▪●*\-–\d.)]+/, '').trim();
+    const dosPuntos = n.indexOf(':');
+    const cabeza = dosPuntos >= 0 && dosPuntos <= 60 ? n.slice(0, dosPuntos) : n.length <= 40 ? n : '';
+    const esCab = cabeza && (CAB_REQ.test(cabeza) || CAB_DES.test(cabeza) || CAB_IGNORAR.test(cabeza));
+    if (esCab) estado = CAB_DES.test(cabeza) || DESEABLE.test(cabeza) ? 'des' : CAB_IGNORAR.test(cabeza) ? 'ign' : 'req';
+    else if (estado === 'ign' && REACTIVA.test(n)) estado = 'req';
+    // Una frase suelta con «deseable», «de preferencia», «no excluyente»… es deseable aunque esté entre requisitos
+    const donde = !esCab && estado !== 'ign' && DESEABLE.test(n) ? 'des' : estado;
+    if (donde !== 'ign') out[donde].push(seg);
+  }
+  return { req: out.req.join('\n'), des: out.des.join('\n') };
+}
+const PESO_DESEABLE = 0.35;
+
 /**
  * Calcula la coincidencia de una oferta con el perfil del usuario.
  * @param {{titulo:string, descripcion?:string, empresa?:string}} oferta
  * @param {{cvTexto?:string, claves?:string, profesion?:string, experiencia?:string|number, perfiles?:string[]}} perfil
- * @returns {{pct:number|null, coinciden:string[], faltan:string[], notas:string[], partes:object}}
+ * @returns {{pct:number|null, coinciden:string[], faltan:string[], faltanDeseables:string[], notas:string[], partes:object}}
  */
 export function coincidencia(oferta, perfil = {}) {
   const textoOferta = `${oferta.titulo || ''}. ${oferta.descripcion || ''}`;
+  const sec = seccionar(oferta.descripcion || '');
+  const textoReq = `${oferta.titulo || ''}. ${sec.req}`;
   // Claves del usuario que ya están en el vocabulario se cuentan con su etiqueta estándar
   // (así «cierre de minas» no aparece dos veces); las demás se agregan como términos propios.
   const enBase = new Set();
@@ -156,17 +201,23 @@ export function coincidencia(oferta, perfil = {}) {
   const textoCv = `${perfil.profesion || ''}. ${perfil.claves || ''}. ${perfil.cvTexto || ''}`;
 
   // 1) Habilidades que pide la oferta vs. las que tiene el CV
-  const pide = terminos(textoOferta, vocab);
+  const pide = terminos(textoReq, vocab);
+  const pideDes = new Set([...terminos(sec.des, vocab)].filter((x) => !pide.has(x)));
+  if (pide.has('Excel avanzado')) pideDes.delete('Excel');
   const tiene = terminos(textoCv, vocab);
   for (const [c] of claves) tiene.add(c);
   enBase.forEach((x) => tiene.add(x));
   // Si el CV tiene "Excel avanzado", también cubre "Excel"
   if (tiene.has('Excel avanzado')) tiene.add('Excel');
-  const coinciden = [...pide].filter((x) => tiene.has(x));
+  const okReq = [...pide].filter((x) => tiene.has(x));
+  const okDes = [...pideDes].filter((x) => tiene.has(x));
+  const coinciden = [...okReq, ...okDes];
   const faltan = [...pide].filter((x) => !tiene.has(x));
+  const faltanDeseables = [...pideDes].filter((x) => !tiene.has(x));
   const notas = [];
   const partes = {};
-  partes.habilidades = pide.size ? coinciden.length / pide.size : null;
+  const totalPedido = pide.size + PESO_DESEABLE * pideDes.size;
+  partes.habilidades = totalPedido ? (okReq.length + PESO_DESEABLE * okDes.length) / totalPedido : null;
 
   // 2) Profesión
   const profOferta = profesionesEn(textoOferta);
@@ -179,7 +230,8 @@ export function coincidencia(oferta, perfil = {}) {
   } else partes.profesion = null;
 
   // 3) Experiencia
-  const pideAnios = aniosPedidos(textoOferta);
+  // Los años que aparecen solo en «deseable» no penalizan
+  const pideAnios = aniosPedidos(textoReq);
   const misAnios = perfil.experiencia === '' || perfil.experiencia == null ? null : Number(perfil.experiencia);
   if (pideAnios != null && misAnios != null && !Number.isNaN(misAnios)) {
     partes.experiencia = Math.min(1, misAnios / pideAnios);
@@ -211,13 +263,57 @@ export function coincidencia(oferta, perfil = {}) {
     notas.push('La oferta no detalla requisitos: revisa la descripción completa');
   }
 
-  return { pct, coinciden, faltan, notas, partes };
+  // tope: máximo que puede alcanzar el % aunque el aprendizaje sume puntos
+  const tope = partes.profesion === 0 ? 35 : partes.habilidades == null ? 70 : 100;
+  return { pct, coinciden, faltan, faltanDeseables, notas, partes, tope };
+}
+
+// ---------- Aprendizaje de tus decisiones (sin IA) ----------
+// Lo que guardas o marcas como postulado sube unos puntos a las ofertas parecidas; lo que
+// ocultas las baja. Se compara por palabras del título y por empresa. Máximo ±8 puntos.
+const VACIAS = new Set(['para', 'con', 'por', 'los', 'las', 'del', 'una', 'uno', 'que', 'sede', 'lima', 'peru', 'zona', 'area', 'proyecto', 'proyectos',
+  'senior', 'junior', 'semi', 'ssr', 'sr', 'jr', 'urgente', 'ingeniero', 'ingeniera', 'ingenieria', 'profesional', 'empresa', 'importante', 'trabajo', 'empleo']);
+const SIN_EMPRESA = /confidencial|no indicada|entidad publica/;
+/** Nombre de empresa comparable: sin tildes ni forma societaria («Minera Sol S.A.C.» = «MINERA SOL SAC» = «Minera Sol»). */
+export function claveEmpresa(nombre = '') {
+  const e = normalizar(nombre).replace(/\s(s\sa\sc|s\sa\sa|s\sa|s\sr\sl|s\sc\sr\sl|e\si\sr\sl|sac|saa|sa|srl|scrl|eirl|ltda|inc|corp)\s$/, ' ').trim();
+  return SIN_EMPRESA.test(e) ? '' : e;
+}
+export function fichas(o) {
+  const f = new Set(normalizar(o.titulo || '').split(' ').filter((w) => w.length >= 4 && !VACIAS.has(w)));
+  const e = claveEmpresa(o.empresa);
+  if (e) f.add('emp:' + e);
+  return [...f];
+}
+export const MAX_AJUSTE = 8;
+/** @returns {{activo:boolean, pesos:Object<string,number>, senales:number}} */
+export function aprender(items = [], positivas = new Set(), negativas = new Set()) {
+  const g = {}; const n = {}; let senales = 0;
+  for (const o of items) {
+    const signo = positivas.has(o.id) ? 1 : negativas.has(o.id) ? -1 : 0;
+    if (!signo) continue;
+    senales++;
+    for (const t of fichas(o)) (signo > 0 ? g : n)[t] = ((signo > 0 ? g : n)[t] || 0) + 1;
+  }
+  const pesos = {};
+  for (const t of new Set([...Object.keys(g), ...Object.keys(n)])) pesos[t] = ((g[t] || 0) - (n[t] || 0)) / ((g[t] || 0) + (n[t] || 0) + 1);
+  return { activo: senales >= 3, pesos, senales };
+}
+export function ajuste(o, modelo) {
+  if (!modelo?.activo) return 0;
+  const s = fichas(o).reduce((a, t) => a + (modelo.pesos[t] || 0), 0);
+  return Math.round(MAX_AJUSTE * Math.max(-1, Math.min(1, s / 2)));
+}
+
+/** Nombre de archivo seguro a partir de la empresa (o del puesto si es confidencial). */
+export function destinoDe(oferta) {
+  return (oferta.empresa && !/confidencial|no indicada/i.test(oferta.empresa) ? oferta.empresa : oferta.titulo || 'puesto')
+    .replace(/[\\/:*?"<>|]+/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 60);
 }
 
 /** Prompt listo para pegar en un chat de IA y adaptar el CV a la oferta. */
 export function promptCv(oferta, perfil = {}, res = coincidencia(oferta, perfil)) {
-  const destino = (oferta.empresa && !/confidencial/i.test(oferta.empresa) ? oferta.empresa : oferta.titulo || 'puesto')
-    .replace(/[\\/:*?"<>|]+/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 60);
+  const destino = destinoDe(oferta);
   const desc = (oferta.descripcion || '').replace(/\s+/g, ' ').trim().slice(0, 4000);
   return [
     'Adapta mi CV a la siguiente oferta laboral. Reglas:',
@@ -235,7 +331,8 @@ export function promptCv(oferta, perfil = {}, res = coincidencia(oferta, perfil)
     '',
     `## Análisis previo (automático, sin IA): ${res.pct ?? '—'} % de coincidencia`,
     res.coinciden.length ? `Ya cubro: ${res.coinciden.join(', ')}` : '',
-    res.faltan.length ? `No aparece en mi CV: ${res.faltan.join(', ')}` : '',
+    res.faltan.length ? `No aparece en mi CV (indispensable): ${res.faltan.join(', ')}` : '',
+    res.faltanDeseables?.length ? `No aparece en mi CV (deseable): ${res.faltanDeseables.join(', ')}` : '',
     ...res.notas,
     '',
     '## Mi CV actual',
