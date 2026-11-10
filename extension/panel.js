@@ -492,7 +492,12 @@ $('#cvArchivo').addEventListener('change', async (e) => {
   $('#perfilEstado').textContent = 'CV cargado: pulsa «Guardar perfil».';
 });
 
-$('#btnBuscarEmpleo').addEventListener('click', ejecutarBusqueda);
+// Firefox permite al usuario negar el acceso a los portales: se vuelve a pedir en el mismo clic
+const PORTALES_ORIGEN = ['https://pe.computrabajo.com/*', 'https://www.bumeran.com.pe/*', 'https://app.servir.gob.pe/*'];
+$('#btnBuscarEmpleo').addEventListener('click', () => {
+  if (!ext?.permissions) return ejecutarBusqueda();
+  ext.permissions.request({ origins: PORTALES_ORIGEN }).catch(() => false).then(() => ejecutarBusqueda());
+});
 $('#eBuscar').addEventListener('input', (e) => { emp.f.q = e.target.value; pintarEmpleo(); });
 $('#eMinimo').addEventListener('change', (e) => { emp.f.minimo = Number(e.target.value); pintarEmpleo(); });
 $('#eFuente').addEventListener('change', (e) => { emp.f.fuente = e.target.value; pintarEmpleo(); });

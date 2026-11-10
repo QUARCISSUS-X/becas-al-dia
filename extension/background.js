@@ -85,15 +85,18 @@ async function reglasRed() {
           { header: 'origin', operation: 'set', value: 'https://www.bumeran.com.pe' },
           { header: 'referer', operation: 'set', value: 'https://www.bumeran.com.pe/empleos.html' },
         ] },
-        condition: { urlFilter: '||bumeran.com.pe/api/', initiatorDomains: [chrome.runtime.id], resourceTypes: ['xmlhttprequest', 'other'] },
+        condition: { urlFilter: '||bumeran.com.pe/api/', initiatorDomains: [new URL(chrome.runtime.getURL('')).hostname], resourceTypes: ['xmlhttprequest', 'other'] },
       }],
     });
   } catch (e) { console.warn('No se pudo registrar la regla de Bumeran', e); }
 }
 reglasRed();
 
+// Chrome/Edge abren el panel lateral; Firefox usa su barra lateral (sidebar_action)
+if (chrome.sidePanel?.setPanelBehavior) chrome.sidePanel.setPanelBehavior({ openPanelOnActionClick: true }).catch(() => {});
+else if (globalThis.browser?.sidebarAction) chrome.action.onClicked.addListener(() => { browser.sidebarAction.toggle(); });
+
 chrome.runtime.onInstalled.addListener(() => {
-  chrome.sidePanel.setPanelBehavior({ openPanelOnActionClick: true }).catch(() => {});
   chrome.alarms.create('actualizar', { periodInMinutes: CADA_MINUTOS, delayInMinutes: 0.1 });
   actualizar();
 });

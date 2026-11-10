@@ -34,10 +34,31 @@ GitHub Actions (6:17 a. m. Lima)          Tu navegador
 Corre solo: la primera vez al subir el código y luego todos los días a las 6:17 a. m. También puedes lanzarlo a mano desde **Actions → Recolectar becas → Run workflow**.
 
 ### 3. Instalar la extensión
-1. Abre `chrome://extensions` (o `edge://extensions`).
-2. Activa **Modo de desarrollador**.
-3. Haz clic en **Cargar descomprimida** y elige la carpeta `extension/`.
+
+Descarga el archivo de tu navegador desde **[Releases](../../releases/latest)**.
+
+**Chrome / Edge**
+1. Descarga `becas-al-dia-chrome-X.Y.Z.zip` y descomprímelo (o usa la carpeta `extension/` del repo).
+2. Abre `chrome://extensions` (o `edge://extensions`) y activa **Modo de desarrollador**.
+3. Haz clic en **Cargar descomprimida** y elige la carpeta.
 4. Haz clic en el ícono 🎓 para abrir el panel lateral.
+
+**Firefox** (128 o posterior)
+
+Firefox solo instala de forma permanente extensiones firmadas por Mozilla.
+- **Si el release dice «firmado por Mozilla»**: descarga `becas-al-dia-firefox-X.Y.Z.xpi`, ábrelo con Firefox → **Añadir**.
+- **Si no está firmado**:
+  - *Prueba rápida*: `about:debugging#/runtime/this-firefox` → **Cargar complemento temporal…** → elige el `.xpi`. Se quita al cerrar Firefox.
+  - *Permanente*: en Firefox Developer Edition o Nightly, `about:config` → `xpinstall.signatures.required` = `false`, y arrastra el `.xpi` a la ventana.
+
+En Firefox la extensión se abre en la **barra lateral**: clic en el ícono 🎓 o `Ctrl+B` → Becas al Día.
+
+**Para que los releases salgan firmados (una sola vez):**
+1. Entra a [addons.mozilla.org/developers/addon/api/key](https://addons.mozilla.org/developers/addon/api/key/) con una cuenta de Firefox y genera tus credenciales.
+2. En GitHub: **Settings → Secrets and variables → Actions → New repository secret**. Crea `AMO_JWT_ISSUER` (el «emisor JWT») y `AMO_JWT_SECRET` (el «secreto JWT»).
+3. Desde entonces, cada release trae el `.xpi` firmado. La firma es «no listada»: la extensión no aparece en la tienda de Firefox, solo la instala quien tenga el archivo.
+
+**Publicar una versión nueva:** sube el número en `extension/manifest.json`, haz commit y crea la etiqueta: `git tag v0.3.2 && git push --tags`. El flujo *Publicar extensión* prueba, empaqueta y crea el release. También puedes correrlo a mano desde la pestaña **Actions**.
 
 Si usas otro nombre de repo o de cuenta, cámbialo en ⚙ **Ajustes** dentro del panel.
 
