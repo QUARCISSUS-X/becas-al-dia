@@ -1,9 +1,9 @@
 {
  "version": 1,
- "generado": "2026-11-09T21:28:21.907Z",
- "hoy": "2026-11-09",
- "total": 99,
- "abiertas": 27,
+ "generado": "2026-11-10T18:41:04.920Z",
+ "hoy": "2026-11-10",
+ "total": 106,
+ "abiertas": 33,
  "items": [
   {
    "id": "3e2700bbb6ab",
@@ -27,7 +27,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "0fa3d35d4e40",
@@ -41,7 +41,7 @@
    "fechaLimite": "2026-11-12",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-09",
+   "verificado": "2026-11-10",
    "estado": "abierta",
    "niveles": [
     "pregrado",
@@ -58,7 +58,57 @@
    "paraPeru": false,
    "publicado": "2026-11-09",
    "primeraVez": "2026-11-09",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
+  },
+  {
+   "id": "a4a029a90c59",
+   "titulo": "Wave Winter Research Fellowship 2026-2027",
+   "url": "https://opportunitydesk.org/2026/11/10/wave-winter-research-fellowship-2026-2027/",
+   "resumen": "Deadline: November 13, 2026 Applications are open for the Wave Winter Research Fellowship 2026-2027. The Wave Winter Research Fellowship (November 15, 2026 – January 15, 2027) is an 8-week scientific research and engineering incubator guided directly by Regeneron ISEF winners and",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-11-13",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-10",
+   "estado": "abierta",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-10",
+   "primeraVez": "2026-11-10",
+   "vistoUltimo": "2026-11-10"
+  },
+  {
+   "id": "909e48a4bfd6",
+   "titulo": "Debt Accountability Journalism Fellowship 2027 for Nigerian Journalists",
+   "url": "https://opportunitydesk.org/2026/11/10/debt-accountability-journalism-fellowship-2027/",
+   "resumen": "Deadline: November 13, 2026 Applications are open for the Debt Accountability Journalism Fellowship 2027. The International Budget Partnership (IBP) Nigeria, in partnership with the Westminster Foundation for Democracy (WFD) Nigeria, is organising a Debt Accountability Journalism",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-11-13",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-10",
+   "estado": "abierta",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-10",
+   "primeraVez": "2026-11-10",
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "019d069e9e37",
@@ -72,7 +122,7 @@
    "fechaLimite": "2026-11-14",
    "ultimaPasada": "2026-10-31",
    "fechaAprox": false,
-   "verificado": "2026-11-09",
+   "verificado": "2026-11-10",
    "estado": "abierta",
    "niveles": [
     "pregrado",
@@ -91,7 +141,31 @@
    "paraPeru": false,
    "publicado": "2026-11-09",
    "primeraVez": "2026-11-09",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
+  },
+  {
+   "id": "34377b2698d4",
+   "titulo": "Computation & Cognition Tübingen Summer (CaCTüS) Internship Program 2027",
+   "url": "https://opportunitydesk.org/2026/11/10/cactus-internship-program-2027/",
+   "resumen": "Deadline: November 16, 2026 Applications are open for the Computation & Cognition Tübingen Summer (CaCTüS) Internship Program 2027. The CaCTüS Internship program aims to boost the careers of talented students who experience significant difficulties in their pursuit of higher educ",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-11-16",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-10",
+   "estado": "abierta",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-10",
+   "primeraVez": "2026-11-10",
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "f11f3b260153",
@@ -153,7 +227,7 @@
    "fechaLimite": "2026-11-23",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-09",
+   "verificado": "2026-11-10",
    "estado": "abierta",
    "niveles": [
     "investigacion"
@@ -163,7 +237,7 @@
    "paraPeru": false,
    "publicado": "2026-11-09",
    "primeraVez": "2026-11-09",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "6224ea37b475",
@@ -185,7 +259,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "9eff1286f00f",
@@ -236,6 +310,33 @@
    "vistoUltimo": "2026-11-08"
   },
   {
+   "id": "737983464bd6",
+   "titulo": "Nature Culture Fellowship 2027",
+   "url": "https://opportunitydesk.org/2026/11/10/nature-culture-fellowship-2027/",
+   "resumen": "Deadline: December 1, 2026 Applications for the Nature Culture Fellowship 2027 are now open. The Nature Culture Fellowship brings together a diverse, global community of changemakers to explore how storytelling, artivism, and culture can drive social environmental change and tran",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-12-01",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-10",
+   "estado": "abierta",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-10",
+   "primeraVez": "2026-11-10",
+   "vistoUltimo": "2026-11-10"
+  },
+  {
    "id": "140023023f32",
    "titulo": "MCW Global Young Leaders Fellowship 2027 (Funded)",
    "url": "https://opportunitydesk.org/2026/11/07/mcw-global-young-leaders-fellowship-2027-funded/",
@@ -260,6 +361,28 @@
    "vistoUltimo": "2026-11-09"
   },
   {
+   "id": "d1742a7c8bec",
+   "titulo": "Obama Foundation Leaders Program 2027-2028",
+   "url": "https://opportunitydesk.org/2026/11/10/obama-foundation-leaders-program-2027-2028/",
+   "resumen": "Deadline: December 4, 2026 Applications are open for the Obama Foundation Leaders Program 2027-2028. The Obama Foundation Leaders Program is an eight-month, global virtual leadership development journey. Designed for changemakers aged 24 to 45 across various sectors, the program ",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-12-04",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-10",
+   "estado": "abierta",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-10",
+   "primeraVez": "2026-11-10",
+   "vistoUltimo": "2026-11-10"
+  },
+  {
    "id": "48108df1d00c",
    "titulo": "ICANN Fellowship Program 2027 to Attend ICANN89 Policy Forum in Vancouver, Canada (Funded)",
    "url": "https://opportunitydesk.org/2026/11/09/icann-fellowship-program-2027/",
@@ -271,7 +394,7 @@
    "fechaLimite": "2026-12-05",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-09",
+   "verificado": "2026-11-10",
    "estado": "abierta",
    "niveles": [
     "investigacion"
@@ -281,7 +404,7 @@
    "paraPeru": false,
    "publicado": "2026-11-09",
    "primeraVez": "2026-11-09",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "1b7486a56be7",
@@ -317,7 +440,7 @@
    "fechaLimite": "2026-12-15",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-09",
+   "verificado": "2026-11-10",
    "estado": "abierta",
    "niveles": [],
    "areas": [
@@ -327,7 +450,7 @@
    "paraPeru": false,
    "publicado": "2026-11-09",
    "primeraVez": "2026-11-09",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "6511ae6e8e27",
@@ -367,7 +490,7 @@
    "fechaLimite": "2027-01-05",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-09",
+   "verificado": "2026-11-10",
    "estado": "abierta",
    "niveles": [
     "pregrado",
@@ -381,7 +504,7 @@
    "paraPeru": false,
    "publicado": "2026-11-09",
    "primeraVez": "2026-11-09",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "5482f97afae9",
@@ -446,7 +569,7 @@
    "fechaLimite": "2027-01-20",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-09",
+   "verificado": "2026-11-10",
    "estado": "abierta",
    "niveles": [
     "pregrado",
@@ -460,7 +583,7 @@
    "paraPeru": false,
    "publicado": "2026-11-09",
    "primeraVez": "2026-11-09",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "c56d15fcea58",
@@ -484,7 +607,32 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
+  },
+  {
+   "id": "39fd361e6e76",
+   "titulo": "Career Pathways Initiative Fellowship 2027",
+   "url": "https://opportunitydesk.org/2026/11/10/career-pathways-initiative-fellowship-2027/",
+   "resumen": "Deadline: January 29, 2027 Applications are open for the Career Pathways Initiative Fellowship 2027. Are you a first-generation, low-income (FGLI) undergraduate college student looking for an internship or your first job? Tired of spending hours on job applications and hearing no",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-01-29",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-10",
+   "estado": "abierta",
+   "niveles": [
+    "pregrado",
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-10",
+   "primeraVez": "2026-11-10",
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "e6e91956daf5",
@@ -535,7 +683,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "c3e335df6ac6",
@@ -599,7 +747,7 @@
    "fechaLimite": "2027-04-30",
    "ultimaPasada": null,
    "fechaAprox": true,
-   "verificado": "2026-11-09",
+   "verificado": "2026-11-10",
    "estado": "abierta",
    "niveles": [
     "pregrado",
@@ -615,7 +763,7 @@
    "paraPeru": false,
    "publicado": "2026-11-09",
    "primeraVez": "2026-11-09",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "4750d8386680",
@@ -629,7 +777,7 @@
    "fechaLimite": "2027-09-30",
    "ultimaPasada": null,
    "fechaAprox": true,
-   "verificado": "2026-11-09",
+   "verificado": "2026-11-10",
    "estado": "abierta",
    "niveles": [
     "pregrado",
@@ -645,7 +793,7 @@
    "paraPeru": false,
    "publicado": "2026-11-09",
    "primeraVez": "2026-11-09",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "7de0dc4b4043",
@@ -659,7 +807,7 @@
    "fechaLimite": "2027-10-31",
    "ultimaPasada": null,
    "fechaAprox": true,
-   "verificado": "2026-11-09",
+   "verificado": "2026-11-10",
    "estado": "abierta",
    "niveles": [
     "pregrado",
@@ -676,7 +824,7 @@
    "paraPeru": false,
    "publicado": "2026-11-09",
    "primeraVez": "2026-11-09",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "08aac2bc744f",
@@ -700,7 +848,33 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
+  },
+  {
+   "id": "cc7801405798",
+   "titulo": "“El papa León XIV nos impulsó a ser profesionales”: el testimonio de dos becarias del Pronabec",
+   "url": "https://www.gob.pe/institucion/pronabec/noticias/1472005-el-papa-leon-xiv-nos-impulso-a-ser-profesionales-el-testimonio-de-dos-becarias-del-pronabec",
+   "resumen": "",
+   "fuente": "pronabec-noticias",
+   "fuenteNombre": "Pronabec (noticias oficiales)",
+   "pais": "Perú",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-10",
+   "estado": "por-confirmar",
+   "niveles": [
+    "maestria"
+   ],
+   "areas": [
+    "gestion"
+   ],
+   "cobertura": null,
+   "paraPeru": true,
+   "publicado": null,
+   "primeraVez": "2026-11-10",
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "d5c5d0326486",
@@ -717,15 +891,14 @@
    "verificado": "2026-11-09",
    "estado": "por-confirmar",
    "niveles": [
-    "pregrado",
-    "curso"
+    "pregrado"
    ],
    "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-09",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "90826bdb2acb",
@@ -749,7 +922,7 @@
    "paraPeru": false,
    "publicado": "2026-11-09",
    "primeraVez": "2026-11-09",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "cb1b3de9e032",
@@ -817,7 +990,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "1a37543a047c",
@@ -841,7 +1014,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "e71e7eb76b0e",
@@ -865,7 +1038,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "cee663f2951b",
@@ -887,7 +1060,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "1f6c23b68ba1",
@@ -909,7 +1082,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "ba6455b8a3f3",
@@ -931,7 +1104,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "bbf097c9af59",
@@ -953,7 +1126,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "b2ae51ea98ad",
@@ -977,7 +1150,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "55c6c9e219f5",
@@ -1002,7 +1175,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "e51304633dcb",
@@ -1026,7 +1199,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "b857117cfd8f",
@@ -1050,7 +1223,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "bfdfb6bae497",
@@ -1074,7 +1247,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "94553eea33cb",
@@ -1096,7 +1269,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "c91a16c279fd",
@@ -1118,7 +1291,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "fdc238768f8a",
@@ -1142,7 +1315,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "dd056e50a37b",
@@ -1166,7 +1339,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "48afbfda0a7f",
@@ -1190,7 +1363,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "a0f9bd24dc37",
@@ -1214,7 +1387,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "df18ea746646",
@@ -1238,7 +1411,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "a4db949d0cc6",
@@ -1262,7 +1435,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "2b9938536e1b",
@@ -1286,31 +1459,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
-  },
-  {
-   "id": "f6e9ed4cbec3",
-   "titulo": "Pronabec ofrece 6000 nuevas vacantes de Beca 18 para estudiar carreras acordes con las necesidades del país",
-   "url": "https://www.gob.pe/institucion/pronabec/noticias/1454817-pronabec-ofrece-6000-nuevas-vacantes-de-beca-18-para-estudiar-carreras-acordes-con-las-necesidades-del-pais",
-   "resumen": "",
-   "fuente": "pronabec-noticias",
-   "fuenteNombre": "Pronabec (noticias oficiales)",
-   "pais": "Perú",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [
-    "pregrado"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "d72f4b000fee",
@@ -1328,6 +1477,376 @@
    "estado": "por-confirmar",
    "niveles": [
     "curso"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-10"
+  },
+  {
+   "id": "709e052cbcd4",
+   "titulo": "Programas / Proyectos",
+   "url": "https://www.oas.org/oocpp/default.aspx?lang=es",
+   "resumen": "",
+   "fuente": "oea",
+   "fuenteNombre": "OEA – Programa de Becas",
+   "pais": "Américas",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-10"
+  },
+  {
+   "id": "cce000f3b4a2",
+   "titulo": "Programa de Becas Académicas de la OEA (Grado)",
+   "url": "http://www.oas.org/en/scholarships/specaf_2026.asp",
+   "resumen": "",
+   "fuente": "oea",
+   "fuenteNombre": "OEA – Programa de Becas",
+   "pais": "Américas",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-10"
+  },
+  {
+   "id": "56265b2ee48a",
+   "titulo": "Becas México",
+   "url": "https://www.oas.org/es/becas/Mexico/Convocatoria_Secihti_OEA2026.pdf",
+   "resumen": "",
+   "fuente": "oea",
+   "fuenteNombre": "OEA – Programa de Becas",
+   "pais": "Américas",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-10"
+  },
+  {
+   "id": "07b4b7c403ba",
+   "titulo": "El Programa de Becas Académicas (ASP)",
+   "url": "https://www.oas.org/es/sedi/dhdee/DOCs/2023/ASP%20ESP.pdf",
+   "resumen": "Programa de Becas y Capacitación de la OEA El Programa de Becas y Capacitación de la OEA, en el Departamento de Desarrollo Humano, Educación y Empleo de la Secretaría Ejecutiva para el Desarrollo Integral, ofrece becas para estudios de pregrado y posgrado, así como cursos de capa",
+   "fuente": "oea",
+   "fuenteNombre": "OEA – Programa de Becas",
+   "pais": "Américas",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "curso"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-10"
+  },
+  {
+   "id": "fb3b472d817b",
+   "titulo": "Manual de Procedimientos de Becas OEA",
+   "url": "http://www.oas.org/es/becas/ManualdeProcedimientos.pdf",
+   "resumen": "Programa de Becas y Capacitación de la OEA El Programa de Becas y Capacitación de la OEA, en el Departamento de Desarrollo Humano, Educación y Empleo de la Secretaría Ejecutiva para el Desarrollo Integral, ofrece becas para estudios de pregrado y posgrado, así como cursos de capa",
+   "fuente": "oea",
+   "fuenteNombre": "OEA – Programa de Becas",
+   "pais": "Américas",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "curso"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-10"
+  },
+  {
+   "id": "b53249a26e4f",
+   "titulo": "El Programa de Alianzas para la Educación y la Capacitación (PAEC)",
+   "url": "https://www.oas.org/es/sedi/dhdee/DOCs/2023/PAEC%20ESP.pdf",
+   "resumen": "Programa de Becas y Capacitación de la OEA El Programa de Becas y Capacitación de la OEA, en el Departamento de Desarrollo Humano, Educación y Empleo de la Secretaría Ejecutiva para el Desarrollo Integral, ofrece becas para estudios de pregrado y posgrado, así como cursos de capa",
+   "fuente": "oea",
+   "fuenteNombre": "OEA – Programa de Becas",
+   "pais": "Américas",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "curso"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-10"
+  },
+  {
+   "id": "3fe6afc92bbb",
+   "titulo": "Becas Brasil PAEC OEA y GCUB Mob",
+   "url": "https://www.oas.org/en/scholarships/PAEC/2026/[EN%7D%20Call%20for%20Applications%20GCUB-Mob%20N.%20001_2026%20.pdf",
+   "resumen": "Becas Brasil PAEC OEA y GCUB Mob Programas de Maestría y Doctorado presenciales en Brasil Portugués 6 de julio de 2026 Presencial (Brasil) Grupo de Cooperación Internacional de Universidades Brasileñas (GCUB) PAEC",
+   "fuente": "oea",
+   "fuenteNombre": "OEA – Programa de Becas",
+   "pais": "Américas",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [
+    "maestria",
+    "doctorado"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-10"
+  },
+  {
+   "id": "2504b353449f",
+   "titulo": "Programa de Becas Académicas de la OEA",
+   "url": "http://www.oas.org/en/scholarships/regularprogram/2026/2026%20Academic%20Program%20-%20Candidatos%20Seleccionados1.pdf",
+   "resumen": "Programa de Becas Académicas de la OEA (Convocatoria de Becas para Estudios e Investigación de Postgrado 2026) Españo/Inglés Consulte a la ONE en su pais Resultados Presencial, a distancia (en línea) o una combinación de ambas Consorcio de Universidades de la OEA. Programa de Bec",
+   "fuente": "oea",
+   "fuenteNombre": "OEA – Programa de Becas",
+   "pais": "Américas",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [
+    "maestria",
+    "investigacion"
+   ],
+   "areas": [
+    "gestion"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-10"
+  },
+  {
+   "id": "f5dc38a26511",
+   "titulo": "Empleos y Pasantías",
+   "url": "http://www.oas.org/dhrs/dhr/employment_opportunities.asp",
+   "resumen": "",
+   "fuente": "oea",
+   "fuenteNombre": "OEA – Programa de Becas",
+   "pais": "Américas",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-10"
+  },
+  {
+   "id": "5c91bb907312",
+   "titulo": "Becas Fulbright – Posgrado en EE. UU.",
+   "url": "https://www.fulbright.pe/",
+   "resumen": "",
+   "fuente": "fulbright-peru",
+   "fuenteNombre": "Fulbright Perú",
+   "pais": "EE. UU.",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-10",
+   "estado": "por-confirmar",
+   "niveles": [
+    "maestria"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental",
+    "civil",
+    "gestion"
+   ],
+   "cobertura": null,
+   "paraPeru": true,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-10"
+  },
+  {
+   "id": "7a779131cfd9",
+   "titulo": "Erasmus Mundus – Maestrías conjuntas en Europa",
+   "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en",
+   "resumen": "",
+   "fuente": "erasmus-mundus",
+   "fuenteNombre": "Erasmus Mundus (UE)",
+   "pais": "Unión Europea",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-10",
+   "estado": "por-confirmar",
+   "niveles": [
+    "maestria"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental",
+    "civil",
+    "gestion"
+   ],
+   "cobertura": "completa",
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-10"
+  },
+  {
+   "id": "f5a73f506aff",
+   "titulo": "Fundación Carolina refuerza su compromiso con la formación de periodistas iberoamericanos a través de su programa de becas",
+   "url": "https://www.fundacioncarolina.es/fundacion-carolina-refuerza-su-compromiso-con-la-formacion-de-periodistas-iberoamericanos-a-traves-de-su-programa-de-becas/",
+   "resumen": "",
+   "fuente": "fundacion-carolina",
+   "fuenteNombre": "Fundación Carolina (España)",
+   "pais": "España",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-10"
+  },
+  {
+   "id": "d68daa3b68c9",
+   "titulo": "A Coruña acoge un nuevo encuentro regional de becarios y becarias de la Fundación Carolina de la promoción 2026-2027",
+   "url": "https://www.fundacioncarolina.es/a-coruna-acoge-un-nuevo-encuentro-regional-de-becarios-y-becarias-de-la-fundacion-carolina-de-la-promocion-2026-2027/",
+   "resumen": "",
+   "fuente": "fundacion-carolina",
+   "fuenteNombre": "Fundación Carolina (España)",
+   "pais": "España",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-10"
+  },
+  {
+   "id": "52e73f84d887",
+   "titulo": "El exbecario de Fundación Carolina José Eduardo Méndez Delgado recibe el Premio Princesa de Girona Internacional de Investigación 2026",
+   "url": "https://www.fundacioncarolina.es/el-exbecario-de-fundacion-carolina-jose-eduardo-mendez-delgado-recibe-el-premio-princesa-de-girona-internacional-de-investigacion-2026/",
+   "resumen": "",
+   "fuente": "fundacion-carolina",
+   "fuenteNombre": "Fundación Carolina (España)",
+   "pais": "España",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-10"
+  },
+  {
+   "id": "f6e9ed4cbec3",
+   "titulo": "Pronabec ofrece 6000 nuevas vacantes de Beca 18 para estudiar carreras acordes con las necesidades del país",
+   "url": "https://www.gob.pe/institucion/pronabec/noticias/1454817-pronabec-ofrece-6000-nuevas-vacantes-de-beca-18-para-estudiar-carreras-acordes-con-las-necesidades-del-pais",
+   "resumen": "",
+   "fuente": "pronabec-noticias",
+   "fuenteNombre": "Pronabec (noticias oficiales)",
+   "pais": "Perú",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [
+    "pregrado"
    ],
    "areas": [],
    "cobertura": null,
@@ -1684,352 +2203,6 @@
    "vistoUltimo": "2026-11-09"
   },
   {
-   "id": "709e052cbcd4",
-   "titulo": "Programas / Proyectos",
-   "url": "https://www.oas.org/oocpp/default.aspx?lang=es",
-   "resumen": "",
-   "fuente": "oea",
-   "fuenteNombre": "OEA – Programa de Becas",
-   "pais": "Américas",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
-  },
-  {
-   "id": "cce000f3b4a2",
-   "titulo": "Programa de Becas Académicas de la OEA (Grado)",
-   "url": "http://www.oas.org/en/scholarships/specaf_2026.asp",
-   "resumen": "",
-   "fuente": "oea",
-   "fuenteNombre": "OEA – Programa de Becas",
-   "pais": "Américas",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
-  },
-  {
-   "id": "56265b2ee48a",
-   "titulo": "Becas México",
-   "url": "https://www.oas.org/es/becas/Mexico/Convocatoria_Secihti_OEA2026.pdf",
-   "resumen": "",
-   "fuente": "oea",
-   "fuenteNombre": "OEA – Programa de Becas",
-   "pais": "Américas",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
-  },
-  {
-   "id": "07b4b7c403ba",
-   "titulo": "El Programa de Becas Académicas (ASP)",
-   "url": "https://www.oas.org/es/sedi/dhdee/DOCs/2023/ASP%20ESP.pdf",
-   "resumen": "Programa de Becas y Capacitación de la OEA El Programa de Becas y Capacitación de la OEA, en el Departamento de Desarrollo Humano, Educación y Empleo de la Secretaría Ejecutiva para el Desarrollo Integral, ofrece becas para estudios de pregrado y posgrado, así como cursos de capa",
-   "fuente": "oea",
-   "fuenteNombre": "OEA – Programa de Becas",
-   "pais": "Américas",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [
-    "pregrado",
-    "maestria",
-    "curso"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
-  },
-  {
-   "id": "fb3b472d817b",
-   "titulo": "Manual de Procedimientos de Becas OEA",
-   "url": "http://www.oas.org/es/becas/ManualdeProcedimientos.pdf",
-   "resumen": "Programa de Becas y Capacitación de la OEA El Programa de Becas y Capacitación de la OEA, en el Departamento de Desarrollo Humano, Educación y Empleo de la Secretaría Ejecutiva para el Desarrollo Integral, ofrece becas para estudios de pregrado y posgrado, así como cursos de capa",
-   "fuente": "oea",
-   "fuenteNombre": "OEA – Programa de Becas",
-   "pais": "Américas",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [
-    "pregrado",
-    "maestria",
-    "curso"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
-  },
-  {
-   "id": "b53249a26e4f",
-   "titulo": "El Programa de Alianzas para la Educación y la Capacitación (PAEC)",
-   "url": "https://www.oas.org/es/sedi/dhdee/DOCs/2023/PAEC%20ESP.pdf",
-   "resumen": "Programa de Becas y Capacitación de la OEA El Programa de Becas y Capacitación de la OEA, en el Departamento de Desarrollo Humano, Educación y Empleo de la Secretaría Ejecutiva para el Desarrollo Integral, ofrece becas para estudios de pregrado y posgrado, así como cursos de capa",
-   "fuente": "oea",
-   "fuenteNombre": "OEA – Programa de Becas",
-   "pais": "Américas",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [
-    "pregrado",
-    "maestria",
-    "curso"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
-  },
-  {
-   "id": "3fe6afc92bbb",
-   "titulo": "Becas Brasil PAEC OEA y GCUB Mob",
-   "url": "https://www.oas.org/en/scholarships/PAEC/2026/[EN%7D%20Call%20for%20Applications%20GCUB-Mob%20N.%20001_2026%20.pdf",
-   "resumen": "Becas Brasil PAEC OEA y GCUB Mob Programas de Maestría y Doctorado presenciales en Brasil Portugués 6 de julio de 2026 Presencial (Brasil) Grupo de Cooperación Internacional de Universidades Brasileñas (GCUB) PAEC",
-   "fuente": "oea",
-   "fuenteNombre": "OEA – Programa de Becas",
-   "pais": "Américas",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria",
-    "doctorado"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
-  },
-  {
-   "id": "2504b353449f",
-   "titulo": "Programa de Becas Académicas de la OEA",
-   "url": "http://www.oas.org/en/scholarships/regularprogram/2026/2026%20Academic%20Program%20-%20Candidatos%20Seleccionados1.pdf",
-   "resumen": "Programa de Becas Académicas de la OEA (Convocatoria de Becas para Estudios e Investigación de Postgrado 2026) Españo/Inglés Consulte a la ONE en su pais Resultados Presencial, a distancia (en línea) o una combinación de ambas Consorcio de Universidades de la OEA. Programa de Bec",
-   "fuente": "oea",
-   "fuenteNombre": "OEA – Programa de Becas",
-   "pais": "Américas",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria",
-    "investigacion"
-   ],
-   "areas": [
-    "gestion"
-   ],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
-  },
-  {
-   "id": "f5dc38a26511",
-   "titulo": "Empleos y Pasantías",
-   "url": "http://www.oas.org/dhrs/dhr/employment_opportunities.asp",
-   "resumen": "",
-   "fuente": "oea",
-   "fuenteNombre": "OEA – Programa de Becas",
-   "pais": "Américas",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [
-    "investigacion"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
-  },
-  {
-   "id": "5c91bb907312",
-   "titulo": "Becas Fulbright – Posgrado en EE. UU.",
-   "url": "https://www.fulbright.pe/",
-   "resumen": "",
-   "fuente": "fulbright-peru",
-   "fuenteNombre": "Fulbright Perú",
-   "pais": "EE. UU.",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-09",
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria"
-   ],
-   "areas": [
-    "ingenieria",
-    "ambiental",
-    "civil",
-    "gestion"
-   ],
-   "cobertura": null,
-   "paraPeru": true,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
-  },
-  {
-   "id": "7a779131cfd9",
-   "titulo": "Erasmus Mundus – Maestrías conjuntas en Europa",
-   "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en",
-   "resumen": "",
-   "fuente": "erasmus-mundus",
-   "fuenteNombre": "Erasmus Mundus (UE)",
-   "pais": "Unión Europea",
-   "idioma": "en",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-09",
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria"
-   ],
-   "areas": [
-    "ingenieria",
-    "ambiental",
-    "civil",
-    "gestion"
-   ],
-   "cobertura": "completa",
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
-  },
-  {
-   "id": "f5a73f506aff",
-   "titulo": "Fundación Carolina refuerza su compromiso con la formación de periodistas iberoamericanos a través de su programa de becas",
-   "url": "https://www.fundacioncarolina.es/fundacion-carolina-refuerza-su-compromiso-con-la-formacion-de-periodistas-iberoamericanos-a-traves-de-su-programa-de-becas/",
-   "resumen": "",
-   "fuente": "fundacion-carolina",
-   "fuenteNombre": "Fundación Carolina (España)",
-   "pais": "España",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
-  },
-  {
-   "id": "d68daa3b68c9",
-   "titulo": "A Coruña acoge un nuevo encuentro regional de becarios y becarias de la Fundación Carolina de la promoción 2026-2027",
-   "url": "https://www.fundacioncarolina.es/a-coruna-acoge-un-nuevo-encuentro-regional-de-becarios-y-becarias-de-la-fundacion-carolina-de-la-promocion-2026-2027/",
-   "resumen": "",
-   "fuente": "fundacion-carolina",
-   "fuenteNombre": "Fundación Carolina (España)",
-   "pais": "España",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
-  },
-  {
-   "id": "52e73f84d887",
-   "titulo": "El exbecario de Fundación Carolina José Eduardo Méndez Delgado recibe el Premio Princesa de Girona Internacional de Investigación 2026",
-   "url": "https://www.fundacioncarolina.es/el-exbecario-de-fundacion-carolina-jose-eduardo-mendez-delgado-recibe-el-premio-princesa-de-girona-internacional-de-investigacion-2026/",
-   "resumen": "",
-   "fuente": "fundacion-carolina",
-   "fuenteNombre": "Fundación Carolina (España)",
-   "pais": "España",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [
-    "investigacion"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
-  },
-  {
    "id": "b6a35c34031a",
    "titulo": "De Villa María del Triunfo a las Naciones Unidas: becaria sanmarquina promueve el liderazgo juvenil en foros internacionales",
    "url": "https://www.gob.pe/institucion/pronabec/noticias/1454303-de-villa-maria-del-triunfo-a-las-naciones-unidas-becaria-sanmarquina-promueve-el-liderazgo-juvenil-en-foros-internacionales",
@@ -2314,7 +2487,7 @@
    "paraPeru": false,
    "publicado": "2026-11-09",
    "primeraVez": "2026-11-09",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "b2f889e0a953",
@@ -2342,7 +2515,7 @@
    "paraPeru": false,
    "publicado": "2026-11-09",
    "primeraVez": "2026-11-09",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "6a0e49374b55",
@@ -2372,7 +2545,7 @@
    "paraPeru": false,
    "publicado": "2026-11-09",
    "primeraVez": "2026-11-09",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "98e25c7eadf4",
@@ -2396,7 +2569,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "c7a979b3e3ba",
@@ -2420,7 +2593,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "5d9c66951d6c",
@@ -2444,7 +2617,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "45d2a74fd85c",
@@ -2466,7 +2639,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   },
   {
    "id": "ef80cdc067da",
@@ -2480,7 +2653,7 @@
    "fechaLimite": null,
    "ultimaPasada": "2026-10-31",
    "fechaAprox": true,
-   "verificado": "2026-11-09",
+   "verificado": "2026-11-10",
    "estado": "cerrada",
    "niveles": [
     "maestria"
@@ -2493,7 +2666,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-09"
+   "vistoUltimo": "2026-11-10"
   }
  ],
  "salud": [
@@ -2505,7 +2678,7 @@
    "ok": true,
    "items": 25,
    "error": null,
-   "ultimaOk": "2026-11-09"
+   "ultimaOk": "2026-11-10"
   },
   {
    "id": "prociencia",
@@ -2515,16 +2688,16 @@
    "ok": true,
    "items": 5,
    "error": null,
-   "ultimaOk": "2026-11-09"
+   "ultimaOk": "2026-11-10"
   },
   {
    "id": "daad-maestria",
    "nombre": "DAAD (oficina regional para Perú) – Maestría",
    "url": "https://www.daad.co/es/becas/becas-de-posgrado/maestria",
    "via": null,
-   "ok": true,
-   "items": 25,
-   "error": null,
+   "ok": false,
+   "items": 0,
+   "error": "https://www.daad.co/es/becas/becas-de-posgrado/maestria: HTTP 403 | https://www.daad.de/en/information-services-for-higher-education-institutions/further-information-on-daad-programmes/epos/: HTTP 403",
    "ultimaOk": "2026-11-09"
   },
   {
@@ -2532,9 +2705,9 @@
    "nombre": "DAAD (oficina regional para Perú) – Doctorado e investigación",
    "url": "https://www.daad.co/es/becas/becas-de-estancias-de-investigacion-y-docencia/",
    "via": null,
-   "ok": true,
-   "items": 10,
-   "error": null,
+   "ok": false,
+   "items": 0,
+   "error": "https://www.daad.co/es/becas/becas-de-estancias-de-investigacion-y-docencia/: HTTP 403",
    "ultimaOk": "2026-11-09"
   },
   {
@@ -2545,7 +2718,7 @@
    "ok": true,
    "items": 12,
    "error": null,
-   "ultimaOk": "2026-11-09"
+   "ultimaOk": "2026-11-10"
   },
   {
    "id": "chevening",
@@ -2555,7 +2728,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-09"
+   "ultimaOk": "2026-11-10"
   },
   {
    "id": "fulbright-peru",
@@ -2565,7 +2738,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-09"
+   "ultimaOk": "2026-11-10"
   },
   {
    "id": "erasmus-mundus",
@@ -2575,7 +2748,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-09"
+   "ultimaOk": "2026-11-10"
   },
   {
    "id": "fundacion-carolina",
@@ -2585,7 +2758,7 @@
    "ok": true,
    "items": 3,
    "error": null,
-   "ultimaOk": "2026-11-09"
+   "ultimaOk": "2026-11-10"
   },
   {
    "id": "scholars4dev",
@@ -2595,7 +2768,7 @@
    "ok": true,
    "items": 10,
    "error": null,
-   "ultimaOk": "2026-11-09"
+   "ultimaOk": "2026-11-10"
   },
   {
    "id": "opportunitydesk",
@@ -2605,7 +2778,7 @@
    "ok": true,
    "items": 10,
    "error": null,
-   "ultimaOk": "2026-11-09"
+   "ultimaOk": "2026-11-10"
   }
  ]
 }
