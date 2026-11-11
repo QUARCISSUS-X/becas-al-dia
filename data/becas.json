@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generado": "2026-11-11T18:42:21.052Z",
+ "generado": "2026-11-11T22:54:18.225Z",
  "hoy": "2026-11-11",
  "total": 115,
  "abiertas": 40,
@@ -1186,30 +1186,6 @@
    "vistoUltimo": "2026-11-11"
   },
   {
-   "id": "1a37543a047c",
-   "titulo": "Cómo obtener puntos adicionales para ganar una beca de posgrado en el extranjero",
-   "url": "https://www.gob.pe/institucion/pronabec/noticias/1470448-como-obtener-puntos-adicionales-para-ganar-una-beca-de-posgrado-en-el-extranjero",
-   "resumen": "",
-   "fuente": "pronabec-noticias",
-   "fuenteNombre": "Pronabec (noticias oficiales)",
-   "pais": "Perú",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
-  },
-  {
    "id": "e71e7eb76b0e",
    "titulo": "Noticias sobre Beca 18",
    "url": "https://www.gob.pe/institucion/pronabec/colecciones/5954-noticias-sobre-beca-18",
@@ -1314,6 +1290,30 @@
    "verificado": "2026-11-08",
    "estado": "por-confirmar",
    "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-11"
+  },
+  {
+   "id": "1a37543a047c",
+   "titulo": "Cómo obtener puntos adicionales para ganar una beca de posgrado en el extranjero",
+   "url": "https://www.gob.pe/institucion/pronabec/noticias/1470448-como-obtener-puntos-adicionales-para-ganar-una-beca-de-posgrado-en-el-extranjero",
+   "resumen": "",
+   "fuente": "pronabec-noticias",
+   "fuenteNombre": "Pronabec (noticias oficiales)",
+   "pais": "Perú",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [
+    "maestria"
+   ],
    "areas": [],
    "cobertura": null,
    "paraPeru": false,
