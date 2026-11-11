@@ -54,11 +54,19 @@ jobs:
           if [ -z "$AMO_JWT_ISSUER" ] || [ -z "$AMO_JWT_SECRET" ]; then
             echo "Sin claves de Mozilla: el .xpi queda sin firmar."; echo "firmado=no" >> "$GITHUB_OUTPUT"; exit 0
           fi
-          npx --yes web-ext@8 sign -s dist/firefox --channel unlisted \
+          # Si Mozilla rechaza o no responde, el release sale igual con el .xpi sin firmar
+          # y el motivo queda como aviso en el resumen de la ejecución.
+          set -o pipefail
+          if npx --yes web-ext@8 sign -s dist/firefox --channel unlisted \
             --api-key "$AMO_JWT_ISSUER" --api-secret "$AMO_JWT_SECRET" \
-            --artifacts-dir dist/firmado --approval-timeout 900000
-          mv dist/firmado/*.xpi "dist/becas-al-dia-firefox-${{ steps.v.outputs.version }}.xpi"
-          echo "firmado=si" >> "$GITHUB_OUTPUT"
+            --artifacts-dir dist/firmado --approval-timeout 900000 2>&1 | tee firma.log; then
+            mv dist/firmado/*.xpi "dist/becas-al-dia-firefox-${{ steps.v.outputs.version }}.xpi"
+            echo "firmado=si" >> "$GITHUB_OUTPUT"
+          else
+            MOTIVO=$(tail -n 20 firma.log | sed 's/%/%25/g' | awk '{printf "%s%%0A", $0}')
+            echo "::warning title=Mozilla no firmó el .xpi::$MOTIVO"
+            echo "firmado=no" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Crear release
         env:
