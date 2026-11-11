@@ -142,10 +142,10 @@ await prueba('rutas de empleo: búsqueda, booleana, bolsas y prompt de CV', () =
   assert.ok(b.some((x) => x.n === 'Talento Perú'));
   assert.deepEqual(normalizarSel({ ruta: 'ambiental', esp: 'cierre', niv: 'jefe' }), { ruta: 'ambiental', esp: 'ambiental', niv: 'junior' });
   assert.ok(sinonimos(normalizarSel({ ruta: 'ambiental', esp: 'ambiental', niv: 'pre' }))[0].q.startsWith('practicante '));
-  assert.equal(nombreCv(s, 'Supervisor de Cierre – Minera Sol\nFunciones…'), 'CV_Bécquer Melgarejo_Supervisor de Cierre – Minera Sol');
-  assert.equal(nombreCv(s, '', 'Volcan'), 'CV_Bécquer Melgarejo_Volcan');
+  assert.equal(nombreCv(s, 'Supervisor de Cierre – Minera Sol\nFunciones…'), 'CV_Becquer Melgarejo_Supervisor de Cierre – Minera Sol');
+  assert.equal(nombreCv(s, '', 'Volcan'), 'CV_Becquer Melgarejo_Volcan');
   const p = promptAviso(s, 'Aviso X');
-  assert.match(p, /Puesto objetivo: Cierre de minas, nivel Supervisor/); assert.match(p, /máximo 2 páginas/); assert.match(p, /"""\nAviso X\n"""/);
+  assert.match(p, /Puesto objetivo: Cierre de minas, nivel Supervisor/); assert.match(p, /Largo: 2 páginas/); assert.match(p, /«CV_Becquer Melgarejo_Aviso X»/); assert.match(p, /No inventes/); assert.match(p, /"""\nAviso X\n"""/);
 });
 
 console.log(`\n${ok} pruebas de oportunidades OK`);

@@ -8,6 +8,8 @@ import { buscarEmpleo, terminosBusqueda, puntuar, fusionarDuplicadas, aplicarApr
 import { marcar, aCsv } from '../empleo/seguimiento.js';
 import { generar, listarModelos, elegirModelo, probar, configurada, origenDe, funcionActiva, algunaActiva } from '../ia/ia.js';
 import { armar, leerAnalisis, analisisATexto, aWord, nombreArchivo } from '../ia/tareas.js';
+import { ofertaParaClaude, ofertaAJson, nombreOferta } from '../empleo/exportar.js';
+import { REGLAS_CV } from '../empleo/reglasCv.js';
 
 const require = createRequire(new URL('../../collector/package.json', import.meta.url));
 const { DOMParser } = require('linkedom');
@@ -79,8 +81,10 @@ await prueba('detecta mineras', () => {
 });
 await prueba('prompt de CV: nombre de archivo y no inventar', () => {
   const p = promptCv({ titulo: 'Ingeniero de costos', empresa: 'Volcan Compañía Minera', descripcion: 'S10' }, PERFIL);
-  assert.match(p, /CV_Bécquer Melgarejo_Volcan Compañía Minera/);
+  assert.match(p, /CV_Becquer Melgarejo_Volcan Compañía Minera/);
+  assert.doesNotMatch(p, /CV_Bécquer/);
   assert.match(p, /No inventes/);
+  for (const r of REGLAS_CV) assert.ok(p.includes(r), 'el prompt lleva las reglas comunes');
   assert.match(p, /Mi CV actual\n.*colegiado/);
 });
 
@@ -364,7 +368,35 @@ await prueba('IA: instrucciones, lectura del análisis y documento Word', () => 
   assert.throws(() => leerAnalisis('no puedo'), /formato esperado/);
   const w = aWord('# Bécquer\n## Experiencia\n- **S10** <script>\n\nTexto', 'CV');
   assert.match(w, /<h1>Bécquer<\/h1>\n<h2>Experiencia<\/h2>\n<ul>\n<li><b>S10<\/b> &lt;script&gt;<\/li>\n<\/ul>\n<p>Texto<\/p>/);
-  assert.equal(nombreArchivo('cv', o), 'CV_Bécquer Melgarejo_Minera Sol Perú');
+  assert.equal(nombreArchivo('cv', o), 'CV_Becquer Melgarejo_Minera Sol Perú');
+  assert.equal(nombreArchivo('carta', o), 'Carta_Becquer Melgarejo_Minera Sol Perú');
+});
+
+// ---------- Puente a Claude Code ----------
+await prueba('oferta para Claude Code: cumple el contrato y no lleva datos personales', () => {
+  const o = { id: 'bm-1234567', titulo: 'Ingeniero de Costos y Presupuestos', empresa: 'Empresa S.A.', ubicacion: 'Lima', fuente: 'Bumeran',
+    url: 'https://www.bumeran.com.pe/empleos/aviso-1234567.html', descripcion: '  Requisitos: S10 y MS Project.  ', pct: 72,
+    coinciden: ['S10'], faltan: ['Primavera P6'], faltanDeseables: [], guardada: true, ajuste: 3 };
+  const j = ofertaParaClaude(o, PERFIL, new Date('2026-11-11T14:00:00Z'));
+  assert.deepEqual(Object.keys(j), ['version', 'id', 'titulo', 'empresa', 'ubicacion', 'fuente', 'url', 'descripcion', 'coincidencia', 'exportado']);
+  assert.equal(j.version, 1); assert.equal(j.id, 'bm-1234567'); assert.equal(j.descripcion, 'Requisitos: S10 y MS Project.');
+  assert.deepEqual(j.coincidencia, { pct: 72, coinciden: ['S10'], faltan: ['Primavera P6'], faltanDeseables: [] });
+  assert.equal(j.exportado, '2026-11-11T14:00:00.000Z');
+  const txt = ofertaAJson(o, PERFIL, new Date('2026-11-11T14:00:00Z'));
+  assert.deepEqual(JSON.parse(txt), j);
+  assert.ok(!txt.includes(PERFIL.cvTexto) && !txt.includes(PERFIL.claves), 'no exporta el CV ni el perfil');
+});
+await prueba('oferta para Claude Code: calcula la coincidencia si falta y nombra el archivo', () => {
+  const j = ofertaParaClaude({ id: 'ct-9', titulo: 'Ingeniero ambiental', descripcion: 'Requisitos: S10, MS Project y Primavera P6.' }, PERFIL);
+  assert.equal(typeof j.coincidencia.pct, 'number'); assert.ok(j.coincidencia.coinciden.includes('S10'));
+  assert.equal(j.empresa, ''); assert.equal(j.url, '');
+  assert.equal(nombreOferta({ id: 'bm-1234567' }), 'oferta_bm-1234567.json');
+  assert.equal(nombreOferta({ id: '../x:y?' }), 'oferta_x-y.json');
+  assert.equal(nombreOferta({}), 'oferta_sin-id.json');
+});
+await prueba('manifiesto: permiso de descargas y versión 4.1', () => {
+  const m = require('../extension/manifest.json');
+  assert.ok(m.permissions.includes('downloads')); assert.equal(m.version, '4.1.0');
 });
 
 await prueba('IA: funciones activables (por defecto todas activas)', () => {

@@ -1,6 +1,7 @@
 // Tareas de IA para la pestaña Empleo: instrucciones y lectura de respuestas. Funciones puras.
 // Regla común: la IA nunca inventa experiencia; solo reordena y redacta lo que ya está en el CV.
 import { destinoDe } from '../empleo/coincidencia.js';
+import { nombreDeArchivo } from '../empleo/reglasCv.js';
 
 const corta = (s = '', n) => { const t = String(s).trim(); return t.length > n ? t.slice(0, n) + '\n[…recortado]' : t; };
 const SISTEMA = 'Eres un reclutador técnico peruano con experiencia en ingeniería ambiental, civil, costos y minería. '
@@ -127,5 +128,5 @@ export function aWord(md, titulo = 'Documento') {
     + `</head><body>${out.join('\n')}</body></html>`;
 }
 
-/** Nombre de archivo: CV_Bécquer Melgarejo_<empresa> · Carta_Bécquer Melgarejo_<empresa> */
-export const nombreArchivo = (tipo, oferta) => `${tipo === 'cv' ? 'CV' : 'Carta'}_Bécquer Melgarejo_${destinoDe(oferta)}`;
+/** Nombre de archivo sin tildes: CV_Becquer Melgarejo_<empresa> · Carta_Becquer Melgarejo_<empresa> */
+export const nombreArchivo = (tipo, oferta) => nombreDeArchivo(tipo === 'cv' ? 'CV' : 'Carta', destinoDe(oferta));

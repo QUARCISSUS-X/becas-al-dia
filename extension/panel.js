@@ -2,6 +2,7 @@
 import { buscarEmpleo, puntuar, aplicarAprendizaje } from './empleo/buscador.js';
 import { promptCv, aprender } from './empleo/coincidencia.js';
 import { ESTADOS, marcar, aCsv } from './empleo/seguimiento.js';
+import { ofertaAJson, nombreOferta, CARPETA_DESCARGA } from './empleo/exportar.js';
 import { PROVEEDORES, configurada, origenDe, generar, probar, FUNCIONES, funcionActiva, algunaActiva } from './ia/ia.js';
 import { TAREAS, armar, leerAnalisis, analisisATexto, aWord, nombreArchivo } from './ia/tareas.js';
 import { buscaEnWeb } from './ia/ia.js';
@@ -382,6 +383,14 @@ function pintarEmpleo() {
       try { await navigator.clipboard.writeText(promptCv(o, emp.perfil)); b.textContent = '✔ Copiado'; } catch { b.textContent = 'No se pudo copiar'; }
       setTimeout(() => { b.textContent = '📋 Prompt'; }, 2200);
     });
+    li.querySelector('.btn-claude').addEventListener('click', async (e) => {
+      const b = e.currentTarget;
+      try {
+        const donde = await descargarEnCarpeta(ofertaAJson(o, emp.perfil), nombreOferta(o));
+        b.textContent = `✔ En Descargas${donde}`;
+      } catch { b.textContent = 'No se pudo descargar'; }
+      setTimeout(() => { b.textContent = '⬇ Enviar a Claude Code'; }, 3000);
+    });
     const oc = li.querySelector('.btn-ocultar');
     oc.textContent = emp.ocultas.has(o.id) ? 'Mostrar' : 'Ocultar';
     oc.addEventListener('click', async () => {
@@ -521,6 +530,16 @@ function descargar(contenido, nombre, tipo) {
   a.href = URL.createObjectURL(new Blob([contenido], { type: `${tipo};charset=utf-8` }));
   a.download = nombre; document.body.append(a); a.click(); a.remove();
   setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+}
+
+/** Guarda un JSON en Descargas/becas-al-dia/ (API downloads). Sin la API, cae a la descarga normal. Devuelve la subcarpeta usada. */
+async function descargarEnCarpeta(contenido, nombre) {
+  if (!ext?.downloads?.download) { descargar(contenido, nombre, 'application/json'); return ''; }
+  const url = URL.createObjectURL(new Blob([contenido], { type: 'application/json;charset=utf-8' }));
+  try {
+    await ext.downloads.download({ url, filename: `${CARPETA_DESCARGA}/${nombre}`, conflictAction: 'overwrite', saveAs: false });
+    return `/${CARPETA_DESCARGA}`;
+  } finally { setTimeout(() => URL.revokeObjectURL(url), 5000); }
 }
 
 // ---------- IA opcional ----------

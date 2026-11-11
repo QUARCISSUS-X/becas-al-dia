@@ -5,6 +5,7 @@
 //   habilidades 45 % · profesión 20 % · perfil buscado 20 % · experiencia 15 %
 // En habilidades, lo «deseable» pesa un tercio de lo indispensable, y lo que la oferta
 // menciona en «Beneficios» o «Sobre nosotros» no cuenta como requisito.
+import { reglasCvTexto, nombreDeArchivo } from './reglasCv.js';
 
 export const sinTildes = (s = '') => String(s).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 export const normalizar = (s = '') => ' ' + sinTildes(s).replace(/[^a-z0-9+#]+/g, ' ').replace(/\s+/g, ' ').trim() + ' ';
@@ -317,11 +318,7 @@ export function promptCv(oferta, perfil = {}, res = coincidencia(oferta, perfil)
   const desc = (oferta.descripcion || '').replace(/\s+/g, ' ').trim().slice(0, 4000);
   return [
     'Adapta mi CV a la siguiente oferta laboral. Reglas:',
-    '- No inventes experiencia, cargos, fechas ni certificaciones: solo reordena, resume y resalta lo que ya está en mi CV.',
-    '- Usa las palabras clave de la oferta cuando describan algo que sí hice (para pasar filtros ATS).',
-    '- Mantén el CV en 1–2 páginas, con logros cuantificados donde mi CV tenga datos.',
-    '- Al final, lista qué requisitos de la oferta NO cubro, para que yo decida cómo abordarlos.',
-    `- Nombra el archivo: CV_Bécquer Melgarejo_${destino}`,
+    ...reglasCvTexto(nombreDeArchivo('CV', destino)),
     '',
     `## Oferta: ${oferta.titulo || ''}`,
     `Empresa: ${oferta.empresa || '—'} · Lugar: ${oferta.ubicacion || '—'} · Fuente: ${oferta.fuente || '—'}`,

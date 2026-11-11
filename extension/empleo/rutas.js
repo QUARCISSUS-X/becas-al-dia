@@ -1,6 +1,7 @@
 // Rutas de búsqueda de empleo (portadas de la página «Becas al Día»): por ruta, especialidad y nivel
 // arma la búsqueda principal, enlaces en vivo a cada bolsa, búsqueda booleana, requisitos típicos,
 // normas, empresas para seguir y el prompt para adaptar el CV a un aviso pegado. Funciones puras.
+import { reglasCvTexto, nombreDeArchivo } from './reglasCv.js';
 
 const MINERAS = ['Antamina', 'Southern Peru', 'Cerro Verde', 'Buenaventura', 'Las Bambas', 'Anglo American', 'Nexa Resources', 'Volcan', 'Chinalco', 'Hudbay'];
 const CONSULT = ['Anddes', 'SRK Consulting', 'WSP', 'Knight Piésold', 'Ausenco', 'Stantec', 'Hatch', 'Cesel', 'Golder', 'ERM'];
@@ -149,27 +150,26 @@ export function nombreCv({ esp, niv }, aviso = '', nombre = '') {
   let v = limpiar(nombre);
   if (!v) v = limpiar(String(aviso).split(/\n/).map((l) => l.replace(/^\s*EJEMPLO\s*[—-]\s*/i, '').trim()).filter(Boolean)[0] || '');
   if (!v) v = limpiar(`${NIVJ[niv].nombre} de ${ESPJ[esp].nombre}`);
-  return `CV_Bécquer Melgarejo_${v}`;
+  return nombreDeArchivo('CV', v);
 }
 
-/** Prompt para adaptar el CV a un aviso pegado (el mismo de la página). */
+/** Prompt para adaptar el CV a un aviso pegado. Usa las reglas de reglasCv.js (las de la carpeta de postulaciones). */
 export function promptAviso(sel, aviso = '', nombre = '') {
   const e = ESPJ[sel.esp]; const n = NIVJ[sel.niv]; const file = nombreCv(sel, aviso, nombre);
-  const pags = ['pre', 'pro', 'junior'].includes(sel.niv) ? '1 página' : 'máximo 2 páginas';
   return [
-    'Actúa como reclutador técnico y especialista en CV para ingeniería en el Perú. Adjunto mi CV actual (Bécquer Melgarejo). Abajo está la oferta a la que postulo.',
+    'Actúa como reclutador técnico y especialista en CV para ingeniería en el Perú. Adjunto mi CV actual. Abajo está la oferta a la que postulo.',
     '',
     `Puesto objetivo: ${e.nombre}, nivel ${n.nombre} (${n.anos}).`,
     '',
     'Haz lo siguiente:',
     '1. Extrae de la oferta las palabras clave: nombre exacto del cargo, funciones, software, certificaciones, normas y competencias. Arma una tabla con tres columnas: palabra clave | ¿está en mi CV? (sí/no) | dónde la incluirás.',
-    '2. Reescribe mi CV para esta oferta. Usa como título el nombre del cargo tal como aparece en el aviso. Escribe un perfil profesional de 3 a 4 líneas con las palabras clave principales. Ordena la experiencia de la más reciente a la más antigua.',
-    '3. Convierte funciones en logros medibles con la forma verbo + acción + resultado (soles, %, plazos, m³, hectáreas, frentes, personas a cargo). Usa solo datos que estén en mi CV. Si falta una cifra, escribe [completar: dato que falta] y pregúntamela al final. No la estimes.',
-    '4. No inventes experiencia, cargos, empresas, fechas, títulos, certificaciones ni software. Si la oferta pide algo que no tengo, no lo agregues al CV: ponlo en una lista aparte de brechas con una forma concreta de cerrarla (curso, certificación o cómo mencionarlo con honestidad).',
-    `5. Formato apto para filtros ATS: una sola columna; sin tablas, cuadros de texto, íconos, fotos ni gráficos; nada importante en encabezados o pies de página; títulos de sección estándar (Perfil profesional, Experiencia, Educación, Certificaciones, Software, Idiomas); fechas en formato mes/año; fuente Calibri o Arial de 10 a 11 pt; ${pags}.`,
-    `6. Para este nivel, los avisos suelen pedir: ${n.req.join(' ')} Software frecuente: ${e.soft.join(', ')}. Certificaciones frecuentes: ${e.cert.join('; ')}. Normas: ${e.norma.join('; ')}. Destaca lo que yo sí tenga de esto; lo que falte va a la lista de brechas.`,
-    '7. Entrega en este orden: (a) el CV final completo, listo para pegar en Word; (b) la tabla de palabras clave; (c) la lista de brechas; (d) las preguntas para completar cifras; (e) tres preguntas probables de entrevista con una idea de respuesta basada solo en mi experiencia real.',
-    `8. Si puedes crear archivos, entrégame el CV en .docx y en PDF. Nombra el archivo exactamente así: «${file}» (${file}.docx y ${file}.pdf).`,
+    '2. Adapta mi CV a esta oferta con estas reglas:',
+    ...reglasCvTexto(file, '   - '),
+    '3. Si falta una cifra para sustentar un logro, escribe [completar: dato que falta] y pregúntamela al final. No la estimes.',
+    '4. Para cada brecha, propón una forma concreta de cerrarla (curso, certificación o cómo mencionarla con honestidad).',
+    `5. Para este nivel, los avisos suelen pedir: ${n.req.join(' ')} Software frecuente: ${e.soft.join(', ')}. Certificaciones frecuentes: ${e.cert.join('; ')}. Normas: ${e.norma.join('; ')}. Destaca lo que yo sí tenga de esto; lo que falte va a la lista de brechas.`,
+    '6. Entrega en este orden: (a) los textos nuevos de perfil, capacidades y herramientas, listos para pegar en mi Word; (b) la tabla de palabras clave; (c) la lista de brechas; (d) las preguntas para completar cifras; (e) tres preguntas probables de entrevista con una idea de respuesta basada solo en mi experiencia real.',
+    `7. Si puedes editar mi archivo conservando su formato, entrégame el CV en .docx y en PDF con el nombre «${file}» (${file}.docx y ${file}.pdf).`,
     '',
     'Oferta:',
     '"""',

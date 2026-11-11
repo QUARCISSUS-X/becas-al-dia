@@ -18,6 +18,31 @@ GitHub Actions (6:17 a. m. Lima)          Tu navegador
 └──────────────────────────────┘
 ```
 
+## Novedades de la v4.1
+
+- **⬇ Enviar a Claude Code**: cada oferta tiene un botón que la descarga como `oferta_<id>.json` en `Descargas/becas-al-dia/`. El archivo lleva el aviso completo y el análisis de coincidencia, y nunca tu CV ni tu perfil. Sirve para preparar la postulación en una carpeta privada de Claude Code con el comando `/postular`. Por eso la extensión pide el permiso de **descargas**.
+- **Mismas reglas en todos los prompts de CV**: «📋 Prompt» y «Prompt de CV» usan una sola lista (`extension/empleo/reglasCv.js`): no inventar, cambiar solo perfil, capacidades y herramientas, 2 páginas (3 para sector público o becas), formato apto para ATS y lista de brechas al final.
+- **Nombre de archivo sin tildes**: `CV_Becquer Melgarejo_<empresa>`, para que ningún portal lo rechace.
+
+Formato del archivo de oferta (versión 1):
+
+```json
+{
+  "version": 1,
+  "id": "bm-1234567",
+  "titulo": "Ingeniero de Costos y Presupuestos",
+  "empresa": "Empresa S.A.",
+  "ubicacion": "Lima",
+  "fuente": "Bumeran",
+  "url": "https://…",
+  "descripcion": "texto completo del aviso",
+  "coincidencia": { "pct": 72, "coinciden": [], "faltan": [], "faltanDeseables": [] },
+  "exportado": "2026-11-11T14:00:00.000Z"
+}
+```
+
+El `id` empieza con `bm-` (Bumeran), `ct-` (Computrabajo) o `sv-` (Talento Perú).
+
 ## Novedades de la v4.0
 
 - **🎓 Oportunidades**: las becas, eventos y cursos que Claude verifica cada lunes en la página «Becas al Día», con su ficha completa. Cada ficha trae requisitos, beneficios, documentos, fechas clave, fuentes y enlaces para ver ganadores en LinkedIn. La pestaña tiene:
@@ -134,7 +159,7 @@ La búsqueda de empleo **corre en tu navegador**, no en GitHub: Computrabajo y B
    - **Indispensable vs. deseable.** Lo que la oferta pide como «deseable», «de preferencia» o «no excluyente» pesa un tercio. Lo que aparece en «Beneficios» o «Sobre nosotros» no cuenta como requisito.
    - **Aprende de ti.** Cuando ya guardaste, postulaste u ocultaste al menos 3 ofertas, las parecidas (por palabras del puesto y por empresa) suben o bajan hasta 8 puntos.
    - **Sin repetidas.** La misma oferta publicada en dos portales se muestra una vez, con el enlace «También en».
-4. **📋 Prompt para CV** copia un prompt que puedes pegar en cualquier chat de IA. El prompt incluye la oferta, el análisis y tu CV. Pide adaptar el CV sin inventar nada y nombrar el archivo `CV_Bécquer Melgarejo_<empresa>`.
+4. **📋 Prompt para CV** copia un prompt que puedes pegar en cualquier chat de IA. El prompt incluye la oferta, el análisis y tu CV. Pide adaptar el CV sin inventar nada y nombrar el archivo `CV_Becquer Melgarejo_<empresa>`.
 
 5. **Registro de postulaciones.** En cada oferta, el desplegable «Sin postular» pasa a «Postulé», «Entrevista», «Me ofrecieron» o «No avanzó». El filtro **Postuladas** las reúne aunque el portal ya las haya retirado, y en «Estado de los portales» puedes descargarlas para Excel.
 
@@ -154,7 +179,7 @@ Pulsa **Probar y listar modelos**: la extensión comprueba la clave y elige un m
 
 Con la IA conectada, el botón **✨ IA** de cada oferta ofrece:
 - **Analizar afinidad**: segunda opinión del %, requisito por requisito, con la evidencia de tu CV. Queda como etiqueta «IA %».
-- **Carta de presentación** y **Adaptar mi CV**: se descargan como Word con el nombre `CV_Bécquer Melgarejo_<empresa>`. La IA tiene prohibido inventar experiencia.
+- **Carta de presentación** y **Adaptar mi CV**: se descargan como Word con el nombre `CV_Becquer Melgarejo_<empresa>`. La IA tiene prohibido inventar experiencia.
 - **Responder** una pregunta del formulario de postulación.
 
 «✨ Analizar con IA las 10 primeras» lo hace en lote, una consulta cada 4,5 s.
@@ -176,5 +201,6 @@ Si un portal cambia su web, en «Estado de los portales» aparecerá ⚠ o ✖. 
 - [x] **Fase 2**: ofertas de empleo y prácticas de Bumeran, Computrabajo y Talento Perú, filtradas por tus perfiles. Cada oferta tiene su % de coincidencia con tu CV, etiqueta «Minera» y el prompt para adaptar el CV.
 - [x] **v0.3**: requisitos indispensables vs. deseables, aprendizaje de tus decisiones, ofertas repetidas unidas, registro de postulaciones e IA opcional con tu propia clave.
 - [x] **v4.0**: oportunidades verificadas por Claude, rutas de empleo, prompt de CV y revisión con cualquier IA.
+- [x] **v4.1**: botón «Enviar a Claude Code» (oferta en JSON), reglas únicas para los prompts de CV y nombre de archivo sin tildes.
 - [ ] **Fase 2b**: portales de carrera de las mineras (Antamina, Southern, Cerro Verde, Las Bambas…).
 - [ ] **Fase 3**: autocompletado de formularios portal por portal y registro de postulaciones.
