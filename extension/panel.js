@@ -3,6 +3,9 @@ import { buscarEmpleo, puntuar, aplicarAprendizaje } from './empleo/buscador.js'
 import { promptCv, aprender } from './empleo/coincidencia.js';
 import { ESTADOS, marcar, aCsv } from './empleo/seguimiento.js';
 import { ofertaAJson, nombreOferta, CARPETA_DESCARGA } from './empleo/exportar.js';
+import { minerasDe, origenesMineras } from './empleo/mineras.js';
+import { enlacesExternos } from './empleo/enlaces.js';
+import { terminosBusqueda } from './empleo/buscador.js';
 import { PROVEEDORES, configurada, origenDe, generar, probar, FUNCIONES, funcionActiva, algunaActiva } from './ia/ia.js';
 import { TAREAS, armar, leerAnalisis, analisisATexto, aWord, nombreArchivo } from './ia/tareas.js';
 import { buscaEnWeb } from './ia/ia.js';
@@ -203,7 +206,7 @@ const BUSCAR_CADA_H = 6;
 const emp = {
   datos: null, perfil: {}, guardadas: new Set(), ocultas: new Set(), vistasAntes: new Set(), buscando: false,
   seguimiento: {}, ia: {}, iaCache: {},
-  f: { q: '', minimo: 60, fuente: '', orden: 'pct', practicas: false, empleos: false, mineras: false, publico: false, guardadas: false, postuladas: false, nuevas: false },
+  f: { q: '', minimo: 60, fuente: '', orden: 'pct', practicas: false, empleos: false, mineras: false, interes: false, publico: false, guardadas: false, postuladas: false, nuevas: false },
 };
 
 // Lo que guardas o a lo que postulas sube ofertas parecidas; lo que ocultas las baja (sin IA)
@@ -229,8 +232,9 @@ async function cargarEmpleo() {
   emp.guardadas = new Set(g.empleoGuardadas || []);
   emp.ocultas = new Set(g.empleoOcultas || []);
   emp.vistasAntes = new Set(g.empleoVistas || []);
-  cargarPerfil(emp.perfil);
+  cargarPerfil({ ...emp.perfil, mineras: minerasDe(emp.perfil) });
   avisoPerfil();
+  pintarOtrasBolsas();
   poblarFuentes();
   pintarEmpleo();
   pintarSaludEmpleo();
@@ -245,6 +249,20 @@ function avisoPerfil() {
   $('#perfilAviso').textContent = falta.length ? `— falta: ${falta.join(', ')}` : '— completo ✔';
   if (falta.length && !emp.datos) $('#perfilBloque').open = true;
 }
+
+// «Buscar también en»: LinkedIn, Indeed y otras bolsas con los términos de tu perfil
+function pintarOtrasBolsas() {
+  const sel = $('#eOtrasQ'); const actual = sel.value;
+  const t = terminosBusqueda(emp.perfil).q;
+  sel.replaceChildren(...t.map((q) => new Option(q, q)));
+  if (t.includes(actual)) sel.value = actual;
+  const cont = $('#eOtrasLinks'); cont.replaceChildren();
+  for (const { n, u } of enlacesExternos(sel.value)) {
+    const a = document.createElement('a'); a.href = u; a.target = '_blank'; a.rel = 'noopener'; a.textContent = n;
+    cont.append(a);
+  }
+}
+$('#eOtrasQ').addEventListener('change', pintarOtrasBolsas);
 
 function poblarFuentes() {
   const sel = $('#eFuente'); const actual = sel.value;
@@ -278,6 +296,7 @@ function filtrarOfertas() {
     if (f.practicas && !o.practica) return false;
     if (f.empleos && o.practica) return false;
     if (f.mineras && !o.minera) return false;
+    if (f.interes && !o.portalMinera) return false;
     if (f.publico && !o.sectorPublico) return false;
     if (f.nuevas && emp.vistasAntes.has(o.id) && diasHasta(o.primeraVez) < -2) return false;
     if (q && !sinTildes(`${o.titulo} ${o.empresa} ${o.ubicacion}`).includes(q)) return false;
@@ -330,7 +349,7 @@ function pintarEmpleo() {
     const tag = (txt, cls = '') => { const s = document.createElement('span'); s.className = 'tag ' + cls; s.textContent = txt; et.append(s); };
     if (!emp.vistasAntes.has(o.id) || diasHasta(o.primeraVez) >= -2) tag('Nueva', 'nueva');
     if (o.practica) tag('Prácticas', 'acento');
-    if (o.minera) tag('Minera');
+    if (o.portalMinera) tag('⛏ Mis mineras', 'acento'); else if (o.minera) tag('Minera');
     if (o.salario) tag(o.salario);
     if (o.modalidad && !o.practica) tag(o.modalidad);
     if (o.vence) { const d = diasHasta(o.vence); tag(d <= 0 ? 'Cierra hoy' : `Cierra en ${d} día${d === 1 ? '' : 's'}`, d <= 3 ? 'urgente' : ''); }
@@ -493,13 +512,13 @@ $('#perfil').addEventListener('submit', async (e) => {
     if (el.type === 'checkbox') { (p[el.name] ||= []); if (el.checked) p[el.name].push(el.value); }
     else p[el.name] = el.value.trim();
   }
-  const cambianBusquedas = JSON.stringify([emp.perfil.perfiles, emp.perfil.busquedas]) !== JSON.stringify([p.perfiles, p.busquedas]);
+  const cambianBusquedas = JSON.stringify([emp.perfil.perfiles, emp.perfil.busquedas, minerasDe(emp.perfil)]) !== JSON.stringify([p.perfiles, p.busquedas, minerasDe(p)]);
   emp.perfil = p;
   // Recalcular el % de lo ya encontrado con el perfil nuevo (sin volver a buscar)
   if (emp.datos) { const m = modeloAprendizaje(); emp.datos.items.forEach((o) => puntuar(o, p, m)); await almacen.set({ empleo: emp.datos }); }
   await almacen.set({ perfil: p });
   $('#perfilEstado').textContent = 'Perfil guardado ✔ (solo en este navegador)';
-  avisoPerfil(); pintarEmpleo();
+  avisoPerfil(); pintarOtrasBolsas(); pintarEmpleo();
   if (cambianBusquedas && emp.datos) $('#empleoProgreso').textContent = 'Cambiaste los perfiles: pulsa «Buscar ofertas» para traer ofertas nuevas.';
 });
 $('#cvArchivo').addEventListener('change', async (e) => {
@@ -510,15 +529,17 @@ $('#cvArchivo').addEventListener('change', async (e) => {
 
 // Firefox permite al usuario negar el acceso a los portales: se vuelve a pedir en el mismo clic
 const PORTALES_ORIGEN = ['https://pe.computrabajo.com/*', 'https://www.bumeran.com.pe/*', 'https://app.servir.gob.pe/*'];
+// Los portales de las mineras se piden en el mismo clic (permisos opcionales, solo los elegidos)
 $('#btnBuscarEmpleo').addEventListener('click', () => {
   if (!ext?.permissions) return ejecutarBusqueda();
-  ext.permissions.request({ origins: PORTALES_ORIGEN }).catch(() => false).then(() => ejecutarBusqueda());
+  const origins = [...new Set([...PORTALES_ORIGEN, ...origenesMineras(minerasDe(emp.perfil))])];
+  ext.permissions.request({ origins }).catch(() => false).then(() => ejecutarBusqueda());
 });
 $('#eBuscar').addEventListener('input', (e) => { emp.f.q = e.target.value; pintarEmpleo(); });
 $('#eMinimo').addEventListener('change', (e) => { emp.f.minimo = Number(e.target.value); pintarEmpleo(); });
 $('#eFuente').addEventListener('change', (e) => { emp.f.fuente = e.target.value; pintarEmpleo(); });
 $('#eOrden').addEventListener('change', (e) => { emp.f.orden = e.target.value; pintarEmpleo(); });
-for (const [id, k] of [['#ePracticas', 'practicas'], ['#eEmpleos', 'empleos'], ['#eMineras', 'mineras'], ['#ePublico', 'publico'], ['#eGuardadas', 'guardadas'], ['#ePostuladas', 'postuladas'], ['#eNuevas', 'nuevas']]) {
+for (const [id, k] of [['#ePracticas', 'practicas'], ['#eEmpleos', 'empleos'], ['#eMineras', 'mineras'], ['#eInteres', 'interes'], ['#ePublico', 'publico'], ['#eGuardadas', 'guardadas'], ['#ePostuladas', 'postuladas'], ['#eNuevas', 'nuevas']]) {
   $(id).addEventListener('click', (e) => { emp.f[k] = !emp.f[k]; e.currentTarget.classList.toggle('on'); pintarEmpleo(); });
 }
 $('#eDiagnostico').addEventListener('click', copiarDiagnostico);

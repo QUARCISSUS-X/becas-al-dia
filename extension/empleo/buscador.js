@@ -2,9 +2,11 @@
 // con pausas cortas, abre el detalle de las ofertas más prometedoras, calcula el % de
 // coincidencia y fusiona con la búsqueda anterior (para marcar «nuevas»).
 import { PORTALES } from './portales.js';
+import { MINERAS_INTERES, minerasDe } from './mineras.js';
 import { PERFILES, coincidencia, esPractica, esMinera, sinTildes, normalizar, ajuste, claveEmpresa } from './coincidencia.js';
 
 const MAX_DETALLES = 30;     // páginas de detalle (Computrabajo) por búsqueda
+const MAX_DETALLES_MINERA = 15; // fichas por minera de interés (aparte de las de Computrabajo)
 const CONSERVAR_DIAS = 30;   // ofertas no vistas se borran a los 30 días
 const PAUSA_MS = 600;        // entre consultas al mismo portal
 const espera = (ms) => new Promise((ok) => setTimeout(ok, ms));
@@ -40,13 +42,18 @@ function prioridad(it, perfil) {
  * @param {object} cacheDetalles  { [id]: {descripcion, vence, ...} } (se actualiza in situ)
  * @param {object} dep  { fetch, parsear, alAvanzar?(texto) }
  */
-export async function buscarEmpleo({ perfil = {}, anterior = {}, cacheDetalles = {}, dep, hoy = new Date(), portales = PORTALES, aprendizaje = null }) {
+export async function buscarEmpleo({ perfil = {}, anterior = {}, cacheDetalles = {}, dep, hoy = new Date(), portales = PORTALES, mineras = MINERAS_INTERES, aprendizaje = null }) {
   const HOY = hoyIso(hoy);
   const avisar = dep.alAvanzar || (() => {});
   const t = terminosBusqueda(perfil);
   const salud = [];
   const crudos = new Map();
-  const agregar = (lista) => lista.forEach((it) => { if (!crudos.has(it.id)) crudos.set(it.id, it); });
+  // Si un aviso llega por dos vías (p. ej. MARSA por Bumeran), se queda la marca de minera de interés
+  const agregar = (lista) => lista.forEach((it) => {
+    const previo = crudos.get(it.id);
+    if (!previo) crudos.set(it.id, it); else if (it.portalMinera && !previo.portalMinera) previo.portalMinera = it.portalMinera;
+  });
+  const fuentes = { ...portales };
 
   const tareas = [];
   if (portales.computrabajo) tareas.push(['computrabajo', t.q.map((q) => () => portales.computrabajo.buscar(q, dep, hoy))]);
@@ -55,13 +62,21 @@ export async function buscarEmpleo({ perfil = {}, anterior = {}, cacheDetalles =
     ...t.servir.map((q) => () => portales.servir.buscar(q, dep)),
     ...t.servirPracticas.map((q) => () => portales.servir.buscar(q, dep, { practicas: true })),
   ]]);
+  // Mineras de interés: se leen todas sus vacantes (son pocas) y el % decide el orden
+  for (const k of minerasDe(perfil)) {
+    const m = mineras[k];
+    if (!m) continue;
+    fuentes[m.id] = m;
+    tareas.push([m.id, [() => m.buscar(dep, hoy)]]);
+  }
 
   // Portales en paralelo; dentro de cada portal, una consulta a la vez
   await Promise.all(tareas.map(async ([id, consultas]) => {
-    const s = { id, nombre: portales[id].nombre, ok: false, items: 0, consultas: consultas.length, errores: [] };
+    const s = { id, nombre: fuentes[id].nombre, ok: false, items: 0, consultas: consultas.length, errores: [] };
+    if (fuentes[id].clave) s.minera = true;
     for (const c of consultas) {
       try { const r = await c(); agregar(r); s.items += r.length; s.ok = true; } catch (e) { s.errores.push(String(e.message || e)); }
-      avisar(`${portales[id].nombre}: ${s.items} ofertas…`);
+      avisar(`${fuentes[id].nombre}: ${s.items} ofertas…`);
       await espera(PAUSA_MS);
     }
     s.error = s.ok ? (s.errores.length ? `${s.errores.length} de ${consultas.length} búsquedas fallaron (${s.errores[0]})` : null) : (s.errores[0] || 'sin resultados');
@@ -70,14 +85,23 @@ export async function buscarEmpleo({ perfil = {}, anterior = {}, cacheDetalles =
     salud.push(s);
   }));
 
-  // Detalles de Computrabajo: primero las más prometedoras; lo ya descargado sale de la caché
-  const pendientes = [...crudos.values()].filter((it) => !it.detalleListo && !cacheDetalles[it.id])
-    .sort((a, b) => prioridad(b, perfil) - prioridad(a, perfil)).slice(0, MAX_DETALLES);
+  // Detalles: Computrabajo (las más prometedoras primero) y las fichas de las mineras de interés.
+  // Lo ya descargado sale de la caché.
+  const sinDetalle = [...crudos.values()].filter((it) => !it.detalleListo && !cacheDetalles[it.id]);
+  const porMinera = new Map();
+  for (const it of sinDetalle.filter((i) => i.portal && fuentes[i.portal]?.detalle)) {
+    const g = porMinera.get(it.portal) || []; if (g.length < MAX_DETALLES_MINERA) g.push(it); porMinera.set(it.portal, g);
+  }
+  const pendientes = [
+    ...[...porMinera.values()].flat(),
+    ...sinDetalle.filter((i) => !i.portal).sort((a, b) => prioridad(b, perfil) - prioridad(a, perfil)).slice(0, MAX_DETALLES),
+  ];
+  const lectorDe = (it) => (it.portal ? fuentes[it.portal] : portales[it.id.startsWith('ct-') ? 'computrabajo' : 'bumeran']);
   let hechos = 0;
   const trabajadores = Array.from({ length: 2 }, async () => {
     while (pendientes.length) {
       const it = pendientes.shift();
-      try { cacheDetalles[it.id] = { ...(await portales[it.id.startsWith('ct-') ? 'computrabajo' : 'bumeran'].detalle(it, dep)), el: HOY }; } catch { /* queda sin detalle */ }
+      try { cacheDetalles[it.id] = { ...(await lectorDe(it).detalle(it, dep)), el: HOY }; } catch { /* queda sin detalle */ }
       avisar(`Leyendo ofertas… ${++hechos}`);
       await espera(350);
     }
@@ -90,6 +114,7 @@ export async function buscarEmpleo({ perfil = {}, anterior = {}, cacheDetalles =
   for (const it of crudos.values()) {
     const det = cacheDetalles[it.id] || {};
     const o = { ...it, descripcion: it.descripcion || det.descripcion || '', vence: it.vence || det.vence || null, publicado: it.publicado || det.publicado || null };
+    if (!o.ubicacion && det.ubicacion) o.ubicacion = det.ubicacion;
     if (det.tipo && !o.modalidad) o.modalidad = det.tipo;
     o.sinDetalle = !o.descripcion;
     o.primeraVez = previos.get(o.id)?.primeraVez || HOY;
@@ -150,7 +175,7 @@ export function puntuar(o, perfil, aprendizaje = null) {
   o.coinciden = r.coinciden; o.faltan = r.faltan; o.faltanDeseables = r.faltanDeseables; o.notas = r.notas;
   aplicarAprendizaje(o, aprendizaje);
   o.practica = esPractica(o.titulo) || /practic/i.test(o.modalidad || '');
-  o.minera = esMinera(`${o.empresa} ${o.titulo} ${o.descripcion.slice(0, 600)}`);
+  o.minera = !!o.portalMinera || esMinera(`${o.empresa} ${o.titulo} ${o.descripcion.slice(0, 600)}`);
   return o;
 }
 

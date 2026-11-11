@@ -394,9 +394,10 @@ await prueba('oferta para Claude Code: calcula la coincidencia si falta y nombra
   assert.equal(nombreOferta({ id: '../x:y?' }), 'oferta_x-y.json');
   assert.equal(nombreOferta({}), 'oferta_sin-id.json');
 });
-await prueba('manifiesto: permiso de descargas y versión 4.1', () => {
+await prueba('manifiesto: permiso de descargas y portales de mineras como permisos opcionales', () => {
   const m = require('../extension/manifest.json');
-  assert.ok(m.permissions.includes('downloads')); assert.equal(m.version, '4.1.0');
+  assert.ok(m.permissions.includes('downloads')); assert.match(m.version, /^4\.\d+\.\d+$/);
+  assert.ok(m.optional_host_permissions.includes('https://*/*'), 'los portales de las mineras se piden al buscar');
 });
 
 await prueba('IA: funciones activables (por defecto todas activas)', () => {
