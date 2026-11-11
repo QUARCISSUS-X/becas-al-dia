@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generado": "2026-11-11T18:37:45.191Z",
+ "generado": "2026-11-11T18:42:21.052Z",
  "hoy": "2026-11-11",
  "total": 115,
  "abiertas": 40,
@@ -1038,12 +1038,9 @@
    "estado": "por-confirmar",
    "niveles": [
     "pregrado",
-    "maestria",
     "curso"
    ],
-   "areas": [
-    "gestion"
-   ],
+   "areas": [],
    "cobertura": null,
    "paraPeru": true,
    "publicado": null,
