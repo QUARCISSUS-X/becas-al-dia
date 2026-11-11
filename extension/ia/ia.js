@@ -44,6 +44,9 @@ export const FUNCIONES = {
 export const funcionActiva = (cfg, f) => cfg?.funciones?.[f] !== false;
 export const algunaActiva = (cfg) => Object.keys(FUNCIONES).some((f) => funcionActiva(cfg, f));
 
+/** ¿El proveedor puede buscar en la web? (necesario para verificar fechas) */
+export const buscaEnWeb = (cfg) => ['gemini', 'claude', 'openai'].includes(cfg?.proveedor);
+
 export const configurada = (cfg) => !!cfg?.proveedor && PROVEEDORES[cfg.proveedor]
   && (cfg.proveedor === 'local' || ((cfg.clave || cfg.proveedor === 'compatible') && (cfg.proveedor !== 'compatible' || cfg.base)));
 
@@ -105,11 +108,16 @@ export function elegirModelo(proveedor, ids = []) {
 }
 
 /**
- * Genera texto. @param {{sistema?:string, mensaje:string, json?:boolean, maxTokens?:number}} p
+ * Genera texto. @param {{sistema?:string, mensaje:string, json?:boolean, maxTokens?:number, buscarWeb?:boolean}} p
  * @returns {Promise<string>}
  */
 export async function generar(cfg, p, dep) {
   if (!configurada(cfg)) throw new ErrorIA('La IA no está configurada: abre ⚙ Ajustes');
+  if (p.buscarWeb) {
+    if (!buscaEnWeb(cfg)) throw new ErrorIA('Este proveedor no puede buscar en la web: usa Gemini, Claude o ChatGPT, o copia el prompt en un chat con búsqueda');
+    if (!cfg.modelo) throw new ErrorIA('Falta elegir el modelo: abre ⚙ Ajustes y pulsa «Probar y listar modelos»');
+    return generarConBusqueda(cfg, p, dep);
+  }
   const max = p.maxTokens || 1500;
   if (cfg.proveedor === 'local') return generarLocal(p, dep);
   if (!cfg.modelo) throw new ErrorIA('Falta elegir el modelo: abre ⚙ Ajustes y pulsa «Probar y listar modelos»');
@@ -175,4 +183,52 @@ export async function probar(cfg, dep) {
     const eco = await generar({ ...cfg, modelo }, { mensaje: 'Responde solo con la palabra: listo', maxTokens: 20 }, dep);
     return { ok: true, modelos, modelo, eco };
   } catch (e) { return { ok: false, error: String(e.message || e) }; }
+}
+
+// ---------- Con búsqueda web (para verificar fechas en las páginas oficiales) ----------
+async function generarConBusqueda(cfg, p, dep) {
+  const base = baseDe(cfg);
+  const cab = { 'content-type': 'application/json', ...cabeceras(cfg) };
+  const max = p.maxTokens || 16000;
+  if (cfg.proveedor === 'gemini') {
+    // La búsqueda de Google no se combina con el modo JSON: se pide el JSON en el texto
+    const j = await pedir(dep, `${base}/models/${encodeURIComponent(cfg.modelo)}:generateContent`, {
+      method: 'POST', headers: cab,
+      body: JSON.stringify({
+        ...(p.sistema ? { systemInstruction: { parts: [{ text: p.sistema }] } } : {}),
+        contents: [{ role: 'user', parts: [{ text: p.mensaje }] }],
+        tools: [{ google_search: {} }],
+        generationConfig: { maxOutputTokens: max * 2 },
+      }),
+    });
+    const c = j.candidates?.[0];
+    const txt = (c?.content?.parts || []).filter((x) => !x.thought).map((x) => x.text || '').join('').trim();
+    if (!txt) throw new ErrorIA(`Gemini no devolvió texto (${c?.finishReason || 'respuesta vacía'})`);
+    return txt;
+  }
+  if (cfg.proveedor === 'claude') {
+    // La búsqueda puede pausar el turno (pause_turn): se continúa hasta 5 veces
+    const mensajes = [{ role: 'user', content: p.mensaje }];
+    let texto = '';
+    for (let vuelta = 0; vuelta < 5; vuelta++) {
+      const j = await pedir(dep, `${base}/messages`, {
+        method: 'POST', headers: cab,
+        body: JSON.stringify({ model: cfg.modelo, max_tokens: max, ...(p.sistema ? { system: p.sistema } : {}), messages: mensajes,
+          tools: [{ type: 'web_search_20250305', name: 'web_search', max_uses: p.maxBusquedas || 25 }] }),
+      });
+      texto += (j.content || []).filter((b) => b.type === 'text').map((b) => b.text).join('');
+      if (j.stop_reason !== 'pause_turn') break;
+      mensajes.push({ role: 'assistant', content: j.content });
+    }
+    if (!texto.trim()) throw new ErrorIA('Claude no devolvió texto');
+    return texto.trim();
+  }
+  // OpenAI: Responses API con la herramienta web_search
+  const j = await pedir(dep, `${base}/responses`, {
+    method: 'POST', headers: cab,
+    body: JSON.stringify({ model: cfg.modelo, ...(p.sistema ? { instructions: p.sistema } : {}), input: p.mensaje, tools: [{ type: 'web_search' }], max_output_tokens: max * 2 }),
+  });
+  const txt = (j.output_text || (j.output || []).filter((o) => o.type === 'message').flatMap((o) => o.content || []).map((c) => c.text || '').join('')).trim();
+  if (!txt) throw new ErrorIA(`ChatGPT no devolvió texto (${j.status || 'respuesta vacía'})`);
+  return txt;
 }

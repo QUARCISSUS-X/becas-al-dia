@@ -1,9 +1,15 @@
-// Becas al Día — panel lateral con dos pestañas: Becas y Empleo.
+// Becas al Día — panel lateral: Oportunidades (verificadas por Claude), Radar (recolector) y Empleo.
 import { buscarEmpleo, puntuar, aplicarAprendizaje } from './empleo/buscador.js';
 import { promptCv, aprender } from './empleo/coincidencia.js';
 import { ESTADOS, marcar, aCsv } from './empleo/seguimiento.js';
 import { PROVEEDORES, configurada, origenDe, generar, probar, FUNCIONES, funcionActiva, algunaActiva } from './ia/ia.js';
 import { TAREAS, armar, leerAnalisis, analisisATexto, aWord, nombreArchivo } from './ia/tareas.js';
+import { buscaEnWeb } from './ia/ia.js';
+import { FRECUENCIAS, promptCurador, leerParche, aplicarParche } from './ia/curador.js';
+import { elegirCurado } from './curado/datos.js';
+import { fmt } from './curado/estado.js';
+import { montarOportunidades } from './ui/oportunidades.js';
+import { montarRutas } from './ui/rutas.js';
 const URL_DATOS_DEFECTO = 'https://raw.githubusercontent.com/QUARCISSUS-X/becas-al-dia/main/data/becas.json';
 const $ = (s) => document.querySelector(s);
 const $$ = (s) => [...document.querySelectorAll(s)];
@@ -57,6 +63,7 @@ async function cargar() {
   pintarBecas();
   pintarSalud();
   $('#urlDatos').value = g.config?.urlDatos || URL_DATOS_DEFECTO;
+  $('#urlCurado').value = g.config?.urlCurado || '';
   // Al abrir el panel, todo lo visible pasa a "visto" (el ícono deja de mostrar el número)
   if (estado.datos) {
     estado.datos.items.forEach((i) => estado.vistos.add(i.id));
@@ -626,7 +633,7 @@ $('#iaProveedor').addEventListener('change', () => {
   // Al cambiar de proveedor, la clave y el modelo del anterior no sirven
   if ($('#iaProveedor').value !== (emp.ia.proveedor || '')) { $('#iaClave').value = ''; $('#iaModelo').value = ''; }
   else cargarAjustesIa();
-  $('#iaEstado').textContent = ''; pintarCamposIa();
+  $('#iaEstado').textContent = ''; pintarCamposIa(); pintarCuradorAuto();
 });
 $('#iaProbar').addEventListener('click', async () => {
   const cfg = leerAjustesIa(); const est = $('#iaEstado');
@@ -670,19 +677,97 @@ $('#btnActualizar').addEventListener('click', async (e) => {
   if (r && !r.ok) $('#estadoDatos').textContent = `Error al actualizar: ${r.error}`;
 });
 
-$('#btnAjustes').addEventListener('click', () => { cargarAjustesIa(); $('#ajustes').showModal(); });
+$('#btnAjustes').addEventListener('click', () => { cargarAjustesIa(); cargarCurador(); $('#ajustes').showModal(); });
 $('#guardarAjustes').addEventListener('click', async () => {
   const ia = leerAjustesIa();
   const permiso = pedirPermisoIa(ia);
   const url = $('#urlDatos').value.trim() || URL_DATOS_DEFECTO;
+  const urlCurado = $('#urlCurado').value.trim();
   const { config = {} } = await almacen.get('config');
   await permiso;
-  emp.ia = ia; await almacen.set({ ia });
+  emp.ia = ia; await almacen.set({ ia, curadoConfig: { frecuencia: $('#curFrec').value } });
   pintarEmpleo();
-  await almacen.set({ config: { ...config, urlDatos: url } });
+  await almacen.set({ config: { ...config, urlDatos: url, urlCurado } });
   mensaje({ tipo: 'actualizar' }).then(cargar);
 });
 
-if (ext) ext.storage.onChanged.addListener((cambios, area) => { if (area === 'local' && cambios.datos) cargar(); });
+// ---------- Actualizar becas, eventos y cursos con tu IA ----------
+async function datosCurados() {
+  const g = await almacen.get(['curadoClaude', 'curadoPropio']);
+  return { g, actual: elegirCurado(g.curadoClaude, g.curadoPropio) };
+}
+function pintarCuradorAuto() { $('#curAuto').hidden = !buscaEnWeb({ proveedor: $('#iaProveedor').value }); }
+async function cargarCurador() {
+  const { curadoConfig = {}, curadoUltimo, curadoPropio } = await almacen.get(['curadoConfig', 'curadoUltimo', 'curadoPropio']);
+  $('#curFrec').value = FRECUENCIAS[curadoConfig.frecuencia] ? curadoConfig.frecuencia : 'manual';
+  $('#curEstado').textContent = ''; $('#curCopiado').textContent = ''; $('#curAhoraEstado').textContent = '';
+  pintarCuradorAuto();
+  const u = curadoUltimo;
+  $('#curUltimo').textContent = !u ? '' : u.enCurso && !u.fecha ? 'Hay una revisión en curso…'
+    : u.ok ? `Última revisión con ${u.proveedor || 'tu IA'}: ${new Date(u.fecha).toLocaleString('es-PE')} · ${u.resumen.nuevos.length} nuevas, ${u.resumen.cambiados.length} revisadas.`
+      : `Último intento falló: ${u.error}`;
+  $('#curVolverFila').hidden = !curadoPropio;
+}
+$('#curFrec').addEventListener('change', async () => { await almacen.set({ curadoConfig: { frecuencia: $('#curFrec').value } }); });
+$('#curCopiar').addEventListener('click', async () => {
+  const { actual } = await datosCurados();
+  const est = $('#curCopiado');
+  if (!actual) { est.textContent = 'Aún no hay datos: pulsa ↻ primero.'; return; }
+  try {
+    await navigator.clipboard.writeText(promptCurador({ datos: actual, frecuencia: $('#curFrec').value, paraChat: true }));
+    est.textContent = '✔ Copiado. Pégalo en tu IA con búsqueda web.';
+  } catch { est.textContent = 'No se pudo copiar.'; }
+});
+$('#curImportar').addEventListener('click', async () => {
+  const est = $('#curEstado');
+  const texto = $('#curRespuesta').value.trim();
+  if (!texto) { est.textContent = 'Pega primero la respuesta de la IA.'; return; }
+  try {
+    const { actual } = await datosCurados();
+    const { datos, resumen } = aplicarParche(actual, leerParche(texto), { proveedor: 'tu IA (prompt copiado)' });
+    const fecha = new Date().toISOString();
+    await almacen.set({ curadoPropio: datos, curadoUltimo: { intento: fecha, fecha, ok: true, resumen, proveedor: 'tu IA (prompt copiado)' } });
+    $('#curRespuesta').value = '';
+    est.textContent = `✔ Importado: ${resumen.nuevos.length} nuevas, ${resumen.cambiados.length} revisadas, ${resumen.retirados.length} retiradas${resumen.descartados.length ? `, ${resumen.descartados.length} descartadas por datos inválidos (${resumen.descartados[0]})` : ''}.`;
+    $('#curVolverFila').hidden = false;
+  } catch (e) { est.textContent = `✖ ${e.message || e}`; }
+});
+$('#curAhora').addEventListener('click', async () => {
+  const est = $('#curAhoraEstado');
+  const ia = leerAjustesIa();
+  const permiso = pedirPermisoIa(ia); // en el mismo clic, como exige el navegador
+  if (!buscaEnWeb(ia) || !configurada(ia)) { est.textContent = 'Primero conecta Gemini, Claude o ChatGPT y pulsa «Probar y listar modelos».'; return; }
+  if (!(await permiso)) { est.textContent = 'Sin permiso para conectar con el proveedor.'; return; }
+  emp.ia = ia;
+  await almacen.set({ ia, curadoConfig: { frecuencia: $('#curFrec').value } });
+  est.textContent = 'Revisando con búsqueda web… puede tardar unos minutos. Puedes cerrar Ajustes.';
+  $('#curAhora').disabled = true;
+  const r = await mensaje({ tipo: 'curar' });
+  $('#curAhora').disabled = false;
+  est.textContent = r?.ok ? `✔ Listo: ${r.resumen.nuevos.length} nuevas, ${r.resumen.cambiados.length} revisadas, ${r.resumen.retirados.length} retiradas.` : `✖ ${r?.error || 'No se pudo completar.'}`;
+  cargarCurador();
+});
+$('#curVolver').addEventListener('click', async () => {
+  await (ext ? ext.storage.local.remove('curadoPropio') : almacen.set({ curadoPropio: null }));
+  $('#curVolverFila').hidden = true; $('#curEstado').textContent = 'Se muestran de nuevo los datos de Claude.';
+});
+
+// ---------- Empleo: secciones ----------
+$$('.segmento').forEach((b) => b.addEventListener('click', () => {
+  $$('.segmento').forEach((x) => { const on = x === b; x.classList.toggle('activo', on); x.setAttribute('aria-pressed', on); });
+  $('#segOfertas').hidden = b.dataset.seg !== 'ofertas';
+  $('#segRutas').hidden = b.dataset.seg !== 'rutas';
+  $('#segCv').hidden = b.dataset.seg !== 'cv';
+}));
+
+const oport = montarOportunidades({ almacen, mensaje });
+const rutas = montarRutas({ almacen });
+
+if (ext) ext.storage.onChanged.addListener((cambios, area) => {
+  if (area !== 'local') return;
+  if (cambios.datos) cargar();
+  if (cambios.curadoClaude || cambios.curadoPropio) { oport.cargar(); rutas.cargar(emp.perfil); }
+});
 cargar();
-cargarEmpleo();
+oport.cargar();
+cargarEmpleo().then(() => rutas.cargar(emp.perfil));

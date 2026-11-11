@@ -22,12 +22,63 @@
   </header>
 
   <nav class="pestanas" role="tablist">
-    <button role="tab" class="pestana activa" data-pestana="becas" aria-selected="true">🎓 Becas <span id="contBecas" class="contador"></span></button>
-    <button role="tab" class="pestana" data-pestana="empleo" aria-selected="false">💼 Empleo y prácticas</button>
+    <button role="tab" class="pestana activa" data-pestana="oport" aria-selected="true">🎓 Oportunidades <span id="contOport" class="contador"></span></button>
+    <button role="tab" class="pestana" data-pestana="becas" aria-selected="false">📡 Radar <span id="contBecas" class="contador"></span></button>
+    <button role="tab" class="pestana" data-pestana="empleo" aria-selected="false">💼 Empleo</button>
   </nav>
 
-  <!-- ================= BECAS ================= -->
-  <section id="becas" class="panel activo" role="tabpanel">
+  <!-- ================= OPORTUNIDADES (verificadas por Claude) ================= -->
+  <section id="oport" class="panel activo" role="tabpanel">
+    <div class="o-cabeza">
+      <div>
+        <p class="o-lema">Becas, pasantías, eventos y cursos con certificado, revisados en la web oficial de cada convocatoria.</p>
+        <p id="oOrigen" class="sutil"></p>
+      </div>
+      <div class="sello" aria-label="Fecha de la última verificación"><b>VERIFICADO</b><span id="oSello">—</span><small id="oFrec"></small></div>
+    </div>
+    <div class="o-tipos" id="oTipos" role="group" aria-label="Tipo de oportunidad"></div>
+    <div class="o-conteos" id="oConteos" role="group" aria-label="Filtrar por estado"></div>
+    <div class="filtros">
+      <input id="oBuscar" type="search" placeholder="Buscar: minería, Alemania, ArcGIS, certificado gratis…" autocomplete="off">
+      <div class="fila">
+        <select id="oEsp" aria-label="Especialidad"></select>
+        <select id="oNivel" aria-label="Nivel"></select>
+        <button class="chip" id="oFavs" aria-pressed="false">★ Favoritas</button>
+      </div>
+    </div>
+
+    <details class="o-linea" id="oLineaBloque" open>
+      <summary>Próximos seis meses</summary>
+      <div class="tl-scroll"><div class="tl" id="oLinea"></div></div>
+      <div class="leyenda">
+        <span><i class="bar abierta"></i>Abierta</span>
+        <span><i class="bar prog"></i>Plazo según programa</span>
+        <span><i class="bar porabrir"></i>Aún no abre</span>
+        <span><i class="bar est"></i>Fecha estimada</span>
+        <span><i class="bar ev"></i>Días del evento</span>
+        <span><i class="bar cur"></i>Inscripción a curso</span>
+      </div>
+    </details>
+
+    <p id="oResumen" class="resumen"></p>
+    <div id="oLista" class="libro"></div>
+    <div id="oVacio" class="vacio" hidden></div>
+
+    <details class="salud">
+      <summary>Registro de cambios</summary>
+      <div id="oRegistro"></div>
+    </details>
+    <details class="salud">
+      <summary>Cómo se verifican las fechas</summary>
+      <p class="sutil">Cada lunes Claude revisa la página oficial de cada convocatoria (no blogs ni agregadores) y actualiza aperturas, cierres y fechas clave. Si una institución aún no publica su nueva convocatoria, la fecha se marca como <span class="est">estimada</span> según el ciclo anterior. Los cursos se revisan igual: si el certificado sigue gratis y hasta cuándo vale cada descuento.</p>
+      <p class="sutil">Puedes sumar revisiones extra con tu propia IA en ⚙ Ajustes. La extensión siempre muestra los datos más recientes. Antes de postular, confirma en las bases oficiales.</p>
+      <p class="sutil">Para conocer a quienes ganaron cada beca, la ficha enlaza a búsquedas de LinkedIn: solo aparecen quienes lo cuentan en su perfil.</p>
+    </details>
+  </section>
+
+  <!-- ================= RADAR (recolector automático) ================= -->
+  <section id="becas" class="panel" role="tabpanel" hidden>
+    <p class="sutil radar-intro">Convocatorias que el recolector encuentra cada mañana en 11 fuentes oficiales, sin IA. Las más relevantes pasan luego a «Oportunidades» con su ficha completa.</p>
     <div class="filtros">
       <input id="buscar" type="search" placeholder="Buscar beca, país, universidad…" autocomplete="off">
       <div class="fila">
@@ -75,6 +126,44 @@
 
   <!-- ================= EMPLEO ================= -->
   <section id="empleo" class="panel" role="tabpanel" hidden>
+    <div class="segmentos" role="group" aria-label="Sección de empleo">
+      <button class="segmento activo" data-seg="ofertas" aria-pressed="true">Ofertas para ti</button>
+      <button class="segmento" data-seg="rutas" aria-pressed="false">Rutas de búsqueda</button>
+      <button class="segmento" data-seg="cv" aria-pressed="false">Prompt de CV</button>
+    </div>
+
+    <div id="segRutas" class="seg-panel" hidden>
+      <p class="sutil">Elige ruta, especialidad y nivel. Cada enlace abre una búsqueda en vivo en la bolsa de trabajo.</p>
+      <div class="r-ctrl">
+        <div class="fgrupo"><span class="flabel">Ruta</span><div class="chips" id="rRuta"></div></div>
+        <div class="fgrupo"><span class="flabel">Especialidad</span><div class="chips" id="rEsp"></div></div>
+        <div class="fgrupo"><span class="flabel">Nivel</span><div class="chips" id="rNiv"></div></div>
+      </div>
+      <div id="rSalida" class="r-salida" aria-live="polite"></div>
+    </div>
+
+    <div id="segCv" class="seg-panel" hidden>
+      <p class="sutil">Pega el aviso, elige especialidad y nivel, y copia el prompt. Pégalo en un chat nuevo de cualquier IA junto con tu CV.</p>
+      <form id="cvForm" class="cv-form" onsubmit="return false">
+        <label class="ancho">Texto de la oferta
+          <textarea id="cvOferta" rows="8" placeholder="Pega aquí el aviso completo: cargo, empresa, funciones y requisitos."></textarea>
+        </label>
+        <p><button type="button" class="enlace" id="cvEjemplo">Cargar un aviso de ejemplo</button></p>
+        <div class="fila">
+          <label>Especialidad <select id="cvEsp"></select></label>
+          <label>Nivel <select id="cvNiv"></select></label>
+        </div>
+        <label class="ancho">Puesto o empresa para el nombre del archivo
+          <input id="cvNombre" type="text" autocomplete="off" placeholder="Si lo dejas vacío, se usa la primera línea del aviso">
+        </label>
+        <p class="sutil">Archivo final: <code id="cvArchivoFinal">—</code></p>
+        <div class="cv-barra"><span class="flabel">Prompt listo para copiar</span><button type="button" class="primario" id="cvCopiar">Copiar prompt</button></div>
+        <textarea id="cvPrompt" readonly rows="14" aria-label="Prompt generado"></textarea>
+        <p class="sutil" id="cvEstado" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <div id="segOfertas" class="seg-panel">
     <div class="barra-empleo">
       <div>
         <p id="empleoEstado" class="sutil">Aún no se ha buscado.</p>
@@ -199,6 +288,7 @@
       </div>
     </form>
     </details>
+    </div>
   </section>
 
   <!-- ================= AJUSTES ================= -->
@@ -210,8 +300,35 @@
       </label>
       <p class="sutil">Por defecto lee <code>data/becas.json</code> del repositorio <code>QUARCISSUS-X/becas-al-dia</code>.</p>
 
+      <label class="ancho">URL de las oportunidades verificadas por Claude
+        <input id="urlCurado" type="url" spellcheck="false" placeholder="Se deduce de la URL de arriba">
+      </label>
+
       <h3>✨ Inteligencia artificial (opcional)</h3>
-      <p class="sutil">Todo funciona sin esto. Con tu propia clave se activan: análisis de afinidad, carta de presentación, CV adaptado y respuestas a preguntas de formularios.</p>
+      <p class="sutil">Todo funciona sin esto. Con tu propia clave se activan: revisión extra de becas, eventos y cursos, análisis de afinidad, carta de presentación, CV adaptado y respuestas a preguntas de formularios.</p>
+      <fieldset class="curador">
+        <legend>Actualizar becas, eventos y cursos con IA</legend>
+        <p class="sutil">Claude revisa todo cada lunes y la extensión lo descarga sola. Si quieres revisiones extra con otra IA, elige cada cuánto:</p>
+        <label class="ancho">Frecuencia
+          <select id="curFrec">
+            <option value="manual">Solo cuando yo lo pida</option>
+            <option value="diaria">Cada día</option>
+            <option value="3dias">Cada 3 días</option>
+            <option value="semanal">Cada semana</option>
+            <option value="quincenal">Cada 2 semanas</option>
+          </select>
+        </label>
+        <p><button type="button" id="curCopiar" class="primario">📋 Copiar prompt para cualquier IA</button> <span id="curCopiado" class="sutil" aria-live="polite"></span></p>
+        <p class="sutil">Pégalo en ChatGPT, Gemini, Claude, Copilot o Perplexity con la búsqueda web activada. Si tu IA permite tareas programadas, el prompt le pide repetir la revisión con esa frecuencia. Luego pega aquí su respuesta:</p>
+        <textarea id="curRespuesta" rows="4" spellcheck="false" placeholder="Pega aquí la respuesta de la IA (el bloque JSON)…"></textarea>
+        <p><button type="button" id="curImportar">Importar respuesta</button> <span id="curEstado" class="sutil" aria-live="polite"></span></p>
+        <div id="curAuto" hidden>
+          <p><button type="button" id="curAhora">✨ Actualizar ahora con mi IA</button> <span id="curAhoraEstado" class="sutil" aria-live="polite"></span></p>
+          <p class="sutil">Con tu IA conectada, la revisión también se hace sola en segundo plano con la frecuencia elegida (usa búsqueda web, que en Claude y ChatGPT tiene costo).</p>
+        </div>
+        <p class="sutil" id="curUltimo"></p>
+        <p class="sutil" id="curVolverFila" hidden><button type="button" id="curVolver" class="enlace">Volver a los datos de Claude</button></p>
+      </fieldset>
       <label class="ancho">Proveedor
         <select id="iaProveedor">
           <option value="">Sin IA</option>

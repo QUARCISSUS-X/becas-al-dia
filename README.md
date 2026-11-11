@@ -18,6 +18,32 @@ GitHub Actions (6:17 a. m. Lima)          Tu navegador
 └──────────────────────────────┘
 ```
 
+## Novedades de la v4.0
+
+- **🎓 Oportunidades**: las becas, eventos y cursos que Claude verifica cada lunes en la página «Becas al Día», con su ficha completa. Cada ficha trae requisitos, beneficios, documentos, fechas clave, fuentes y enlaces para ver ganadores en LinkedIn. La pestaña tiene:
+  - el sello «Verificado»;
+  - la línea de tiempo de los próximos 6 meses;
+  - estados abierta, próxima y cerrada;
+  - filtros por tipo, especialidad y nivel;
+  - favoritas con aviso antes del cierre;
+  - el registro de cambios.
+- **📡 Radar**: lo que el recolector encuentra cada mañana en 11 fuentes oficiales (la pestaña Becas de antes).
+- **💼 Empleo** tiene tres secciones:
+  - **Ofertas para ti**: el % de coincidencia de siempre.
+  - **Rutas de búsqueda**: búsquedas en vivo en cada bolsa, sinónimos, búsqueda booleana, requisitos típicos, normas, empresas para seguir y ofertas verificadas.
+  - **Prompt de CV**: pegas un aviso y copias el prompt.
+- **IA opcional para revisar las oportunidades** (⚙ Ajustes → «Actualizar becas, eventos y cursos con IA»):
+  - **📋 Copiar prompt para cualquier IA**: ChatGPT, Gemini, Claude, Copilot o Perplexity con búsqueda web hacen la misma revisión que Claude. Si tu IA tiene tareas programadas, el prompt le pide repetirla con la frecuencia que elijas. Pegas su respuesta en «Importar respuesta».
+  - **✨ Actualizar ahora con mi IA**: si conectaste Gemini, Claude o ChatGPT, la extensión hace la revisión por sí sola, con búsqueda web, ahora o con la frecuencia elegida.
+  - La extensión muestra siempre los datos más recientes: los de Claude o los de tu IA. «Volver a los datos de Claude» descarta tu revisión.
+
+### De dónde salen los datos
+
+| Archivo | Quién lo actualiza | Cuándo |
+|---|---|---|
+| `data/curado.json` | La revisión semanal de Claude (copia los datos de la página con `scripts/extraer-curado.mjs`) | Cada lunes |
+| `data/becas.json` | El recolector de GitHub Actions | Cada mañana |
+
 ## Instalación (una sola vez, ~10 min)
 
 ### 1. Crear el repositorio
@@ -149,5 +175,6 @@ Si un portal cambia su web, en «Estado de los portales» aparecerá ⚠ o ✖. 
 - [x] **Fase 1**: recolector y pestaña Becas. Pestaña Empleo con el perfil.
 - [x] **Fase 2**: ofertas de empleo y prácticas de Bumeran, Computrabajo y Talento Perú, filtradas por tus perfiles. Cada oferta tiene su % de coincidencia con tu CV, etiqueta «Minera» y el prompt para adaptar el CV.
 - [x] **v0.3**: requisitos indispensables vs. deseables, aprendizaje de tus decisiones, ofertas repetidas unidas, registro de postulaciones e IA opcional con tu propia clave.
+- [x] **v4.0**: oportunidades verificadas por Claude, rutas de empleo, prompt de CV y revisión con cualquier IA.
 - [ ] **Fase 2b**: portales de carrera de las mineras (Antamina, Southern, Cerro Verde, Las Bambas…).
 - [ ] **Fase 3**: autocompletado de formularios portal por portal y registro de postulaciones.
