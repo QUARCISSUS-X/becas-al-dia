@@ -18,6 +18,22 @@ GitHub Actions (6:17 a. m. Lima)          Tu navegador
 └──────────────────────────────┘
 ```
 
+## Novedades de la v4.2
+
+- **⛏ Mis mineras**: en cada búsqueda se leen todas las vacantes del portal de empleo oficial de Antamina, Minsur, Alpayana, Poderosa y Cerro Verde. MARSA no tiene un portal vigente, así que sus avisos se buscan en Bumeran. Eliges las mineras en **👤 Mi perfil y CV → Mineras de interés**. La primera vez que pulses «Buscar ofertas», el navegador te pedirá permiso para esos sitios.
+
+  | Minera | Portal | Plataforma |
+  |---|---|---|
+  | Antamina | mastalento.antamina.com | SAP SuccessFactors |
+  | Minsur | oportunidades-laborales.com/minsur | SAP SuccessFactors |
+  | Alpayana | abrilhr.pe (Site Laboral) | Abril HR |
+  | Poderosa | minerapoderosa.hiringroom.com | HiringRoom |
+  | Cerro Verde | cerroverde.hiringroom.com | HiringRoom |
+  | MARSA | Bumeran (por nombre de empresa) | — |
+
+  Sus ofertas llevan la etiqueta «⛏ Mis mineras», tienen su propio filtro y aparecen en «Estado de los portales». Los lectores están en `extension/empleo/mineras.js`.
+- **Buscar también en LinkedIn, Indeed y otras bolsas**: debajo de «Buscar ofertas», enlaces con tus términos de búsqueda a LinkedIn, Indeed, Google Empleos, Bumeran, Computrabajo y Laborum, filtrados a la última semana cuando la bolsa lo permite. LinkedIn e Indeed prohíben la lectura automática y bloquean cuentas, así que la extensión solo arma el enlace: la búsqueda la abres tú.
+
 ## Novedades de la v4.1
 
 - **⬇ Enviar a Claude Code**: cada oferta tiene un botón que la descarga como `oferta_<id>.json` en `Descargas/becas-al-dia/`. El archivo lleva el aviso completo y el análisis de coincidencia, y nunca tu CV ni tu perfil. Sirve para preparar la postulación en una carpeta privada de Claude Code con el comando `/postular`. Por eso la extensión pide el permiso de **descargas**.
@@ -120,7 +136,7 @@ Si usas otro nombre de repo o de cuenta, cámbialo en ⚙ **Ajustes** dentro del
   - `rss`: un feed.
   - `html`: una página con una lista de enlaces.
   - `programa`: una beca recurrente con su página oficial.
-- **Pruebas.** Se ejecutan con `cd collector && npm install && npm test`. Cubren el recolector y la búsqueda de empleo, y usan webs simuladas, sin internet.
+- **Pruebas.** Se ejecutan con `cd collector && npm install && npm test`. Cubren el recolector, la búsqueda de empleo y los portales de las mineras, y usan webs simuladas, sin internet.
 
 ## Pestaña Empleo y prácticas (Fase 2)
 
@@ -202,5 +218,5 @@ Si un portal cambia su web, en «Estado de los portales» aparecerá ⚠ o ✖. 
 - [x] **v0.3**: requisitos indispensables vs. deseables, aprendizaje de tus decisiones, ofertas repetidas unidas, registro de postulaciones e IA opcional con tu propia clave.
 - [x] **v4.0**: oportunidades verificadas por Claude, rutas de empleo, prompt de CV y revisión con cualquier IA.
 - [x] **v4.1**: botón «Enviar a Claude Code» (oferta en JSON), reglas únicas para los prompts de CV y nombre de archivo sin tildes.
-- [ ] **Fase 2b**: portales de carrera de las mineras (Antamina, Southern, Cerro Verde, Las Bambas…).
+- [x] **v4.2 (Fase 2b)**: portales de empleo de Antamina, Minsur, Alpayana, Poderosa, Cerro Verde y MARSA (vía Bumeran), y enlaces a LinkedIn, Indeed y otras bolsas.
 - [ ] **Fase 3**: autocompletado de formularios portal por portal y registro de postulaciones.

@@ -167,6 +167,10 @@ dialog .pie-form { justify-content: flex-end; margin-top: 12px; }
 }
 .oferta-acciones button:not(.fav):hover { border-color: var(--acento); }
 .oferta-acciones .btn-ocultar { margin-left: auto; color: var(--sutil); }
+.otras-bolsas { margin: 6px 0 10px; line-height: 1.8; }
+.otras-bolsas select { max-width: 13em; font-size: 12px; }
+.otras-bolsas a { margin-right: 8px; white-space: nowrap; }
+.otras-bolsas .nota { display: block; font-size: 11px; }
 .enlace { background: none; border: 0; padding: 0; color: var(--acento); cursor: pointer; text-decoration: underline; font-size: inherit; }
 .perfil-bloque { margin-top: 14px; }
 .perfil-bloque > summary { cursor: pointer; font-weight: 700; padding: 8px 0; }

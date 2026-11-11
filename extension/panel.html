@@ -171,6 +171,11 @@
       </div>
       <button id="btnBuscarEmpleo" class="primario">Buscar ofertas</button>
     </div>
+    <p class="otras-bolsas sutil">Buscar también en
+      <select id="eOtrasQ" aria-label="Término para las otras bolsas"></select>:
+      <span id="eOtrasLinks"></span>
+      <span class="nota">(se abren en una pestaña; LinkedIn e Indeed no permiten la lectura automática)</span>
+    </p>
 
     <div class="filtros">
       <input id="eBuscar" type="search" placeholder="Filtrar por puesto, empresa, lugar…" autocomplete="off">
@@ -192,6 +197,7 @@
         <button class="chip" id="ePracticas">Prácticas</button>
         <button class="chip" id="eEmpleos">Solo empleos</button>
         <button class="chip" id="eMineras">Mineras</button>
+        <button class="chip" id="eInteres" title="Antamina, Minsur, Alpayana, MARSA, Poderosa y Cerro Verde (según tu perfil)">⛏ Mis mineras</button>
         <button class="chip" id="ePublico">Sector público</button>
         <button class="chip" id="eGuardadas">★ Guardadas</button>
         <button class="chip" id="ePostuladas">Postuladas <span id="ePostuladasN"></span></button>
@@ -256,6 +262,19 @@
           <label><input type="checkbox" name="perfiles" value="ambiental"> Ingeniería ambiental</label>
           <label><input type="checkbox" name="perfiles" value="civil"> Ingeniería civil</label>
           <label><input type="checkbox" name="perfiles" value="practicas"> Prácticas profesionales</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Mineras de interés</legend>
+        <p class="sutil">Se leen todas las vacantes de su portal de empleo oficial en cada búsqueda. La primera vez, el navegador te pedirá permiso para esos sitios.</p>
+        <div class="checks">
+          <label><input type="checkbox" name="mineras" value="antamina"> Antamina</label>
+          <label><input type="checkbox" name="mineras" value="minsur"> Minsur</label>
+          <label><input type="checkbox" name="mineras" value="alpayana"> Alpayana</label>
+          <label><input type="checkbox" name="mineras" value="marsa"> MARSA (vía Bumeran)</label>
+          <label><input type="checkbox" name="mineras" value="poderosa"> Poderosa</label>
+          <label><input type="checkbox" name="mineras" value="cerroverde"> Cerro Verde</label>
         </div>
       </fieldset>
 
