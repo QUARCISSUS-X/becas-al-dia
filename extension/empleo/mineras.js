@@ -152,12 +152,13 @@ const lugar = (loc) => {
   const a = l.address;
   return limpiar(typeof a === 'string' ? a : [a?.addressLocality, a?.addressRegion, a?.addressCountry].filter(Boolean).join(', '));
 };
-function hiringRoom({ clave, nombre, base }) {
+// `ruta`: el portal nuevo redirige /jobs a http://…/portal, y Firefox bloquea ese salto a http; se pide /portal directo.
+function hiringRoom({ clave, nombre, base, ruta = '/jobs' }) {
   const crear = (vid, extra) => ({ id: `hr-${clave}-${vid}`, portal: `min-${clave}`, portalMinera: clave, fuente: nombre, empresa: nombre, ...extra });
   return {
     id: `min-${clave}`, nombre, clave, origen: `${base}/*`,
     async buscar(dep, hoy = new Date()) {
-      const doc = dep.parsear(await texto(dep, `${base}/jobs`));
+      const doc = dep.parsear(await texto(dep, `${base}${ruta}`));
       const lista = jsonLd(doc).find((x) => x?.['@type'] === 'ItemList');
       if (lista) {
         return (lista.itemListElement || []).map((e) => e.item || e).filter((jp) => jp?.title && jp.url).map((jp) => {
@@ -217,7 +218,7 @@ export const MINERAS_INTERES = {
   alpayana: abril({ clave: 'alpayana', nombre: 'Alpayana', empresa: 'Alpayana' }),
   marsa: enBumeran({ clave: 'marsa', nombre: 'MARSA', consulta: 'Minera Aurifera Retamas', empresaRe: /retamas|\bmarsa\b/i }),
   poderosa: hiringRoom({ clave: 'poderosa', nombre: 'Poderosa', base: 'https://minerapoderosa.hiringroom.com' }),
-  cerroverde: hiringRoom({ clave: 'cerroverde', nombre: 'Cerro Verde', base: 'https://cerroverde.hiringroom.com' }),
+  cerroverde: hiringRoom({ clave: 'cerroverde', nombre: 'Cerro Verde', base: 'https://cerroverde.hiringroom.com', ruta: '/portal' }),
 };
 
 /** Mineras elegidas en el perfil; si nunca se eligieron, todas. */

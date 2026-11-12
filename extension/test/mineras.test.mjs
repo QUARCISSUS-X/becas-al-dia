@@ -71,7 +71,7 @@ async function fetchFalso(url, op = {}) {
   if (u.startsWith('https://oportunidades-laborales.com/minsur/search/')) return resp(SF_MINSUR);
   if (u.startsWith('https://oportunidades-laborales.com/minsur/job/')) return resp(SF_DETALLE.replace('Antamina', 'Minsur'));
   if (u === 'https://www.abrilhr.pe/api/v1/empresa/Alpayana/project/') return resp(JSON.stringify(ABRIL), 'application/json');
-  if (u === 'https://cerroverde.hiringroom.com/jobs') return resp(HR_NUEVO);
+  if (u === 'https://cerroverde.hiringroom.com/portal') return resp(HR_NUEVO);
   if (u === 'https://minerapoderosa.hiringroom.com/jobs') return resp(HR_ANTIGUO);
   if (u.startsWith('https://minerapoderosa.hiringroom.com/jobs/get_vacancy/')) return resp(HR_DETALLE);
   if (u.startsWith('https://www.bumeran.com.pe/api/avisos/searchV2')) return resp(JSON.stringify(BUMERAN), 'application/json');
