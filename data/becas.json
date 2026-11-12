@@ -1,9 +1,9 @@
 {
  "version": 1,
- "generado": "2026-11-11T22:54:18.225Z",
- "hoy": "2026-11-11",
- "total": 115,
- "abiertas": 40,
+ "generado": "2026-11-12T18:57:00.824Z",
+ "hoy": "2026-11-12",
+ "total": 130,
+ "abiertas": 52,
  "items": [
   {
    "id": "0fa3d35d4e40",
@@ -120,6 +120,61 @@
    "vistoUltimo": "2026-11-11"
   },
   {
+   "id": "b1ea7e80b82f",
+   "titulo": "Top 10+ Scholarships in Italy for International Students",
+   "url": "https://www.scholars4dev.com/scholarships-in-italy-scholarships-for-international-students/",
+   "resumen": "©iStock.com/cofkocof Tuition at Italian public universities is relatively low and often depends on family income, and international students can apply for the same regional right-to-study grants as Italian students. Below, scholars4dev.com lists the top 10+ scholarships in Italy ",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-11-15",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-12",
+   "estado": "abierta",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "doctorado",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental",
+    "civil",
+    "gestion"
+   ],
+   "cobertura": null,
+   "paraPeru": true,
+   "publicado": "2026-11-12",
+   "primeraVez": "2026-11-12",
+   "vistoUltimo": "2026-11-12"
+  },
+  {
+   "id": "80cb629beb61",
+   "titulo": "AllPeopleBeHappy Volunteer Service Award Program 2027 (Funded)",
+   "url": "https://opportunitydesk.org/2026/11/12/allpeoplebehappy-volunteer-service-award-program-2027/",
+   "resumen": "Deadline: November 15, 2026 Applications are open for the AllPeopleBeHappy Volunteer Service Award Program 2027. AllPeopleBeHappy is proud to launch their second year Volunteer Service Award program, open to any individuals 18 years of age and older who are interested in cultural",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-11-15",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-12",
+   "estado": "abierta",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-12",
+   "primeraVez": "2026-11-12",
+   "vistoUltimo": "2026-11-12"
+  },
+  {
    "id": "34377b2698d4",
    "titulo": "Computation & Cognition Tübingen Summer (CaCTüS) Internship Program 2027",
    "url": "https://opportunitydesk.org/2026/11/10/cactus-internship-program-2027/",
@@ -216,6 +271,30 @@
    "vistoUltimo": "2026-11-09"
   },
   {
+   "id": "a39024ac3681",
+   "titulo": "Walk of Water Photostory Contest 2026: Out of Sight ($9,000 prize pool)",
+   "url": "https://opportunitydesk.org/2026/11/12/walk-of-water-photostory-contest-2026-out-of-sight/",
+   "resumen": "Deadline: November 20, 2026 Applications are open for the Walk of Water Photostory Contest 2026: Out of Sight. This sixth edition’s theme, “Out of Sight,” spans the full breadth of water and health, how water shapes health, longevity and well-being, and shines its brightest light",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-11-20",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-12",
+   "estado": "abierta",
+   "niveles": [],
+   "areas": [
+    "ambiental"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-12",
+   "primeraVez": "2026-11-12",
+   "vistoUltimo": "2026-11-12"
+  },
+  {
    "id": "78d68c264911",
    "titulo": "Africa Dyslexia Teacher Fellowship Program 2027",
    "url": "https://opportunitydesk.org/2026/11/11/africa-dyslexia-teacher-fellowship-program-2027/",
@@ -227,7 +306,7 @@
    "fechaLimite": "2026-11-20",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-11",
+   "verificado": "2026-11-12",
    "estado": "abierta",
    "niveles": [
     "investigacion"
@@ -237,7 +316,7 @@
    "paraPeru": false,
    "publicado": "2026-11-11",
    "primeraVez": "2026-11-11",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "1d3dfec8ebb0",
@@ -262,6 +341,69 @@
    "publicado": "2026-11-09",
    "primeraVez": "2026-11-09",
    "vistoUltimo": "2026-11-11"
+  },
+  {
+   "id": "08547f8656f4",
+   "titulo": "Top 10+ Scholarships in Australia for International Students",
+   "url": "https://www.scholars4dev.com/australia-scholarships/",
+   "resumen": "©iStock.com/scibak The Australian Government and Australian universities offer many scholarships for international students who want to study in Australia, from government awards for developing countries to research scholarships with a living stipend and university scholarships t",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-11-28",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-12",
+   "estado": "abierta",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "doctorado",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental",
+    "civil",
+    "gestion"
+   ],
+   "cobertura": null,
+   "paraPeru": true,
+   "publicado": "2026-11-12",
+   "primeraVez": "2026-11-12",
+   "vistoUltimo": "2026-11-12"
+  },
+  {
+   "id": "47aef2894b30",
+   "titulo": "Top 15+ Scholarships in Europe for Non-EU International Students",
+   "url": "https://www.scholars4dev.com/scholarships-in-europe-non-eu-students/",
+   "resumen": "©iStock.com/scibak In most European countries, students from outside the EU/EEA pay much higher tuition fees than European students, often €10,000 to €20,000 a year or more for a Master’s. To attract talented students from the rest of the world, European governments and universit",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-11-29",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-12",
+   "estado": "abierta",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental",
+    "gestion"
+   ],
+   "cobertura": "parcial",
+   "paraPeru": false,
+   "publicado": "2026-11-12",
+   "primeraVez": "2026-11-12",
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "62071262d89a",
@@ -307,7 +449,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "9eff1286f00f",
@@ -369,7 +511,7 @@
    "fechaLimite": "2026-12-01",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-11",
+   "verificado": "2026-11-12",
    "estado": "abierta",
    "niveles": [
     "maestria",
@@ -380,7 +522,7 @@
    "paraPeru": false,
    "publicado": "2026-11-11",
    "primeraVez": "2026-11-11",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "737983464bd6",
@@ -480,6 +622,28 @@
    "vistoUltimo": "2026-11-11"
   },
   {
+   "id": "8e0b8fb415f6",
+   "titulo": "IWMF Kim Wall Memorial Fund 2027 (up to $5,000)",
+   "url": "https://opportunitydesk.org/2026/11/12/iwmf-kim-wall-memorial-fund-2027/",
+   "resumen": "Deadline: December 6, 2026 Applications are open for the Kim Wall Memorial Fund 2027. The IWMF’s Kim Wall Memorial Fund will provide $5,000 grants to journalists whose work embodies the spirit of Kim’s reporting. The grant will fund women or nonbinary reporters covering subcultur",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-12-06",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-12",
+   "estado": "abierta",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-12",
+   "primeraVez": "2026-11-12",
+   "vistoUltimo": "2026-11-12"
+  },
+  {
    "id": "f38d55bc92f4",
    "titulo": "Commonwealth Shared Scholarship Programme 2027/2028 to Study in the U.K. (Fully-funded)",
    "url": "https://opportunitydesk.org/2026/11/11/commonwealth-shared-scholarship-programme-2027-2028/",
@@ -502,6 +666,30 @@
    "publicado": "2026-11-11",
    "primeraVez": "2026-11-11",
    "vistoUltimo": "2026-11-11"
+  },
+  {
+   "id": "71b0556e09a7",
+   "titulo": "Thrive Capital Summer Fellowship 2027 ($100,000 salary)",
+   "url": "https://opportunitydesk.org/2026/11/12/thrive-capital-summer-fellowship-2027/",
+   "resumen": "Deadline: December 11, 2026 Applications are invited for the Thrive Capital Summer Fellowship 2027. The Fellowship is an opportunity for exceptional college students to pursue their own curiosities, develop conviction in their ideas, with support from the people and collective re",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-12-11",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-12",
+   "estado": "abierta",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-12",
+   "primeraVez": "2026-11-12",
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "087113edbef8",
@@ -628,6 +816,30 @@
    "vistoUltimo": "2026-11-11"
   },
   {
+   "id": "c5a1548468a8",
+   "titulo": "Gratitude Network Fellowship 2027",
+   "url": "https://opportunitydesk.org/2026/11/12/gratitude-network-fellowship-2027/",
+   "resumen": "Deadline: January 15, 2027 Applications are invited for the Gratitude Network Fellowship 2027. The Gratitude Network Fellowship is a highly selective, 13 month program designed to accelerate the growth and impact of ambitious nonprofit leaders and their organizations. Each year, ",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-01-15",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-12",
+   "estado": "abierta",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-12",
+   "primeraVez": "2026-11-12",
+   "vistoUltimo": "2026-11-12"
+  },
+  {
    "id": "cbd8af0f3e17",
    "titulo": "Pladis Accelerator Programme 2026",
    "url": "https://opportunitydesk.org/2026/11/11/pladis-accelerator-programme-2026/",
@@ -639,7 +851,7 @@
    "fechaLimite": "2027-01-15",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-11",
+   "verificado": "2026-11-12",
    "estado": "abierta",
    "niveles": [],
    "areas": [
@@ -650,7 +862,7 @@
    "paraPeru": false,
    "publicado": "2026-11-11",
    "primeraVez": "2026-11-11",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "5482f97afae9",
@@ -704,6 +916,34 @@
    "vistoUltimo": "2026-11-09"
   },
   {
+   "id": "c2a137d9c831",
+   "titulo": "University of Helsinki Tuition Fee Waivers for International Master’s Students",
+   "url": "https://www.scholars4dev.com/university-of-helsinki-international-masters-programme-scholarships/",
+   "resumen": "University of Helsinki Masters Degree Deadline: 19 Jan 2027 (annual) Study in: Finland Course starts Autumn 2027 Brief description: The University of Helsinki, Finland’s largest and oldest university, runs a scholarship programme for students from outside the EU/EEA who have to p",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-01-19",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-12",
+   "estado": "abierta",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "curso"
+   ],
+   "areas": [
+    "ambiental"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-12",
+   "primeraVez": "2026-11-12",
+   "vistoUltimo": "2026-11-12"
+  },
+  {
    "id": "291c186928cc",
    "titulo": "Boren Awards for USA students to Study Abroad",
    "url": "https://www.scholars4dev.com/boren-awards-for-usa-students-to-study-abroad/",
@@ -753,7 +993,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "39fd361e6e76",
@@ -829,7 +1069,74 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
+  },
+  {
+   "id": "b746edddb0f8",
+   "titulo": "Top 25+ Scholarships in Europe for International Students",
+   "url": "https://www.scholars4dev.com/europe-scholarships-international-students/",
+   "resumen": "©iStock.com/svetikd Europe has some of the world’s oldest universities and a wide choice of English-taught degrees, and in several countries tuition is free or low-cost even for international students (see the countries in Europe with free tuition). To attract talented students f",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-02-28",
+   "ultimaPasada": "2026-01-15",
+   "fechaAprox": false,
+   "verificado": "2026-11-12",
+   "estado": "abierta",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "doctorado",
+    "posdoc",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental",
+    "civil",
+    "gestion"
+   ],
+   "cobertura": "completa",
+   "paraPeru": true,
+   "publicado": "2026-11-12",
+   "primeraVez": "2026-11-12",
+   "vistoUltimo": "2026-11-12"
+  },
+  {
+   "id": "f2504bd56dd4",
+   "titulo": "Top 10 Scholarships in Belgium for International Students",
+   "url": "https://www.scholars4dev.com/top-10-scholarships-in-belgium-for-international-students/",
+   "resumen": "©iStock.com/cofkocof Belgium is home to highly ranked universities such as KU Leuven and Ghent University, and many of their Master’s programmes are taught in English. Through its development cooperation, the Belgian Government funds full scholarships in Belgium for students and ",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-02-28",
+   "ultimaPasada": "2026-10-31",
+   "fechaAprox": false,
+   "verificado": "2026-11-12",
+   "estado": "abierta",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "doctorado",
+    "posdoc",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental",
+    "gestion"
+   ],
+   "cobertura": "completa",
+   "paraPeru": true,
+   "publicado": "2026-11-12",
+   "primeraVez": "2026-11-12",
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "298a69fda223",
@@ -843,7 +1150,7 @@
    "fechaLimite": "2027-02-28",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-11",
+   "verificado": "2026-11-12",
    "estado": "abierta",
    "niveles": [
     "investigacion"
@@ -855,7 +1162,7 @@
    "paraPeru": false,
    "publicado": "2026-11-11",
    "primeraVez": "2026-11-11",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "c3e335df6ac6",
@@ -999,6 +1306,28 @@
    "vistoUltimo": "2026-11-11"
   },
   {
+   "id": "08e5e65a0c1a",
+   "titulo": "Jodi Harris Scholarship 2027 for Emerging Marketing Leaders",
+   "url": "https://opportunitydesk.org/2026/11/12/jodi-harris-scholarship-2027/",
+   "resumen": "Deadline: December 4, 2027 Applications are open for the Jodi Harris Scholarship 2027. They are accepting 10 emerging marketing leaders back into the Scholarship this year alongside the team at AB InBev. Offering a fully-funded, curated programme – including exclusive sessions wi",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-12-04",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-12",
+   "estado": "abierta",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-12",
+   "primeraVez": "2026-11-12",
+   "vistoUltimo": "2026-11-12"
+  },
+  {
    "id": "08aac2bc744f",
    "titulo": "El viernes 30 de octubre comienza la postulación para becas de posgrado en el extranjero",
    "url": "https://www.gob.pe/institucion/pronabec/noticias/1464430-el-viernes-30-de-octubre-comienza-la-postulacion-para-becas-de-posgrado-en-el-extranjero",
@@ -1020,7 +1349,97 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
+  },
+  {
+   "id": "e6c89e0db772",
+   "titulo": "Top 5+ Scholarships in Finland for International Students",
+   "url": "https://www.scholars4dev.com/tuition-free-universities-scholarships-in-finland-international-students/",
+   "resumen": "©iStock.com/cofkocof Finnish universities are known for high-quality, research-based teaching and offer many Bachelor’s and Master’s programmes in English. Students from the EU/EEA and Switzerland study for free, but students from outside the EU/EEA have paid tuition fees since 2",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-12",
+   "estado": "por-confirmar",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "doctorado",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental",
+    "gestion"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-12",
+   "primeraVez": "2026-11-12",
+   "vistoUltimo": "2026-11-12"
+  },
+  {
+   "id": "101eb1e8db2e",
+   "titulo": "Top 5+ Countries with Free or Low Tuition for International Students",
+   "url": "https://www.scholars4dev.com/list-of-european-countries-with-tuition-freelow-tuition-universities-colleges/",
+   "resumen": "©iStock.com/pavlen If you do not win a fully funded university scholarship, studying in a country with free or low tuition can still make a degree affordable. Public universities in Germany are mostly tuition-free, Austria charges students from outside the EU only a few hundred e",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-12",
+   "estado": "por-confirmar",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "doctorado",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [
+    "gestion"
+   ],
+   "cobertura": "completa",
+   "paraPeru": true,
+   "publicado": "2026-11-12",
+   "primeraVez": "2026-11-12",
+   "vistoUltimo": "2026-11-12"
+  },
+  {
+   "id": "7c63e0671744",
+   "titulo": "Tuition Fees and Scholarships in Norway for International Students",
+   "url": "https://www.scholars4dev.com/norway-scholarships-for-international-students/",
+   "resumen": "©iStock.com/zentilia Norway’s public universities used to be free for everyone, but since autumn 2023 students from outside the EU/EEA and Switzerland have had to pay tuition fees, and the Norwegian Government offers no individual scholarships for international degree students. S",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-12",
+   "estado": "por-confirmar",
+   "niveles": [
+    "maestria",
+    "doctorado",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-12",
+   "primeraVez": "2026-11-12",
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "969ecac2175d",
@@ -1045,7 +1464,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-11",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "cc7801405798",
@@ -1067,7 +1486,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-10",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "d5c5d0326486",
@@ -1091,7 +1510,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-09",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "90826bdb2acb",
@@ -1183,7 +1602,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "e71e7eb76b0e",
@@ -1207,7 +1626,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "cee663f2951b",
@@ -1229,7 +1648,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "1f6c23b68ba1",
@@ -1251,7 +1670,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "ba6455b8a3f3",
@@ -1273,7 +1692,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "bbf097c9af59",
@@ -1295,7 +1714,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "1a37543a047c",
@@ -1319,7 +1738,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "b2ae51ea98ad",
@@ -1343,7 +1762,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "55c6c9e219f5",
@@ -1368,7 +1787,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "e51304633dcb",
@@ -1392,7 +1811,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "b857117cfd8f",
@@ -1416,7 +1835,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "bfdfb6bae497",
@@ -1440,7 +1859,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "94553eea33cb",
@@ -1462,7 +1881,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "c91a16c279fd",
@@ -1484,7 +1903,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "fdc238768f8a",
@@ -1508,7 +1927,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "dd056e50a37b",
@@ -1532,7 +1951,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "48afbfda0a7f",
@@ -1556,7 +1975,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "a0f9bd24dc37",
@@ -1580,7 +1999,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "df18ea746646",
@@ -1604,7 +2023,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "a4db949d0cc6",
@@ -1628,7 +2047,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "d72f4b000fee",
@@ -1652,7 +2071,361 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
+  },
+  {
+   "id": "709e052cbcd4",
+   "titulo": "Programas / Proyectos",
+   "url": "https://www.oas.org/oocpp/default.aspx?lang=es",
+   "resumen": "",
+   "fuente": "oea",
+   "fuenteNombre": "OEA – Programa de Becas",
+   "pais": "Américas",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-12"
+  },
+  {
+   "id": "cce000f3b4a2",
+   "titulo": "Programa de Becas Académicas de la OEA (Grado)",
+   "url": "http://www.oas.org/en/scholarships/specaf_2026.asp",
+   "resumen": "",
+   "fuente": "oea",
+   "fuenteNombre": "OEA – Programa de Becas",
+   "pais": "Américas",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-12"
+  },
+  {
+   "id": "56265b2ee48a",
+   "titulo": "Becas México",
+   "url": "https://www.oas.org/es/becas/Mexico/Convocatoria_Secihti_OEA2026.pdf",
+   "resumen": "",
+   "fuente": "oea",
+   "fuenteNombre": "OEA – Programa de Becas",
+   "pais": "Américas",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-12"
+  },
+  {
+   "id": "07b4b7c403ba",
+   "titulo": "El Programa de Becas Académicas (ASP)",
+   "url": "https://www.oas.org/es/sedi/dhdee/DOCs/2023/ASP%20ESP.pdf",
+   "resumen": "Programa de Becas y Capacitación de la OEA El Programa de Becas y Capacitación de la OEA, en el Departamento de Desarrollo Humano, Educación y Empleo de la Secretaría Ejecutiva para el Desarrollo Integral, ofrece becas para estudios de pregrado y posgrado, así como cursos de capa",
+   "fuente": "oea",
+   "fuenteNombre": "OEA – Programa de Becas",
+   "pais": "Américas",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "curso"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-12"
+  },
+  {
+   "id": "fb3b472d817b",
+   "titulo": "Manual de Procedimientos de Becas OEA",
+   "url": "http://www.oas.org/es/becas/ManualdeProcedimientos.pdf",
+   "resumen": "Programa de Becas y Capacitación de la OEA El Programa de Becas y Capacitación de la OEA, en el Departamento de Desarrollo Humano, Educación y Empleo de la Secretaría Ejecutiva para el Desarrollo Integral, ofrece becas para estudios de pregrado y posgrado, así como cursos de capa",
+   "fuente": "oea",
+   "fuenteNombre": "OEA – Programa de Becas",
+   "pais": "Américas",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "curso"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-12"
+  },
+  {
+   "id": "b53249a26e4f",
+   "titulo": "El Programa de Alianzas para la Educación y la Capacitación (PAEC)",
+   "url": "https://www.oas.org/es/sedi/dhdee/DOCs/2023/PAEC%20ESP.pdf",
+   "resumen": "Programa de Becas y Capacitación de la OEA El Programa de Becas y Capacitación de la OEA, en el Departamento de Desarrollo Humano, Educación y Empleo de la Secretaría Ejecutiva para el Desarrollo Integral, ofrece becas para estudios de pregrado y posgrado, así como cursos de capa",
+   "fuente": "oea",
+   "fuenteNombre": "OEA – Programa de Becas",
+   "pais": "Américas",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "curso"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-12"
+  },
+  {
+   "id": "3fe6afc92bbb",
+   "titulo": "Becas Brasil PAEC OEA y GCUB Mob",
+   "url": "https://www.oas.org/en/scholarships/PAEC/2026/[EN%7D%20Call%20for%20Applications%20GCUB-Mob%20N.%20001_2026%20.pdf",
+   "resumen": "Becas Brasil PAEC OEA y GCUB Mob Programas de Maestría y Doctorado presenciales en Brasil Portugués 6 de julio de 2026 Presencial (Brasil) Grupo de Cooperación Internacional de Universidades Brasileñas (GCUB) PAEC",
+   "fuente": "oea",
+   "fuenteNombre": "OEA – Programa de Becas",
+   "pais": "Américas",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [
+    "maestria",
+    "doctorado"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-12"
+  },
+  {
+   "id": "2504b353449f",
+   "titulo": "Programa de Becas Académicas de la OEA",
+   "url": "http://www.oas.org/en/scholarships/regularprogram/2026/2026%20Academic%20Program%20-%20Candidatos%20Seleccionados1.pdf",
+   "resumen": "Programa de Becas Académicas de la OEA (Convocatoria de Becas para Estudios e Investigación de Postgrado 2026) Españo/Inglés Consulte a la ONE en su pais Resultados Presencial, a distancia (en línea) o una combinación de ambas Consorcio de Universidades de la OEA. Programa de Bec",
+   "fuente": "oea",
+   "fuenteNombre": "OEA – Programa de Becas",
+   "pais": "Américas",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [
+    "maestria",
+    "investigacion"
+   ],
+   "areas": [
+    "gestion"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-12"
+  },
+  {
+   "id": "f5dc38a26511",
+   "titulo": "Empleos y Pasantías",
+   "url": "http://www.oas.org/dhrs/dhr/employment_opportunities.asp",
+   "resumen": "",
+   "fuente": "oea",
+   "fuenteNombre": "OEA – Programa de Becas",
+   "pais": "Américas",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-12"
+  },
+  {
+   "id": "5c91bb907312",
+   "titulo": "Becas Fulbright – Posgrado en EE. UU.",
+   "url": "https://www.fulbright.pe/",
+   "resumen": "",
+   "fuente": "fulbright-peru",
+   "fuenteNombre": "Fulbright Perú",
+   "pais": "EE. UU.",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-12",
+   "estado": "por-confirmar",
+   "niveles": [
+    "maestria"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental",
+    "civil",
+    "gestion"
+   ],
+   "cobertura": null,
+   "paraPeru": true,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-12"
+  },
+  {
+   "id": "7a779131cfd9",
+   "titulo": "Erasmus Mundus – Maestrías conjuntas en Europa",
+   "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en",
+   "resumen": "",
+   "fuente": "erasmus-mundus",
+   "fuenteNombre": "Erasmus Mundus (UE)",
+   "pais": "Unión Europea",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-12",
+   "estado": "por-confirmar",
+   "niveles": [
+    "maestria"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental",
+    "gestion"
+   ],
+   "cobertura": "completa",
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-12"
+  },
+  {
+   "id": "f5a73f506aff",
+   "titulo": "Fundación Carolina refuerza su compromiso con la formación de periodistas iberoamericanos a través de su programa de becas",
+   "url": "https://www.fundacioncarolina.es/fundacion-carolina-refuerza-su-compromiso-con-la-formacion-de-periodistas-iberoamericanos-a-traves-de-su-programa-de-becas/",
+   "resumen": "",
+   "fuente": "fundacion-carolina",
+   "fuenteNombre": "Fundación Carolina (España)",
+   "pais": "España",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-12"
+  },
+  {
+   "id": "52e73f84d887",
+   "titulo": "El exbecario de Fundación Carolina José Eduardo Méndez Delgado recibe el Premio Princesa de Girona Internacional de Investigación 2026",
+   "url": "https://www.fundacioncarolina.es/el-exbecario-de-fundacion-carolina-jose-eduardo-mendez-delgado-recibe-el-premio-princesa-de-girona-internacional-de-investigacion-2026/",
+   "resumen": "",
+   "fuente": "fundacion-carolina",
+   "fuenteNombre": "Fundación Carolina (España)",
+   "pais": "España",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-12"
+  },
+  {
+   "id": "bbf45fc6ad41",
+   "titulo": "Top 10+ Scholarships in the Netherlands for International Students",
+   "url": "https://www.scholars4dev.com/scholarships-in-netherlandsfor-international-students/",
+   "resumen": "©iStock.com/cofkocof Along with the UK and Germany, the Netherlands is one of the top study destinations in Europe, with hundreds of English-taught programmes and internationally recognised degrees. Unlike the tuition-free countries in Europe, Dutch universities charge students f",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental",
+    "civil",
+    "gestion"
+   ],
+   "cobertura": "completa",
+   "paraPeru": true,
+   "publicado": "2026-11-12",
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "4db96c9594ed",
@@ -2002,306 +2775,6 @@
    "vistoUltimo": "2026-11-11"
   },
   {
-   "id": "709e052cbcd4",
-   "titulo": "Programas / Proyectos",
-   "url": "https://www.oas.org/oocpp/default.aspx?lang=es",
-   "resumen": "",
-   "fuente": "oea",
-   "fuenteNombre": "OEA – Programa de Becas",
-   "pais": "Américas",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
-  },
-  {
-   "id": "cce000f3b4a2",
-   "titulo": "Programa de Becas Académicas de la OEA (Grado)",
-   "url": "http://www.oas.org/en/scholarships/specaf_2026.asp",
-   "resumen": "",
-   "fuente": "oea",
-   "fuenteNombre": "OEA – Programa de Becas",
-   "pais": "Américas",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
-  },
-  {
-   "id": "56265b2ee48a",
-   "titulo": "Becas México",
-   "url": "https://www.oas.org/es/becas/Mexico/Convocatoria_Secihti_OEA2026.pdf",
-   "resumen": "",
-   "fuente": "oea",
-   "fuenteNombre": "OEA – Programa de Becas",
-   "pais": "Américas",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
-  },
-  {
-   "id": "07b4b7c403ba",
-   "titulo": "El Programa de Becas Académicas (ASP)",
-   "url": "https://www.oas.org/es/sedi/dhdee/DOCs/2023/ASP%20ESP.pdf",
-   "resumen": "Programa de Becas y Capacitación de la OEA El Programa de Becas y Capacitación de la OEA, en el Departamento de Desarrollo Humano, Educación y Empleo de la Secretaría Ejecutiva para el Desarrollo Integral, ofrece becas para estudios de pregrado y posgrado, así como cursos de capa",
-   "fuente": "oea",
-   "fuenteNombre": "OEA – Programa de Becas",
-   "pais": "Américas",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [
-    "pregrado",
-    "maestria",
-    "curso"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
-  },
-  {
-   "id": "fb3b472d817b",
-   "titulo": "Manual de Procedimientos de Becas OEA",
-   "url": "http://www.oas.org/es/becas/ManualdeProcedimientos.pdf",
-   "resumen": "Programa de Becas y Capacitación de la OEA El Programa de Becas y Capacitación de la OEA, en el Departamento de Desarrollo Humano, Educación y Empleo de la Secretaría Ejecutiva para el Desarrollo Integral, ofrece becas para estudios de pregrado y posgrado, así como cursos de capa",
-   "fuente": "oea",
-   "fuenteNombre": "OEA – Programa de Becas",
-   "pais": "Américas",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [
-    "pregrado",
-    "maestria",
-    "curso"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
-  },
-  {
-   "id": "b53249a26e4f",
-   "titulo": "El Programa de Alianzas para la Educación y la Capacitación (PAEC)",
-   "url": "https://www.oas.org/es/sedi/dhdee/DOCs/2023/PAEC%20ESP.pdf",
-   "resumen": "Programa de Becas y Capacitación de la OEA El Programa de Becas y Capacitación de la OEA, en el Departamento de Desarrollo Humano, Educación y Empleo de la Secretaría Ejecutiva para el Desarrollo Integral, ofrece becas para estudios de pregrado y posgrado, así como cursos de capa",
-   "fuente": "oea",
-   "fuenteNombre": "OEA – Programa de Becas",
-   "pais": "Américas",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [
-    "pregrado",
-    "maestria",
-    "curso"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
-  },
-  {
-   "id": "3fe6afc92bbb",
-   "titulo": "Becas Brasil PAEC OEA y GCUB Mob",
-   "url": "https://www.oas.org/en/scholarships/PAEC/2026/[EN%7D%20Call%20for%20Applications%20GCUB-Mob%20N.%20001_2026%20.pdf",
-   "resumen": "Becas Brasil PAEC OEA y GCUB Mob Programas de Maestría y Doctorado presenciales en Brasil Portugués 6 de julio de 2026 Presencial (Brasil) Grupo de Cooperación Internacional de Universidades Brasileñas (GCUB) PAEC",
-   "fuente": "oea",
-   "fuenteNombre": "OEA – Programa de Becas",
-   "pais": "Américas",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria",
-    "doctorado"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
-  },
-  {
-   "id": "2504b353449f",
-   "titulo": "Programa de Becas Académicas de la OEA",
-   "url": "http://www.oas.org/en/scholarships/regularprogram/2026/2026%20Academic%20Program%20-%20Candidatos%20Seleccionados1.pdf",
-   "resumen": "Programa de Becas Académicas de la OEA (Convocatoria de Becas para Estudios e Investigación de Postgrado 2026) Españo/Inglés Consulte a la ONE en su pais Resultados Presencial, a distancia (en línea) o una combinación de ambas Consorcio de Universidades de la OEA. Programa de Bec",
-   "fuente": "oea",
-   "fuenteNombre": "OEA – Programa de Becas",
-   "pais": "Américas",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria",
-    "investigacion"
-   ],
-   "areas": [
-    "gestion"
-   ],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
-  },
-  {
-   "id": "f5dc38a26511",
-   "titulo": "Empleos y Pasantías",
-   "url": "http://www.oas.org/dhrs/dhr/employment_opportunities.asp",
-   "resumen": "",
-   "fuente": "oea",
-   "fuenteNombre": "OEA – Programa de Becas",
-   "pais": "Américas",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [
-    "investigacion"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
-  },
-  {
-   "id": "5c91bb907312",
-   "titulo": "Becas Fulbright – Posgrado en EE. UU.",
-   "url": "https://www.fulbright.pe/",
-   "resumen": "",
-   "fuente": "fulbright-peru",
-   "fuenteNombre": "Fulbright Perú",
-   "pais": "EE. UU.",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-11",
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria"
-   ],
-   "areas": [
-    "ingenieria",
-    "ambiental",
-    "civil",
-    "gestion"
-   ],
-   "cobertura": null,
-   "paraPeru": true,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
-  },
-  {
-   "id": "7a779131cfd9",
-   "titulo": "Erasmus Mundus – Maestrías conjuntas en Europa",
-   "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en",
-   "resumen": "",
-   "fuente": "erasmus-mundus",
-   "fuenteNombre": "Erasmus Mundus (UE)",
-   "pais": "Unión Europea",
-   "idioma": "en",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-11",
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria"
-   ],
-   "areas": [
-    "ingenieria",
-    "ambiental",
-    "civil",
-    "gestion"
-   ],
-   "cobertura": "completa",
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
-  },
-  {
-   "id": "f5a73f506aff",
-   "titulo": "Fundación Carolina refuerza su compromiso con la formación de periodistas iberoamericanos a través de su programa de becas",
-   "url": "https://www.fundacioncarolina.es/fundacion-carolina-refuerza-su-compromiso-con-la-formacion-de-periodistas-iberoamericanos-a-traves-de-su-programa-de-becas/",
-   "resumen": "",
-   "fuente": "fundacion-carolina",
-   "fuenteNombre": "Fundación Carolina (España)",
-   "pais": "España",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
-  },
-  {
    "id": "d68daa3b68c9",
    "titulo": "A Coruña acoge un nuevo encuentro regional de becarios y becarias de la Fundación Carolina de la promoción 2026-2027",
    "url": "https://www.fundacioncarolina.es/a-coruna-acoge-un-nuevo-encuentro-regional-de-becarios-y-becarias-de-la-fundacion-carolina-de-la-promocion-2026-2027/",
@@ -2316,30 +2789,6 @@
    "verificado": "2026-11-08",
    "estado": "por-confirmar",
    "niveles": [],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
-  },
-  {
-   "id": "52e73f84d887",
-   "titulo": "El exbecario de Fundación Carolina José Eduardo Méndez Delgado recibe el Premio Princesa de Girona Internacional de Investigación 2026",
-   "url": "https://www.fundacioncarolina.es/el-exbecario-de-fundacion-carolina-jose-eduardo-mendez-delgado-recibe-el-premio-princesa-de-girona-internacional-de-investigacion-2026/",
-   "resumen": "",
-   "fuente": "fundacion-carolina",
-   "fuenteNombre": "Fundación Carolina (España)",
-   "pais": "España",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [
-    "investigacion"
-   ],
    "areas": [],
    "cobertura": null,
    "paraPeru": false,
@@ -2544,35 +2993,6 @@
    "vistoUltimo": "2026-11-08"
   },
   {
-   "id": "bbf45fc6ad41",
-   "titulo": "Top 10 Scholarships in Netherlands for International Students",
-   "url": "https://www.scholars4dev.com/scholarships-in-netherlandsfor-international-students/",
-   "resumen": "©iStock.com/cofkocof Along with UK and Germany, the Netherlands is one of the top destinations for international students looking to pursue free studies in Europe. The degrees offered by Dutch institutions are internationally recognized and there are a significant number of schol",
-   "fuente": "scholars4dev",
-   "fuenteNombre": "Scholars4Dev (agregador internacional)",
-   "pais": "Internacional",
-   "idioma": "en",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [
-    "pregrado",
-    "maestria",
-    "investigacion"
-   ],
-   "areas": [
-    "ingenieria",
-    "gestion"
-   ],
-   "cobertura": "completa",
-   "paraPeru": false,
-   "publicado": "2026-10-21",
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
-  },
-  {
    "id": "a30ce03bfc36",
    "titulo": "Top 20 Excellence Scholarships for Outstanding International Students",
    "url": "https://www.scholars4dev.com/merit-based-scholarships-for-international-students/",
@@ -2762,7 +3182,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "c7a979b3e3ba",
@@ -2786,7 +3206,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "5d9c66951d6c",
@@ -2810,7 +3230,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "45d2a74fd85c",
@@ -2832,7 +3252,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "ef80cdc067da",
@@ -2846,7 +3266,7 @@
    "fechaLimite": null,
    "ultimaPasada": "2026-10-31",
    "fechaAprox": true,
-   "verificado": "2026-11-11",
+   "verificado": "2026-11-12",
    "estado": "cerrada",
    "niveles": [
     "maestria"
@@ -2859,7 +3279,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   },
   {
    "id": "3e2700bbb6ab",
@@ -2883,7 +3303,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-12"
   }
  ],
  "salud": [
@@ -2895,7 +3315,7 @@
    "ok": true,
    "items": 25,
    "error": null,
-   "ultimaOk": "2026-11-11"
+   "ultimaOk": "2026-11-12"
   },
   {
    "id": "prociencia",
@@ -2905,16 +3325,16 @@
    "ok": true,
    "items": 5,
    "error": null,
-   "ultimaOk": "2026-11-11"
+   "ultimaOk": "2026-11-12"
   },
   {
    "id": "daad-maestria",
    "nombre": "DAAD (oficina regional para Perú) – Maestría",
    "url": "https://www.daad.co/es/becas/becas-de-posgrado/maestria",
    "via": null,
-   "ok": true,
-   "items": 25,
-   "error": null,
+   "ok": false,
+   "items": 0,
+   "error": "https://www.daad.co/es/becas/becas-de-posgrado/maestria: HTTP 403 | https://www.daad.de/en/information-services-for-higher-education-institutions/further-information-on-daad-programmes/epos/: HTTP 403",
    "ultimaOk": "2026-11-11"
   },
   {
@@ -2922,9 +3342,9 @@
    "nombre": "DAAD (oficina regional para Perú) – Doctorado e investigación",
    "url": "https://www.daad.co/es/becas/becas-de-estancias-de-investigacion-y-docencia/",
    "via": null,
-   "ok": true,
-   "items": 10,
-   "error": null,
+   "ok": false,
+   "items": 0,
+   "error": "https://www.daad.co/es/becas/becas-de-estancias-de-investigacion-y-docencia/: HTTP 403",
    "ultimaOk": "2026-11-11"
   },
   {
@@ -2935,7 +3355,7 @@
    "ok": true,
    "items": 12,
    "error": null,
-   "ultimaOk": "2026-11-11"
+   "ultimaOk": "2026-11-12"
   },
   {
    "id": "chevening",
@@ -2945,7 +3365,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-11"
+   "ultimaOk": "2026-11-12"
   },
   {
    "id": "fulbright-peru",
@@ -2955,7 +3375,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-11"
+   "ultimaOk": "2026-11-12"
   },
   {
    "id": "erasmus-mundus",
@@ -2965,7 +3385,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-11"
+   "ultimaOk": "2026-11-12"
   },
   {
    "id": "fundacion-carolina",
@@ -2973,9 +3393,9 @@
    "url": "https://www.fundacioncarolina.es/",
    "via": null,
    "ok": true,
-   "items": 3,
+   "items": 2,
    "error": null,
-   "ultimaOk": "2026-11-11"
+   "ultimaOk": "2026-11-12"
   },
   {
    "id": "scholars4dev",
@@ -2985,7 +3405,7 @@
    "ok": true,
    "items": 10,
    "error": null,
-   "ultimaOk": "2026-11-11"
+   "ultimaOk": "2026-11-12"
   },
   {
    "id": "opportunitydesk",
@@ -2995,7 +3415,7 @@
    "ok": true,
    "items": 10,
    "error": null,
-   "ultimaOk": "2026-11-11"
+   "ultimaOk": "2026-11-12"
   }
  ]
 }
