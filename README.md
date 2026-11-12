@@ -20,6 +20,8 @@ GitHub Actions (6:17 a. m. Lima)          Tu navegador
 
 ## Novedades de la v4.2
 
+- **4.2.1**: Cerro Verde vuelve a cargar en Firefox (su portal redirigía a `http://` y Firefox bloqueaba el salto).
+
 - **⛏ Mis mineras**: en cada búsqueda se leen todas las vacantes del portal de empleo oficial de Antamina, Minsur, Alpayana, Poderosa y Cerro Verde. MARSA no tiene un portal vigente, así que sus avisos se buscan en Bumeran. Eliges las mineras en **👤 Mi perfil y CV → Mineras de interés**. La primera vez que pulses «Buscar ofertas», el navegador te pedirá permiso para esos sitios.
 
   | Minera | Portal | Plataforma |
