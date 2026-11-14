@@ -1,60 +1,10 @@
 {
  "version": 1,
- "generado": "2026-11-13T18:32:37.308Z",
- "hoy": "2026-11-13",
- "total": 147,
- "abiertas": 62,
+ "generado": "2026-11-14T17:08:36.248Z",
+ "hoy": "2026-11-14",
+ "total": 166,
+ "abiertas": 74,
  "items": [
-  {
-   "id": "a4a029a90c59",
-   "titulo": "Wave Winter Research Fellowship 2026-2027",
-   "url": "https://opportunitydesk.org/2026/11/10/wave-winter-research-fellowship-2026-2027/",
-   "resumen": "Deadline: November 13, 2026 Applications are open for the Wave Winter Research Fellowship 2026-2027. The Wave Winter Research Fellowship (November 15, 2026 – January 15, 2027) is an 8-week scientific research and engineering incubator guided directly by Regeneron ISEF winners and",
-   "fuente": "opportunitydesk",
-   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
-   "pais": "Internacional",
-   "idioma": "en",
-   "fechaLimite": "2026-11-13",
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-11",
-   "estado": "abierta",
-   "niveles": [
-    "investigacion"
-   ],
-   "areas": [
-    "ingenieria"
-   ],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": "2026-11-10",
-   "primeraVez": "2026-11-10",
-   "vistoUltimo": "2026-11-11"
-  },
-  {
-   "id": "909e48a4bfd6",
-   "titulo": "Debt Accountability Journalism Fellowship 2027 for Nigerian Journalists",
-   "url": "https://opportunitydesk.org/2026/11/10/debt-accountability-journalism-fellowship-2027/",
-   "resumen": "Deadline: November 13, 2026 Applications are open for the Debt Accountability Journalism Fellowship 2027. The International Budget Partnership (IBP) Nigeria, in partnership with the Westminster Foundation for Democracy (WFD) Nigeria, is organising a Debt Accountability Journalism",
-   "fuente": "opportunitydesk",
-   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
-   "pais": "Internacional",
-   "idioma": "en",
-   "fechaLimite": "2026-11-13",
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-11",
-   "estado": "abierta",
-   "niveles": [
-    "investigacion"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": "2026-11-10",
-   "primeraVez": "2026-11-10",
-   "vistoUltimo": "2026-11-11"
-  },
   {
    "id": "019d069e9e37",
    "titulo": "Mastercard Foundation Scholars Program for Africans",
@@ -177,6 +127,37 @@
    "vistoUltimo": "2026-11-12"
   },
   {
+   "id": "0311fbf7a774",
+   "titulo": "Top 15+ Research Scholarships for International Students",
+   "url": "https://www.scholars4dev.com/top-25-research-scholarships-for-international-students/",
+   "resumen": "©iStock.com/YinYang Research scholarships are among the best-funded scholarships for international students. Governments fund them to attract talented researchers, and universities offer them to bring strong students into their research groups. Most are for a PhD or a research Ma",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-11-16",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-14",
+   "estado": "abierta",
+   "niveles": [
+    "maestria",
+    "doctorado",
+    "posdoc",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria",
+    "gestion"
+   ],
+   "cobertura": null,
+   "paraPeru": true,
+   "publicado": "2026-11-14",
+   "primeraVez": "2026-11-14",
+   "vistoUltimo": "2026-11-14"
+  },
+  {
    "id": "34377b2698d4",
    "titulo": "Computation & Cognition Tübingen Summer (CaCTüS) Internship Program 2027",
    "url": "https://opportunitydesk.org/2026/11/10/cactus-internship-program-2027/",
@@ -223,6 +204,30 @@
    "publicado": "2026-11-09",
    "primeraVez": "2026-11-09",
    "vistoUltimo": "2026-11-09"
+  },
+  {
+   "id": "f1faabb98eb9",
+   "titulo": "Ocean Futures Fellowship 2027: Building Ocean Career Pathways",
+   "url": "https://opportunitydesk.org/2026/11/14/ocean-futures-fellowship-2027-building-ocean-career-pathways/",
+   "resumen": "Deadline: November 17, 2026 Applications are open for the Ocean Futures Fellowship 2027. The Ocean Futures Fellowship empowers the next generation of ocean professionals, equipping them to address pressing ocean challenges while strengthening their own career pathways. Through tr",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-11-17",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-14",
+   "estado": "abierta",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-14",
+   "primeraVez": "2026-11-14",
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "667e5ed412e0",
@@ -389,7 +394,7 @@
    "fechaLimite": "2026-11-21",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-13",
+   "verificado": "2026-11-14",
    "estado": "abierta",
    "niveles": [],
    "areas": [],
@@ -397,7 +402,7 @@
    "paraPeru": false,
    "publicado": "2026-11-13",
    "primeraVez": "2026-11-13",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "1d3dfec8ebb0",
@@ -422,6 +427,32 @@
    "publicado": "2026-11-09",
    "primeraVez": "2026-11-09",
    "vistoUltimo": "2026-11-11"
+  },
+  {
+   "id": "be19615316fd",
+   "titulo": "BusinessDay Young Economists Writing Challenge 2026 (N450,000 in prizes)",
+   "url": "https://opportunitydesk.org/2026/11/14/businessday-young-economists-writing-challenge-2026/",
+   "resumen": "Deadline: November 27, 2026 Applications are invited for the BusinessDay Young Economists Writing Challenge 2026. Are you an Economics student with a bold perspective on the issues shaping Nigeria and Africa’s economic future? BusinessDay is inviting the next generation of econom",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-11-27",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-14",
+   "estado": "abierta",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [
+    "gestion"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-14",
+   "primeraVez": "2026-11-14",
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "08547f8656f4",
@@ -487,6 +518,38 @@
    "vistoUltimo": "2026-11-12"
   },
   {
+   "id": "ef216da2bbb5",
+   "titulo": "5+ Chancellor’s/Vice Chancellor’s Scholarships for International Students",
+   "url": "https://www.scholars4dev.com/vice-chancellors-scholarships-for-international-students/",
+   "resumen": "©iStock.com/shironosov Chancellor’s and Vice-Chancellor’s scholarships are among the most prestigious awards a university gives to international students. Named after the university’s Chancellor or Vice-Chancellor, they usually reward outstanding academic results, and they can ta",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-11-30",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-14",
+   "estado": "abierta",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "doctorado",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental",
+    "gestion"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-14",
+   "primeraVez": "2026-11-14",
+   "vistoUltimo": "2026-11-14"
+  },
+  {
    "id": "62071262d89a",
    "titulo": "Global Youth Mental Health Research Fellowship 2027",
    "url": "https://opportunitydesk.org/2026/11/11/global-youth-mental-health-research-fellowship-2027/",
@@ -530,7 +593,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "9eff1286f00f",
@@ -579,6 +642,41 @@
    "publicado": "2026-11-07",
    "primeraVez": "2026-11-08",
    "vistoUltimo": "2026-11-08"
+  },
+  {
+   "id": "24a5ccb11f57",
+   "titulo": "Top 10+ Science, Engineering and Technology Scholarships for International Students",
+   "url": "https://www.scholars4dev.com/science-engineering-technology-scholarships-for-international-students/",
+   "resumen": "©iStock.com/VLADGRIN Science, engineering and technology are among the best-funded fields for international students. Science faculties and technical universities offer their own scholarships to attract the strongest students, and governments and foundations fund PhD and research",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-12-01",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-14",
+   "estado": "abierta",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "doctorado",
+    "posdoc",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental",
+    "civil",
+    "mineria",
+    "gestion"
+   ],
+   "cobertura": null,
+   "paraPeru": true,
+   "publicado": "2026-11-14",
+   "primeraVez": "2026-11-14",
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "f0cc6fa6a033",
@@ -655,6 +753,30 @@
    "publicado": "2026-11-10",
    "primeraVez": "2026-11-10",
    "vistoUltimo": "2026-11-11"
+  },
+  {
+   "id": "39072891d081",
+   "titulo": "Council of Europe Grants for Civil Society Organisations 2026 (up to €20,000)",
+   "url": "https://opportunitydesk.org/2026/11/14/council-of-europe-grants-for-civil-society-organisations-2026/",
+   "resumen": "Deadline: December 2, 2026 Applications are open for the Council of Europe Grants for Civil Society Organisations 2026. The Council of Europe’s democratic institutions and civil society division is giving out grants to strengthen democracy and support civil society to engage with",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-12-02",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-14",
+   "estado": "abierta",
+   "niveles": [],
+   "areas": [
+    "civil"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-14",
+   "primeraVez": "2026-11-14",
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "b4c6a1d16e26",
@@ -806,6 +928,28 @@
    "vistoUltimo": "2026-11-11"
   },
   {
+   "id": "96c8ac815d99",
+   "titulo": "OD Impact Challenge 2026 for Young Changemakers (Win cash prizes & more)",
+   "url": "https://opportunitydesk.org/2026/11/13/od-impact-challenge-2026/",
+   "resumen": "Deadline: December 10, 2026 We are pleased to announce that the Opportunity Desk Impact Challenge (ODIC) 2026 is officially open. This year, we are inviting young changemakers from around the world to showcase how they are driving positive social impact in their communities. Afte",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-12-10",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-14",
+   "estado": "abierta",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-13",
+   "primeraVez": "2026-11-14",
+   "vistoUltimo": "2026-11-14"
+  },
+  {
    "id": "71b0556e09a7",
    "titulo": "Thrive Capital Summer Fellowship 2027 ($100,000 salary)",
    "url": "https://opportunitydesk.org/2026/11/12/thrive-capital-summer-fellowship-2027/",
@@ -898,6 +1042,28 @@
    "publicado": "2026-11-09",
    "primeraVez": "2026-11-09",
    "vistoUltimo": "2026-11-11"
+  },
+  {
+   "id": "8994102a87fe",
+   "titulo": "Food and Agriculture Organization of the United Nations (UN FAO) Award for Innovation 2027 ($10,000 prize)",
+   "url": "https://opportunitydesk.org/2026/11/14/un-fao-award-for-innovation-2027/",
+   "resumen": "Deadline: December 31, 2026 Applications are open for the UN FAO Award for Innovation 2027. At its Forty-second session, the Food and Agriculture Organization of the United Nations (FAO) Conference decided to establish a “FAO Award for Innovation” to recognise ground-breaking inn",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-12-31",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-14",
+   "estado": "abierta",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-14",
+   "primeraVez": "2026-11-14",
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "adf0869af441",
@@ -1063,6 +1229,30 @@
    "vistoUltimo": "2026-11-13"
   },
   {
+   "id": "406341ea0e76",
+   "titulo": "UCD Iseult Honohan Doctoral Scholarship 2027 (Fully-funded)",
+   "url": "https://opportunitydesk.org/2026/11/13/ucd-iseult-honohan-doctoral-scholarship-2027/",
+   "resumen": "Deadline: January 15, 2027 Applications are open for the UCD Iseult Honohan Doctoral Scholarship 2027. The scholarship is named after Dr Iseult Honohan, one of the first female PhD graduates from the (then) Department of Ethics and Politics. She retired from teaching in 2015 afte",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-01-15",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-14",
+   "estado": "abierta",
+   "niveles": [
+    "doctorado"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-13",
+   "primeraVez": "2026-11-14",
+   "vistoUltimo": "2026-11-14"
+  },
+  {
    "id": "f7e024248fd1",
    "titulo": "Top 50+ International Scholarship Programs Offered Annually",
    "url": "https://www.scholars4dev.com/annual-scholarships-international-students/",
@@ -1197,6 +1387,32 @@
    "vistoUltimo": "2026-11-09"
   },
   {
+   "id": "8e4face79734",
+   "titulo": "Bayer Foundation Scientific Fellowships 2027 (up to €10,000)",
+   "url": "https://opportunitydesk.org/2026/11/13/bayer-foundation-scientific-fellowships-2027/",
+   "resumen": "Deadline: January 18, 2027 Applications are open for the Bayer Foundation Scientific Fellowships 2027. The Bayer Foundation offers scientific fellowships for outstanding master, PhD, and medical students to pursue international research projects, internships, and more, providing ",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-01-18",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-14",
+   "estado": "abierta",
+   "niveles": [
+    "maestria",
+    "doctorado",
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-13",
+   "primeraVez": "2026-11-14",
+   "vistoUltimo": "2026-11-14"
+  },
+  {
    "id": "c2a137d9c831",
    "titulo": "University of Helsinki Tuition Fee Waivers for International Master’s Students",
    "url": "https://www.scholars4dev.com/university-of-helsinki-international-masters-programme-scholarships/",
@@ -1274,7 +1490,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "39fd361e6e76",
@@ -1300,6 +1516,30 @@
    "publicado": "2026-11-10",
    "primeraVez": "2026-11-10",
    "vistoUltimo": "2026-11-11"
+  },
+  {
+   "id": "1a97e298886d",
+   "titulo": "US-UK Fulbright Commission UK Summer Institutes 2027 (Funded)",
+   "url": "https://opportunitydesk.org/2026/11/13/us-uk-fulbright-commission-uk-summer-institutes-2027/",
+   "resumen": "Deadline: February 2, 2027 Applications are invited for the US-UK Fulbright Commission UK Summer Institutes 2027. The Fulbright UK Summer Institutes are two to four week programmes for US undergraduate students, who have no or very little travel experience outside North America. ",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-02-02",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-14",
+   "estado": "abierta",
+   "niveles": [
+    "pregrado"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-13",
+   "primeraVez": "2026-11-14",
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "e6e91956daf5",
@@ -1350,7 +1590,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "b746edddb0f8",
@@ -1446,6 +1686,38 @@
    "vistoUltimo": "2026-11-12"
   },
   {
+   "id": "e5e57397ba11",
+   "titulo": "Top 10+ International Scholarships for Women",
+   "url": "https://www.scholars4dev.com/international-scholarships-for-women/",
+   "resumen": "©iStock.com/3dfoto Scholarships and fellowships help women pursue higher education and research in fields such as science, engineering, business, finance, health, peace and international development. scholars4dev.com presents a list of the top 10+ international scholarships for w",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-03-03",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-14",
+   "estado": "abierta",
+   "niveles": [
+    "maestria",
+    "doctorado",
+    "posdoc",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental",
+    "gestion"
+   ],
+   "cobertura": "completa",
+   "paraPeru": true,
+   "publicado": "2026-11-14",
+   "primeraVez": "2026-11-13",
+   "vistoUltimo": "2026-11-14"
+  },
+  {
    "id": "c3e335df6ac6",
    "titulo": "Banco principal de becas del DAAD",
    "url": "https://www.daad.co/es/becas/buscador-de-becas/",
@@ -1469,7 +1741,38 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
+  },
+  {
+   "id": "e0458e7f6782",
+   "titulo": "Bartlett Promise Sub-Saharan Africa Master’s Scholarship at UCL",
+   "url": "https://www.scholars4dev.com/the-barlett-masters-scholarship-scheme-at-the-university-of-london/",
+   "resumen": "University College London Masters Degree Deadline: 31 Mar 2027 Study in: UK Course starts September 2027 Brief description: The Bartlett Promise is the scholarship programme of the Bartlett, UCL’s Faculty of the Built Environment, for students from backgrounds that are underrepre",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-03-31",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-14",
+   "estado": "abierta",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [
+    "ambiental",
+    "civil",
+    "gestion"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-13",
+   "primeraVez": "2026-11-14",
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "a3e790baf9a0",
@@ -1483,7 +1786,7 @@
    "fechaLimite": "2027-03-31",
    "ultimaPasada": "2026-09-30",
    "fechaAprox": true,
-   "verificado": "2026-11-13",
+   "verificado": "2026-11-14",
    "estado": "abierta",
    "niveles": [
     "investigacion"
@@ -1493,7 +1796,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "c2f7bc934bb0",
@@ -1524,6 +1827,31 @@
    "publicado": "2026-11-09",
    "primeraVez": "2026-11-09",
    "vistoUltimo": "2026-11-11"
+  },
+  {
+   "id": "f4208905cfee",
+   "titulo": "Loughborough-Ferguson Trust African Scholarship at Loughborough University",
+   "url": "https://www.scholars4dev.com/loughborough-university-graduate-school-development-trust-africa-scholarships/",
+   "resumen": "Loughborough University Masters Degree Deadline: 3 May 2027 Study in: UK Course starts September 2027 Brief description: Loughborough University offers the Loughborough-Ferguson Trust African Scholarship to exceptional students living in Africa who want to take a postgraduate tau",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-05-03",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-14",
+   "estado": "abierta",
+   "niveles": [
+    "maestria",
+    "curso"
+   ],
+   "areas": [],
+   "cobertura": "completa",
+   "paraPeru": false,
+   "publicado": "2026-11-13",
+   "primeraVez": "2026-11-14",
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "4750d8386680",
@@ -1630,7 +1958,151 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
+  },
+  {
+   "id": "e9658b906064",
+   "titulo": "“Humilde y carismático”: así recuerdan a León XIV los becarios que fueron sus acólitos",
+   "url": "https://www.gob.pe/institucion/pronabec/noticias/1473546-humilde-y-carismatico-asi-recuerdan-a-leon-xiv-los-becarios-que-fueron-sus-acolitos",
+   "resumen": "",
+   "fuente": "pronabec-noticias",
+   "fuenteNombre": "Pronabec (noticias oficiales)",
+   "pais": "Perú",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-14",
+   "estado": "por-confirmar",
+   "niveles": [
+    "pregrado"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-14",
+   "vistoUltimo": "2026-11-14"
+  },
+  {
+   "id": "323c99694ad1",
+   "titulo": "Top 8 International Fellowships for Students, Researchers and Professionals",
+   "url": "https://www.scholars4dev.com/top-10-academic-research-professional-fellowships-for-international-students/",
+   "resumen": "©iStock.com/Rawpixel Fellowships give students, researchers and professionals funding for study, research or professional development abroad. Some pay for a degree, others for a research stay or a short programme with a host organisation, and many are aimed at people from develop",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-14",
+   "estado": "por-confirmar",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "doctorado",
+    "posdoc",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria",
+    "gestion"
+   ],
+   "cobertura": "completa",
+   "paraPeru": true,
+   "publicado": "2026-11-14",
+   "primeraVez": "2026-11-14",
+   "vistoUltimo": "2026-11-14"
+  },
+  {
+   "id": "edb4429b1a11",
+   "titulo": "Top 5+ Training Scholarships for International Students",
+   "url": "https://www.scholars4dev.com/short-courses-training-scholarships-for-international-students/",
+   "resumen": "©iStock.com/VLADGRIN Training scholarships let you build your skills and qualifications without leaving work for a full degree. They pay for short courses, professional development programmes or a period of non-degree study abroad, usually lasting from a few months to a year, and",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-14",
+   "estado": "por-confirmar",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria",
+    "civil",
+    "gestion"
+   ],
+   "cobertura": "completa",
+   "paraPeru": true,
+   "publicado": "2026-11-14",
+   "primeraVez": "2026-11-14",
+   "vistoUltimo": "2026-11-14"
+  },
+  {
+   "id": "bf88fb0d3525",
+   "titulo": "Top 10+ International Scholarships offered by Global Organizations, Institutions, and Foundations",
+   "url": "https://www.scholars4dev.com/scholarships-by-global-institutions-organizations-foundations/",
+   "resumen": "©iStock.com/Rawpixel Intergovernmental organizations, development banks and international foundations offer some of the best-known scholarships for international students. Many are fully funded, and many are aimed at students from developing countries who want to study abroad or ",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-14",
+   "estado": "por-confirmar",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "doctorado",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental",
+    "civil",
+    "gestion"
+   ],
+   "cobertura": "completa",
+   "paraPeru": true,
+   "publicado": "2026-11-14",
+   "primeraVez": "2026-11-14",
+   "vistoUltimo": "2026-11-14"
+  },
+  {
+   "id": "6bb1a19baf36",
+   "titulo": "Morris Animal Foundation Veterinary Student Scholar Program 2026 ($5,500 stipend)",
+   "url": "https://opportunitydesk.org/2026/11/14/morris-animal-foundation-veterinary-student-scholar-program-2026/",
+   "resumen": "Deadline: Unspecified Applications are invited for the Morris Animal Foundation Veterinary Student Scholar Program 2026. The Morris Animal Foundation Veterinary Student Scholar program is a competitive program that provides veterinary students the opportunity to conduct mentored ",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": null,
+   "estado": "por-confirmar",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-14",
+   "primeraVez": "2026-11-14",
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "19a7c6d97dfc",
@@ -1647,20 +2119,14 @@
    "verificado": "2026-11-13",
    "estado": "por-confirmar",
    "niveles": [
-    "maestria",
-    "doctorado",
-    "curso",
-    "investigacion"
+    "maestria"
    ],
-   "areas": [
-    "ingenieria",
-    "gestion"
-   ],
+   "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-13",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "72c5009af8b1",
@@ -1685,37 +2151,6 @@
    ],
    "cobertura": "completa",
    "paraPeru": false,
-   "publicado": "2026-11-13",
-   "primeraVez": "2026-11-13",
-   "vistoUltimo": "2026-11-13"
-  },
-  {
-   "id": "e5e57397ba11",
-   "titulo": "Top 10+ International Scholarships for Women",
-   "url": "https://www.scholars4dev.com/international-scholarships-for-women/",
-   "resumen": "©iStock.com/3dfoto Scholarships and fellowships help women pursue higher education and research in fields such as science, engineering, business, finance, health, peace and international development. scholars4dev.com presents a list of the top 10+ international scholarships for w",
-   "fuente": "scholars4dev",
-   "fuenteNombre": "Scholars4Dev (agregador internacional)",
-   "pais": "Internacional",
-   "idioma": "en",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-13",
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria",
-    "doctorado",
-    "posdoc",
-    "curso",
-    "investigacion"
-   ],
-   "areas": [
-    "ingenieria",
-    "gestion"
-   ],
-   "cobertura": "completa",
-   "paraPeru": true,
    "publicado": "2026-11-13",
    "primeraVez": "2026-11-13",
    "vistoUltimo": "2026-11-13"
@@ -1906,7 +2341,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-11",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "cc7801405798",
@@ -1928,7 +2363,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-10",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "d5c5d0326486",
@@ -1952,7 +2387,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-09",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "90826bdb2acb",
@@ -2044,7 +2479,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "e71e7eb76b0e",
@@ -2068,7 +2503,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "cee663f2951b",
@@ -2090,29 +2525,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
-  },
-  {
-   "id": "1f6c23b68ba1",
-   "titulo": "Noticias sobre Beca Generación del Bicentenario",
-   "url": "https://www.gob.pe/institucion/pronabec/colecciones/6323-noticias-sobre-beca-generacion-del-bicentenario",
-   "resumen": "",
-   "fuente": "pronabec-noticias",
-   "fuenteNombre": "Pronabec (noticias oficiales)",
-   "pais": "Perú",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "ba6455b8a3f3",
@@ -2134,7 +2547,29 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
+  },
+  {
+   "id": "1f6c23b68ba1",
+   "titulo": "Noticias sobre Beca Generación del Bicentenario",
+   "url": "https://www.gob.pe/institucion/pronabec/colecciones/6323-noticias-sobre-beca-generacion-del-bicentenario",
+   "resumen": "",
+   "fuente": "pronabec-noticias",
+   "fuenteNombre": "Pronabec (noticias oficiales)",
+   "pais": "Perú",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "bbf097c9af59",
@@ -2156,7 +2591,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "1a37543a047c",
@@ -2180,7 +2615,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "b2ae51ea98ad",
@@ -2204,7 +2639,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "55c6c9e219f5",
@@ -2229,7 +2664,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "e51304633dcb",
@@ -2253,7 +2688,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "b857117cfd8f",
@@ -2277,7 +2712,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "bfdfb6bae497",
@@ -2301,7 +2736,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "94553eea33cb",
@@ -2323,7 +2758,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "c91a16c279fd",
@@ -2345,7 +2780,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "fdc238768f8a",
@@ -2369,7 +2804,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "dd056e50a37b",
@@ -2393,7 +2828,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "48afbfda0a7f",
@@ -2417,7 +2852,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "a0f9bd24dc37",
@@ -2441,31 +2876,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
-  },
-  {
-   "id": "df18ea746646",
-   "titulo": "Inscripciones para Beca 18 también se realizan en MAC Express",
-   "url": "https://www.gob.pe/institucion/pronabec/noticias/1457057-inscripciones-para-beca-18-tambien-se-realizan-en-mac-express",
-   "resumen": "",
-   "fuente": "pronabec-noticias",
-   "fuenteNombre": "Pronabec (noticias oficiales)",
-   "pais": "Perú",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [
-    "pregrado"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "d72f4b000fee",
@@ -2489,7 +2900,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "4db96c9594ed",
@@ -2515,7 +2926,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "3b5016ced3d7",
@@ -2543,7 +2954,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "77418871aea5",
@@ -2571,7 +2982,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "d51f18b203cc",
@@ -2597,7 +3008,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "0b6e33a74b2a",
@@ -2623,7 +3034,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "64c1caf011b9",
@@ -2651,7 +3062,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "6f999ce2b5cb",
@@ -2677,7 +3088,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "64139aeaec1c",
@@ -2703,7 +3114,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "5faf7896bfa2",
@@ -2730,7 +3141,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "bca599a069fc",
@@ -2755,7 +3166,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "1ce860e401f1",
@@ -2782,7 +3193,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "a2b8b9460213",
@@ -2810,7 +3221,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "ec301f8798ff",
@@ -2836,7 +3247,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "709e052cbcd4",
@@ -2858,7 +3269,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "cce000f3b4a2",
@@ -2880,7 +3291,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "56265b2ee48a",
@@ -2902,7 +3313,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "07b4b7c403ba",
@@ -2928,7 +3339,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "fb3b472d817b",
@@ -2954,7 +3365,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "b53249a26e4f",
@@ -2980,7 +3391,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "3fe6afc92bbb",
@@ -3005,7 +3416,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "2504b353449f",
@@ -3032,7 +3443,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "f5dc38a26511",
@@ -3056,7 +3467,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "5c91bb907312",
@@ -3070,7 +3481,7 @@
    "fechaLimite": null,
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-13",
+   "verificado": "2026-11-14",
    "estado": "por-confirmar",
    "niveles": [
     "maestria"
@@ -3085,7 +3496,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "7a779131cfd9",
@@ -3099,7 +3510,7 @@
    "fechaLimite": null,
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-13",
+   "verificado": "2026-11-14",
    "estado": "por-confirmar",
    "niveles": [
     "maestria"
@@ -3113,7 +3524,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "f5a73f506aff",
@@ -3135,7 +3546,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "52e73f84d887",
@@ -3153,6 +3564,30 @@
    "estado": "por-confirmar",
    "niveles": [
     "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-14"
+  },
+  {
+   "id": "df18ea746646",
+   "titulo": "Inscripciones para Beca 18 también se realizan en MAC Express",
+   "url": "https://www.gob.pe/institucion/pronabec/noticias/1457057-inscripciones-para-beca-18-tambien-se-realizan-en-mac-express",
+   "resumen": "",
+   "fuente": "pronabec-noticias",
+   "fuenteNombre": "Pronabec (noticias oficiales)",
+   "pais": "Perú",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [
+    "pregrado"
    ],
    "areas": [],
    "cobertura": null,
@@ -3517,6 +3952,34 @@
    "vistoUltimo": "2026-11-08"
   },
   {
+   "id": "df978c514008",
+   "titulo": "Ruth First Scholarship for Southern Africans at Durham University",
+   "url": "https://www.scholars4dev.com/ruth-first-scholarships-for-southern-africans-at-durham-university/",
+   "resumen": "Durham University Masters Degree Deadline: 28 Feb 2026 Study in: UK Course starts September/October Brief description: The Ruth First Educational Trust, Durham University and St Chad’s College offer the Ruth First Scholarship to a student from southern Africa from a historically ",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": "2026-02-28",
+   "fechaAprox": false,
+   "verificado": "2026-11-14",
+   "estado": "cerrada",
+   "niveles": [
+    "maestria",
+    "curso"
+   ],
+   "areas": [
+    "ambiental",
+    "gestion"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-13",
+   "primeraVez": "2026-11-14",
+   "vistoUltimo": "2026-11-14"
+  },
+  {
    "id": "92815d6ec6ed",
    "titulo": "Schwarzman Scholars Program at Tsinghua University",
    "url": "https://www.scholars4dev.com/schwarzman-scholars-program-at-tsinghua-university/",
@@ -3624,7 +4087,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "c7a979b3e3ba",
@@ -3648,7 +4111,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "5d9c66951d6c",
@@ -3672,7 +4135,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "45d2a74fd85c",
@@ -3694,7 +4157,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "ef80cdc067da",
@@ -3708,7 +4171,7 @@
    "fechaLimite": null,
    "ultimaPasada": "2026-10-31",
    "fechaAprox": true,
-   "verificado": "2026-11-13",
+   "verificado": "2026-11-14",
    "estado": "cerrada",
    "niveles": [
     "maestria"
@@ -3721,7 +4184,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "3e2700bbb6ab",
@@ -3745,7 +4208,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-13"
+   "vistoUltimo": "2026-11-14"
   },
   {
    "id": "0fa3d35d4e40",
@@ -3777,6 +4240,56 @@
    "publicado": "2026-11-09",
    "primeraVez": "2026-11-09",
    "vistoUltimo": "2026-11-11"
+  },
+  {
+   "id": "a4a029a90c59",
+   "titulo": "Wave Winter Research Fellowship 2026-2027",
+   "url": "https://opportunitydesk.org/2026/11/10/wave-winter-research-fellowship-2026-2027/",
+   "resumen": "Deadline: November 13, 2026 Applications are open for the Wave Winter Research Fellowship 2026-2027. The Wave Winter Research Fellowship (November 15, 2026 – January 15, 2027) is an 8-week scientific research and engineering incubator guided directly by Regeneron ISEF winners and",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-11-13",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-11",
+   "estado": "vencida",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-10",
+   "primeraVez": "2026-11-10",
+   "vistoUltimo": "2026-11-11"
+  },
+  {
+   "id": "909e48a4bfd6",
+   "titulo": "Debt Accountability Journalism Fellowship 2027 for Nigerian Journalists",
+   "url": "https://opportunitydesk.org/2026/11/10/debt-accountability-journalism-fellowship-2027/",
+   "resumen": "Deadline: November 13, 2026 Applications are open for the Debt Accountability Journalism Fellowship 2027. The International Budget Partnership (IBP) Nigeria, in partnership with the Westminster Foundation for Democracy (WFD) Nigeria, is organising a Debt Accountability Journalism",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-11-13",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-11",
+   "estado": "vencida",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-10",
+   "primeraVez": "2026-11-10",
+   "vistoUltimo": "2026-11-11"
   }
  ],
  "salud": [
@@ -3788,7 +4301,7 @@
    "ok": true,
    "items": 25,
    "error": null,
-   "ultimaOk": "2026-11-13"
+   "ultimaOk": "2026-11-14"
   },
   {
    "id": "prociencia",
@@ -3798,7 +4311,7 @@
    "ok": true,
    "items": 5,
    "error": null,
-   "ultimaOk": "2026-11-13"
+   "ultimaOk": "2026-11-14"
   },
   {
    "id": "daad-maestria",
@@ -3808,7 +4321,7 @@
    "ok": true,
    "items": 25,
    "error": null,
-   "ultimaOk": "2026-11-13"
+   "ultimaOk": "2026-11-14"
   },
   {
    "id": "daad-doctorado",
@@ -3818,7 +4331,7 @@
    "ok": true,
    "items": 10,
    "error": null,
-   "ultimaOk": "2026-11-13"
+   "ultimaOk": "2026-11-14"
   },
   {
    "id": "oea",
@@ -3828,7 +4341,7 @@
    "ok": true,
    "items": 12,
    "error": null,
-   "ultimaOk": "2026-11-13"
+   "ultimaOk": "2026-11-14"
   },
   {
    "id": "chevening",
@@ -3838,7 +4351,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-13"
+   "ultimaOk": "2026-11-14"
   },
   {
    "id": "fulbright-peru",
@@ -3848,7 +4361,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-13"
+   "ultimaOk": "2026-11-14"
   },
   {
    "id": "erasmus-mundus",
@@ -3858,7 +4371,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-13"
+   "ultimaOk": "2026-11-14"
   },
   {
    "id": "fundacion-carolina",
@@ -3868,7 +4381,7 @@
    "ok": true,
    "items": 2,
    "error": null,
-   "ultimaOk": "2026-11-13"
+   "ultimaOk": "2026-11-14"
   },
   {
    "id": "scholars4dev",
@@ -3878,7 +4391,7 @@
    "ok": true,
    "items": 10,
    "error": null,
-   "ultimaOk": "2026-11-13"
+   "ultimaOk": "2026-11-14"
   },
   {
    "id": "opportunitydesk",
@@ -3888,7 +4401,7 @@
    "ok": true,
    "items": 10,
    "error": null,
-   "ultimaOk": "2026-11-13"
+   "ultimaOk": "2026-11-14"
   }
  ]
 }
