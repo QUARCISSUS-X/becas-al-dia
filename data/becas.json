@@ -1,42 +1,35 @@
 {
  "version": 1,
- "generado": "2026-11-14T17:08:36.248Z",
- "hoy": "2026-11-14",
- "total": 166,
- "abiertas": 74,
+ "generado": "2026-11-15T17:43:23.240Z",
+ "hoy": "2026-11-15",
+ "total": 175,
+ "abiertas": 78,
  "items": [
   {
-   "id": "019d069e9e37",
-   "titulo": "Mastercard Foundation Scholars Program for Africans",
-   "url": "https://www.scholars4dev.com/mastercard-foundation-scholarship-program-for-africans/",
-   "resumen": "Mastercard Foundation Bachelors/Masters Degree Deadline: Varies per university Study in: Africa, Canada, USA, UK, France, Lebanon, Costa Rica Course starts varies per university Brief description: The Mastercard Foundation Scholars Program is the largest scholarship initiative of",
+   "id": "a93ee4834204",
+   "titulo": "Padua International Excellence Scholarships at University of Padua",
+   "url": "https://www.scholars4dev.com/university-of-padua-international-scholarships/",
+   "resumen": "University of Padua Bachelors/Masters Degree Deadline: 15 Nov 2026/1 Mar 2027 Study in: Italy Course starts academic year 2027/28 Brief description: The University of Padua (Padova) awards Padua International Excellence Scholarships to outstanding international students admitted ",
    "fuente": "scholars4dev",
    "fuenteNombre": "Scholars4Dev (agregador internacional)",
    "pais": "Internacional",
    "idioma": "en",
-   "fechaLimite": "2026-11-14",
-   "ultimaPasada": "2026-10-31",
+   "fechaLimite": "2026-11-15",
+   "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-11",
+   "verificado": "2026-11-15",
    "estado": "abierta",
    "niveles": [
     "pregrado",
     "maestria",
-    "doctorado",
-    "curso",
-    "investigacion"
+    "curso"
    ],
-   "areas": [
-    "ingenieria",
-    "ambiental",
-    "civil",
-    "gestion"
-   ],
+   "areas": [],
    "cobertura": null,
    "paraPeru": false,
-   "publicado": "2026-11-09",
-   "primeraVez": "2026-11-09",
-   "vistoUltimo": "2026-11-11"
+   "publicado": "2026-11-15",
+   "primeraVez": "2026-11-15",
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "f94fb3f46205",
@@ -217,7 +210,7 @@
    "fechaLimite": "2026-11-17",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-14",
+   "verificado": "2026-11-15",
    "estado": "abierta",
    "niveles": [
     "investigacion"
@@ -227,7 +220,7 @@
    "paraPeru": false,
    "publicado": "2026-11-14",
    "primeraVez": "2026-11-14",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "667e5ed412e0",
@@ -394,7 +387,7 @@
    "fechaLimite": "2026-11-21",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-14",
+   "verificado": "2026-11-15",
    "estado": "abierta",
    "niveles": [],
    "areas": [],
@@ -402,7 +395,7 @@
    "paraPeru": false,
    "publicado": "2026-11-13",
    "primeraVez": "2026-11-13",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "1d3dfec8ebb0",
@@ -440,7 +433,7 @@
    "fechaLimite": "2026-11-27",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-14",
+   "verificado": "2026-11-15",
    "estado": "abierta",
    "niveles": [
     "investigacion"
@@ -452,7 +445,7 @@
    "paraPeru": false,
    "publicado": "2026-11-14",
    "primeraVez": "2026-11-14",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "08547f8656f4",
@@ -766,7 +759,7 @@
    "fechaLimite": "2026-12-02",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-14",
+   "verificado": "2026-11-15",
    "estado": "abierta",
    "niveles": [],
    "areas": [
@@ -776,7 +769,7 @@
    "paraPeru": false,
    "publicado": "2026-11-14",
    "primeraVez": "2026-11-14",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "b4c6a1d16e26",
@@ -939,7 +932,7 @@
    "fechaLimite": "2026-12-10",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-14",
+   "verificado": "2026-11-15",
    "estado": "abierta",
    "niveles": [],
    "areas": [],
@@ -947,7 +940,7 @@
    "paraPeru": false,
    "publicado": "2026-11-13",
    "primeraVez": "2026-11-14",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "71b0556e09a7",
@@ -1055,7 +1048,7 @@
    "fechaLimite": "2026-12-31",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-14",
+   "verificado": "2026-11-15",
    "estado": "abierta",
    "niveles": [],
    "areas": [],
@@ -1063,7 +1056,7 @@
    "paraPeru": false,
    "publicado": "2026-11-14",
    "primeraVez": "2026-11-14",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "adf0869af441",
@@ -1093,7 +1086,7 @@
    "id": "6511ae6e8e27",
    "titulo": "Clarendon Fund Scholarships at University of Oxford",
    "url": "https://www.scholars4dev.com/clarendon-scholarships-at-university-of-oxford/",
-   "resumen": "Oxford University Press Masters/PhD Degrees Deadline: Dec 2026/ Jan 2027 (annual) Study in: UK Course starts October 2027 Brief description: The Clarendon Fund is a major graduate scholarship scheme at the University of Oxford, offering around 140 new scholarships every year. Cla",
+   "resumen": "Oxford University Press Masters/PhD Degree Deadline: Dec 2026/Jan 2027 (annual) Study in: UK Course starts October 2027 Brief description: The Clarendon Fund offers over 200 new, fully funded scholarships each year to outstanding graduate students at the University of Oxford. The",
    "fuente": "scholars4dev",
    "fuenteNombre": "Scholars4Dev (agregador internacional)",
    "pais": "Internacional",
@@ -1101,7 +1094,7 @@
    "fechaLimite": "2026-12-31",
    "ultimaPasada": null,
    "fechaAprox": true,
-   "verificado": "2026-11-08",
+   "verificado": "2026-11-15",
    "estado": "abierta",
    "niveles": [
     "maestria",
@@ -1109,11 +1102,11 @@
     "curso"
    ],
    "areas": [],
-   "cobertura": null,
+   "cobertura": "completa",
    "paraPeru": false,
-   "publicado": "2026-09-24",
+   "publicado": "2026-11-15",
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-08"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "be7c684b5156",
@@ -1201,6 +1194,31 @@
    "vistoUltimo": "2026-11-13"
   },
   {
+   "id": "a1dbc0c5c061",
+   "titulo": "Refugee Scholarships at University of the People (Fondation Hoffmann)",
+   "url": "https://www.scholars4dev.com/fondation-hoffman-scholarship-at-university-of-the-people/",
+   "resumen": "University of the People Associate/Bachelors Degree Deadline: 7 Jan/18 Mar 2027 (annual) Study in: any Country (online) Next terms start 28 Jan/8 Apr 2027 Brief description: University of the People (UoPeople) is a non-profit, fully online American university that does not charge",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-01-07",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-15",
+   "estado": "abierta",
+   "niveles": [
+    "pregrado",
+    "curso"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-15",
+   "primeraVez": "2026-11-15",
+   "vistoUltimo": "2026-11-15"
+  },
+  {
    "id": "2dd4c92f5de3",
    "titulo": "SDA Bocconi MBA Scholarships",
    "url": "https://www.scholars4dev.com/sda-bocconi-mba-scholarships/",
@@ -1240,7 +1258,7 @@
    "fechaLimite": "2027-01-15",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-14",
+   "verificado": "2026-11-15",
    "estado": "abierta",
    "niveles": [
     "doctorado"
@@ -1250,7 +1268,7 @@
    "paraPeru": false,
    "publicado": "2026-11-13",
    "primeraVez": "2026-11-14",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "f7e024248fd1",
@@ -1398,7 +1416,7 @@
    "fechaLimite": "2027-01-18",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-14",
+   "verificado": "2026-11-15",
    "estado": "abierta",
    "niveles": [
     "maestria",
@@ -1410,7 +1428,7 @@
    "paraPeru": false,
    "publicado": "2026-11-13",
    "primeraVez": "2026-11-14",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "c2a137d9c831",
@@ -1490,7 +1508,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "39fd361e6e76",
@@ -1518,6 +1536,33 @@
    "vistoUltimo": "2026-11-11"
   },
   {
+   "id": "6ca2568fe358",
+   "titulo": "Harry Frank Guggenheim Emerging Scholar Awards for PhD Candidates",
+   "url": "https://www.scholars4dev.com/harry-frank-guggenheim-foundation-dissertation-fellowships/",
+   "resumen": "Harry Frank Guggenheim Foundation PhD Degree Deadline: 31 Jan 2027 (annual) Study in: any Country Award starts 1 Sept 2027 Brief description: The Harry Frank Guggenheim Foundation (HFG) gives Emerging Scholar Awards to PhD candidates in their final year who are writing a disserta",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-01-31",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-15",
+   "estado": "abierta",
+   "niveles": [
+    "doctorado",
+    "investigacion"
+   ],
+   "areas": [
+    "ambiental"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-15",
+   "primeraVez": "2026-11-15",
+   "vistoUltimo": "2026-11-15"
+  },
+  {
    "id": "1a97e298886d",
    "titulo": "US-UK Fulbright Commission UK Summer Institutes 2027 (Funded)",
    "url": "https://opportunitydesk.org/2026/11/13/us-uk-fulbright-commission-uk-summer-institutes-2027/",
@@ -1529,7 +1574,7 @@
    "fechaLimite": "2027-02-02",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-14",
+   "verificado": "2026-11-15",
    "estado": "abierta",
    "niveles": [
     "pregrado"
@@ -1539,7 +1584,7 @@
    "paraPeru": false,
    "publicado": "2026-11-13",
    "primeraVez": "2026-11-14",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "e6e91956daf5",
@@ -1590,7 +1635,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "b746edddb0f8",
@@ -1686,6 +1731,31 @@
    "vistoUltimo": "2026-11-12"
   },
   {
+   "id": "e41d58393a2a",
+   "titulo": "Carleton Prestige Scholarships",
+   "url": "https://www.scholars4dev.com/carleton-prestige-scholarships/",
+   "resumen": "Carleton University Bachelors Degree Deadline: 1 Mar 2027 (annual) Study in: Canada Course starts September 2027 Brief description: Prestige Scholarships are Carleton University’s highest entrance awards. They go to students entering an undergraduate degree straight from high sch",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-03-01",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-15",
+   "estado": "abierta",
+   "niveles": [
+    "pregrado",
+    "curso"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-15",
+   "primeraVez": "2026-11-15",
+   "vistoUltimo": "2026-11-15"
+  },
+  {
    "id": "e5e57397ba11",
    "titulo": "Top 10+ International Scholarships for Women",
    "url": "https://www.scholars4dev.com/international-scholarships-for-women/",
@@ -1741,7 +1811,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "e0458e7f6782",
@@ -1786,7 +1856,7 @@
    "fechaLimite": "2027-03-31",
    "ultimaPasada": "2026-09-30",
    "fechaAprox": true,
-   "verificado": "2026-11-14",
+   "verificado": "2026-11-15",
    "estado": "abierta",
    "niveles": [
     "investigacion"
@@ -1796,7 +1866,33 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
+  },
+  {
+   "id": "2d0ee86174ff",
+   "titulo": "NL Scholarship (formerly Holland Scholarship) at Erasmus University Rotterdam",
+   "url": "https://www.scholars4dev.com/erasmus-university-holland-scholarship/",
+   "resumen": "Dutch Government/Erasmus University Rotterdam Bachelors/Masters Degree Deadline: Varies by faculty (e.g. 25 Apr 2027) Study in: Netherlands Course starts academic year 2027/28 Brief description: The NL Scholarship, which replaced the Holland Scholarship, is the Dutch national sch",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-04-25",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-15",
+   "estado": "abierta",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "curso"
+   ],
+   "areas": [],
+   "cobertura": "parcial",
+   "paraPeru": false,
+   "publicado": "2026-11-15",
+   "primeraVez": "2026-11-15",
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "c2f7bc934bb0",
@@ -1958,7 +2054,37 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
+  },
+  {
+   "id": "62b420dd25f9",
+   "titulo": "ADB Scholarships at University of Auckland",
+   "url": "https://www.scholars4dev.com/adb-scholarships-at-univeristy-of-auckland/",
+   "resumen": "Asian Development Bank/University of Auckland Masters Degree Deadline: At least 6 months before your course starts Study in: New Zealand Course starts Varies Brief description: The Asian Development Bank–Japan Scholarship Program (ADB–JSP), funded by the Government of Japan, give",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-15",
+   "estado": "por-confirmar",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-15",
+   "primeraVez": "2026-11-15",
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "e9658b906064",
@@ -1974,15 +2100,37 @@
    "fechaAprox": false,
    "verificado": "2026-11-14",
    "estado": "por-confirmar",
-   "niveles": [
-    "pregrado"
-   ],
+   "niveles": [],
    "areas": [],
    "cobertura": null,
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-14",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
+  },
+  {
+   "id": "6bb1a19baf36",
+   "titulo": "Morris Animal Foundation Veterinary Student Scholar Program 2026 ($5,500 stipend)",
+   "url": "https://opportunitydesk.org/2026/11/14/morris-animal-foundation-veterinary-student-scholar-program-2026/",
+   "resumen": "Deadline: Unspecified Applications are invited for the Morris Animal Foundation Veterinary Student Scholar Program 2026. The Morris Animal Foundation Veterinary Student Scholar program is a competitive program that provides veterinary students the opportunity to conduct mentored ",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": null,
+   "estado": "por-confirmar",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-14",
+   "primeraVez": "2026-11-14",
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "323c99694ad1",
@@ -2081,30 +2229,6 @@
    "vistoUltimo": "2026-11-14"
   },
   {
-   "id": "6bb1a19baf36",
-   "titulo": "Morris Animal Foundation Veterinary Student Scholar Program 2026 ($5,500 stipend)",
-   "url": "https://opportunitydesk.org/2026/11/14/morris-animal-foundation-veterinary-student-scholar-program-2026/",
-   "resumen": "Deadline: Unspecified Applications are invited for the Morris Animal Foundation Veterinary Student Scholar Program 2026. The Morris Animal Foundation Veterinary Student Scholar program is a competitive program that provides veterinary students the opportunity to conduct mentored ",
-   "fuente": "opportunitydesk",
-   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
-   "pais": "Internacional",
-   "idioma": "en",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": null,
-   "estado": "por-confirmar",
-   "niveles": [
-    "investigacion"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": "2026-11-14",
-   "primeraVez": "2026-11-14",
-   "vistoUltimo": "2026-11-14"
-  },
-  {
    "id": "19a7c6d97dfc",
    "titulo": "Este viernes 13 culmina plazo para postular a becas de posgrado en el extranjero",
    "url": "https://www.gob.pe/institucion/pronabec/noticias/1473206-este-viernes-13-culmina-plazo-para-postular-a-becas-de-posgrado-en-el-extranjero",
@@ -2126,7 +2250,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-13",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "72c5009af8b1",
@@ -2341,7 +2465,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-11",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "cc7801405798",
@@ -2363,7 +2487,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-10",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "d5c5d0326486",
@@ -2387,7 +2511,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-09",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "90826bdb2acb",
@@ -2479,7 +2603,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "e71e7eb76b0e",
@@ -2503,7 +2627,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "cee663f2951b",
@@ -2525,7 +2649,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "ba6455b8a3f3",
@@ -2547,7 +2671,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "1f6c23b68ba1",
@@ -2569,7 +2693,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "bbf097c9af59",
@@ -2591,7 +2715,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "1a37543a047c",
@@ -2615,7 +2739,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "b2ae51ea98ad",
@@ -2639,7 +2763,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "55c6c9e219f5",
@@ -2664,7 +2788,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "e51304633dcb",
@@ -2688,7 +2812,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "b857117cfd8f",
@@ -2712,7 +2836,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "bfdfb6bae497",
@@ -2736,7 +2860,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "94553eea33cb",
@@ -2758,7 +2882,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "c91a16c279fd",
@@ -2780,7 +2904,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "fdc238768f8a",
@@ -2804,7 +2928,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "dd056e50a37b",
@@ -2828,7 +2952,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "48afbfda0a7f",
@@ -2852,7 +2976,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "a0f9bd24dc37",
@@ -2876,7 +3000,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "d72f4b000fee",
@@ -2900,7 +3024,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "4db96c9594ed",
@@ -2926,7 +3050,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "3b5016ced3d7",
@@ -2954,7 +3078,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "77418871aea5",
@@ -2982,7 +3106,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "d51f18b203cc",
@@ -3008,7 +3132,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "0b6e33a74b2a",
@@ -3034,7 +3158,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "64c1caf011b9",
@@ -3062,7 +3186,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "6f999ce2b5cb",
@@ -3088,7 +3212,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "64139aeaec1c",
@@ -3114,7 +3238,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "5faf7896bfa2",
@@ -3141,7 +3265,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "bca599a069fc",
@@ -3166,7 +3290,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "1ce860e401f1",
@@ -3193,7 +3317,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "a2b8b9460213",
@@ -3221,7 +3345,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "ec301f8798ff",
@@ -3247,7 +3371,110 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
+  },
+  {
+   "id": "5c91bb907312",
+   "titulo": "Becas Fulbright – Posgrado en EE. UU.",
+   "url": "https://www.fulbright.pe/",
+   "resumen": "",
+   "fuente": "fulbright-peru",
+   "fuenteNombre": "Fulbright Perú",
+   "pais": "EE. UU.",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-15",
+   "estado": "por-confirmar",
+   "niveles": [
+    "maestria"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental",
+    "civil",
+    "gestion"
+   ],
+   "cobertura": null,
+   "paraPeru": true,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-15"
+  },
+  {
+   "id": "7a779131cfd9",
+   "titulo": "Erasmus Mundus – Maestrías conjuntas en Europa",
+   "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en",
+   "resumen": "",
+   "fuente": "erasmus-mundus",
+   "fuenteNombre": "Erasmus Mundus (UE)",
+   "pais": "Unión Europea",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-15",
+   "estado": "por-confirmar",
+   "niveles": [
+    "maestria"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental",
+    "gestion"
+   ],
+   "cobertura": "completa",
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-15"
+  },
+  {
+   "id": "f5a73f506aff",
+   "titulo": "Fundación Carolina refuerza su compromiso con la formación de periodistas iberoamericanos a través de su programa de becas",
+   "url": "https://www.fundacioncarolina.es/fundacion-carolina-refuerza-su-compromiso-con-la-formacion-de-periodistas-iberoamericanos-a-traves-de-su-programa-de-becas/",
+   "resumen": "",
+   "fuente": "fundacion-carolina",
+   "fuenteNombre": "Fundación Carolina (España)",
+   "pais": "España",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-15"
+  },
+  {
+   "id": "52e73f84d887",
+   "titulo": "El exbecario de Fundación Carolina José Eduardo Méndez Delgado recibe el Premio Princesa de Girona Internacional de Investigación 2026",
+   "url": "https://www.fundacioncarolina.es/el-exbecario-de-fundacion-carolina-jose-eduardo-mendez-delgado-recibe-el-premio-princesa-de-girona-internacional-de-investigacion-2026/",
+   "resumen": "",
+   "fuente": "fundacion-carolina",
+   "fuenteNombre": "Fundación Carolina (España)",
+   "pais": "España",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-08",
+   "estado": "por-confirmar",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "709e052cbcd4",
@@ -3453,109 +3680,6 @@
    "fuente": "oea",
    "fuenteNombre": "OEA – Programa de Becas",
    "pais": "Américas",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [
-    "investigacion"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
-  },
-  {
-   "id": "5c91bb907312",
-   "titulo": "Becas Fulbright – Posgrado en EE. UU.",
-   "url": "https://www.fulbright.pe/",
-   "resumen": "",
-   "fuente": "fulbright-peru",
-   "fuenteNombre": "Fulbright Perú",
-   "pais": "EE. UU.",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-14",
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria"
-   ],
-   "areas": [
-    "ingenieria",
-    "ambiental",
-    "civil",
-    "gestion"
-   ],
-   "cobertura": null,
-   "paraPeru": true,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
-  },
-  {
-   "id": "7a779131cfd9",
-   "titulo": "Erasmus Mundus – Maestrías conjuntas en Europa",
-   "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en",
-   "resumen": "",
-   "fuente": "erasmus-mundus",
-   "fuenteNombre": "Erasmus Mundus (UE)",
-   "pais": "Unión Europea",
-   "idioma": "en",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-14",
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria"
-   ],
-   "areas": [
-    "ingenieria",
-    "ambiental",
-    "gestion"
-   ],
-   "cobertura": "completa",
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
-  },
-  {
-   "id": "f5a73f506aff",
-   "titulo": "Fundación Carolina refuerza su compromiso con la formación de periodistas iberoamericanos a través de su programa de becas",
-   "url": "https://www.fundacioncarolina.es/fundacion-carolina-refuerza-su-compromiso-con-la-formacion-de-periodistas-iberoamericanos-a-traves-de-su-programa-de-becas/",
-   "resumen": "",
-   "fuente": "fundacion-carolina",
-   "fuenteNombre": "Fundación Carolina (España)",
-   "pais": "España",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-08",
-   "estado": "por-confirmar",
-   "niveles": [],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
-  },
-  {
-   "id": "52e73f84d887",
-   "titulo": "El exbecario de Fundación Carolina José Eduardo Méndez Delgado recibe el Premio Princesa de Girona Internacional de Investigación 2026",
-   "url": "https://www.fundacioncarolina.es/el-exbecario-de-fundacion-carolina-jose-eduardo-mendez-delgado-recibe-el-premio-princesa-de-girona-internacional-de-investigacion-2026/",
-   "resumen": "",
-   "fuente": "fundacion-carolina",
-   "fuenteNombre": "Fundación Carolina (España)",
-   "pais": "España",
    "idioma": "es",
    "fechaLimite": null,
    "ultimaPasada": null,
@@ -3952,6 +4076,88 @@
    "vistoUltimo": "2026-11-08"
   },
   {
+   "id": "6834de311475",
+   "titulo": "Erasmus Mundus Scholarships for Joint Master in Aquaculture, Environment and Society (ACES-STAR)",
+   "url": "https://www.scholars4dev.com/erasmus-mundus-scholarships-for-joint-master-degree-in-aquaculture-environment-and-society-emjmd-aces-aces/",
+   "resumen": "Erasmus Mundus/SAMS Masters Degree Deadline: 30 Jan 2026 (annual) Study in: UK, Greece, France Course starts September 2027 Brief description: The Erasmus Mundus Joint Master in Aquaculture, Environment and Society (ACES-STAR) is a two-year, 120-ECTS master’s coordinated by the S",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": "2026-01-30",
+   "fechaAprox": false,
+   "verificado": "2026-11-15",
+   "estado": "cerrada",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [
+    "ambiental"
+   ],
+   "cobertura": "completa",
+   "paraPeru": false,
+   "publicado": "2026-11-15",
+   "primeraVez": "2026-11-15",
+   "vistoUltimo": "2026-11-15"
+  },
+  {
+   "id": "6846a04a8a96",
+   "titulo": "Scholarships for LLM in Human Rights and Democratisation in Africa at University of Pretoria",
+   "url": "https://www.scholars4dev.com/scholarships-for-llm-mphil-human-rights-democratisation-in-africa-at-university-of-pretoria/",
+   "resumen": "Centre for Human Rights, University of Pretoria Masters Degree Deadline: 31 Jul 2026 (annual) Study in: South Africa/Africa Course starts January 2027 Brief description: The Centre for Human Rights at the University of Pretoria offers full scholarships to African citizens for its",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": "2026-07-31",
+   "fechaAprox": false,
+   "verificado": "2026-11-15",
+   "estado": "cerrada",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "doctorado",
+    "curso"
+   ],
+   "areas": [],
+   "cobertura": "completa",
+   "paraPeru": false,
+   "publicado": "2026-11-15",
+   "primeraVez": "2026-11-15",
+   "vistoUltimo": "2026-11-15"
+  },
+  {
+   "id": "e8cb422e532e",
+   "titulo": "FHASS Doctoral Scholarships at Lancaster University",
+   "url": "https://www.scholars4dev.com/faculty-of-arts-and-sciences-research-scholarships-at-lancaster-university/",
+   "resumen": "Lancaster University PhD Degree Deadline: 27 Mar 2026 (annual) Study in: UK Course starts October 2027 Brief description: Lancaster University’s Faculty of Humanities, Arts and Social Sciences (FHASS) offers Doctoral Scholarships to PhD applicants in its departments. The scholars",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": "2026-03-27",
+   "fechaAprox": false,
+   "verificado": "2026-11-15",
+   "estado": "cerrada",
+   "niveles": [
+    "maestria",
+    "doctorado",
+    "curso"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-15",
+   "primeraVez": "2026-11-15",
+   "vistoUltimo": "2026-11-15"
+  },
+  {
    "id": "df978c514008",
    "titulo": "Ruth First Scholarship for Southern Africans at Durham University",
    "url": "https://www.scholars4dev.com/ruth-first-scholarships-for-southern-africans-at-durham-university/",
@@ -4087,7 +4293,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "c7a979b3e3ba",
@@ -4111,7 +4317,34 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
+  },
+  {
+   "id": "ef80cdc067da",
+   "titulo": "Becas Chevening – Maestría de 1 año en Reino Unido",
+   "url": "https://www.chevening.org/scholarships/application-timeline/",
+   "resumen": "",
+   "fuente": "chevening",
+   "fuenteNombre": "Chevening (Reino Unido)",
+   "pais": "Reino Unido",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": "2026-10-31",
+   "fechaAprox": true,
+   "verificado": "2026-11-15",
+   "estado": "cerrada",
+   "niveles": [
+    "maestria"
+   ],
+   "areas": [
+    "ingenieria",
+    "gestion"
+   ],
+   "cobertura": "completa",
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "5d9c66951d6c",
@@ -4160,33 +4393,6 @@
    "vistoUltimo": "2026-11-14"
   },
   {
-   "id": "ef80cdc067da",
-   "titulo": "Becas Chevening – Maestría de 1 año en Reino Unido",
-   "url": "https://www.chevening.org/scholarships/application-timeline/",
-   "resumen": "",
-   "fuente": "chevening",
-   "fuenteNombre": "Chevening (Reino Unido)",
-   "pais": "Reino Unido",
-   "idioma": "en",
-   "fechaLimite": null,
-   "ultimaPasada": "2026-10-31",
-   "fechaAprox": true,
-   "verificado": "2026-11-14",
-   "estado": "cerrada",
-   "niveles": [
-    "maestria"
-   ],
-   "areas": [
-    "ingenieria",
-    "gestion"
-   ],
-   "cobertura": "completa",
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
-  },
-  {
    "id": "3e2700bbb6ab",
    "titulo": "Concytec y Prociencia abren convocatoria para financiar proyectos de investigación aplicada con hasta S/ 500 mil",
    "url": "https://www.gob.pe/institucion/prociencia/noticias/1438704-concytec-y-prociencia-abren-convocatoria-para-financiar-proyectos-de-investigacion-aplicada-con-hasta-s-500-mil",
@@ -4208,7 +4414,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-14"
+   "vistoUltimo": "2026-11-15"
   },
   {
    "id": "0fa3d35d4e40",
@@ -4290,6 +4496,39 @@
    "publicado": "2026-11-10",
    "primeraVez": "2026-11-10",
    "vistoUltimo": "2026-11-11"
+  },
+  {
+   "id": "019d069e9e37",
+   "titulo": "Mastercard Foundation Scholars Program for Africans",
+   "url": "https://www.scholars4dev.com/mastercard-foundation-scholarship-program-for-africans/",
+   "resumen": "Mastercard Foundation Bachelors/Masters Degree Deadline: Varies per university Study in: Africa, Canada, USA, UK, France, Lebanon, Costa Rica Course starts varies per university Brief description: The Mastercard Foundation Scholars Program is the largest scholarship initiative of",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-11-14",
+   "ultimaPasada": "2026-10-31",
+   "fechaAprox": false,
+   "verificado": "2026-11-11",
+   "estado": "vencida",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "doctorado",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental",
+    "civil",
+    "gestion"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-09",
+   "primeraVez": "2026-11-09",
+   "vistoUltimo": "2026-11-11"
   }
  ],
  "salud": [
@@ -4301,7 +4540,7 @@
    "ok": true,
    "items": 25,
    "error": null,
-   "ultimaOk": "2026-11-14"
+   "ultimaOk": "2026-11-15"
   },
   {
    "id": "prociencia",
@@ -4311,7 +4550,7 @@
    "ok": true,
    "items": 5,
    "error": null,
-   "ultimaOk": "2026-11-14"
+   "ultimaOk": "2026-11-15"
   },
   {
    "id": "daad-maestria",
@@ -4321,7 +4560,7 @@
    "ok": true,
    "items": 25,
    "error": null,
-   "ultimaOk": "2026-11-14"
+   "ultimaOk": "2026-11-15"
   },
   {
    "id": "daad-doctorado",
@@ -4331,16 +4570,16 @@
    "ok": true,
    "items": 10,
    "error": null,
-   "ultimaOk": "2026-11-14"
+   "ultimaOk": "2026-11-15"
   },
   {
    "id": "oea",
    "nombre": "OEA – Programa de Becas",
    "url": "https://www.oas.org/es/becas/",
    "via": null,
-   "ok": true,
-   "items": 12,
-   "error": null,
+   "ok": false,
+   "items": 0,
+   "error": "https://www.oas.org/es/becas/: HTTP 403",
    "ultimaOk": "2026-11-14"
   },
   {
@@ -4351,7 +4590,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-14"
+   "ultimaOk": "2026-11-15"
   },
   {
    "id": "fulbright-peru",
@@ -4361,7 +4600,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-14"
+   "ultimaOk": "2026-11-15"
   },
   {
    "id": "erasmus-mundus",
@@ -4371,7 +4610,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-14"
+   "ultimaOk": "2026-11-15"
   },
   {
    "id": "fundacion-carolina",
@@ -4381,7 +4620,7 @@
    "ok": true,
    "items": 2,
    "error": null,
-   "ultimaOk": "2026-11-14"
+   "ultimaOk": "2026-11-15"
   },
   {
    "id": "scholars4dev",
@@ -4391,7 +4630,7 @@
    "ok": true,
    "items": 10,
    "error": null,
-   "ultimaOk": "2026-11-14"
+   "ultimaOk": "2026-11-15"
   },
   {
    "id": "opportunitydesk",
@@ -4401,7 +4640,7 @@
    "ok": true,
    "items": 10,
    "error": null,
-   "ultimaOk": "2026-11-14"
+   "ultimaOk": "2026-11-15"
   }
  ]
 }
