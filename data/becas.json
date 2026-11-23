@@ -1,10 +1,37 @@
 {
  "version": 1,
- "generado": "2026-11-22T18:31:47.780Z",
- "hoy": "2026-11-22",
- "total": 229,
- "abiertas": 106,
+ "generado": "2026-11-23T22:39:48.543Z",
+ "hoy": "2026-11-23",
+ "total": 242,
+ "abiertas": 117,
  "items": [
+  {
+   "id": "91f2672e45ea",
+   "titulo": "New Scholarships at Oxford, NTU, Stockholm and Geneva",
+   "url": "https://www.scholars4dev.com/new-scholarships-23-november-2026/",
+   "resumen": "The latest scholarships added or updated on Scholars4Dev, soonest deadline first. UNICAF Scholarships for Online Degrees at UK UniversitiesUNICAFBachelors/Masters/PhD Degree. Study online with UK university partners. Several start dates each year.SponsoredStart datesSeveral each ",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-11-23",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-23",
+   "estado": "abierta",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "doctorado",
+    "curso"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-23",
+   "primeraVez": "2026-11-23",
+   "vistoUltimo": "2026-11-23"
+  },
   {
    "id": "225d6fa708e3",
    "titulo": "Refugee-Led Research Hub (RLRH) East Africa Operations Manager",
@@ -52,6 +79,28 @@
    "publicado": "2026-11-09",
    "primeraVez": "2026-11-09",
    "vistoUltimo": "2026-11-11"
+  },
+  {
+   "id": "9ae4ecb8d27b",
+   "titulo": "UN FAO Soil Collage Contest 2026",
+   "url": "https://opportunitydesk.org/2026/11/23/un-fao-soil-collage-contest-2026/",
+   "resumen": "Deadline: November 25, 2026 Applications are open for the UN FAO Soil Collage Contest 2026. In celebration of World Soil Day (WSD) 2026, the Food and Agriculture Organization of the United Nations (FAO), the Global Soil Partnership (GSP), the French Government Agency for Ecologic",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-11-25",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-23",
+   "estado": "abierta",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-23",
+   "primeraVez": "2026-11-23",
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "88704b4f0485",
@@ -137,6 +186,30 @@
    "publicado": "2026-11-12",
    "primeraVez": "2026-11-12",
    "vistoUltimo": "2026-11-12"
+  },
+  {
+   "id": "e24160d5dbbd",
+   "titulo": "Public Policy New Voices Fellowship Program 2026-2027",
+   "url": "https://opportunitydesk.org/2026/11/23/public-policy-new-voices-fellowship-program-2026-2027/",
+   "resumen": "Deadline: November 29, 2026 Applications are invited for the Public Policy New Voices Fellowship Program 2026-2027. The Public Policy New Voices (PPNV) Program is a collaboration among leading public policy graduate schools, corporate public policy teams, and some of the most inn",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-11-29",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-23",
+   "estado": "abierta",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-23",
+   "primeraVez": "2026-11-23",
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "47aef2894b30",
@@ -996,7 +1069,7 @@
    "fechaLimite": "2026-12-15",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-22",
+   "verificado": "2026-11-23",
    "estado": "abierta",
    "niveles": [
     "pregrado",
@@ -1013,7 +1086,7 @@
    "paraPeru": false,
    "publicado": "2026-11-16",
    "primeraVez": "2026-11-16",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "4c54c796e01b",
@@ -1027,7 +1100,7 @@
    "fechaLimite": "2026-12-15",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-22",
+   "verificado": "2026-11-23",
    "estado": "abierta",
    "niveles": [
     "maestria",
@@ -1042,7 +1115,7 @@
    "paraPeru": false,
    "publicado": "2026-11-16",
    "primeraVez": "2026-11-16",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "a9bbc13b0cc4",
@@ -1091,6 +1164,30 @@
    "vistoUltimo": "2026-11-18"
   },
   {
+   "id": "5342e1a5becd",
+   "titulo": "Tor Community Fellowship 2027 (stipend available)",
+   "url": "https://opportunitydesk.org/2026/11/23/tor-community-fellowship-2027/",
+   "resumen": "Deadline: December 17, 2026 Applications are open for the Tor Community Fellowship 2027. For its first year, they are accepting 4 human rights defenders, journalists, technologists, and researchers. Fellows will get the chance to learn from the Tor Project team, build a deep unde",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-12-17",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-23",
+   "estado": "abierta",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-23",
+   "primeraVez": "2026-11-23",
+   "vistoUltimo": "2026-11-23"
+  },
+  {
    "id": "74aae67c6e46",
    "titulo": "EJN Methane Reporting Workshop 2027 in Jakarta, Indonesia",
    "url": "https://opportunitydesk.org/2026/11/17/ejn-methane-reporting-workshop-2027-in-jakarta-indonesia/",
@@ -1137,6 +1234,57 @@
    "vistoUltimo": "2026-11-20"
   },
   {
+   "id": "b26908353a44",
+   "titulo": "Nanyang President’s Graduate Scholarship (NPGS) at NTU Singapore",
+   "url": "https://www.scholars4dev.com/nanyang-presidents-graduate-scholarship-ntu-singapore/",
+   "resumen": "Nanyang Technological University (NTU) PhD Degree Deadline: 31 Dec 2026 (annual) Study in: Singapore Course starts Academic Year 2027-28 Brief description: The Nanyang President’s Graduate Scholarship (NPGS) is a competitive and prestigious scholarship for outstanding graduates a",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-12-31",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-23",
+   "estado": "abierta",
+   "niveles": [
+    "pregrado",
+    "doctorado",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-23",
+   "primeraVez": "2026-11-23",
+   "vistoUltimo": "2026-11-23"
+  },
+  {
+   "id": "ac2785eaf8e0",
+   "titulo": "Yale Council on African Studies Visiting African Scholars Fellowship 2027-2028",
+   "url": "https://opportunitydesk.org/2026/11/23/yale-council-on-african-studies-visiting-african-scholars-fellowship-2027-2028/",
+   "resumen": "Deadline: December 31, 2026 Applications are open for the Yale Council on African Studies Visiting African Scholars Fellowship 2027-2028. The Council on African Studies at the Whitney and Betty MacMillan Center for International and Area Studies at Yale University invites applica",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-12-31",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-23",
+   "estado": "abierta",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-23",
+   "primeraVez": "2026-11-23",
+   "vistoUltimo": "2026-11-23"
+  },
+  {
    "id": "92229b17b421",
    "titulo": "Mastercard Foundation Scholars Program at the University of Cambridge 2027/2028",
    "url": "https://opportunitydesk.org/2026/11/21/mastercard-foundation-scholars-program-at-the-university-of-cambridge-2027-2028/",
@@ -1148,7 +1296,7 @@
    "fechaLimite": "2026-12-31",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-22",
+   "verificado": "2026-11-23",
    "estado": "abierta",
    "niveles": [
     "maestria"
@@ -1158,7 +1306,7 @@
    "paraPeru": false,
    "publicado": "2026-11-21",
    "primeraVez": "2026-11-21",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "a036015c3fc9",
@@ -1301,6 +1449,33 @@
    "vistoUltimo": "2026-11-15"
   },
   {
+   "id": "e03dee5b40e0",
+   "titulo": "Ertegun Graduate Scholarships in the Humanities at University of Oxford",
+   "url": "https://www.scholars4dev.com/ertegun-graduate-scholarships-oxford/",
+   "resumen": "University of Oxford Masters/PhD Degree Deadline: 5 Jan 2027 (most courses) Study in: UK Course starts October 2027 Brief description: The Mica and Ahmet Ertegun Graduate Scholarship Programme funds full-time graduate study in the humanities at the University of Oxford. It aims t",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-01-05",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-23",
+   "estado": "abierta",
+   "niveles": [
+    "maestria",
+    "doctorado",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-23",
+   "primeraVez": "2026-11-23",
+   "vistoUltimo": "2026-11-23"
+  },
+  {
    "id": "be7c684b5156",
    "titulo": "Benjamin A. Gilman International Scholarship for US Citizens to Study Abroad",
    "url": "https://www.scholars4dev.com/benjamin-a-gilman-international-scholarship/",
@@ -1340,7 +1515,7 @@
    "fechaLimite": "2027-01-06",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-22",
+   "verificado": "2026-11-23",
    "estado": "abierta",
    "niveles": [
     "maestria",
@@ -1353,7 +1528,7 @@
    "paraPeru": false,
    "publicado": "2026-11-16",
    "primeraVez": "2026-11-13",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "15dd6f5cf927",
@@ -1470,6 +1645,59 @@
    "vistoUltimo": "2026-11-13"
   },
   {
+   "id": "794726eada9a",
+   "titulo": "Top 20+ Scholarships in Sweden for International Students",
+   "url": "https://www.scholars4dev.com/scholarships-in-sweden-for-international-students/",
+   "resumen": "©iStock.com/cofkocof Until 2011, Sweden was one of the few countries in Europe where you could study for free. Students from outside the EU/EEA and Switzerland now pay application and tuition fees, which average around SEK 160,000 a year. To help with these costs, the Swedish Ins",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-01-15",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-23",
+   "estado": "abierta",
+   "niveles": [
+    "pregrado",
+    "maestria"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental",
+    "civil",
+    "mineria",
+    "gestion"
+   ],
+   "cobertura": "parcial",
+   "paraPeru": false,
+   "publicado": "2026-11-23",
+   "primeraVez": "2026-11-23",
+   "vistoUltimo": "2026-11-23"
+  },
+  {
+   "id": "82b393e0ffe1",
+   "titulo": "Apply to join the ITU Secretary-General’s Youth Advisory Board​​​",
+   "url": "https://opportunitydesk.org/2026/11/23/itu-secretary-general-youth-advisory-board-2/",
+   "resumen": "Deadline: January 15, 2027 Applications are open for join the ITU Secretary-General’s Youth Advisory Board​​​. The ITU Secretary-General’s Youth Advisory Board (YAB) brings young people into the heart of global digital decision-making, through a unique platform to inform the work",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-01-15",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-23",
+   "estado": "abierta",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-23",
+   "primeraVez": "2026-11-23",
+   "vistoUltimo": "2026-11-23"
+  },
+  {
    "id": "94bc4c2388d6",
    "titulo": "Clements-Archer National Security Policy Postdoctoral Fellowship 2027-2028 ($80,000 stipend)",
    "url": "https://opportunitydesk.org/2026/11/21/clements-archer-national-security-policy-postdoctoral-fellowship-2027-2028/",
@@ -1481,7 +1709,7 @@
    "fechaLimite": "2027-01-15",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-22",
+   "verificado": "2026-11-23",
    "estado": "abierta",
    "niveles": [
     "doctorado",
@@ -1495,7 +1723,7 @@
    "paraPeru": false,
    "publicado": "2026-11-21",
    "primeraVez": "2026-11-21",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "2659d1b2d7e7",
@@ -1687,6 +1915,34 @@
    "vistoUltimo": "2026-11-08"
   },
   {
+   "id": "d3ae1f79cbc3",
+   "titulo": "Geneva Academy Scholarships for LLM Programmes in International Humanitarian Law and Human Rights",
+   "url": "https://www.scholars4dev.com/geneva-academy-of-international-humanitarian-law-and-human-rights-scholarships/",
+   "resumen": "Geneva Academy Masters (LLM-MAS) Deadline: 17 Jan 2027 (annual) Study in: Geneva, Switzerland Course starts September 2027 Brief description: The Geneva Academy of International Humanitarian Law and Human Rights, set up in 2007 as a joint centre of the University of Geneva’s Facu",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-01-17",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-23",
+   "estado": "abierta",
+   "niveles": [
+    "maestria",
+    "curso"
+   ],
+   "areas": [
+    "ambiental",
+    "gestion"
+   ],
+   "cobertura": "completa",
+   "paraPeru": true,
+   "publicado": "2026-11-23",
+   "primeraVez": "2026-11-23",
+   "vistoUltimo": "2026-11-23"
+  },
+  {
    "id": "6d751291d095",
    "titulo": "Center for Effective Global Action (CEGA) Visiting Fellowship 2027-2028",
    "url": "https://opportunitydesk.org/2026/11/07/cega-visiting-fellowship-2027-2028/",
@@ -1804,7 +2060,7 @@
    "fechaLimite": "2027-01-22",
    "ultimaPasada": "2026-11-16",
    "fechaAprox": false,
-   "verificado": "2026-11-22",
+   "verificado": "2026-11-23",
    "estado": "abierta",
    "niveles": [
     "pregrado",
@@ -1820,7 +2076,7 @@
    "paraPeru": false,
    "publicado": "2026-11-16",
    "primeraVez": "2026-11-16",
-   "vistoUltimo": "2026-11-22",
+   "vistoUltimo": "2026-11-23",
    "cambioFecha": {
     "antes": "2026-11-16",
     "ahora": "2027-01-22",
@@ -1849,7 +2105,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "39fd361e6e76",
@@ -1888,7 +2144,7 @@
    "fechaLimite": "2027-01-31",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-22",
+   "verificado": "2026-11-23",
    "estado": "abierta",
    "niveles": [
     "investigacion"
@@ -1900,7 +2156,7 @@
    "paraPeru": false,
    "publicado": "2026-11-21",
    "primeraVez": "2026-11-21",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "bad0b74274eb",
@@ -1974,6 +2230,31 @@
    "publicado": "2026-11-15",
    "primeraVez": "2026-11-15",
    "vistoUltimo": "2026-11-15"
+  },
+  {
+   "id": "e7d55ce1e508",
+   "titulo": "Stockholm University Scholarships for International Students",
+   "url": "https://www.scholars4dev.com/stockholm-university-scholarships/",
+   "resumen": "Stockholm University Masters Degree Deadline: 15 Jan/Apr 2027 (annual) Study in: Sweden Course starts August 2027 Brief description: The Stockholm University Scholarship Scheme is for especially qualified students from outside the EU/EEA and Switzerland who have to pay tuition fe",
+   "fuente": "scholars4dev",
+   "fuenteNombre": "Scholars4Dev (agregador internacional)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-02-01",
+   "ultimaPasada": "2026-03-30",
+   "fechaAprox": false,
+   "verificado": "2026-11-23",
+   "estado": "abierta",
+   "niveles": [
+    "maestria",
+    "curso"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-23",
+   "primeraVez": "2026-11-23",
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "979af1d3ec99",
@@ -2140,7 +2421,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "e03328124a12",
@@ -2271,7 +2552,7 @@
    "fechaLimite": "2027-02-28",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-22",
+   "verificado": "2026-11-23",
    "estado": "abierta",
    "niveles": [
     "maestria"
@@ -2286,7 +2567,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "3fde5d87502e",
@@ -2625,7 +2906,7 @@
    "fechaLimite": "2027-05-31",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-22",
+   "verificado": "2026-11-23",
    "estado": "abierta",
    "niveles": [],
    "areas": [],
@@ -2633,7 +2914,7 @@
    "paraPeru": false,
    "publicado": "2026-11-21",
    "primeraVez": "2026-11-21",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "4750d8386680",
@@ -2740,7 +3021,54 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
+  },
+  {
+   "id": "3ef427d62d95",
+   "titulo": "Más de 52 000 peruanos rindieron en todo el país el examen de Beca 18 para continuar en competencia",
+   "url": "https://www.gob.pe/institucion/pronabec/noticias/1479047-mas-de-52-000-peruanos-rindieron-en-todo-el-pais-el-examen-de-beca-18-para-continuar-en-competencia",
+   "resumen": "",
+   "fuente": "pronabec-noticias",
+   "fuenteNombre": "Pronabec (noticias oficiales)",
+   "pais": "Perú",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-23",
+   "estado": "por-confirmar",
+   "niveles": [
+    "pregrado",
+    "curso"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": true,
+   "publicado": null,
+   "primeraVez": "2026-11-23",
+   "vistoUltimo": "2026-11-23"
+  },
+  {
+   "id": "a2d99419b5f1",
+   "titulo": "Fulbright Teaching Excellence and Achievement Program 2027 (Funded)",
+   "url": "https://opportunitydesk.org/2026/11/23/fulbright-teaching-excellence-and-achievement-program-2027/",
+   "resumen": "Deadline: Unspecified Applications are open for the Fulbright Teaching Excellence and Achievement Program 2027. The Fulbright Teaching Excellence and Achievement Program brings international secondary-level teachers to the United States for a six-week professional development pro",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": null,
+   "estado": "por-confirmar",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-23",
+   "primeraVez": "2026-11-23",
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "7d95c3fca2a7",
@@ -2764,7 +3092,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-21",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "81ede3329dad",
@@ -2788,7 +3116,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-20",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "f59d635c283d",
@@ -2838,7 +3166,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-19",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "17cfd86fec09",
@@ -2952,7 +3280,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-18",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "841c69885e5d",
@@ -3073,15 +3401,13 @@
    "fechaAprox": false,
    "verificado": "2026-11-22",
    "estado": "por-confirmar",
-   "niveles": [
-    "pregrado"
-   ],
+   "niveles": [],
    "areas": [],
    "cobertura": null,
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-14",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "6bb1a19baf36",
@@ -3225,7 +3551,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-13",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "72c5009af8b1",
@@ -3440,7 +3766,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-11",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "cc7801405798",
@@ -3462,7 +3788,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-10",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "d5c5d0326486",
@@ -3486,7 +3812,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-09",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "90826bdb2acb",
@@ -3578,7 +3904,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "e71e7eb76b0e",
@@ -3602,7 +3928,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "cee663f2951b",
@@ -3624,7 +3950,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "ba6455b8a3f3",
@@ -3646,7 +3972,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "bbf097c9af59",
@@ -3668,7 +3994,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "1a37543a047c",
@@ -3692,7 +4018,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "b2ae51ea98ad",
@@ -3716,7 +4042,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "55c6c9e219f5",
@@ -3741,7 +4067,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "e51304633dcb",
@@ -3765,7 +4091,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "b857117cfd8f",
@@ -3789,7 +4115,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "bfdfb6bae497",
@@ -3813,7 +4139,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "94553eea33cb",
@@ -3835,7 +4161,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "c91a16c279fd",
@@ -3857,31 +4183,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
-  },
-  {
-   "id": "fdc238768f8a",
-   "titulo": "Más de 62 000 peruanos se inscribieron en la nueva convocatoria de Beca 18",
-   "url": "https://www.gob.pe/institucion/pronabec/noticias/1459191-mas-de-62-000-peruanos-se-inscribieron-en-la-nueva-convocatoria-de-beca-18",
-   "resumen": "",
-   "fuente": "pronabec-noticias",
-   "fuenteNombre": "Pronabec (noticias oficiales)",
-   "pais": "Perú",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-17",
-   "estado": "por-confirmar",
-   "niveles": [
-    "pregrado"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": true,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "d72f4b000fee",
@@ -3903,6 +4205,82 @@
    "areas": [],
    "cobertura": null,
    "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-23"
+  },
+  {
+   "id": "7a779131cfd9",
+   "titulo": "Erasmus Mundus – Maestrías conjuntas en Europa",
+   "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en",
+   "resumen": "",
+   "fuente": "erasmus-mundus",
+   "fuenteNombre": "Erasmus Mundus (UE)",
+   "pais": "Unión Europea",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-23",
+   "estado": "por-confirmar",
+   "niveles": [
+    "maestria"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental",
+    "gestion"
+   ],
+   "cobertura": "completa",
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-23"
+  },
+  {
+   "id": "52e73f84d887",
+   "titulo": "El exbecario de Fundación Carolina José Eduardo Méndez Delgado recibe el Premio Princesa de Girona Internacional de Investigación 2026",
+   "url": "https://www.fundacioncarolina.es/el-exbecario-de-fundacion-carolina-jose-eduardo-mendez-delgado-recibe-el-premio-princesa-de-girona-internacional-de-investigacion-2026/",
+   "resumen": "",
+   "fuente": "fundacion-carolina",
+   "fuenteNombre": "Fundación Carolina (España)",
+   "pais": "España",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-16",
+   "estado": "por-confirmar",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-23"
+  },
+  {
+   "id": "fdc238768f8a",
+   "titulo": "Más de 62 000 peruanos se inscribieron en la nueva convocatoria de Beca 18",
+   "url": "https://www.gob.pe/institucion/pronabec/noticias/1459191-mas-de-62-000-peruanos-se-inscribieron-en-la-nueva-convocatoria-de-beca-18",
+   "resumen": "",
+   "fuente": "pronabec-noticias",
+   "fuenteNombre": "Pronabec (noticias oficiales)",
+   "pais": "Perú",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-17",
+   "estado": "por-confirmar",
+   "niveles": [
+    "pregrado"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
    "vistoUltimo": "2026-11-22"
@@ -4245,58 +4623,6 @@
    "niveles": [
     "doctorado",
     "posdoc",
-    "investigacion"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
-  },
-  {
-   "id": "7a779131cfd9",
-   "titulo": "Erasmus Mundus – Maestrías conjuntas en Europa",
-   "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en",
-   "resumen": "",
-   "fuente": "erasmus-mundus",
-   "fuenteNombre": "Erasmus Mundus (UE)",
-   "pais": "Unión Europea",
-   "idioma": "en",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-22",
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria"
-   ],
-   "areas": [
-    "ingenieria",
-    "ambiental",
-    "gestion"
-   ],
-   "cobertura": "completa",
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
-  },
-  {
-   "id": "52e73f84d887",
-   "titulo": "El exbecario de Fundación Carolina José Eduardo Méndez Delgado recibe el Premio Princesa de Girona Internacional de Investigación 2026",
-   "url": "https://www.fundacioncarolina.es/el-exbecario-de-fundacion-carolina-jose-eduardo-mendez-delgado-recibe-el-premio-princesa-de-girona-internacional-de-investigacion-2026/",
-   "resumen": "",
-   "fuente": "fundacion-carolina",
-   "fuenteNombre": "Fundación Carolina (España)",
-   "pais": "España",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-16",
-   "estado": "por-confirmar",
-   "niveles": [
     "investigacion"
    ],
    "areas": [],
@@ -5244,7 +5570,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "3e2700bbb6ab",
@@ -5268,7 +5594,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "c7a979b3e3ba",
@@ -5292,7 +5618,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "ef80cdc067da",
@@ -5306,7 +5632,7 @@
    "fechaLimite": null,
    "ultimaPasada": "2026-10-31",
    "fechaAprox": true,
-   "verificado": "2026-11-22",
+   "verificado": "2026-11-23",
    "estado": "cerrada",
    "niveles": [
     "maestria"
@@ -5319,7 +5645,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-23"
   },
   {
    "id": "5d9c66951d6c",
@@ -5881,7 +6207,7 @@
    "ok": true,
    "items": 25,
    "error": null,
-   "ultimaOk": "2026-11-22"
+   "ultimaOk": "2026-11-23"
   },
   {
    "id": "prociencia",
@@ -5891,16 +6217,16 @@
    "ok": true,
    "items": 5,
    "error": null,
-   "ultimaOk": "2026-11-22"
+   "ultimaOk": "2026-11-23"
   },
   {
    "id": "daad-maestria",
    "nombre": "DAAD (oficina regional para Perú) – Maestría",
    "url": "https://www.daad.co/es/becas/becas-de-posgrado/maestria",
    "via": null,
-   "ok": true,
-   "items": 25,
-   "error": null,
+   "ok": false,
+   "items": 0,
+   "error": "https://www.daad.co/es/becas/becas-de-posgrado/maestria: HTTP 403 | https://www.daad.de/en/information-services-for-higher-education-institutions/further-information-on-daad-programmes/epos/: HTTP 403",
    "ultimaOk": "2026-11-22"
   },
   {
@@ -5908,9 +6234,9 @@
    "nombre": "DAAD (oficina regional para Perú) – Doctorado e investigación",
    "url": "https://www.daad.co/es/becas/becas-de-estancias-de-investigacion-y-docencia/",
    "via": null,
-   "ok": true,
-   "items": 10,
-   "error": null,
+   "ok": false,
+   "items": 0,
+   "error": "https://www.daad.co/es/becas/becas-de-estancias-de-investigacion-y-docencia/: HTTP 403",
    "ultimaOk": "2026-11-22"
   },
   {
@@ -5931,7 +6257,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-22"
+   "ultimaOk": "2026-11-23"
   },
   {
    "id": "fulbright-peru",
@@ -5941,7 +6267,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-22"
+   "ultimaOk": "2026-11-23"
   },
   {
    "id": "erasmus-mundus",
@@ -5951,7 +6277,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-22"
+   "ultimaOk": "2026-11-23"
   },
   {
    "id": "fundacion-carolina",
@@ -5961,7 +6287,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-22"
+   "ultimaOk": "2026-11-23"
   },
   {
    "id": "scholars4dev",
@@ -5971,7 +6297,7 @@
    "ok": true,
    "items": 10,
    "error": null,
-   "ultimaOk": "2026-11-22"
+   "ultimaOk": "2026-11-23"
   },
   {
    "id": "opportunitydesk",
@@ -5981,7 +6307,7 @@
    "ok": true,
    "items": 10,
    "error": null,
-   "ultimaOk": "2026-11-22"
+   "ultimaOk": "2026-11-23"
   }
  ]
 }
