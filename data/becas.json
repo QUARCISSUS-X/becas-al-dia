@@ -1,9 +1,9 @@
 {
  "version": 1,
- "generado": "2026-11-24T21:12:58.633Z",
- "hoy": "2026-11-24",
- "total": 250,
- "abiertas": 119,
+ "generado": "2026-11-25T20:29:26.777Z",
+ "hoy": "2026-11-25",
+ "total": 258,
+ "abiertas": 127,
  "items": [
   {
    "id": "9ae4ecb8d27b",
@@ -26,6 +26,28 @@
    "publicado": "2026-11-23",
    "primeraVez": "2026-11-23",
    "vistoUltimo": "2026-11-24"
+  },
+  {
+   "id": "011b71dae0a4",
+   "titulo": "African Union Development Agency Energize Africa Health Fellows Program 2027",
+   "url": "https://opportunitydesk.org/2026/11/25/energize-africa-health-fellows-program-2027/",
+   "resumen": "Deadline: November 27, 2026 Applications are open for the African Union Development Agency Energize Africa Health Fellows Program 2027. The African Union Development Agency invites applicants who are citizens of African Union Member States for the post of Energize Africa Health F",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-11-27",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-25",
+   "estado": "abierta",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-25",
+   "primeraVez": "2026-11-25",
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "88704b4f0485",
@@ -602,6 +624,30 @@
    "vistoUltimo": "2026-11-11"
   },
   {
+   "id": "4577c3424f43",
+   "titulo": "Call for Applications: Better Futures Fellowship 2027",
+   "url": "https://opportunitydesk.org/2026/11/24/better-futures-fellowship-2027/",
+   "resumen": "Deadline: December 6, 2026 Applications are open for the Better Futures Fellowship 2027. The Better Futures Fellowship is a 9-week program for people deciding whether better-futures work should become their focus. Better-futures work is research and fieldbuilding aimed at improvi",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-12-06",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-25",
+   "estado": "abierta",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-24",
+   "primeraVez": "2026-11-25",
+   "vistoUltimo": "2026-11-25"
+  },
+  {
    "id": "e583be31ab79",
    "titulo": "Rest & Resilience Fellowship 2027 (Fully-funded)",
    "url": "https://opportunitydesk.org/2026/11/19/rest-resilience-fellowship-2027/",
@@ -886,6 +932,30 @@
    "vistoUltimo": "2026-11-09"
   },
   {
+   "id": "9f079d98b14a",
+   "titulo": "Cora Weiss Fellowship for Young Women Peacebuilders 2027 (Funded)",
+   "url": "https://opportunitydesk.org/2026/11/25/cora-weiss-fellowship-for-young-women-peacebuilders-2027/",
+   "resumen": "Deadline: December 15, 2026 Applications are open for the Cora Weiss Fellowship for Young Women Peacebuilders 2027. The Global Network of Women Peacebuilders (GNWP) invites young women aged 23-30 who are currently based in the United States and passionate about peacebuilding, hum",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-12-15",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-25",
+   "estado": "abierta",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-25",
+   "primeraVez": "2026-11-25",
+   "vistoUltimo": "2026-11-25"
+  },
+  {
    "id": "6ac04054ae7d",
    "titulo": "Reporters Without Borders (RSF) Berlin Fellowship 2027 (Funded)",
    "url": "https://opportunitydesk.org/2026/11/19/rsf-berlin-fellowship-2027/",
@@ -972,7 +1042,7 @@
    "fechaLimite": "2026-12-15",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-24",
+   "verificado": "2026-11-25",
    "estado": "abierta",
    "niveles": [
     "pregrado",
@@ -989,7 +1059,7 @@
    "paraPeru": false,
    "publicado": "2026-11-16",
    "primeraVez": "2026-11-16",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "4c54c796e01b",
@@ -1003,7 +1073,7 @@
    "fechaLimite": "2026-12-15",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-24",
+   "verificado": "2026-11-25",
    "estado": "abierta",
    "niveles": [
     "maestria",
@@ -1018,7 +1088,7 @@
    "paraPeru": false,
    "publicado": "2026-11-16",
    "primeraVez": "2026-11-16",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "a9bbc13b0cc4",
@@ -1090,6 +1160,30 @@
    "publicado": "2026-11-18",
    "primeraVez": "2026-11-18",
    "vistoUltimo": "2026-11-18"
+  },
+  {
+   "id": "68e0b3a8a354",
+   "titulo": "GSMA Innovation Fund for AI-Enabled Financial Health 2027 (up to £250,000)",
+   "url": "https://opportunitydesk.org/2026/11/25/gsma-innovation-fund-for-ai-enabled-financial-health-2027/",
+   "resumen": "Deadline: December 17, 2026 Applications are open for the GSMA Innovation Fund for AI-Enabled Financial Health 2027. Over the past decade, digital financial services have significantly expanded financial inclusion across low- and middle-income countries (LMICs), supported in larg",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-12-17",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-25",
+   "estado": "abierta",
+   "niveles": [],
+   "areas": [
+    "ingenieria"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-25",
+   "primeraVez": "2026-11-25",
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "5342e1a5becd",
@@ -1173,7 +1267,7 @@
    "fechaLimite": "2026-12-20",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-24",
+   "verificado": "2026-11-25",
    "estado": "abierta",
    "niveles": [
     "investigacion"
@@ -1183,7 +1277,31 @@
    "paraPeru": false,
    "publicado": "2026-11-24",
    "primeraVez": "2026-11-24",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
+  },
+  {
+   "id": "ac052b304286",
+   "titulo": "Acumen Academy Green RISE East Africa Fellowship 2027 (Fully-funded)",
+   "url": "https://opportunitydesk.org/2026/11/25/acumen-academy-green-rise-east-africa-fellowship-2027/",
+   "resumen": "Deadline: December 22, 2026 Applications are open for the Acumen Academy Green RISE East Africa Fellowship 2027. Acumen invests in social entrepreneurs across the capital continuum and accompanies them on the journey to create transformational change. Acumen Academy identifies an",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-12-22",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-25",
+   "estado": "abierta",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-25",
+   "primeraVez": "2026-11-25",
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "b26908353a44",
@@ -1197,7 +1315,7 @@
    "fechaLimite": "2026-12-31",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-24",
+   "verificado": "2026-11-25",
    "estado": "abierta",
    "niveles": [
     "pregrado",
@@ -1210,7 +1328,7 @@
    "paraPeru": false,
    "publicado": "2026-11-23",
    "primeraVez": "2026-11-23",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "ac2785eaf8e0",
@@ -1412,7 +1530,7 @@
    "fechaLimite": "2027-01-05",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-24",
+   "verificado": "2026-11-25",
    "estado": "abierta",
    "niveles": [
     "maestria",
@@ -1425,7 +1543,7 @@
    "paraPeru": false,
    "publicado": "2026-11-23",
    "primeraVez": "2026-11-23",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "be7c684b5156",
@@ -1467,7 +1585,7 @@
    "fechaLimite": "2027-01-06",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-24",
+   "verificado": "2026-11-25",
    "estado": "abierta",
    "niveles": [
     "maestria",
@@ -1480,7 +1598,7 @@
    "paraPeru": false,
    "publicado": "2026-11-16",
    "primeraVez": "2026-11-13",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "15dd6f5cf927",
@@ -1630,7 +1748,7 @@
    "fechaLimite": "2027-01-15",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-24",
+   "verificado": "2026-11-25",
    "estado": "abierta",
    "niveles": [
     "pregrado",
@@ -1647,7 +1765,7 @@
    "paraPeru": false,
    "publicado": "2026-11-23",
    "primeraVez": "2026-11-23",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "82b393e0ffe1",
@@ -1903,14 +2021,12 @@
    "verificado": "2026-11-24",
    "estado": "abierta",
    "niveles": [],
-   "areas": [
-    "ambiental"
-   ],
+   "areas": [],
    "cobertura": null,
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-24",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "d3ae1f79cbc3",
@@ -1924,7 +2040,7 @@
    "fechaLimite": "2027-01-17",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-24",
+   "verificado": "2026-11-25",
    "estado": "abierta",
    "niveles": [
     "maestria",
@@ -1938,7 +2054,7 @@
    "paraPeru": true,
    "publicado": "2026-11-23",
    "primeraVez": "2026-11-23",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "6d751291d095",
@@ -2047,6 +2163,30 @@
    "vistoUltimo": "2026-11-11"
   },
   {
+   "id": "82ccd6b59013",
+   "titulo": "Earth Observation (EO) Excellence Award 2027 (up to €15,000)",
+   "url": "https://opportunitydesk.org/2026/11/24/earth-observation-excellence-award-2027/",
+   "resumen": "Deadline: January 22, 2027 Applications are open for the EO Excellence Award 2027. Are you an early-career individual using Earth Observation satellite data to advance science and applications? The EO Excellence Award, launched by the European Space Agency (ESA), celebrates outst",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-01-22",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-25",
+   "estado": "abierta",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-24",
+   "primeraVez": "2026-11-25",
+   "vistoUltimo": "2026-11-25"
+  },
+  {
    "id": "6c515d51f0e3",
    "titulo": "10+ New Scholarships for International Students",
    "url": "https://www.scholars4dev.com/new-scholarships-16-november-2026/",
@@ -2058,7 +2198,7 @@
    "fechaLimite": "2027-01-22",
    "ultimaPasada": "2026-11-16",
    "fechaAprox": false,
-   "verificado": "2026-11-24",
+   "verificado": "2026-11-25",
    "estado": "abierta",
    "niveles": [
     "pregrado",
@@ -2074,12 +2214,34 @@
    "paraPeru": false,
    "publicado": "2026-11-16",
    "primeraVez": "2026-11-16",
-   "vistoUltimo": "2026-11-24",
+   "vistoUltimo": "2026-11-25",
    "cambioFecha": {
     "antes": "2026-11-16",
     "ahora": "2027-01-22",
     "el": "2026-11-17"
    }
+  },
+  {
+   "id": "5c5c39b8db5b",
+   "titulo": "Caine Prize for African Writing 2027 (£10,000 prize)",
+   "url": "https://opportunitydesk.org/2026/11/25/caine-prize-for-african-writing-2027/",
+   "resumen": "Deadline: January 25, 2027 Applications are open for the Caine Prize for African Writing 2027. The Caine Prize for African Writing is the foremost international literary prize for a short story by an African author. In addition to administering the Prize, they work to connect rea",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-01-25",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-25",
+   "estado": "abierta",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-25",
+   "primeraVez": "2026-11-25",
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "c56d15fcea58",
@@ -2096,19 +2258,14 @@
    "verificado": "2026-11-24",
    "estado": "abierta",
    "niveles": [
-    "maestria",
-    "doctorado",
-    "curso",
-    "investigacion"
+    "curso"
    ],
-   "areas": [
-    "ingenieria"
-   ],
+   "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "39fd361e6e76",
@@ -2235,6 +2392,28 @@
    "vistoUltimo": "2026-11-15"
   },
   {
+   "id": "ec6d9aaadb62",
+   "titulo": "Qynari Story Competition 2027 ($12,500 in prizes)",
+   "url": "https://opportunitydesk.org/2026/11/25/qynari-story-competition-2027/",
+   "resumen": "Deadline: February 1, 2027 Applications are open for the Qynari Story Competition 2027. Most stories only go one way. You press play, it runs, it ends, you scroll on. A Qynari story stops and asks the viewer what happens next. They pick a path, or type whatever they like, and the",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-02-01",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-25",
+   "estado": "abierta",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-25",
+   "primeraVez": "2026-11-25",
+   "vistoUltimo": "2026-11-25"
+  },
+  {
    "id": "e7d55ce1e508",
    "titulo": "Stockholm University Scholarships for International Students",
    "url": "https://www.scholars4dev.com/stockholm-university-scholarships/",
@@ -2246,7 +2425,7 @@
    "fechaLimite": "2027-02-01",
    "ultimaPasada": "2026-03-30",
    "fechaAprox": false,
-   "verificado": "2026-11-24",
+   "verificado": "2026-11-25",
    "estado": "abierta",
    "niveles": [
     "maestria",
@@ -2257,7 +2436,7 @@
    "paraPeru": false,
    "publicado": "2026-11-23",
    "primeraVez": "2026-11-23",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "979af1d3ec99",
@@ -2414,8 +2593,7 @@
    "verificado": "2026-11-24",
    "estado": "abierta",
    "niveles": [
-    "curso",
-    "investigacion"
+    "curso"
    ],
    "areas": [
     "ingenieria",
@@ -2425,7 +2603,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "0d264facd123",
@@ -2439,7 +2617,7 @@
    "fechaLimite": "2027-02-28",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-24",
+   "verificado": "2026-11-25",
    "estado": "abierta",
    "niveles": [],
    "areas": [
@@ -2449,7 +2627,7 @@
    "paraPeru": false,
    "publicado": "2026-11-24",
    "primeraVez": "2026-11-24",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "2d67d61a2b9f",
@@ -2605,7 +2783,7 @@
    "fechaLimite": "2027-02-28",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-24",
+   "verificado": "2026-11-25",
    "estado": "abierta",
    "niveles": [
     "maestria"
@@ -2620,7 +2798,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "3fde5d87502e",
@@ -2771,19 +2949,23 @@
    "fechaLimite": "2027-03-11",
    "ultimaPasada": "2026-09-03",
    "fechaAprox": false,
-   "verificado": "2026-11-16",
+   "verificado": "2026-11-25",
    "estado": "abierta",
    "niveles": [
-    "maestria"
+    "maestria",
+    "doctorado",
+    "posdoc",
+    "investigacion"
    ],
    "areas": [
+    "ingenieria",
     "gestion"
    ],
    "cobertura": null,
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "353a645650ce",
@@ -2854,7 +3036,7 @@
    "fechaLimite": "2027-03-31",
    "ultimaPasada": "2026-09-30",
    "fechaAprox": true,
-   "verificado": "2026-11-22",
+   "verificado": "2026-11-25",
    "estado": "abierta",
    "niveles": [
     "investigacion"
@@ -2864,7 +3046,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "2d0ee86174ff",
@@ -3067,21 +3249,14 @@
    "verificado": "2026-11-24",
    "estado": "abierta",
    "niveles": [
-    "maestria",
-    "doctorado",
-    "curso",
-    "investigacion"
+    "maestria"
    ],
-   "areas": [
-    "ingenieria",
-    "ambiental",
-    "gestion"
-   ],
+   "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "c4e382a8e6cb",
@@ -3098,18 +3273,14 @@
    "verificado": "2026-11-24",
    "estado": "por-confirmar",
    "niveles": [
-    "curso",
-    "investigacion"
+    "curso"
    ],
-   "areas": [
-    "ingenieria",
-    "gestion"
-   ],
+   "areas": [],
    "cobertura": null,
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-24",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "3260c1ebd66f",
@@ -3155,7 +3326,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-23",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "a2d99419b5f1",
@@ -3201,7 +3372,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-21",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "81ede3329dad",
@@ -3225,7 +3396,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-20",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "f59d635c283d",
@@ -3275,7 +3446,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-19",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "17cfd86fec09",
@@ -3389,7 +3560,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-18",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "841c69885e5d",
@@ -3516,7 +3687,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-14",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "6bb1a19baf36",
@@ -3660,7 +3831,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-13",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "72c5009af8b1",
@@ -3875,7 +4046,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-11",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "cc7801405798",
@@ -3897,7 +4068,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-10",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "d5c5d0326486",
@@ -3911,17 +4082,18 @@
    "fechaLimite": null,
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-17",
+   "verificado": "2026-11-25",
    "estado": "por-confirmar",
    "niveles": [
-    "pregrado"
+    "pregrado",
+    "curso"
    ],
    "areas": [],
    "cobertura": null,
-   "paraPeru": false,
+   "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-09",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "90826bdb2acb",
@@ -4007,17 +4179,13 @@
    "fechaAprox": false,
    "verificado": "2026-11-24",
    "estado": "por-confirmar",
-   "niveles": [
-    "curso"
-   ],
-   "areas": [
-    "gestion"
-   ],
+   "niveles": [],
+   "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "e71e7eb76b0e",
@@ -4034,40 +4202,14 @@
    "verificado": "2026-11-24",
    "estado": "por-confirmar",
    "niveles": [
-    "pregrado",
-    "curso"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": true,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-24"
-  },
-  {
-   "id": "cee663f2951b",
-   "titulo": "Noticias sobre Beca Hijos de Docentes",
-   "url": "https://www.gob.pe/institucion/pronabec/colecciones/6322-noticias-sobre-beca-hijos-de-docentes",
-   "resumen": "",
-   "fuente": "pronabec-noticias",
-   "fuenteNombre": "Pronabec (noticias oficiales)",
-   "pais": "Perú",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-24",
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria",
-    "curso"
+    "pregrado"
    ],
    "areas": [],
    "cobertura": null,
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "ba6455b8a3f3",
@@ -4083,17 +4225,35 @@
    "fechaAprox": false,
    "verificado": "2026-11-24",
    "estado": "por-confirmar",
-   "niveles": [
-    "curso"
-   ],
-   "areas": [
-    "ingenieria"
-   ],
+   "niveles": [],
+   "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
+  },
+  {
+   "id": "cee663f2951b",
+   "titulo": "Noticias sobre Beca Hijos de Docentes",
+   "url": "https://www.gob.pe/institucion/pronabec/colecciones/6322-noticias-sobre-beca-hijos-de-docentes",
+   "resumen": "",
+   "fuente": "pronabec-noticias",
+   "fuenteNombre": "Pronabec (noticias oficiales)",
+   "pais": "Perú",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-24",
+   "estado": "por-confirmar",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "bbf097c9af59",
@@ -4109,19 +4269,13 @@
    "fechaAprox": false,
    "verificado": "2026-11-24",
    "estado": "por-confirmar",
-   "niveles": [
-    "pregrado",
-    "maestria",
-    "doctorado"
-   ],
-   "areas": [
-    "ingenieria"
-   ],
-   "cobertura": "parcial",
-   "paraPeru": true,
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "1a37543a047c",
@@ -4138,18 +4292,14 @@
    "verificado": "2026-11-24",
    "estado": "por-confirmar",
    "niveles": [
-    "maestria",
-    "doctorado",
-    "curso"
+    "maestria"
    ],
-   "areas": [
-    "gestion"
-   ],
+   "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "b2ae51ea98ad",
@@ -4166,15 +4316,14 @@
    "verificado": "2026-11-24",
    "estado": "por-confirmar",
    "niveles": [
-    "pregrado",
-    "curso"
+    "pregrado"
    ],
    "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "55c6c9e219f5",
@@ -4192,20 +4341,14 @@
    "estado": "por-confirmar",
    "niveles": [
     "maestria",
-    "doctorado",
-    "curso",
-    "investigacion"
+    "curso"
    ],
-   "areas": [
-    "ingenieria",
-    "ambiental",
-    "gestion"
-   ],
+   "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "e51304633dcb",
@@ -4222,18 +4365,14 @@
    "verificado": "2026-11-24",
    "estado": "por-confirmar",
    "niveles": [
-    "pregrado",
-    "curso"
+    "pregrado"
    ],
-   "areas": [
-    "ingenieria",
-    "civil"
-   ],
+   "areas": [],
    "cobertura": null,
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "b857117cfd8f",
@@ -4247,17 +4386,20 @@
    "fechaLimite": null,
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-17",
+   "verificado": "2026-11-25",
    "estado": "por-confirmar",
-   "niveles": [],
+   "niveles": [
+    "pregrado"
+   ],
    "areas": [
-    "ingenieria"
+    "ingenieria",
+    "ambiental"
    ],
    "cobertura": null,
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "bfdfb6bae497",
@@ -4271,17 +4413,18 @@
    "fechaLimite": null,
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-17",
+   "verificado": "2026-11-25",
    "estado": "por-confirmar",
    "niveles": [
-    "pregrado"
+    "pregrado",
+    "curso"
    ],
    "areas": [],
    "cobertura": null,
-   "paraPeru": false,
+   "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "94553eea33cb",
@@ -4295,15 +4438,23 @@
    "fechaLimite": null,
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-17",
+   "verificado": "2026-11-25",
    "estado": "por-confirmar",
-   "niveles": [],
-   "areas": [],
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "curso"
+   ],
+   "areas": [
+    "ingenieria",
+    "civil",
+    "mineria"
+   ],
    "cobertura": null,
-   "paraPeru": false,
+   "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "c91a16c279fd",
@@ -4317,15 +4468,19 @@
    "fechaLimite": null,
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-17",
+   "verificado": "2026-11-25",
    "estado": "por-confirmar",
-   "niveles": [],
-   "areas": [],
+   "niveles": [
+    "maestria"
+   ],
+   "areas": [
+    "gestion"
+   ],
    "cobertura": null,
-   "paraPeru": false,
+   "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "d72f4b000fee",
@@ -4342,18 +4497,366 @@
    "verificado": "2026-11-24",
    "estado": "por-confirmar",
    "niveles": [
-    "curso",
+    "curso"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-25"
+  },
+  {
+   "id": "4db96c9594ed",
+   "titulo": "Convocatoria en el banco de becas",
+   "url": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/?origin=54&status=4&subjectGrps=&daad=&q=heilbronn&page=1&detail=57883183#voraussetzungen",
+   "resumen": "DAAD Heilbronn AI Estancias de investigación doctorales o posdoctorales en Alemania dirigidas a investigadores que trabajan en Inteligencia Artificial; ya sea como campo de investigación o como herramienta aplicada a otras disciplinas. En universidades e instituciones de investig",
+   "fuente": "daad-doctorado",
+   "fuenteNombre": "DAAD (oficina regional para Perú) – Doctorado e investigación",
+   "pais": "Alemania",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-25",
+   "estado": "por-confirmar",
+   "niveles": [
+    "doctorado",
+    "posdoc",
     "investigacion"
    ],
    "areas": [
     "ingenieria",
-    "gestion"
+    "ambiental",
+    "civil"
    ],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
+  },
+  {
+   "id": "3b5016ced3d7",
+   "titulo": "Guía para postularse a la convocatoria EPOS 2026/2027",
+   "url": "https://www.daad.co/files/2025/06/Guia_EPOS_2026_stand_13_junio2025.pdf",
+   "resumen": "EPOS: Development-Related Postgraduate Courses Becas para Estudios de Posgrado en Alemania en el ámbito del Desarrollo: Este programa financia una selección específica de 35 Maestrías y 4 programas de Doctorados. Dirigido a egresados ​​de Pregrado o Maestría con al menos 2 años d",
+   "fuente": "daad-maestria",
+   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
+   "pais": "Alemania",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-25",
+   "estado": "por-confirmar",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "doctorado",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-25"
+  },
+  {
+   "id": "77418871aea5",
+   "titulo": "Lista de Maestrías financiadas por el Programa EPOS 2026",
+   "url": "https://static.daad.de/media/daad_de/pdfs_nicht_barrierefrei/in-deutschland-studieren-forschen-lehren/daad_programmbroschuere_epos_2026-27.pdf",
+   "resumen": "EPOS: Development-Related Postgraduate Courses Becas para Estudios de Posgrado en Alemania en el ámbito del Desarrollo: Este programa financia una selección específica de 35 Maestrías y 4 programas de Doctorados. Dirigido a egresados ​​de Pregrado o Maestría con al menos 2 años d",
+   "fuente": "daad-maestria",
+   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
+   "pais": "Alemania",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-25",
+   "estado": "por-confirmar",
+   "niveles": [
+    "pregrado",
+    "maestria",
+    "doctorado",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-25"
+  },
+  {
+   "id": "d51f18b203cc",
+   "titulo": "Guía para postularse a la convocatoria PPGG 2026",
+   "url": "https://www.daad.co/files/2025/06/Guia_Helmut_Schmidt_2025_stand_27_junio.pdf",
+   "resumen": "Helmut-Schmidt–Programme (Master’s Scholarships for Public Policy and Good Governance – PPGG) Becas para Maestrías en Política Pública y Buen Gobierno (PPGG) Se financia una selección específica de 7 maestrías completas. Duración de la Maestría: 1-2 años. – Apoyo para manutención",
+   "fuente": "daad-maestria",
+   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
+   "pais": "Alemania",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-25",
+   "estado": "por-confirmar",
+   "niveles": [
+    "maestria",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-25"
+  },
+  {
+   "id": "0b6e33a74b2a",
+   "titulo": "Maestrías financiadas por el Programa Helmut-Schmidt",
+   "url": "https://static.daad.de/media/daad_de/pdfs_nicht_barrierefrei/in-deutschland-studieren-forschen-lehren/daad_helmut-schmidt-programme_information_about_the_master_s_courses.pdf",
+   "resumen": "Helmut-Schmidt–Programme (Master’s Scholarships for Public Policy and Good Governance – PPGG) Becas para Maestrías en Política Pública y Buen Gobierno (PPGG) Se financia una selección específica de 7 maestrías completas. Duración de la Maestría: 1-2 años. – Apoyo para manutención",
+   "fuente": "daad-maestria",
+   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
+   "pais": "Alemania",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": null,
+   "estado": "por-confirmar",
+   "niveles": [
+    "maestria",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-25"
+  },
+  {
+   "id": "64c1caf011b9",
+   "titulo": "Guía para postularse a las becas STEM 2026",
+   "url": "https://www.daad.co/files/2025/07/Guia_STEM_2025_stand_3_julio_2025.pdf",
+   "resumen": "Becas para Maestrías en áreas STEM (Science, Technology, Engineering, Mathematics) A través de este programa de becas, el DAAD ofrece financiación completa para realizar estudios presenciales de Maestría en Universiades de Alemania en áreas como Ciencias, Ingeniería, Informática ",
+   "fuente": "daad-maestria",
+   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
+   "pais": "Alemania",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-25",
+   "estado": "por-confirmar",
+   "niveles": [
+    "maestria",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-25"
+  },
+  {
+   "id": "6f999ce2b5cb",
+   "titulo": "Guía para postularse a la convocatoria 2026",
+   "url": "https://www.daad.co/files/2026/02/DAAD_COLFUTURO_Convocatoria-2026-1.pdf",
+   "resumen": "DAAD – COLFUTURO Programa Crédito-Beca (Maestría o Doctorado) en todas las áreas Apoya estudios de posgrado (maestría o doctorado) en Alemania en todas las áreas del conocimiento en alemán o en inglés para colombianos. Otorgamiento de becas por parte del DAAD a los beneficiarios ",
+   "fuente": "daad-maestria",
+   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
+   "pais": "Alemania",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": null,
+   "estado": "por-confirmar",
+   "niveles": [
+    "maestria",
+    "doctorado",
+    "curso"
+   ],
+   "areas": [],
+   "cobertura": "parcial",
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-25"
+  },
+  {
+   "id": "64139aeaec1c",
+   "titulo": "Information about your preferred master programmes",
+   "url": "https://static.daad.de/media/daad_de/word-excel-nicht-barrierefrei/in-deutschland-studieren-forschen-lehren/a206_studiengangsinfo-information_about_the_study_programme.docx",
+   "resumen": "DAAD – COLFUTURO Programa Crédito-Beca (Maestría o Doctorado) en todas las áreas Apoya estudios de posgrado (maestría o doctorado) en Alemania en todas las áreas del conocimiento en alemán o en inglés para colombianos. Otorgamiento de becas por parte del DAAD a los beneficiarios ",
+   "fuente": "daad-maestria",
+   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
+   "pais": "Alemania",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": null,
+   "estado": "por-confirmar",
+   "niveles": [
+    "maestria",
+    "doctorado",
+    "curso"
+   ],
+   "areas": [],
+   "cobertura": "parcial",
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-25"
+  },
+  {
+   "id": "bca599a069fc",
+   "titulo": "Convocatoria en el banco de becas",
+   "url": "https://www2.daad.de/deutschland/stipendium/datenbank/de/21148-stipendiendatenbank/?status=&origin=&subjectGrps=&daad=&intention=&q=sommer&page=1&detail=50035295",
+   "resumen": "University Summer Courses offered in Germany for Foreign Students and Graduates Becas para cursos de verano en universidades alemanas: Cursos intensivos para perfeccionar conocimientos de alemán en diferentes instituciones en Alemania. Dirigidos a estudiantes de pregrado de unive",
+   "fuente": "daad-maestria",
+   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
+   "pais": "Alemania",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": null,
+   "estado": "por-confirmar",
+   "niveles": [
+    "pregrado",
+    "curso"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-25"
+  },
+  {
+   "id": "1ce860e401f1",
+   "titulo": "Guía para postularse a la convocatoria 2026/27",
+   "url": "https://www.daad.co/files/2026/07/GUIA_RESEARCH-STAYS_2026.pdf",
+   "resumen": "Research Grants in Germany Becas para estancias de investigación doctoral o posdoctoral en todas las áreas del conocimiento: Este programa financia una estancia de investigación en una universidad o centro de investigación en Alemania en cualquier área del conocimiento Duración: ",
+   "fuente": "daad-doctorado",
+   "fuenteNombre": "DAAD (oficina regional para Perú) – Doctorado e investigación",
+   "pais": "Alemania",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-25",
+   "estado": "por-confirmar",
+   "niveles": [
+    "doctorado",
+    "posdoc",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-25"
+  },
+  {
+   "id": "a2b8b9460213",
+   "titulo": "Guía a postularse en español_convocatoria 2026",
+   "url": "https://www.daad.co/files/2026/04/GUIA_GROW-2026_stand-9-de-abril-2.pdf",
+   "resumen": "GROW - Global Research Opportunities for the South Becas para estancias a nivel doctoral, posdoctoral o de docentes universitarios en Alemania en áreas relacionadas a los Objetivos de Desarrollo Sostenible (ODS): Este programa financia viajes para el establecimiento de contactos ",
+   "fuente": "daad-doctorado",
+   "fuenteNombre": "DAAD (oficina regional para Perú) – Doctorado e investigación",
+   "pais": "Alemania",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-25",
+   "estado": "por-confirmar",
+   "niveles": [
+    "doctorado",
+    "posdoc",
+    "investigacion"
+   ],
+   "areas": [
+    "ambiental"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-25"
+  },
+  {
+   "id": "ec301f8798ff",
+   "titulo": "Convocatoria en el banco de becas",
+   "url": "http://www.daad.de/prime/en",
+   "resumen": "Postdoctoral Researchers International Mobility Experience (P.R.I.M.E.) Programa dirigido a posdoctorandos que desean combinar un puesto laboral con una estancia de investigación. Duración: Posición laboral temporal de 18 meses. Prestaciones: Remuneración acorde a la posición pos",
+   "fuente": "daad-doctorado",
+   "fuenteNombre": "DAAD (oficina regional para Perú) – Doctorado e investigación",
+   "pais": "Alemania",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-25",
+   "estado": "por-confirmar",
+   "niveles": [
+    "doctorado",
+    "posdoc",
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-25"
+  },
+  {
+   "id": "7a779131cfd9",
+   "titulo": "Erasmus Mundus – Maestrías conjuntas en Europa",
+   "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en",
+   "resumen": "",
+   "fuente": "erasmus-mundus",
+   "fuenteNombre": "Erasmus Mundus (UE)",
+   "pais": "Unión Europea",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-25",
+   "estado": "por-confirmar",
+   "niveles": [
+    "maestria"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental",
+    "gestion"
+   ],
+   "cobertura": "completa",
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "709e052cbcd4",
@@ -4644,34 +5147,6 @@
    "vistoUltimo": "2026-11-24"
   },
   {
-   "id": "7a779131cfd9",
-   "titulo": "Erasmus Mundus – Maestrías conjuntas en Europa",
-   "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en",
-   "resumen": "",
-   "fuente": "erasmus-mundus",
-   "fuenteNombre": "Erasmus Mundus (UE)",
-   "pais": "Unión Europea",
-   "idioma": "en",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-24",
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria"
-   ],
-   "areas": [
-    "ingenieria",
-    "ambiental",
-    "gestion"
-   ],
-   "cobertura": "completa",
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-24"
-  },
-  {
    "id": "52e73f84d887",
    "titulo": "El exbecario de Fundación Carolina José Eduardo Méndez Delgado recibe el Premio Princesa de Girona Internacional de Investigación 2026",
    "url": "https://www.fundacioncarolina.es/el-exbecario-de-fundacion-carolina-jose-eduardo-mendez-delgado-recibe-el-premio-princesa-de-girona-internacional-de-investigacion-2026/",
@@ -4715,353 +5190,6 @@
    "areas": [],
    "cobertura": null,
    "paraPeru": true,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
-  },
-  {
-   "id": "4db96c9594ed",
-   "titulo": "Convocatoria en el banco de becas",
-   "url": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/?origin=54&status=4&subjectGrps=&daad=&q=heilbronn&page=1&detail=57883183#voraussetzungen",
-   "resumen": "DAAD Heilbronn AI Estancias de investigación doctorales o posdoctorales en Alemania dirigidas a investigadores que trabajan en Inteligencia Artificial; ya sea como campo de investigación o como herramienta aplicada a otras disciplinas. En universidades e instituciones de investig",
-   "fuente": "daad-doctorado",
-   "fuenteNombre": "DAAD (oficina regional para Perú) – Doctorado e investigación",
-   "pais": "Alemania",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-16",
-   "estado": "por-confirmar",
-   "niveles": [
-    "doctorado",
-    "posdoc",
-    "investigacion"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
-  },
-  {
-   "id": "3b5016ced3d7",
-   "titulo": "Guía para postularse a la convocatoria EPOS 2026/2027",
-   "url": "https://www.daad.co/files/2025/06/Guia_EPOS_2026_stand_13_junio2025.pdf",
-   "resumen": "EPOS: Development-Related Postgraduate Courses Becas para Estudios de Posgrado en Alemania en el ámbito del Desarrollo: Este programa financia una selección específica de 35 Maestrías y 4 programas de Doctorados. Dirigido a egresados ​​de Pregrado o Maestría con al menos 2 años d",
-   "fuente": "daad-maestria",
-   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
-   "pais": "Alemania",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-16",
-   "estado": "por-confirmar",
-   "niveles": [
-    "pregrado",
-    "maestria",
-    "doctorado",
-    "curso",
-    "investigacion"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
-  },
-  {
-   "id": "77418871aea5",
-   "titulo": "Lista de Maestrías financiadas por el Programa EPOS 2026",
-   "url": "https://static.daad.de/media/daad_de/pdfs_nicht_barrierefrei/in-deutschland-studieren-forschen-lehren/daad_programmbroschuere_epos_2026-27.pdf",
-   "resumen": "EPOS: Development-Related Postgraduate Courses Becas para Estudios de Posgrado en Alemania en el ámbito del Desarrollo: Este programa financia una selección específica de 35 Maestrías y 4 programas de Doctorados. Dirigido a egresados ​​de Pregrado o Maestría con al menos 2 años d",
-   "fuente": "daad-maestria",
-   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
-   "pais": "Alemania",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-16",
-   "estado": "por-confirmar",
-   "niveles": [
-    "pregrado",
-    "maestria",
-    "doctorado",
-    "curso",
-    "investigacion"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
-  },
-  {
-   "id": "d51f18b203cc",
-   "titulo": "Guía para postularse a la convocatoria PPGG 2026",
-   "url": "https://www.daad.co/files/2025/06/Guia_Helmut_Schmidt_2025_stand_27_junio.pdf",
-   "resumen": "Helmut-Schmidt–Programme (Master’s Scholarships for Public Policy and Good Governance – PPGG) Becas para Maestrías en Política Pública y Buen Gobierno (PPGG) Se financia una selección específica de 7 maestrías completas. Duración de la Maestría: 1-2 años. – Apoyo para manutención",
-   "fuente": "daad-maestria",
-   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
-   "pais": "Alemania",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-16",
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria",
-    "curso",
-    "investigacion"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
-  },
-  {
-   "id": "0b6e33a74b2a",
-   "titulo": "Maestrías financiadas por el Programa Helmut-Schmidt",
-   "url": "https://static.daad.de/media/daad_de/pdfs_nicht_barrierefrei/in-deutschland-studieren-forschen-lehren/daad_helmut-schmidt-programme_information_about_the_master_s_courses.pdf",
-   "resumen": "Helmut-Schmidt–Programme (Master’s Scholarships for Public Policy and Good Governance – PPGG) Becas para Maestrías en Política Pública y Buen Gobierno (PPGG) Se financia una selección específica de 7 maestrías completas. Duración de la Maestría: 1-2 años. – Apoyo para manutención",
-   "fuente": "daad-maestria",
-   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
-   "pais": "Alemania",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": null,
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria",
-    "curso",
-    "investigacion"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
-  },
-  {
-   "id": "64c1caf011b9",
-   "titulo": "Guía para postularse a las becas STEM 2026",
-   "url": "https://www.daad.co/files/2025/07/Guia_STEM_2025_stand_3_julio_2025.pdf",
-   "resumen": "Becas para Maestrías en áreas STEM (Science, Technology, Engineering, Mathematics) A través de este programa de becas, el DAAD ofrece financiación completa para realizar estudios presenciales de Maestría en Universiades de Alemania en áreas como Ciencias, Ingeniería, Informática ",
-   "fuente": "daad-maestria",
-   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
-   "pais": "Alemania",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-16",
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria",
-    "curso",
-    "investigacion"
-   ],
-   "areas": [
-    "ingenieria"
-   ],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
-  },
-  {
-   "id": "6f999ce2b5cb",
-   "titulo": "Guía para postularse a la convocatoria 2026",
-   "url": "https://www.daad.co/files/2026/02/DAAD_COLFUTURO_Convocatoria-2026-1.pdf",
-   "resumen": "DAAD – COLFUTURO Programa Crédito-Beca (Maestría o Doctorado) en todas las áreas Apoya estudios de posgrado (maestría o doctorado) en Alemania en todas las áreas del conocimiento en alemán o en inglés para colombianos. Otorgamiento de becas por parte del DAAD a los beneficiarios ",
-   "fuente": "daad-maestria",
-   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
-   "pais": "Alemania",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-17",
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria",
-    "doctorado",
-    "curso"
-   ],
-   "areas": [],
-   "cobertura": "parcial",
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
-  },
-  {
-   "id": "64139aeaec1c",
-   "titulo": "Information about your preferred master programmes",
-   "url": "https://static.daad.de/media/daad_de/word-excel-nicht-barrierefrei/in-deutschland-studieren-forschen-lehren/a206_studiengangsinfo-information_about_the_study_programme.docx",
-   "resumen": "DAAD – COLFUTURO Programa Crédito-Beca (Maestría o Doctorado) en todas las áreas Apoya estudios de posgrado (maestría o doctorado) en Alemania en todas las áreas del conocimiento en alemán o en inglés para colombianos. Otorgamiento de becas por parte del DAAD a los beneficiarios ",
-   "fuente": "daad-maestria",
-   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
-   "pais": "Alemania",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-17",
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria",
-    "doctorado",
-    "curso"
-   ],
-   "areas": [],
-   "cobertura": "parcial",
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
-  },
-  {
-   "id": "5faf7896bfa2",
-   "titulo": "Guia para postularse a la Convocatoria de becas 2026",
-   "url": "https://imp.daad.com/media/daad_de/pdfs_nicht_barrierefrei/in-deutschland-studieren-forschen-lehren/call_third_country_programme_latin_america_master.pdf",
-   "resumen": "„In-Region Scholarship Programme“ Latin America Beca del DAAD: Maestría en Ingeniería Eléctrica en la Universidad Nacional de San Juan, Argentina. La convocatoria “In-Region Scholarship Programme – Latin America”, permite realizar estudios de Maestría en la Universidad Nacional d",
-   "fuente": "daad-maestria",
-   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
-   "pais": "Alemania",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-17",
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria",
-    "investigacion"
-   ],
-   "areas": [
-    "ingenieria"
-   ],
-   "cobertura": "completa",
-   "paraPeru": true,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
-  },
-  {
-   "id": "bca599a069fc",
-   "titulo": "Convocatoria en el banco de becas",
-   "url": "https://www2.daad.de/deutschland/stipendium/datenbank/de/21148-stipendiendatenbank/?status=&origin=&subjectGrps=&daad=&intention=&q=sommer&page=1&detail=50035295",
-   "resumen": "University Summer Courses offered in Germany for Foreign Students and Graduates Becas para cursos de verano en universidades alemanas: Cursos intensivos para perfeccionar conocimientos de alemán en diferentes instituciones en Alemania. Dirigidos a estudiantes de pregrado de unive",
-   "fuente": "daad-maestria",
-   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
-   "pais": "Alemania",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-17",
-   "estado": "por-confirmar",
-   "niveles": [
-    "pregrado",
-    "curso"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
-  },
-  {
-   "id": "1ce860e401f1",
-   "titulo": "Guía para postularse a la convocatoria 2026/27",
-   "url": "https://www.daad.co/files/2026/07/GUIA_RESEARCH-STAYS_2026.pdf",
-   "resumen": "Research Grants in Germany Becas para estancias de investigación doctoral o posdoctoral en todas las áreas del conocimiento: Este programa financia una estancia de investigación en una universidad o centro de investigación en Alemania en cualquier área del conocimiento Duración: ",
-   "fuente": "daad-doctorado",
-   "fuenteNombre": "DAAD (oficina regional para Perú) – Doctorado e investigación",
-   "pais": "Alemania",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-16",
-   "estado": "por-confirmar",
-   "niveles": [
-    "doctorado",
-    "posdoc",
-    "curso",
-    "investigacion"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
-  },
-  {
-   "id": "a2b8b9460213",
-   "titulo": "Guía a postularse en español_convocatoria 2026",
-   "url": "https://www.daad.co/files/2026/04/GUIA_GROW-2026_stand-9-de-abril-2.pdf",
-   "resumen": "GROW - Global Research Opportunities for the South Becas para estancias a nivel doctoral, posdoctoral o de docentes universitarios en Alemania en áreas relacionadas a los Objetivos de Desarrollo Sostenible (ODS): Este programa financia viajes para el establecimiento de contactos ",
-   "fuente": "daad-doctorado",
-   "fuenteNombre": "DAAD (oficina regional para Perú) – Doctorado e investigación",
-   "pais": "Alemania",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-16",
-   "estado": "por-confirmar",
-   "niveles": [
-    "doctorado",
-    "posdoc",
-    "investigacion"
-   ],
-   "areas": [
-    "ambiental"
-   ],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-22"
-  },
-  {
-   "id": "ec301f8798ff",
-   "titulo": "Convocatoria en el banco de becas",
-   "url": "http://www.daad.de/prime/en",
-   "resumen": "Postdoctoral Researchers International Mobility Experience (P.R.I.M.E.) Programa dirigido a posdoctorandos que desean combinar un puesto laboral con una estancia de investigación. Duración: Posición laboral temporal de 18 meses. Prestaciones: Remuneración acorde a la posición pos",
-   "fuente": "daad-doctorado",
-   "fuenteNombre": "DAAD (oficina regional para Perú) – Doctorado e investigación",
-   "pais": "Alemania",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-16",
-   "estado": "por-confirmar",
-   "niveles": [
-    "doctorado",
-    "posdoc",
-    "investigacion"
-   ],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
    "vistoUltimo": "2026-11-22"
@@ -5777,20 +5905,14 @@
    "verificado": "2026-11-24",
    "estado": "cerrada",
    "niveles": [
-    "maestria",
-    "doctorado",
-    "curso",
-    "investigacion"
+    "maestria"
    ],
-   "areas": [
-    "ingenieria",
-    "gestion"
-   ],
+   "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "3e2700bbb6ab",
@@ -5807,17 +5929,14 @@
    "verificado": "2026-11-24",
    "estado": "cerrada",
    "niveles": [
-    "curso",
     "investigacion"
    ],
-   "areas": [
-    "ingenieria"
-   ],
+   "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "c7a979b3e3ba",
@@ -5833,10 +5952,7 @@
    "fechaAprox": false,
    "verificado": "2026-11-24",
    "estado": "cerrada",
-   "niveles": [
-    "curso",
-    "investigacion"
-   ],
+   "niveles": [],
    "areas": [
     "ambiental"
    ],
@@ -5844,7 +5960,34 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
+  },
+  {
+   "id": "5faf7896bfa2",
+   "titulo": "Guia para postularse a la Convocatoria de becas 2026",
+   "url": "https://imp.daad.com/media/daad_de/pdfs_nicht_barrierefrei/in-deutschland-studieren-forschen-lehren/call_third_country_programme_latin_america_master.pdf",
+   "resumen": "„In-Region Scholarship Programme“ Latin America Beca del DAAD: Maestría en Ingeniería Eléctrica en la Universidad Nacional de San Juan, Argentina. La convocatoria “In-Region Scholarship Programme – Latin America”, permite realizar estudios de Maestría en la Universidad Nacional d",
+   "fuente": "daad-maestria",
+   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
+   "pais": "Alemania",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": "2026-03-03",
+   "fechaAprox": false,
+   "verificado": null,
+   "estado": "cerrada",
+   "niveles": [
+    "maestria",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria"
+   ],
+   "cobertura": "completa",
+   "paraPeru": true,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "ef80cdc067da",
@@ -5858,7 +6001,7 @@
    "fechaLimite": null,
    "ultimaPasada": "2026-10-31",
    "fechaAprox": true,
-   "verificado": "2026-11-24",
+   "verificado": "2026-11-25",
    "estado": "cerrada",
    "niveles": [
     "maestria"
@@ -5871,7 +6014,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "0fa3d35d4e40",
@@ -6402,7 +6545,7 @@
    "paraPeru": false,
    "publicado": "2026-11-23",
    "primeraVez": "2026-11-23",
-   "vistoUltimo": "2026-11-24"
+   "vistoUltimo": "2026-11-25"
   },
   {
    "id": "225d6fa708e3",
@@ -6462,7 +6605,7 @@
    "ok": true,
    "items": 25,
    "error": null,
-   "ultimaOk": "2026-11-24"
+   "ultimaOk": "2026-11-25"
   },
   {
    "id": "prociencia",
@@ -6472,36 +6615,36 @@
    "ok": true,
    "items": 6,
    "error": null,
-   "ultimaOk": "2026-11-24"
+   "ultimaOk": "2026-11-25"
   },
   {
    "id": "daad-maestria",
    "nombre": "DAAD (oficina regional para Perú) – Maestría",
    "url": "https://www.daad.co/es/becas/becas-de-posgrado/maestria",
    "via": null,
-   "ok": false,
-   "items": 0,
-   "error": "https://www.daad.co/es/becas/becas-de-posgrado/maestria: HTTP 403 | https://www.daad.de/en/information-services-for-higher-education-institutions/further-information-on-daad-programmes/epos/: HTTP 403",
-   "ultimaOk": "2026-11-22"
+   "ok": true,
+   "items": 25,
+   "error": null,
+   "ultimaOk": "2026-11-25"
   },
   {
    "id": "daad-doctorado",
    "nombre": "DAAD (oficina regional para Perú) – Doctorado e investigación",
    "url": "https://www.daad.co/es/becas/becas-de-estancias-de-investigacion-y-docencia/",
    "via": null,
-   "ok": false,
-   "items": 0,
-   "error": "https://www.daad.co/es/becas/becas-de-estancias-de-investigacion-y-docencia/: HTTP 403",
-   "ultimaOk": "2026-11-22"
+   "ok": true,
+   "items": 10,
+   "error": null,
+   "ultimaOk": "2026-11-25"
   },
   {
    "id": "oea",
    "nombre": "OEA – Programa de Becas",
    "url": "https://www.oas.org/es/becas/",
    "via": null,
-   "ok": true,
-   "items": 12,
-   "error": null,
+   "ok": false,
+   "items": 0,
+   "error": "https://www.oas.org/es/becas/: HTTP 403",
    "ultimaOk": "2026-11-24"
   },
   {
@@ -6512,7 +6655,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-24"
+   "ultimaOk": "2026-11-25"
   },
   {
    "id": "fulbright-peru",
@@ -6522,7 +6665,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-24"
+   "ultimaOk": "2026-11-25"
   },
   {
    "id": "erasmus-mundus",
@@ -6532,7 +6675,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-24"
+   "ultimaOk": "2026-11-25"
   },
   {
    "id": "fundacion-carolina",
@@ -6542,7 +6685,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-24"
+   "ultimaOk": "2026-11-25"
   },
   {
    "id": "scholars4dev",
@@ -6552,7 +6695,7 @@
    "ok": true,
    "items": 10,
    "error": null,
-   "ultimaOk": "2026-11-24"
+   "ultimaOk": "2026-11-25"
   },
   {
    "id": "opportunitydesk",
@@ -6562,7 +6705,7 @@
    "ok": true,
    "items": 10,
    "error": null,
-   "ultimaOk": "2026-11-24"
+   "ultimaOk": "2026-11-25"
   }
  ]
 }
