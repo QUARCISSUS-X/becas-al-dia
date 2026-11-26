@@ -1,32 +1,10 @@
 {
  "version": 1,
- "generado": "2026-11-25T20:29:26.777Z",
- "hoy": "2026-11-25",
- "total": 258,
- "abiertas": 127,
+ "generado": "2026-11-26T20:12:23.874Z",
+ "hoy": "2026-11-26",
+ "total": 269,
+ "abiertas": 132,
  "items": [
-  {
-   "id": "9ae4ecb8d27b",
-   "titulo": "UN FAO Soil Collage Contest 2026",
-   "url": "https://opportunitydesk.org/2026/11/23/un-fao-soil-collage-contest-2026/",
-   "resumen": "Deadline: November 25, 2026 Applications are open for the UN FAO Soil Collage Contest 2026. In celebration of World Soil Day (WSD) 2026, the Food and Agriculture Organization of the United Nations (FAO), the Global Soil Partnership (GSP), the French Government Agency for Ecologic",
-   "fuente": "opportunitydesk",
-   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
-   "pais": "Internacional",
-   "idioma": "en",
-   "fechaLimite": "2026-11-25",
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-24",
-   "estado": "abierta",
-   "niveles": [],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": "2026-11-23",
-   "primeraVez": "2026-11-23",
-   "vistoUltimo": "2026-11-24"
-  },
   {
    "id": "011b71dae0a4",
    "titulo": "African Union Development Agency Energize Africa Health Fellows Program 2027",
@@ -694,6 +672,34 @@
    "vistoUltimo": "2026-11-12"
   },
   {
+   "id": "587e3ff0bc7b",
+   "titulo": "ENGYRO Research Proposal Competition 2027",
+   "url": "https://opportunitydesk.org/2026/11/25/engyro-research-proposal-competition-2027/",
+   "resumen": "Deadline: December 7, 2026 Applications are open for the ENGYRO Research Proposal Competition 2027. ENGYRO is an international research proposal competition empowering high school students to explore engineering and technology through interdisciplinary research. They welcome prop",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-12-07",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-26",
+   "estado": "abierta",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria",
+    "ambiental",
+    "gestion"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-25",
+   "primeraVez": "2026-11-26",
+   "vistoUltimo": "2026-11-26"
+  },
+  {
    "id": "efcf8d5f44a8",
    "titulo": "Journalism & Women Symposium (JAWS) Health Journalism Fellowship 2027 ($4,000 stipend)",
    "url": "https://opportunitydesk.org/2026/11/18/jaws-health-journalism-fellowship-2027/",
@@ -768,6 +774,30 @@
    "vistoUltimo": "2026-11-11"
   },
   {
+   "id": "9b559e69134b",
+   "titulo": "IAFFE Feminist Economics School 2027 (Funded)",
+   "url": "https://opportunitydesk.org/2026/11/25/iaffe-feminist-economics-school-2027/",
+   "resumen": "Deadline: December 10, 2026 Applications are open for the IAFFE Feminist Economics School 2027. The IAFFE Feminist Economics School is designed to bring together approximately 30 early-career scholars, practitioners, activists, and policymakers engaged in research and action on i",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-12-10",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-26",
+   "estado": "abierta",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-25",
+   "primeraVez": "2026-11-26",
+   "vistoUltimo": "2026-11-26"
+  },
+  {
    "id": "6efe9ba587e7",
    "titulo": "Healthy Futures Mastercard Scholarship 2027",
    "url": "https://opportunitydesk.org/2026/11/18/healthy-futures-mastercard-scholarship-2027/",
@@ -812,6 +842,30 @@
    "publicado": "2026-11-13",
    "primeraVez": "2026-11-14",
    "vistoUltimo": "2026-11-15"
+  },
+  {
+   "id": "94e24239cdae",
+   "titulo": "Friends of Pakistan Fellowship 2027 (Funded)",
+   "url": "https://opportunitydesk.org/2026/11/26/friends-of-pakistan-fellowship-2027/",
+   "resumen": "Deadline: December 11, 2026 Applications are open for the Friends of Pakistan Fellowship 2027. Pakistan has extraordinary leaders working on big social problems. Scale is the next frontier. Each year, a small cohort of Pakistani leaders spends seven days in Northern Pakistan refi",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-12-11",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-26",
+   "estado": "abierta",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-26",
+   "primeraVez": "2026-11-26",
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "490d286eeade",
@@ -1042,7 +1096,7 @@
    "fechaLimite": "2026-12-15",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-25",
+   "verificado": "2026-11-26",
    "estado": "abierta",
    "niveles": [
     "pregrado",
@@ -1059,7 +1113,7 @@
    "paraPeru": false,
    "publicado": "2026-11-16",
    "primeraVez": "2026-11-16",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "4c54c796e01b",
@@ -1073,7 +1127,7 @@
    "fechaLimite": "2026-12-15",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-25",
+   "verificado": "2026-11-26",
    "estado": "abierta",
    "niveles": [
     "maestria",
@@ -1088,7 +1142,7 @@
    "paraPeru": false,
    "publicado": "2026-11-16",
    "primeraVez": "2026-11-16",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "a9bbc13b0cc4",
@@ -1232,6 +1286,28 @@
    "vistoUltimo": "2026-11-17"
   },
   {
+   "id": "98d6891b8a76",
+   "titulo": "1776 Reimagined: A Revolution Without the Declaration Essay Competition 2026",
+   "url": "https://opportunitydesk.org/2026/11/25/1776-reimagined-essay-competition-2026/",
+   "resumen": "Deadline: December 18, 2026 Applications are open for the 1776 Reimagined: A Revolution Without the Declaration Essay Competition 2026. 1776 gave America more than independence from Great Britain. The Declaration of Independence also provided later generations a statement of the ",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-12-18",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-26",
+   "estado": "abierta",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-25",
+   "primeraVez": "2026-11-26",
+   "vistoUltimo": "2026-11-26"
+  },
+  {
    "id": "42bf838593dd",
    "titulo": "Global Citizen Prize: 2027 Cisco Youth Leadership Award ($250,000 prize)",
    "url": "https://opportunitydesk.org/2026/11/19/global-citizen-prize-2027-cisco-youth-leadership-award/",
@@ -1315,7 +1391,7 @@
    "fechaLimite": "2026-12-31",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-25",
+   "verificado": "2026-11-26",
    "estado": "abierta",
    "niveles": [
     "pregrado",
@@ -1328,7 +1404,7 @@
    "paraPeru": false,
    "publicado": "2026-11-23",
    "primeraVez": "2026-11-23",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "ac2785eaf8e0",
@@ -1530,7 +1606,7 @@
    "fechaLimite": "2027-01-05",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-25",
+   "verificado": "2026-11-26",
    "estado": "abierta",
    "niveles": [
     "maestria",
@@ -1543,7 +1619,7 @@
    "paraPeru": false,
    "publicado": "2026-11-23",
    "primeraVez": "2026-11-23",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "be7c684b5156",
@@ -1585,7 +1661,7 @@
    "fechaLimite": "2027-01-06",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-25",
+   "verificado": "2026-11-26",
    "estado": "abierta",
    "niveles": [
     "maestria",
@@ -1598,7 +1674,7 @@
    "paraPeru": false,
    "publicado": "2026-11-16",
    "primeraVez": "2026-11-13",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "15dd6f5cf927",
@@ -1737,6 +1813,30 @@
    "vistoUltimo": "2026-11-13"
   },
   {
+   "id": "dec390da6159",
+   "titulo": "Google for Startups Accelerator: Sovereign AI 2027",
+   "url": "https://opportunitydesk.org/2026/11/26/google-for-startups-accelerator-sovereign-ai-2027/",
+   "resumen": "Deadline: January 15, 2027 Applications are open for the Google for Startups Accelerator: Sovereign AI 2027. Available in Europe and Israel, this initiative supports startups that are building cutting-edge AI solutions for European regulatory environments. This equity-free, 15-we",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-01-15",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-26",
+   "estado": "abierta",
+   "niveles": [],
+   "areas": [
+    "ambiental"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-26",
+   "primeraVez": "2026-11-26",
+   "vistoUltimo": "2026-11-26"
+  },
+  {
    "id": "794726eada9a",
    "titulo": "Top 20+ Scholarships in Sweden for International Students",
    "url": "https://www.scholars4dev.com/scholarships-in-sweden-for-international-students/",
@@ -1748,7 +1848,7 @@
    "fechaLimite": "2027-01-15",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-25",
+   "verificado": "2026-11-26",
    "estado": "abierta",
    "niveles": [
     "pregrado",
@@ -1765,7 +1865,7 @@
    "paraPeru": false,
    "publicado": "2026-11-23",
    "primeraVez": "2026-11-23",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "82b393e0ffe1",
@@ -2026,7 +2126,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-24",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "d3ae1f79cbc3",
@@ -2040,7 +2140,7 @@
    "fechaLimite": "2027-01-17",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-25",
+   "verificado": "2026-11-26",
    "estado": "abierta",
    "niveles": [
     "maestria",
@@ -2054,7 +2154,7 @@
    "paraPeru": true,
    "publicado": "2026-11-23",
    "primeraVez": "2026-11-23",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "6d751291d095",
@@ -2198,7 +2298,7 @@
    "fechaLimite": "2027-01-22",
    "ultimaPasada": "2026-11-16",
    "fechaAprox": false,
-   "verificado": "2026-11-25",
+   "verificado": "2026-11-26",
    "estado": "abierta",
    "niveles": [
     "pregrado",
@@ -2214,7 +2314,7 @@
    "paraPeru": false,
    "publicado": "2026-11-16",
    "primeraVez": "2026-11-16",
-   "vistoUltimo": "2026-11-25",
+   "vistoUltimo": "2026-11-26",
    "cambioFecha": {
     "antes": "2026-11-16",
     "ahora": "2027-01-22",
@@ -2265,7 +2365,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "39fd361e6e76",
@@ -2425,7 +2525,7 @@
    "fechaLimite": "2027-02-01",
    "ultimaPasada": "2026-03-30",
    "fechaAprox": false,
-   "verificado": "2026-11-25",
+   "verificado": "2026-11-26",
    "estado": "abierta",
    "niveles": [
     "maestria",
@@ -2436,7 +2536,7 @@
    "paraPeru": false,
    "publicado": "2026-11-23",
    "primeraVez": "2026-11-23",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "979af1d3ec99",
@@ -2555,6 +2655,30 @@
    "vistoUltimo": "2026-11-17"
   },
   {
+   "id": "23a36156758c",
+   "titulo": "Iso Lomso Fellowships 2028 (Funded)",
+   "url": "https://opportunitydesk.org/2026/11/25/iso-lomso-fellowships-2028/",
+   "resumen": "Deadline: February 15, 2027 Applications are open for the Iso Lomso Fellowships 2028. The Iso Lomso Fellowships provide a three-year affiliation with STIAS. The aim is to facilitate and support emerging researchers towards becoming established scholars in their fields. This is ac",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-02-15",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-26",
+   "estado": "abierta",
+   "niveles": [
+    "investigacion"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-25",
+   "primeraVez": "2026-11-26",
+   "vistoUltimo": "2026-11-26"
+  },
+  {
    "id": "e6e91956daf5",
    "titulo": "Generation Regen Challenge to Attend the One Young World Summit 2027 (Fully-funded)",
    "url": "https://opportunitydesk.org/2026/11/09/generation-regen-challenge-2027/",
@@ -2603,7 +2727,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "0d264facd123",
@@ -2783,7 +2907,7 @@
    "fechaLimite": "2027-02-28",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-25",
+   "verificado": "2026-11-26",
    "estado": "abierta",
    "niveles": [
     "maestria"
@@ -2798,7 +2922,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "3fde5d87502e",
@@ -2952,20 +3076,16 @@
    "verificado": "2026-11-25",
    "estado": "abierta",
    "niveles": [
-    "maestria",
-    "doctorado",
-    "posdoc",
-    "investigacion"
+    "maestria"
    ],
    "areas": [
-    "ingenieria",
     "gestion"
    ],
    "cobertura": null,
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "353a645650ce",
@@ -3036,7 +3156,7 @@
    "fechaLimite": "2027-03-31",
    "ultimaPasada": "2026-09-30",
    "fechaAprox": true,
-   "verificado": "2026-11-25",
+   "verificado": "2026-11-26",
    "estado": "abierta",
    "niveles": [
     "investigacion"
@@ -3046,7 +3166,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "2d0ee86174ff",
@@ -3256,7 +3376,128 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
+  },
+  {
+   "id": "4fab93cb8d8b",
+   "titulo": "Pronabec aplica examen inclusivo en sistema Braille para Beca 18",
+   "url": "https://www.gob.pe/institucion/pronabec/noticias/1481173-pronabec-aplica-examen-inclusivo-en-sistema-braille-para-beca-18",
+   "resumen": "",
+   "fuente": "pronabec-noticias",
+   "fuenteNombre": "Pronabec (noticias oficiales)",
+   "pais": "Perú",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-26",
+   "estado": "por-confirmar",
+   "niveles": [
+    "pregrado",
+    "curso"
+   ],
+   "areas": [
+    "ingenieria"
+   ],
+   "cobertura": null,
+   "paraPeru": true,
+   "publicado": null,
+   "primeraVez": "2026-11-26",
+   "vistoUltimo": "2026-11-26"
+  },
+  {
+   "id": "9f3e32ee9163",
+   "titulo": "10 Global Scholarship Opportunities Currently Open – November 25, 2026",
+   "url": "https://opportunitydesk.org/2026/11/25/10-global-scholarship-opportunities-currently-open-november-25-2026/",
+   "resumen": "1. ANSO-CAS-TWAS/UNESCO PhD Scholarship 2026-2027 (Funded)The ANSO-CAS-TWAS/UNESCO PhD Scholarship supports outstanding students from developing countries to pursue full-time doctoral study at the University of Science and Technology of China, the University of Chinese Academy of",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": null,
+   "estado": "por-confirmar",
+   "niveles": [
+    "doctorado"
+   ],
+   "areas": [
+    "ingenieria"
+   ],
+   "cobertura": null,
+   "paraPeru": true,
+   "publicado": "2026-11-25",
+   "primeraVez": "2026-11-26",
+   "vistoUltimo": "2026-11-26"
+  },
+  {
+   "id": "0b0166aaeb6e",
+   "titulo": "20 Communications, Talent Management & Creative Job Opportunities Currently Open – November 25, 2026",
+   "url": "https://opportunitydesk.org/2026/11/25/20-communications-talent-management-creative-job-opportunities-currently-open-november-25-2026/",
+   "resumen": "1. Advocacy Manager, Professional Products Division – L’Oréal, London, United Kingdom L’Oréal is recruiting an Advocacy Manager to translate global consumer strategies into locally relevant advocacy and creator-marketing plans. The role focuses on cultural trends, influencer and ",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": null,
+   "estado": "por-confirmar",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-25",
+   "primeraVez": "2026-11-26",
+   "vistoUltimo": "2026-11-26"
+  },
+  {
+   "id": "ca4f3cce9607",
+   "titulo": "Make Your Holidays Count: How to Gain New Skills During the Holiday Season",
+   "url": "https://opportunitydesk.org/2026/11/25/make-your-holidays-count-how-to-gain-new-skills-during-the-holiday-season/",
+   "resumen": "The holiday season is often associated with celebrations, family gatherings, travel, relaxation and taking a break from the demands of work or school. While it is important to rest and reconnect with loved ones, the holidays also present an excellent opportunity to invest in your",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": null,
+   "estado": "por-confirmar",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-25",
+   "primeraVez": "2026-11-26",
+   "vistoUltimo": "2026-11-26"
+  },
+  {
+   "id": "3f39448a2e4c",
+   "titulo": "How to Boost Your Sales During the Festive Season: 10 Strategies Every Business Owner Should Know",
+   "url": "https://opportunitydesk.org/2026/11/25/how-to-boost-your-sales-during-the-festive-season-10-strategies-every-business-owner-should-know/",
+   "resumen": "The festive season presents one of the biggest opportunities for entrepreneurs and business owners to increase revenue, attract new customers and strengthen their brand visibility. From Christmas and New Year celebrations to other cultural and religious festivities, consumers are",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": null,
+   "estado": "por-confirmar",
+   "niveles": [],
+   "areas": [
+    "gestion"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-25",
+   "primeraVez": "2026-11-26",
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "c4e382a8e6cb",
@@ -3280,7 +3521,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-24",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "3260c1ebd66f",
@@ -3326,7 +3567,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-23",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "a2d99419b5f1",
@@ -3372,7 +3613,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-21",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "81ede3329dad",
@@ -3396,7 +3637,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-20",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "f59d635c283d",
@@ -3446,7 +3687,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-19",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "17cfd86fec09",
@@ -3552,15 +3793,19 @@
    "fechaLimite": null,
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-18",
+   "verificado": "2026-11-26",
    "estado": "por-confirmar",
-   "niveles": [],
-   "areas": [],
+   "niveles": [
+    "pregrado"
+   ],
+   "areas": [
+    "gestion"
+   ],
    "cobertura": null,
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-18",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "841c69885e5d",
@@ -3687,7 +3932,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-14",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "6bb1a19baf36",
@@ -3831,7 +4076,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-13",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "72c5009af8b1",
@@ -4046,7 +4291,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-11",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "cc7801405798",
@@ -4060,15 +4305,19 @@
    "fechaLimite": null,
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-18",
+   "verificado": "2026-11-26",
    "estado": "por-confirmar",
-   "niveles": [],
-   "areas": [],
+   "niveles": [
+    "maestria"
+   ],
+   "areas": [
+    "gestion"
+   ],
    "cobertura": null,
-   "paraPeru": false,
+   "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-10",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "d5c5d0326486",
@@ -4085,15 +4334,14 @@
    "verificado": "2026-11-25",
    "estado": "por-confirmar",
    "niveles": [
-    "pregrado",
-    "curso"
+    "pregrado"
    ],
    "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-09",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "90826bdb2acb",
@@ -4185,7 +4433,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "e71e7eb76b0e",
@@ -4209,7 +4457,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "ba6455b8a3f3",
@@ -4231,7 +4479,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "cee663f2951b",
@@ -4253,7 +4501,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "bbf097c9af59",
@@ -4275,7 +4523,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "1a37543a047c",
@@ -4299,7 +4547,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "b2ae51ea98ad",
@@ -4323,7 +4571,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "55c6c9e219f5",
@@ -4348,7 +4596,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "e51304633dcb",
@@ -4372,7 +4620,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "b857117cfd8f",
@@ -4388,18 +4636,15 @@
    "fechaAprox": false,
    "verificado": "2026-11-25",
    "estado": "por-confirmar",
-   "niveles": [
-    "pregrado"
-   ],
+   "niveles": [],
    "areas": [
-    "ingenieria",
-    "ambiental"
+    "ingenieria"
    ],
    "cobertura": null,
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "bfdfb6bae497",
@@ -4416,15 +4661,14 @@
    "verificado": "2026-11-25",
    "estado": "por-confirmar",
    "niveles": [
-    "pregrado",
-    "curso"
+    "pregrado"
    ],
    "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "94553eea33cb",
@@ -4440,47 +4684,13 @@
    "fechaAprox": false,
    "verificado": "2026-11-25",
    "estado": "por-confirmar",
-   "niveles": [
-    "pregrado",
-    "maestria",
-    "curso"
-   ],
-   "areas": [
-    "ingenieria",
-    "civil",
-    "mineria"
-   ],
+   "niveles": [],
+   "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
-  },
-  {
-   "id": "c91a16c279fd",
-   "titulo": "Pronabec y Cancillería articulan esfuerzos para ampliar oportunidades de becas en el extranjero",
-   "url": "https://www.gob.pe/institucion/pronabec/noticias/1459898-pronabec-y-cancilleria-articulan-esfuerzos-para-ampliar-oportunidades-de-becas-en-el-extranjero",
-   "resumen": "",
-   "fuente": "pronabec-noticias",
-   "fuenteNombre": "Pronabec (noticias oficiales)",
-   "pais": "Perú",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-25",
-   "estado": "por-confirmar",
-   "niveles": [
-    "maestria"
-   ],
-   "areas": [
-    "gestion"
-   ],
-   "cobertura": null,
-   "paraPeru": true,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "d72f4b000fee",
@@ -4504,7 +4714,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "4db96c9594ed",
@@ -4525,16 +4735,12 @@
     "posdoc",
     "investigacion"
    ],
-   "areas": [
-    "ingenieria",
-    "ambiental",
-    "civil"
-   ],
+   "areas": [],
    "cobertura": null,
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "3b5016ced3d7",
@@ -4562,7 +4768,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "77418871aea5",
@@ -4590,7 +4796,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "d51f18b203cc",
@@ -4616,7 +4822,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "0b6e33a74b2a",
@@ -4642,7 +4848,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "64c1caf011b9",
@@ -4670,7 +4876,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "6f999ce2b5cb",
@@ -4684,7 +4890,7 @@
    "fechaLimite": null,
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": null,
+   "verificado": "2026-11-26",
    "estado": "por-confirmar",
    "niveles": [
     "maestria",
@@ -4696,7 +4902,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "64139aeaec1c",
@@ -4710,7 +4916,7 @@
    "fechaLimite": null,
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": null,
+   "verificado": "2026-11-26",
    "estado": "por-confirmar",
    "niveles": [
     "maestria",
@@ -4722,7 +4928,34 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
+  },
+  {
+   "id": "5faf7896bfa2",
+   "titulo": "Guia para postularse a la Convocatoria de becas 2026",
+   "url": "https://imp.daad.com/media/daad_de/pdfs_nicht_barrierefrei/in-deutschland-studieren-forschen-lehren/call_third_country_programme_latin_america_master.pdf",
+   "resumen": "„In-Region Scholarship Programme“ Latin America Beca del DAAD: Maestría en Ingeniería Eléctrica en la Universidad Nacional de San Juan, Argentina. La convocatoria “In-Region Scholarship Programme – Latin America”, permite realizar estudios de Maestría en la Universidad Nacional d",
+   "fuente": "daad-maestria",
+   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
+   "pais": "Alemania",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-26",
+   "estado": "por-confirmar",
+   "niveles": [
+    "maestria",
+    "investigacion"
+   ],
+   "areas": [
+    "ingenieria"
+   ],
+   "cobertura": "completa",
+   "paraPeru": true,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "bca599a069fc",
@@ -4736,10 +4969,11 @@
    "fechaLimite": null,
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": null,
+   "verificado": "2026-11-26",
    "estado": "por-confirmar",
    "niveles": [
     "pregrado",
+    "maestria",
     "curso"
    ],
    "areas": [],
@@ -4747,7 +4981,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "1ce860e401f1",
@@ -4774,7 +5008,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "a2b8b9460213",
@@ -4802,7 +5036,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "ec301f8798ff",
@@ -4828,7 +5062,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "7a779131cfd9",
@@ -4842,7 +5076,7 @@
    "fechaLimite": null,
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-25",
+   "verificado": "2026-11-26",
    "estado": "por-confirmar",
    "niveles": [
     "maestria"
@@ -4854,6 +5088,32 @@
    ],
    "cobertura": "completa",
    "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-26"
+  },
+  {
+   "id": "c91a16c279fd",
+   "titulo": "Pronabec y Cancillería articulan esfuerzos para ampliar oportunidades de becas en el extranjero",
+   "url": "https://www.gob.pe/institucion/pronabec/noticias/1459898-pronabec-y-cancilleria-articulan-esfuerzos-para-ampliar-oportunidades-de-becas-en-el-extranjero",
+   "resumen": "",
+   "fuente": "pronabec-noticias",
+   "fuenteNombre": "Pronabec (noticias oficiales)",
+   "pais": "Perú",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-25",
+   "estado": "por-confirmar",
+   "niveles": [
+    "maestria"
+   ],
+   "areas": [
+    "gestion"
+   ],
+   "cobertura": null,
+   "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
    "vistoUltimo": "2026-11-25"
@@ -5912,7 +6172,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "3e2700bbb6ab",
@@ -5936,7 +6196,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "c7a979b3e3ba",
@@ -5960,34 +6220,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
-  },
-  {
-   "id": "5faf7896bfa2",
-   "titulo": "Guia para postularse a la Convocatoria de becas 2026",
-   "url": "https://imp.daad.com/media/daad_de/pdfs_nicht_barrierefrei/in-deutschland-studieren-forschen-lehren/call_third_country_programme_latin_america_master.pdf",
-   "resumen": "„In-Region Scholarship Programme“ Latin America Beca del DAAD: Maestría en Ingeniería Eléctrica en la Universidad Nacional de San Juan, Argentina. La convocatoria “In-Region Scholarship Programme – Latin America”, permite realizar estudios de Maestría en la Universidad Nacional d",
-   "fuente": "daad-maestria",
-   "fuenteNombre": "DAAD (oficina regional para Perú) – Maestría",
-   "pais": "Alemania",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": "2026-03-03",
-   "fechaAprox": false,
-   "verificado": null,
-   "estado": "cerrada",
-   "niveles": [
-    "maestria",
-    "investigacion"
-   ],
-   "areas": [
-    "ingenieria"
-   ],
-   "cobertura": "completa",
-   "paraPeru": true,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "ef80cdc067da",
@@ -6001,7 +6234,7 @@
    "fechaLimite": null,
    "ultimaPasada": "2026-10-31",
    "fechaAprox": true,
-   "verificado": "2026-11-25",
+   "verificado": "2026-11-26",
    "estado": "cerrada",
    "niveles": [
     "maestria"
@@ -6014,7 +6247,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "0fa3d35d4e40",
@@ -6545,7 +6778,7 @@
    "paraPeru": false,
    "publicado": "2026-11-23",
    "primeraVez": "2026-11-23",
-   "vistoUltimo": "2026-11-25"
+   "vistoUltimo": "2026-11-26"
   },
   {
    "id": "225d6fa708e3",
@@ -6594,6 +6827,28 @@
    "publicado": "2026-11-09",
    "primeraVez": "2026-11-09",
    "vistoUltimo": "2026-11-11"
+  },
+  {
+   "id": "9ae4ecb8d27b",
+   "titulo": "UN FAO Soil Collage Contest 2026",
+   "url": "https://opportunitydesk.org/2026/11/23/un-fao-soil-collage-contest-2026/",
+   "resumen": "Deadline: November 25, 2026 Applications are open for the UN FAO Soil Collage Contest 2026. In celebration of World Soil Day (WSD) 2026, the Food and Agriculture Organization of the United Nations (FAO), the Global Soil Partnership (GSP), the French Government Agency for Ecologic",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-11-25",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-24",
+   "estado": "vencida",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-23",
+   "primeraVez": "2026-11-23",
+   "vistoUltimo": "2026-11-24"
   }
  ],
  "salud": [
@@ -6605,7 +6860,7 @@
    "ok": true,
    "items": 25,
    "error": null,
-   "ultimaOk": "2026-11-25"
+   "ultimaOk": "2026-11-26"
   },
   {
    "id": "prociencia",
@@ -6615,7 +6870,7 @@
    "ok": true,
    "items": 6,
    "error": null,
-   "ultimaOk": "2026-11-25"
+   "ultimaOk": "2026-11-26"
   },
   {
    "id": "daad-maestria",
@@ -6625,7 +6880,7 @@
    "ok": true,
    "items": 25,
    "error": null,
-   "ultimaOk": "2026-11-25"
+   "ultimaOk": "2026-11-26"
   },
   {
    "id": "daad-doctorado",
@@ -6635,7 +6890,7 @@
    "ok": true,
    "items": 10,
    "error": null,
-   "ultimaOk": "2026-11-25"
+   "ultimaOk": "2026-11-26"
   },
   {
    "id": "oea",
@@ -6655,7 +6910,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-25"
+   "ultimaOk": "2026-11-26"
   },
   {
    "id": "fulbright-peru",
@@ -6665,7 +6920,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-25"
+   "ultimaOk": "2026-11-26"
   },
   {
    "id": "erasmus-mundus",
@@ -6675,7 +6930,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-25"
+   "ultimaOk": "2026-11-26"
   },
   {
    "id": "fundacion-carolina",
@@ -6685,7 +6940,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-25"
+   "ultimaOk": "2026-11-26"
   },
   {
    "id": "scholars4dev",
@@ -6695,7 +6950,7 @@
    "ok": true,
    "items": 10,
    "error": null,
-   "ultimaOk": "2026-11-25"
+   "ultimaOk": "2026-11-26"
   },
   {
    "id": "opportunitydesk",
@@ -6705,7 +6960,7 @@
    "ok": true,
    "items": 10,
    "error": null,
-   "ultimaOk": "2026-11-25"
+   "ultimaOk": "2026-11-26"
   }
  ]
 }
