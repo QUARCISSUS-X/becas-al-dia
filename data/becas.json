@@ -1,9 +1,9 @@
 {
  "version": 1,
- "generado": "2026-11-26T20:12:23.874Z",
- "hoy": "2026-11-26",
- "total": 269,
- "abiertas": 132,
+ "generado": "2026-11-27T19:57:52.895Z",
+ "hoy": "2026-11-27",
+ "total": 274,
+ "abiertas": 135,
  "items": [
   {
    "id": "011b71dae0a4",
@@ -844,6 +844,28 @@
    "vistoUltimo": "2026-11-15"
   },
   {
+   "id": "5514d612fbbe",
+   "titulo": "EU–India Young Leaders Exchange Programme 2026–2027 (Funded)",
+   "url": "https://opportunitydesk.org/2026/11/27/eu-india-young-leaders-exchange-programme-2026-2027/",
+   "resumen": "Deadline: December 11, 2026 The European Union Delegation to India invites young professionals and emerging leaders from the European Union and India to apply for the EU–India Young Leaders Exchange Programme 2026–2027. The initiative brings emerging leaders together to strengthe",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2026-12-11",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-27",
+   "estado": "abierta",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-27",
+   "primeraVez": "2026-11-27",
+   "vistoUltimo": "2026-11-27"
+  },
+  {
    "id": "94e24239cdae",
    "titulo": "Friends of Pakistan Fellowship 2027 (Funded)",
    "url": "https://opportunitydesk.org/2026/11/26/friends-of-pakistan-fellowship-2027/",
@@ -855,7 +877,7 @@
    "fechaLimite": "2026-12-11",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-26",
+   "verificado": "2026-11-27",
    "estado": "abierta",
    "niveles": [
     "investigacion"
@@ -865,7 +887,7 @@
    "paraPeru": false,
    "publicado": "2026-11-26",
    "primeraVez": "2026-11-26",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "490d286eeade",
@@ -1096,7 +1118,7 @@
    "fechaLimite": "2026-12-15",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-26",
+   "verificado": "2026-11-27",
    "estado": "abierta",
    "niveles": [
     "pregrado",
@@ -1113,7 +1135,7 @@
    "paraPeru": false,
    "publicado": "2026-11-16",
    "primeraVez": "2026-11-16",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "4c54c796e01b",
@@ -1127,7 +1149,7 @@
    "fechaLimite": "2026-12-15",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-26",
+   "verificado": "2026-11-27",
    "estado": "abierta",
    "niveles": [
     "maestria",
@@ -1142,7 +1164,7 @@
    "paraPeru": false,
    "publicado": "2026-11-16",
    "primeraVez": "2026-11-16",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "a9bbc13b0cc4",
@@ -1297,7 +1319,7 @@
    "fechaLimite": "2026-12-18",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-26",
+   "verificado": "2026-11-27",
    "estado": "abierta",
    "niveles": [],
    "areas": [],
@@ -1305,7 +1327,7 @@
    "paraPeru": false,
    "publicado": "2026-11-25",
    "primeraVez": "2026-11-26",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "42bf838593dd",
@@ -1391,7 +1413,7 @@
    "fechaLimite": "2026-12-31",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-26",
+   "verificado": "2026-11-27",
    "estado": "abierta",
    "niveles": [
     "pregrado",
@@ -1404,7 +1426,7 @@
    "paraPeru": false,
    "publicado": "2026-11-23",
    "primeraVez": "2026-11-23",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "ac2785eaf8e0",
@@ -1606,7 +1628,7 @@
    "fechaLimite": "2027-01-05",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-26",
+   "verificado": "2026-11-27",
    "estado": "abierta",
    "niveles": [
     "maestria",
@@ -1619,7 +1641,7 @@
    "paraPeru": false,
    "publicado": "2026-11-23",
    "primeraVez": "2026-11-23",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "be7c684b5156",
@@ -1661,7 +1683,7 @@
    "fechaLimite": "2027-01-06",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-26",
+   "verificado": "2026-11-27",
    "estado": "abierta",
    "niveles": [
     "maestria",
@@ -1674,7 +1696,7 @@
    "paraPeru": false,
    "publicado": "2026-11-16",
    "primeraVez": "2026-11-13",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "15dd6f5cf927",
@@ -1785,6 +1807,30 @@
    "vistoUltimo": "2026-11-22"
   },
   {
+   "id": "d239d594c03a",
+   "titulo": "Queen Elizabeth Commonwealth Scholarships 2027 (Fully-funded)",
+   "url": "https://opportunitydesk.org/2026/11/27/queen-elizabeth-commonwealth-scholarships-2027/",
+   "resumen": "Deadline: January 13, 2027 Applications are open for the Queen Elizabeth Commonwealth Scholarships 2027. The Queen Elizabeth Commonwealth Scholarships (QECS) offer a unique opportunity to study a two-year master’s degree in a low or middle-income Commonwealth country. Aimed at st",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": "2027-01-13",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-27",
+   "estado": "abierta",
+   "niveles": [
+    "maestria"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-27",
+   "primeraVez": "2026-11-27",
+   "vistoUltimo": "2026-11-27"
+  },
+  {
    "id": "2dd4c92f5de3",
    "titulo": "SDA Bocconi MBA Scholarships",
    "url": "https://www.scholars4dev.com/sda-bocconi-mba-scholarships/",
@@ -1824,7 +1870,7 @@
    "fechaLimite": "2027-01-15",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-26",
+   "verificado": "2026-11-27",
    "estado": "abierta",
    "niveles": [],
    "areas": [
@@ -1834,7 +1880,7 @@
    "paraPeru": false,
    "publicado": "2026-11-26",
    "primeraVez": "2026-11-26",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "794726eada9a",
@@ -1848,7 +1894,7 @@
    "fechaLimite": "2027-01-15",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-26",
+   "verificado": "2026-11-27",
    "estado": "abierta",
    "niveles": [
     "pregrado",
@@ -1865,7 +1911,7 @@
    "paraPeru": false,
    "publicado": "2026-11-23",
    "primeraVez": "2026-11-23",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "82b393e0ffe1",
@@ -2126,7 +2172,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-24",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "d3ae1f79cbc3",
@@ -2140,7 +2186,7 @@
    "fechaLimite": "2027-01-17",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-26",
+   "verificado": "2026-11-27",
    "estado": "abierta",
    "niveles": [
     "maestria",
@@ -2154,7 +2200,7 @@
    "paraPeru": true,
    "publicado": "2026-11-23",
    "primeraVez": "2026-11-23",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "6d751291d095",
@@ -2298,7 +2344,7 @@
    "fechaLimite": "2027-01-22",
    "ultimaPasada": "2026-11-16",
    "fechaAprox": false,
-   "verificado": "2026-11-26",
+   "verificado": "2026-11-27",
    "estado": "abierta",
    "niveles": [
     "pregrado",
@@ -2314,7 +2360,7 @@
    "paraPeru": false,
    "publicado": "2026-11-16",
    "primeraVez": "2026-11-16",
-   "vistoUltimo": "2026-11-26",
+   "vistoUltimo": "2026-11-27",
    "cambioFecha": {
     "antes": "2026-11-16",
     "ahora": "2027-01-22",
@@ -2365,7 +2411,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "39fd361e6e76",
@@ -2391,6 +2437,34 @@
    "publicado": "2026-11-10",
    "primeraVez": "2026-11-10",
    "vistoUltimo": "2026-11-11"
+  },
+  {
+   "id": "e325c9414c96",
+   "titulo": "Más sobre Your finance career in Germany starts here – apply by 31 January",
+   "url": "https://www.daad.co/es/university-ad/coburg-mba-261127/",
+   "resumen": "Anuncios de universidades alemanas Your finance career in Germany starts here – apply by 31 January Unlock your finance and leadership potential – our premium, accredited MBA in Financial Management opens doors to top careers in Germany’s thriving market. Más sobre Your finance c",
+   "fuente": "daad-doctorado",
+   "fuenteNombre": "DAAD (oficina regional para Perú) – Doctorado e investigación",
+   "pais": "Alemania",
+   "idioma": "es",
+   "fechaLimite": "2027-01-31",
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-27",
+   "estado": "abierta",
+   "niveles": [
+    "maestria",
+    "curso",
+    "investigacion"
+   ],
+   "areas": [
+    "gestion"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-27",
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "95f9561ff3fe",
@@ -2525,7 +2599,7 @@
    "fechaLimite": "2027-02-01",
    "ultimaPasada": "2026-03-30",
    "fechaAprox": false,
-   "verificado": "2026-11-26",
+   "verificado": "2026-11-27",
    "estado": "abierta",
    "niveles": [
     "maestria",
@@ -2536,7 +2610,7 @@
    "paraPeru": false,
    "publicado": "2026-11-23",
    "primeraVez": "2026-11-23",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "979af1d3ec99",
@@ -2666,7 +2740,7 @@
    "fechaLimite": "2027-02-15",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-26",
+   "verificado": "2026-11-27",
    "estado": "abierta",
    "niveles": [
     "investigacion"
@@ -2676,7 +2750,7 @@
    "paraPeru": false,
    "publicado": "2026-11-25",
    "primeraVez": "2026-11-26",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "e6e91956daf5",
@@ -2727,7 +2801,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "0d264facd123",
@@ -2907,7 +2981,7 @@
    "fechaLimite": "2027-02-28",
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-26",
+   "verificado": "2026-11-27",
    "estado": "abierta",
    "niveles": [
     "maestria"
@@ -2922,7 +2996,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "3fde5d87502e",
@@ -3085,7 +3159,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "353a645650ce",
@@ -3156,7 +3230,7 @@
    "fechaLimite": "2027-03-31",
    "ultimaPasada": "2026-09-30",
    "fechaAprox": true,
-   "verificado": "2026-11-26",
+   "verificado": "2026-11-27",
    "estado": "abierta",
    "niveles": [
     "investigacion"
@@ -3166,7 +3240,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "2d0ee86174ff",
@@ -3376,7 +3450,83 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
+  },
+  {
+   "id": "d957c8d58c55",
+   "titulo": "Voluntariado entre becarios impulsa su permanencia en los estudios y fortalece su empleabilidad",
+   "url": "https://www.gob.pe/institucion/pronabec/noticias/1481803-voluntariado-entre-becarios-impulsa-su-permanencia-en-los-estudios-y-fortalece-su-empleabilidad",
+   "resumen": "",
+   "fuente": "pronabec-noticias",
+   "fuenteNombre": "Pronabec (noticias oficiales)",
+   "pais": "Perú",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-27",
+   "estado": "por-confirmar",
+   "niveles": [
+    "pregrado",
+    "curso"
+   ],
+   "areas": [],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-27",
+   "vistoUltimo": "2026-11-27"
+  },
+  {
+   "id": "d9d3cf6c0f7a",
+   "titulo": "DOT Climate Innovation Bootcamp 2026",
+   "url": "https://opportunitydesk.org/2026/11/27/dot-climate-innovation-bootcamp-2026/",
+   "resumen": "Deadline: Ongoing Applications are open for the Digital Opportunity Trust (DOT) Climate Innovation Bootcamp 2026. The world needs bold, youth-led climate solutions now more than ever. Whether your idea is just starting or you’ve already piloted a project, scaling it requires the ",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": null,
+   "estado": "por-confirmar",
+   "niveles": [
+    "curso"
+   ],
+   "areas": [
+    "ambiental"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-27",
+   "primeraVez": "2026-11-27",
+   "vistoUltimo": "2026-11-27"
+  },
+  {
+   "id": "4560ced8374c",
+   "titulo": "Beyond the Credential: How an Online DBA Can Reshape the Way You Lead",
+   "url": "https://opportunitydesk.org/2026/11/27/beyond-the-credential-how-an-online-dba-can-reshape-the-way-you-lead/",
+   "resumen": "Business leadership is changing quickly today. Technology is reshaping operations, teams are increasingly distributed, and leaders are expected to make consequential decisions with incomplete information. Experience remains valuable, but experience alone does not always provide t",
+   "fuente": "opportunitydesk",
+   "fuenteNombre": "Opportunity Desk (becas, cursos y eventos)",
+   "pais": "Internacional",
+   "idioma": "en",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": null,
+   "estado": "por-confirmar",
+   "niveles": [],
+   "areas": [
+    "ingenieria",
+    "gestion"
+   ],
+   "cobertura": null,
+   "paraPeru": false,
+   "publicado": "2026-11-27",
+   "primeraVez": "2026-11-27",
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "4fab93cb8d8b",
@@ -3393,17 +3543,16 @@
    "verificado": "2026-11-26",
    "estado": "por-confirmar",
    "niveles": [
-    "pregrado",
-    "curso"
+    "pregrado"
    ],
    "areas": [
     "ingenieria"
    ],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-26",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "9f3e32ee9163",
@@ -3429,7 +3578,7 @@
    "paraPeru": true,
    "publicado": "2026-11-25",
    "primeraVez": "2026-11-26",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "0b0166aaeb6e",
@@ -3451,7 +3600,7 @@
    "paraPeru": false,
    "publicado": "2026-11-25",
    "primeraVez": "2026-11-26",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "ca4f3cce9607",
@@ -3521,7 +3670,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-24",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "3260c1ebd66f",
@@ -3567,7 +3716,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-23",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "a2d99419b5f1",
@@ -3613,7 +3762,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-21",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "81ede3329dad",
@@ -3637,7 +3786,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-20",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "f59d635c283d",
@@ -3677,17 +3826,18 @@
    "fechaLimite": null,
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-19",
+   "verificado": "2026-11-27",
    "estado": "por-confirmar",
    "niveles": [
-    "pregrado"
+    "pregrado",
+    "curso"
    ],
    "areas": [],
-   "cobertura": null,
+   "cobertura": "parcial",
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-19",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "17cfd86fec09",
@@ -3795,17 +3945,13 @@
    "fechaAprox": false,
    "verificado": "2026-11-26",
    "estado": "por-confirmar",
-   "niveles": [
-    "pregrado"
-   ],
-   "areas": [
-    "gestion"
-   ],
+   "niveles": [],
+   "areas": [],
    "cobertura": null,
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-18",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "841c69885e5d",
@@ -3932,7 +4078,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-14",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "6bb1a19baf36",
@@ -4076,7 +4222,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-13",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "72c5009af8b1",
@@ -4280,18 +4426,21 @@
    "fechaLimite": null,
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-19",
+   "verificado": "2026-11-27",
    "estado": "por-confirmar",
    "niveles": [
     "pregrado",
+    "maestria",
     "curso"
    ],
-   "areas": [],
+   "areas": [
+    "gestion"
+   ],
    "cobertura": null,
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-11",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "cc7801405798",
@@ -4307,17 +4456,13 @@
    "fechaAprox": false,
    "verificado": "2026-11-26",
    "estado": "por-confirmar",
-   "niveles": [
-    "maestria"
-   ],
-   "areas": [
-    "gestion"
-   ],
+   "niveles": [],
+   "areas": [],
    "cobertura": null,
-   "paraPeru": true,
+   "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-10",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "d5c5d0326486",
@@ -4341,7 +4486,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-09",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "90826bdb2acb",
@@ -4433,7 +4578,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "e71e7eb76b0e",
@@ -4457,7 +4602,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "ba6455b8a3f3",
@@ -4479,7 +4624,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "cee663f2951b",
@@ -4501,7 +4646,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "bbf097c9af59",
@@ -4523,7 +4668,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "1a37543a047c",
@@ -4547,7 +4692,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "b2ae51ea98ad",
@@ -4571,7 +4716,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "55c6c9e219f5",
@@ -4596,7 +4741,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "e51304633dcb",
@@ -4620,7 +4765,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "b857117cfd8f",
@@ -4644,7 +4789,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "bfdfb6bae497",
@@ -4668,29 +4813,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
-  },
-  {
-   "id": "94553eea33cb",
-   "titulo": "Pronabec otorgará 20 000 becas en el 2027 y priorizará carreras de alta demanda para el país",
-   "url": "https://www.gob.pe/institucion/pronabec/noticias/1460040-pronabec-otorgara-20-000-becas-en-el-2027-y-priorizara-carreras-de-alta-demanda-para-el-pais",
-   "resumen": "",
-   "fuente": "pronabec-noticias",
-   "fuenteNombre": "Pronabec (noticias oficiales)",
-   "pais": "Perú",
-   "idioma": "es",
-   "fechaLimite": null,
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-25",
-   "estado": "por-confirmar",
-   "niveles": [],
-   "areas": [],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": null,
-   "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "d72f4b000fee",
@@ -4714,7 +4837,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "4db96c9594ed",
@@ -4740,7 +4863,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "3b5016ced3d7",
@@ -4768,7 +4891,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "77418871aea5",
@@ -4796,7 +4919,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "d51f18b203cc",
@@ -4822,7 +4945,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "0b6e33a74b2a",
@@ -4848,7 +4971,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "64c1caf011b9",
@@ -4876,7 +4999,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "6f999ce2b5cb",
@@ -4902,7 +5025,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "64139aeaec1c",
@@ -4928,7 +5051,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "5faf7896bfa2",
@@ -4955,7 +5078,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "bca599a069fc",
@@ -4973,7 +5096,6 @@
    "estado": "por-confirmar",
    "niveles": [
     "pregrado",
-    "maestria",
     "curso"
    ],
    "areas": [],
@@ -4981,7 +5103,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "1ce860e401f1",
@@ -5008,7 +5130,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "a2b8b9460213",
@@ -5036,7 +5158,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "ec301f8798ff",
@@ -5062,7 +5184,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "7a779131cfd9",
@@ -5076,7 +5198,7 @@
    "fechaLimite": null,
    "ultimaPasada": null,
    "fechaAprox": false,
-   "verificado": "2026-11-26",
+   "verificado": "2026-11-27",
    "estado": "por-confirmar",
    "niveles": [
     "maestria"
@@ -5087,6 +5209,28 @@
     "gestion"
    ],
    "cobertura": "completa",
+   "paraPeru": false,
+   "publicado": null,
+   "primeraVez": "2026-11-08",
+   "vistoUltimo": "2026-11-27"
+  },
+  {
+   "id": "94553eea33cb",
+   "titulo": "Pronabec otorgará 20 000 becas en el 2027 y priorizará carreras de alta demanda para el país",
+   "url": "https://www.gob.pe/institucion/pronabec/noticias/1460040-pronabec-otorgara-20-000-becas-en-el-2027-y-priorizara-carreras-de-alta-demanda-para-el-pais",
+   "resumen": "",
+   "fuente": "pronabec-noticias",
+   "fuenteNombre": "Pronabec (noticias oficiales)",
+   "pais": "Perú",
+   "idioma": "es",
+   "fechaLimite": null,
+   "ultimaPasada": null,
+   "fechaAprox": false,
+   "verificado": "2026-11-25",
+   "estado": "por-confirmar",
+   "niveles": [],
+   "areas": [],
+   "cobertura": null,
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
@@ -6172,7 +6316,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "3e2700bbb6ab",
@@ -6196,7 +6340,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "c7a979b3e3ba",
@@ -6220,7 +6364,7 @@
    "paraPeru": true,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "ef80cdc067da",
@@ -6234,7 +6378,7 @@
    "fechaLimite": null,
    "ultimaPasada": "2026-10-31",
    "fechaAprox": true,
-   "verificado": "2026-11-26",
+   "verificado": "2026-11-27",
    "estado": "cerrada",
    "niveles": [
     "maestria"
@@ -6247,38 +6391,7 @@
    "paraPeru": false,
    "publicado": null,
    "primeraVez": "2026-11-08",
-   "vistoUltimo": "2026-11-26"
-  },
-  {
-   "id": "0fa3d35d4e40",
-   "titulo": "DAAD In-Country/In-Region Scholarships for Sub-Saharan Africans",
-   "url": "https://www.scholars4dev.com/drd-scholarships-for-sub-saharan-africans/",
-   "resumen": "DAAD Masters Degree Deadline: 12 Nov 2026 (annual) Study in: Sub-Saharan Africa Course starts 2027 Brief description: The DAAD In-Country/In-Region Programme gives scholarships for development-related Master’s studies at selected universities in Sub-Saharan Africa. It is for peop",
-   "fuente": "scholars4dev",
-   "fuenteNombre": "Scholars4Dev (agregador internacional)",
-   "pais": "Internacional",
-   "idioma": "en",
-   "fechaLimite": "2026-11-12",
-   "ultimaPasada": null,
-   "fechaAprox": false,
-   "verificado": "2026-11-11",
-   "estado": "vencida",
-   "niveles": [
-    "pregrado",
-    "maestria",
-    "curso",
-    "investigacion"
-   ],
-   "areas": [
-    "ingenieria",
-    "ambiental",
-    "gestion"
-   ],
-   "cobertura": null,
-   "paraPeru": false,
-   "publicado": "2026-11-09",
-   "primeraVez": "2026-11-09",
-   "vistoUltimo": "2026-11-11"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "a4a029a90c59",
@@ -6778,7 +6891,7 @@
    "paraPeru": false,
    "publicado": "2026-11-23",
    "primeraVez": "2026-11-23",
-   "vistoUltimo": "2026-11-26"
+   "vistoUltimo": "2026-11-27"
   },
   {
    "id": "225d6fa708e3",
@@ -6860,7 +6973,7 @@
    "ok": true,
    "items": 25,
    "error": null,
-   "ultimaOk": "2026-11-26"
+   "ultimaOk": "2026-11-27"
   },
   {
    "id": "prociencia",
@@ -6870,7 +6983,7 @@
    "ok": true,
    "items": 6,
    "error": null,
-   "ultimaOk": "2026-11-26"
+   "ultimaOk": "2026-11-27"
   },
   {
    "id": "daad-maestria",
@@ -6880,7 +6993,7 @@
    "ok": true,
    "items": 25,
    "error": null,
-   "ultimaOk": "2026-11-26"
+   "ultimaOk": "2026-11-27"
   },
   {
    "id": "daad-doctorado",
@@ -6888,9 +7001,9 @@
    "url": "https://www.daad.co/es/becas/becas-de-estancias-de-investigacion-y-docencia/",
    "via": null,
    "ok": true,
-   "items": 10,
+   "items": 11,
    "error": null,
-   "ultimaOk": "2026-11-26"
+   "ultimaOk": "2026-11-27"
   },
   {
    "id": "oea",
@@ -6910,7 +7023,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-26"
+   "ultimaOk": "2026-11-27"
   },
   {
    "id": "fulbright-peru",
@@ -6920,7 +7033,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-26"
+   "ultimaOk": "2026-11-27"
   },
   {
    "id": "erasmus-mundus",
@@ -6930,7 +7043,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-26"
+   "ultimaOk": "2026-11-27"
   },
   {
    "id": "fundacion-carolina",
@@ -6940,7 +7053,7 @@
    "ok": true,
    "items": 1,
    "error": null,
-   "ultimaOk": "2026-11-26"
+   "ultimaOk": "2026-11-27"
   },
   {
    "id": "scholars4dev",
@@ -6950,7 +7063,7 @@
    "ok": true,
    "items": 10,
    "error": null,
-   "ultimaOk": "2026-11-26"
+   "ultimaOk": "2026-11-27"
   },
   {
    "id": "opportunitydesk",
@@ -6960,7 +7073,7 @@
    "ok": true,
    "items": 10,
    "error": null,
-   "ultimaOk": "2026-11-26"
+   "ultimaOk": "2026-11-27"
   }
  ]
 }
